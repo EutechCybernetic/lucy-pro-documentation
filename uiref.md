@@ -31,7 +31,7 @@ Drag the ui element around to re-arrange the order in which they are displayed.
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -41,17 +41,17 @@ Drag the ui element around to re-arrange the order in which they are displayed.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='fieldline-widget'></a>
 
@@ -87,7 +87,7 @@ This container is useful for arranging a sequence of buttons together on a singl
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -97,17 +97,17 @@ This container is useful for arranging a sequence of buttons together on a singl
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='label-widget'></a>
 
@@ -152,7 +152,7 @@ The label's text property can be [data bound](databinding).
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -162,17 +162,17 @@ The label's text property can be [data bound](databinding).
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='objectlink-widget'></a>
 
@@ -239,7 +239,7 @@ the ObjectKey, ObjectType and ObjectID fields.
     * - Object Type
       - The type of the object being represented by the link. This will determine what page to navigate to, what quick info bubble to show and what icon to show.
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -249,17 +249,17 @@ the ObjectKey, ObjectType and ObjectID fields.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='icon-widget'></a>
 
@@ -276,7 +276,7 @@ The font-size property controls the size of the icon.
     * - Property
       - Description
     * - actions
-      - The list of [User Interface Actions](uis.rst#uiactions) to execute when the icon is clicked.
+      - The list of [User Interface Actions](uis.md#uiactions) to execute when the icon is clicked.
 
 
 ## Appearance Properties
@@ -308,7 +308,7 @@ The font-size property controls the size of the icon.
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -318,17 +318,17 @@ The font-size property controls the size of the icon.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='celllist-widget'></a>
 
@@ -344,7 +344,7 @@ and the results are refreshed to reflected the changed data.
 
 This makes this ui element suitable for displaying search results with filters that can be set by the user.
 
-See [Working with lists of items](uis.rst#uilists) for more information.
+See [Working with lists of items](uis.md#uilists) for more information.
 
 This is similar to a [repeater-widget](repeater-widget) except that here
 
@@ -355,7 +355,7 @@ This is similar to a [repeater-widget](repeater-widget) except that here
 This ui element is useful for showing a large list of items efficiently.
 However, it cannot be used to show data entry fields that require data to be captured.
 This is because the ids of the data entry fields will keep changing as the list scrolls, making it difficult to capture information.
-Instead, consider using a [Action](uiref.rst#action-widget) or [Icon](uiref.rst#icon-widget) in the results that
+Instead, consider using a [Action](uiref.md#action-widget) or [Icon](uiref.md#icon-widget) in the results that
 display a dialog when clicked, in which the user can edit and save details about a particular item.
 
 ## Appearance Properties
@@ -401,7 +401,7 @@ display a dialog when clicked, in which the user can edit and save details about
     * - Item Height
       - The height, in pixels of each row of the results.
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -411,23 +411,23 @@ display a dialog when clicked, in which the user can edit and save details about
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='dynamiclist-widget'></a>
 
 # Object Picker
 This ui element is used to select an element from a list.
-This is similar to a [List Box](uiref.rst#list-widget) except that the list of items to select from
+This is similar to a [List Box](uiref.md#list-widget) except that the list of items to select from
 is dynamically populated from a data source or from a list of pre-defined objects.
 You must specify either
 * a model to bind to
@@ -474,7 +474,7 @@ You must specify either
     * - Object Type
       - Bind this list to a particular object type to show all objects of that type to the user. The object's key property will be used as the selected value.
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -484,17 +484,17 @@ You must specify either
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='list-widget'></a>
 
@@ -577,7 +577,7 @@ the text to be shown.
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -587,17 +587,17 @@ the text to be shown.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='text-widget'></a>
 
@@ -630,7 +630,7 @@ The Text property can be [data bound](databinding).
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -640,17 +640,17 @@ The Text property can be [data bound](databinding).
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='hidden-widget'></a>
 
@@ -691,7 +691,7 @@ Its main use is to hold a piece of data to be accessed by client-side javascript
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -701,17 +701,17 @@ Its main use is to hold a piece of data to be accessed by client-side javascript
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='datetime-widget'></a>
 
@@ -745,7 +745,7 @@ The [timestamp](datetimes) will be displayed in the current logged-in user's tim
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -755,17 +755,17 @@ The [timestamp](datetimes) will be displayed in the current logged-in user's tim
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='date-widget'></a>
 
@@ -799,7 +799,7 @@ The time property is ignored when bound to a [timestamp](datetimes) value.
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -809,17 +809,17 @@ The time property is ignored when bound to a [timestamp](datetimes) value.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='time-widget'></a>
 
@@ -853,7 +853,7 @@ The date property is ignored when bound to a [timestamp](datetimes) value.
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -863,17 +863,17 @@ The date property is ignored when bound to a [timestamp](datetimes) value.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='checkbox-widget'></a>
 
@@ -921,7 +921,7 @@ Typically, the CheckedValue will be set to `1` and the unchecked value will be s
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
     * - Checked Value
       - The value that represents the checkbox's checked state. If the checkbox's value property matches this, then the checkbox state will be checked.
 
@@ -933,23 +933,23 @@ Typically, the CheckedValue will be set to `1` and the unchecked value will be s
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='fieldlist-widget'></a>
 
 # Field List
 A container that's used to layout widgets with titles/labels next to them.
-This is similar to a [Vertical Layout](uiref.rst#fieldblock-widget) in that ui elements are stacked vertically.
+This is similar to a [Vertical Layout](uiref.md#fieldblock-widget) in that ui elements are stacked vertically.
 However, in this case, each ui element will also have a title.
 
 Click on the title label to edit it directly in the UI design surface. You can also make it empty to indicate no title should be shown.
@@ -985,7 +985,7 @@ Use this container to lay out data entry forms and data display forms easily.
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -995,17 +995,17 @@ Use this container to lay out data entry forms and data display forms easily.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='action-widget'></a>
 
@@ -1020,7 +1020,7 @@ This element can be styled as a button or a link.
     * - Property
       - Description
     * - actions
-      - The list of [User Interface Actions](uis.rst#uiactions) to execute when the button is clicked.
+      - The list of [User Interface Actions](uis.md#uiactions) to execute when the button is clicked.
 
 
 ## Appearance Properties
@@ -1050,7 +1050,7 @@ This element can be styled as a button or a link.
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -1060,17 +1060,17 @@ This element can be styled as a button or a link.
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
 
 <a name='html-widget'></a>
 
@@ -1114,7 +1114,7 @@ Html in here can make use of [iviva Expression](ice) syntax to formulate its con
     * - id
       - An identifier for this ui element
     * - tag
-      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.rst#uitags) for more information on how and where to use them.
+      - The tag is an identifier you can associate with the widget. This is used to identify the element in client-side javascript. See [Accessing ui elements from javascript](uis.md#uitags) for more information on how and where to use them.
 
 
 ## Position Properties
@@ -1124,14 +1124,14 @@ Html in here can make use of [iviva Expression](ice) syntax to formulate its con
     * - Property
       - Description
     * - Bottom
-      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the bottom-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Height
-      - The height of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The height of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.
     * - Left
-      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the left-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Right
-      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the right-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Top
-      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned.
+      - The position of the ui element relative to the top-edge of its container. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned.
     * - Width
-      - The width of the ui element See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information on how widgets are positioned and sized.
+      - The width of the ui element See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information on how widgets are positioned and sized.

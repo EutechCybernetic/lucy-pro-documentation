@@ -62,10 +62,10 @@ This block is used to make a action sequence return json data.
 Used to return a value from a action sequence.
 The output is always a JSON structure and the mime type used is `application/json`.
 Values are returned as key/value pairs by default.
-Multiple key/value pairs can be returned by using multiple [Output](block-source.raw.rst#actionoutput-ref) blocks.
+Multiple key/value pairs can be returned by using multiple [Output](block-source.raw.md#actionoutput-ref) blocks.
     
 If you wish to return a raw structure and not just key/value pairs,
-then use a single [Output](block-source.raw.rst#actionoutput-ref) block and pass the json structure in text form as the value
+then use a single [Output](block-source.raw.md#actionoutput-ref) block and pass the json structure in text form as the value
 and leave the Field name empty.
     
 ### Inputs
@@ -106,7 +106,7 @@ and leave the Field name empty.
     You can also delete the entire action sequence by going to the [action switcher](actionswitcher) and using the image:: images/trash.png icon for the corresponding action sequence.
 
 {% hint type="seealso" %}
-      Actions are covered in depth in [Actions](actions.rst#actions) {% endhint %}
+      Actions are covered in depth in [Actions](actions.md#actions) {% endhint %}
 
     
 
@@ -143,7 +143,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     
     
 .. seealso::
-    [Supported date and time formats](datatypes.rst#datetimeformats)
+    [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
 .. list-table::
@@ -210,7 +210,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     
     
 .. seealso::
-    [Supported date and time formats](datatypes.rst#datetimeformats)
+    [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
 .. list-table::
@@ -247,7 +247,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     
     
 .. seealso::
-    [Supported date and time formats](datatypes.rst#datetimeformats)
+    [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
 .. list-table::
@@ -292,7 +292,7 @@ dashboard configuration. This should be a number from 1-12.
     
 .. seealso: 
     
-    [Dictionaries and Objects](datatypes.rst#dictionaries)
+    [Dictionaries and Objects](datatypes.md#dictionaries)
     
 
 
@@ -319,7 +319,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     
     
 .. seealso::
-    [Supported date and time formats](datatypes.rst#datetimeformats)
+    [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
 .. list-table::
@@ -471,7 +471,7 @@ All data sources return a [result set](dt-results).
 
 {% hint style="seealso" %}
 
-    [Working with Data Sources](datasources.rst#datasources)
+    [Working with Data Sources](datasources.md#datasources)
     
 
 {% endhint %}
@@ -503,7 +503,7 @@ All data sources return a [result set](dt-results).
     * - Output Name
       - Description
     * - *All Output*
-      - Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.rst#repeataction-ref) block.
+      - Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.
     * - *Multiple*
       -  You can can auto-extract values from the first result by adding new output pins. Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
@@ -574,8 +574,8 @@ Combines two pieces of text together.
 Any inputs which are not textual are converted to a textual representation before combining them.
     
 .. note::
-    If you need to combine multiple pieces of text together, avoid chaining [Combine](block-source.raw.rst#concat-ref) blocks.
-    Instead, use a [Template](block-source.raw.rst#template-ref) block.
+    If you need to combine multiple pieces of text together, avoid chaining [Combine](block-source.raw.md#concat-ref) blocks.
+    Instead, use a [Template](block-source.raw.md#template-ref) block.
 
 ### Inputs
 .. list-table::
@@ -903,11 +903,11 @@ Comparisons are case-insensitive.
 
 {% hint type="seealso" %}
     
-        [Javascript Library](es6javascript.rst#es6javascriptlib) {% endhint %}
+        [Javascript Library](es6javascript.md#es6javascriptlib) {% endhint %}
 
 {% hint style="seealso" %}
 
-        For more information on how data type conversions work with Javascript code, see [Datatypes in Lucy](datatypes.rst#datatypes)
+        For more information on how data type conversions work with Javascript code, see [Datatypes in Lucy](datatypes.md#datatypes)
 
 {% endhint %}
 
@@ -952,7 +952,7 @@ Used to listen for and react to events that are sent into the system.
 .. seealso::
 
     Events are covered in depth in 
-    [Event Stream and Event Handling](events.rst#eventhandling)
+    [Event Stream and Event Handling](events.md#eventhandling)
 
         
 <a name='exception-ref'></a>
@@ -1118,7 +1118,7 @@ The input json structure must either be an object or an array of homogenous obje
 ## Get Value
 
 
-  Gets an arbitrary value that was written using [Set Value](blocks.rst#setinredis-ref).
+  Gets an arbitrary value that was written using [Set Value](blocks.md#setinredis-ref).
 
 ### Inputs
 .. list-table::
@@ -1295,7 +1295,7 @@ For reference on what functions are available in javascript, see the Javascript 
     
 .. seealso::
     
-    [Javascript Library](javascript.rst#javascriptlib)
+    [Javascript Library](javascript.md#javascriptlib)
 
 ### Fields
 .. list-table::
@@ -1814,7 +1814,7 @@ Publish a message to the message bus.
 
 {% hint style="seealso" %}
 
-              [Publishing Messages](messagebus.rst#mbpublish)
+              [Publishing Messages](messagebus.md#mbpublish)
 
 {% endhint %}
 
@@ -1847,7 +1847,7 @@ Publish a message to the message queue.
 
 {% hint style="seealso" %}
 
-              [Publishing Messages](messagebus.rst#mbpublish)
+              [Publishing Messages](messagebus.md#mbpublish)
 
 {% endhint %}
 
@@ -1913,7 +1913,7 @@ Writes a global setting in the current iviva account.
 ## Parse Date
 
 This block converts a textual representation of a [timestamp](datetimes) into an actual [timestamp](datetimes).
-See [Supported date and time formats](datatypes.rst#datetimeformats) for more information on the formats in which the input can be specified.
+See [Supported date and time formats](datatypes.md#datetimeformats) for more information on the formats in which the input can be specified.
 If the input is not in any of those formats, Lucy tries to make a guess as to how it should be intrepreted.
 Don't like the sound of that? Then specify the date in a valid format :)
 
@@ -1978,7 +1978,7 @@ The value written to the input pin is written to the output only when the trigge
 This is useful to ensure that certain parts of a sequene are executed before another.
     
 .. seealso::
-    See [Flow of Data and Execution](actionsequences.rst#dataflow) for more information on controlling data flow through a action sequence
+    See [Flow of Data and Execution](actionsequences.md#dataflow) for more information on controlling data flow through a action sequence
 
 ### Inputs
 .. list-table::
@@ -2010,7 +2010,7 @@ This is useful to ensure that certain parts of a sequene are executed before ano
 
 {% hint style="seealso" %}
 
-        [Publishing Messages](messagebus.rst#mbpublish)
+        [Publishing Messages](messagebus.md#mbpublish)
 
 {% endhint %}
 
@@ -2072,7 +2072,7 @@ All input text that matches each capture group will be written to the correspond
 The Repeat Action block is used to loop through a list of data and execute an action for each item in the list.
     
 ### Specifying Inputs
-The input list can be a [result set](dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.rst#splittext-ref) block) or any javascript array (the output from a |javascript| block).
+The input list can be a [result set](dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.md#splittext-ref) block) or any javascript array (the output from a |javascript| block).
     
 ### Specifying the looping logic
 The way a repeat block works, is that it executes an [Action Start](actionstart-ref) block for each item in the input list.
@@ -2199,7 +2199,7 @@ Sets the name associated with the current model instance.
     
 .. seealso::
     
-    [Attributes of |instances|](instances.rst#instanceattrs)
+    [Attributes of |instances|](instances.md#instanceattrs)
 
 ### Inputs
 .. list-table::
@@ -2360,7 +2360,7 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
     Within the `for` block, you can use `#{loop-variable}` to access each item.
     You can also use `#{index}` to access the iteration count (starts with zero)
 
-    Example (given a list of strings, say by using the [Split Text](block-source.raw.rst#splittext-ref) block):
+    Example (given a list of strings, say by using the [Split Text](block-source.raw.md#splittext-ref) block):
 
 ```
 
@@ -2470,7 +2470,7 @@ Available Functions:
         * - escapexml(text)
           - Escapes the text so that its suitable for including within an xml block. Example: `escapexml([Ben & Jerrys])` translates to `Bend &amp; Jerrys`
         * - datetimeformat(timestamp ,[timezone])
-          - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.rst#timezonecodes) to convert the timestamp into before formatting
+          - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.md#timezonecodes) to convert the timestamp into before formatting
         * - dateformat(timestamp)
           - Given a [timestamp](datetimes), converts it into a nicely formatted date string according to the date format given in iviva account settings.
 

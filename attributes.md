@@ -34,7 +34,7 @@ Attributes are defined in each model. The data that is associated with each attr
       - A reference to any other object in the system - either an iviva application object or another Lucy model. Internally, these are stored using a *type* which denotes the type of object being saved, and a key (an integer) that uniquely identifies that particular object within a given type.
 
 {% hint type="seealso" %}
-    [Attribute Editor](modeldesigner.rst#attributeeditor) {% endhint %}
+    [Attribute Editor](modeldesigner.md#attributeeditor) {% endhint %}
 
 {% hint type="seealso" %}
-    [Working with Dates and Times](datatypes.rst#datetimes) {% endhint %}
+    [Working with Dates and Times](datatypes.md#datetimes) {% endhint %}

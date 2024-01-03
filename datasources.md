@@ -26,7 +26,7 @@ This will invoke a dialog in which all fields of the base model are listed.
 
 {% hint type="note" %}
     If the base model is a Lucy model, then all attributes of the model will be listed along with several standard fields like `Name`, `Description`, `Key` and `IsActive`
-    See [Attributes of |instances|](instances.rst#instanceattrs) for more information about attributes. {% endhint %}
+    See [Attributes of |instances|](instances.md#instanceattrs) for more information about attributes. {% endhint %}
 
 You can select fields from either the base model or from any models connected to it. Connected models show up as bold color items, listed after the model's attributes.
 You an click them to expand them to see the connected model's own attributes.

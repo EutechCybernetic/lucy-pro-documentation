@@ -16,7 +16,7 @@ On the right, any related weblets will be shown for the node that is clicked on.
 To invoke the metadata explorer for a specific object, click the image:: images/mdeicon.png in that object's details screen. This will also work for any Lucy model instance details screen.
 
 The icon is also present in quick-info bubbles.
-You can also manually invoke it from a custom ui using the [Show Metadata Explorer](uis.rst#axnmde) action.
+You can also manually invoke it from a custom ui using the [Show Metadata Explorer](uis.md#axnmde) action.
 
 The metadata explorer shows connections between objects automatically. If your model instance is connected to another object through an attribute, that connection will be shown.
 

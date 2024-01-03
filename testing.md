@@ -80,7 +80,7 @@ From the debugger panel on the top right, you can shift to showing the global de
 This shows you a log of all debug statements that were logged by all models in your account.
 You can log items here from your [action](actions) in two ways:
 
-1. Use a [Debug](block-source.raw.rst#debug-ref)
+1. Use a [Debug](block-source.raw.md#debug-ref)
 2. From a javascript block, using `lucy.log()`
 
 

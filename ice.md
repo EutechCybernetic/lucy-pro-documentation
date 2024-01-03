@@ -5,7 +5,7 @@
 
 # iviva Expression Langauge
 The iviva expression language is a domain-specific mini-language that lets you express logic and formatting instructions in textual form. It provides flexibility to intersperse expressions with regular text.
-This syntax is used in [Template](block-source.raw.rst#template-ref) blocks as well as in custom user interfaces to bind data and determine logic.
+This syntax is used in [Template](block-source.raw.md#template-ref) blocks as well as in custom user interfaces to bind data and determine logic.
 
 
 ## Syntax
@@ -27,7 +27,7 @@ The final text output might be:
     Good morning, Ricky Ricardo!
 
 In this case, `auth` is a special object that represents the currently logged-in user and `Name` is a field of that object that reprsents the user's full name.
-See the [Available Variables and Objects](ice.rst#icevars) section for a full list of what variables and objects can be used in expressions.
+See the [Available Variables and Objects](ice.md#icevars) section for a full list of what variables and objects can be used in expressions.
 
 ## Logic
 You can use boolean logic as part of your expression.
@@ -83,7 +83,7 @@ If the `authorized` variable is true then evaluate to the text "Ok" else evaluat
 Transformers are special functions that transform an expression in some way.
 Put a pipe (`|`) character after an expression and then the name of the transformer to transform that expression.
 
-One such transformer is the [datetimeformat](ice.rst#datetimeformat-transformer) transformer.
+One such transformer is the [datetimeformat](ice.md#datetimeformat-transformer) transformer.
 That transforms an expression which evaluated to a [timestamp](datetimes) into a nicely formatted textual representation of the [timestamp](datetimes) according to the logged-in user's format preferences.
 
 ```

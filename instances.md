@@ -53,7 +53,7 @@ There are several ways an instance of a model could be created:
 
 1. By defining an [action](actions) using an [Action Start](actionstart-ref) block with the mode set to [Trigger new Instance](actiontriggernewinstance). Then, calling this action on a model will automatically create a new instance of the model and run the action sequence for that action on this new instance.
 
-2. Creating an instance by listening to an incoming [event](eventhandling). The [Event Start](eventstart-ref) block must be set to [Trigger a new Instance](events.rst#eventtriggernewinstance) to make it trigger a new instance of the model.
+2. Creating an instance by listening to an incoming [event](eventhandling). The [Event Start](eventstart-ref) block must be set to [Trigger a new Instance](events.md#eventtriggernewinstance) to make it trigger a new instance of the model.
 
 3. By invoking the instance creation dialog in a user interface.
 
@@ -72,7 +72,7 @@ There are three ways to deactivate an instance:
 
     1. From the instance details screen, click on the **Deactivate** link in the sidebar to deactivate the instance.
     2. Use a |deactivate| block in your action sequence to deactivate the current instance
-    3. Call the [deactivate()](es6javascript.rst#jsdeactivate) function in a |javascript| block to deactivate an instance.
+    3. Call the [deactivate()](es6javascript.md#jsdeactivate) function in a |javascript| block to deactivate an instance.
 
 Deativating an instance does not permanently remove it from the system. It sets the IsActive status to `0`.
 
@@ -93,4 +93,4 @@ Each instance of a model can have a dynamic dashboard associated with it.
 Use this dashboard to track information in real-time and get up to date information. These dashboards are self-assembling - you can use logic in your action sequence to determine what to show and when to show it.
 
 {% hint type="seealso" %}
-    [Instance Details Page](dynamicuis.rst#instancedetailsui) {% endhint %}
+    [Instance Details Page](dynamicuis.md#instancedetailsui) {% endhint %}

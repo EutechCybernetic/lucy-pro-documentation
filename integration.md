@@ -41,10 +41,10 @@ That menu will show you any existing extension objects and will give you the opt
 {% hint type="note" %}
     For a given extension model, only one instance of it can exist as an extension of another object. So if one already exists, the menu will show it to you. If one doesn't exist, you will be given the option to create one. {% endhint %}
 
-When you click the option to create a new extension, that model's [Instance Creation Dialog](dynamicuis.rst#instancecreationdialog) will be shown with the extension attribute's value auto-filled to the current object.
+When you click the option to create a new extension, that model's [Instance Creation Dialog](dynamicuis.md#instancecreationdialog) will be shown with the extension attribute's value auto-filled to the current object.
 
 {% hint type="note" %}
-    You can override the default creation dialog with your own. See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information. {% endhint %}
+    You can override the default creation dialog with your own. See [Configuring Dynamic User Interfaces](dynamicuis.md#configdynuis) for more information. {% endhint %}
 
 After creating the instance, you will be redirected ot the instance's details page.
 
@@ -75,7 +75,7 @@ For example, if we want to create our StaffExtension when a new staff gets regis
 That's it!  Your StaffExtension instance will now get created whenever a new Staff is created in the system.
 
 {% hint type="seealso" %}
-    [Event Stream and Event Handling](events.rst#eventhandling) {% endhint %}
+    [Event Stream and Event Handling](events.md#eventhandling) {% endhint %}
 
 
 To do this, listen to an event that gets emitted from the iviva application. Mark that event block as *Trigger new instance*.
@@ -91,12 +91,12 @@ Most iviva objects have screens arranged around tabs and have provisions for add
 
 To inject a tab, you need to design a tab in the [UI Composer](uicomposer).
 First create a new UI bundle for your model.
-See [Linking your model to a user interface](customuis.rst#linkuimodel) for more information on how to do this.
+See [Linking your model to a user interface](customuis.md#linkuimodel) for more information on how to do this.
 
 Then design your tab and set it up to be injected into the iviva screen.
-See [Tab Injections](uis.rst#tabinjections) for more information on how to inject a tab.
+See [Tab Injections](uis.md#tabinjections) for more information on how to inject a tab.
 
 ### Weblets
 You may also want to provide dashboard weblets that act as the launchpad to your models. Weblets can be published and any interested user can add the weblet to their home screen. From these weblets, you can provide links into your specific screens and models.
 
-See [Weblets](uis.rst#weblets) for more information on designing weblets.
+See [Weblets](uis.md#weblets) for more information on designing weblets.

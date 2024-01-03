@@ -29,14 +29,14 @@ Once the sheet is uploaded, Lucy will call an [action](actions) called `BulkLoad
 
 {% hint type="note" %}
     The action name that is called is fixed as `BulkLoad`
-    To have your model support multiple types of bulk imports, read the section on [Supporting Multiple Bulk Import Actions](bulkloading.rst#multipleimports) {% endhint %}
+    To have your model support multiple types of bulk imports, read the section on [Supporting Multiple Bulk Import Actions](bulkloading.md#multipleimports) {% endhint %}
 
 The action will be sent a parameter for every column in the sheet. The column name will be used as the name of the parameter and the value will be the value of that cell in each row.
 
 Your action can then make use of that data in any way.
 If you are creating new model instances, then you can mark the action as *Trigger new instance* and then wire up all the parameters to |attributeset| blocks to assign attribute values from the sheet.
 
-If you are using the action sequence to do a custom import of iviva application data, then you can process that data and call iviva services using the [Call Service](block-source.raw.rst#callservice-ref) block.
+If you are using the action sequence to do a custom import of iviva application data, then you can process that data and call iviva services using the [Call Service](block-source.raw.md#callservice-ref) block.
 
 ## Error Handling
 If any error occurs in your action and the action sequence terminates, then that particular record in the Excel sheet will be marked as an error and the import process will move on to the next row.
@@ -50,11 +50,11 @@ It's a good idea to make it possible to download an empty excel sheet  that acts
 The bulk-import screen has a sidebar link to downlaod an empty template.
 When the link is clicked, an action called `DownloadBulkTemplate` will be called in your model. You should then create an excel sheet and return it as binary data.
 
-To generate the excel sheet, use the [generateExcelSheet(columns, items)](es6javascript.rst#genexcel) function inside a javascript block.
+To generate the excel sheet, use the [generateExcelSheet(columns, items)](es6javascript.md#genexcel) function inside a javascript block.
 
-Use a [Binary Output](block-source.raw.rst#actionbinaryoutput-ref) block to return the data back.
+Use a [Binary Output](block-source.raw.md#actionbinaryoutput-ref) block to return the data back.
 
-See [Working with Binary Data](datatypes.rst#binarydata) for more information on working with binary data.
+See [Working with Binary Data](datatypes.md#binarydata) for more information on working with binary data.
 
 
 <a name='multipleimports'></a>
@@ -86,4 +86,4 @@ For bulk imports to work, the Excel sheet must have a suitable format:
 3. All other rows should contain data
 
 {% hint type="note" %}
-    If your import logic needs to work with a variable number of columns, instead of specifying individual column names as parameters to the [Action Start](actionstart-ref) block, use the *All Output* pin to read all values together as a dictionary and then use that to probe for what keys are present (using either a |javascript| block or an [Exists](block-source.raw.rst#exists-ref) block) {% endhint %}
+    If your import logic needs to work with a variable number of columns, instead of specifying individual column names as parameters to the [Action Start](actionstart-ref) block, use the *All Output* pin to read all values together as a dictionary and then use that to probe for what keys are present (using either a |javascript| block or an [Exists](block-source.raw.md#exists-ref) block) {% endhint %}

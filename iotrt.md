@@ -49,7 +49,7 @@ You can fill in any name for your event.
 If the event has not yet been [registered](eventsregister), it will automatically get registered.
 
 {% hint type="seealso" %}
-    [Event Stream and Event Handling](events.rst#eventhandling)  for more information on how to handle events. {% endhint %}
+    [Event Stream and Event Handling](events.md#eventhandling)  for more information on how to handle events. {% endhint %}
 
 
 #### Content Type
@@ -71,7 +71,7 @@ This saves you from havin to process it as JSON within your Lucy action sequence
 
 ### Publishing to MQTT
 Publishing messages on an MQTT topic is easy.
-You can use the [MqttPublish](blocks.rst#mqttpublish-ref) block within any Lucy action sequence to publish a message on a given topic.
+You can use the [MqttPublish](blocks.md#mqttpublish-ref) block within any Lucy action sequence to publish a message on a given topic.
 
 
 ## Processing Real-Time Data
@@ -79,7 +79,7 @@ There are some useful Lucy blocks for processing real-time data.
 
 Some of them are:
 
-### [Deadband](blocks.rst#deadband-ref)
+### [Deadband](blocks.md#deadband-ref)
 It's common for values from real-time systems to fluctuate slightly and jitter.
 This block lets you filter out values unless they have changed by a significant amount.
 
@@ -87,13 +87,13 @@ For example, you may want to process a temperature reading only when it changes 
 This block will pass its input to the output pin only if the value changes sufficiently, OR a given time window has passed.
 
 
-### [Set Value](blocks.rst#setinredis-ref)
+### [Set Value](blocks.md#setinredis-ref)
 Use this to store an arbitrary value against a key.
 One useful use-case is storing a sensor's value against its id.
 You can also set an expiry time so that if the value is stale, it will be removed.
 
-You can use the corresponding [Get Value](blocks.rst#getfromredis-ref) block to read the value back.
+You can use the corresponding [Get Value](blocks.md#getfromredis-ref) block to read the value back.
 
-### [PublishMessage](blocks.rst#publishmessage-ref)
-Use this block to publish data on the real-time [Message Bus](messagebus.rst#messagebus).
+### [PublishMessage](blocks.md#publishmessage-ref)
+Use this block to publish data on the real-time [Message Bus](messagebus.md#messagebus).
 You can make client apps that run on webpages, desktops or mobiles that can have data pushed to it in real-time using thhis block.

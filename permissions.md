@@ -86,11 +86,11 @@ Under each section, you can see a list of roles that have been applied for that 
 If you select multiple roles, the user needs to have any one of them to access the screen.
 
 {% hint type="seealso" %}
-    [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis)
+    [Configuring Dynamic User Interfaces](dynamicuis.md#configdynuis)
     
     [uitab](uitab) {% endhint %}
 
-If you are defining your own custom user interface, then you need to specify an experssion in the [UI Composer](uicomposer), in the **Permissions** section of the UI screen configuration. See [Applying Permissions to User Interfaces](uis.rst#uipermissions) for more information.
+If you are defining your own custom user interface, then you need to specify an experssion in the [UI Composer](uicomposer), in the **Permissions** section of the UI screen configuration. See [Applying Permissions to User Interfaces](uis.md#uipermissions) for more information.
 
 {% hint type="note" %}
     When specifying roles in actions and dynamically generated UIs, you can only select roles within the current model. Custom UIs can specify roles in any model, using [iviva Expression](ice). {% endhint %}

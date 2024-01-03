@@ -1,14 +1,15 @@
 
 
-<a name='javascriptlib'></a>
+<a name='es6javascriptlib'></a>
 
 # Javascript Library
 
 
 The following javascript functions are available for use with the |javascript| block.
 
-<a name='jsoi'></a>
-## oi
+<a name='es6jsoi'></a>
+
+## lucy
 
 ### model(name)
 Creates a new [model reference](metadataobject) for the model with the given name
@@ -27,7 +28,7 @@ Sets an output for an action.
 
 {% hint style="seealso" %}
 
-    [Output](block-source.raw.rst#actionoutput-ref)
+    [Output](block-source.raw.md#actionoutput-ref)
 
 {% endhint %}
 
@@ -60,7 +61,7 @@ Parse a textual representation of a datetime.
 #### Returns
 [timestamp](datetimes)
 
-<a name='legacygenexcel'></a>
+<a name='genexcel'></a>
 
 ### generateExcelSheet(columns, items)
 Generate an excel sheet in xlsx format.
@@ -110,7 +111,7 @@ The current time in UTC format
 #### Returns
 [timestamp](datetimes)
 
-<a name='legacyjstzfunctions'></a>
+<a name='jstzfunctions'></a>
 
 ### convertFromUtc(dt, tz)
 Converts a [timestamp](datetimes) from utc to a different timezone.
@@ -176,6 +177,11 @@ Returns true if the current action sequence is executing in an model instance (a
 #### Returns
 bool
 
+### logItems(items...)
+Logs data to the Global Debug Log.
+You can pass in multiple objects here and they will be serialized as JSON and written to the log.
+
+
 ### executeService(service)
 Execute an iviva service
 
@@ -194,7 +200,7 @@ Generate a globally unique identifier.
 #### Returns
 string
 
-<a name='legacyuploadData'></a>
+<a name='uploadData'></a>
 
 ### uploadData(name, data)
 Upload the given data to the iviva storage, using `name` as a base name.  The actual name used to store the data will be unique and randomly generated using `name` as part of it.
@@ -218,7 +224,7 @@ This name can be accessed via an http url of the form:
 string - the actual file name that the data is saved as.
 
 ### uploadDataWithExplicitName(name, data)
-Same as [uploadData(name, data)](es6javascript.rst#uploadData) except the name specified is the exact name used to save the file. No extra unique postfix is added to the name.
+Same as [uploadData(name, data)](es6javascript.md#uploadData) except the name specified is the exact name used to save the file. No extra unique postfix is added to the name.
 
 {% hint type="warning" %}
     This could potentially cause existing uploads to be overwritten if not used carefully. Do not use this function unless you have a very good reason for maintaining file names. {% endhint %}
@@ -251,7 +257,7 @@ Encode the specified text data as a QR code image in png format.
 [binary data object](binobjects)
 
 
-<a name='legacymetadataobject'></a>
+<a name='metadataobject'></a>
 
 ## model
 ### isInstance()
@@ -260,22 +266,38 @@ Returns true if the object represents an model instance (as opposed to a model)
 #### Returns
 bool
 
-<a name='legacyjsdeactivate'></a>
+<a name='jsdeactivate'></a>
 
 ### deactivate()
 Deactivate the current instance. Only works when the current object is an model instance
 
-### setAttribute(name, value)
-Sets the attribute `name` with the value `value` in the current model instance
-Has no effect when run on a model.
+<a name='setAttribute'></a>
 
+### setAttribute(name,value)
+Asynchronously  the attribute `name` with the value `value` in the current model instance
+This function returns a promise that will complete once the attribute value is set.
+
+
+<a name='getAttribute'></a>
 
 ### getAttribute(name)
 Gets the value of the specified attribute in the model instance.
 Has no effect when run on a model.
 
+This function returns a promise that will resolve to the attribute's value once the operation completes.
+
+Example:
+
+```
+
+    var p = instance.getAttribute('UserName');
+    p.then(user => runtime.done({UserID:user}));
+
+```
+
+
 #### Returns
-object
+Promise<object>
 
 
 ### queryDataSource(datasource, arguments)
@@ -286,8 +308,12 @@ Pass `arguments` as parameters to the data source.
 [result set](dt-results)
 
 
+<a name='executeAction'></a>
+
 ### executeAction(action, object arguments)
-Execute an action named `action` on the current object, passing `arguments` as parameters.
+Asynchronously execute an action named `action` on the current object, passing `arguments` as parameters.
+
+This method will return a Promise that will resolve to the result of the action upon completion.
 
 #### Returns
-[dictionary](dictionaries)
+Promise<[dictionary](dictionaries)>

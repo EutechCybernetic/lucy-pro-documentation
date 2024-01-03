@@ -111,7 +111,7 @@ The minutes to add can be negative, allowing you to calculate a [timestamp](date
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of minutes to add
@@ -130,7 +130,7 @@ The days to add can be negative, allowing you to calculate a [timestamp](datetim
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of days to add
@@ -149,7 +149,7 @@ The months to add can be negative, allowing you to calculate a [timestamp](datet
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of months to add
@@ -168,7 +168,7 @@ The years to add can be negative, allowing you to calculate a [timestamp](dateti
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of years to add
@@ -184,8 +184,8 @@ Combines two pieces of text together.
 Any inputs which are not textual are converted to a textual representation before combining them.
 
 {% hint type="note" %}
-    If you need to combine multiple pieces of text together, avoid chaining [Combine](block-source.raw.rst#concat-ref) blocks.
-    Instead, use a [Template](block-source.raw.rst#template-ref) block. {% endhint %}
+    If you need to combine multiple pieces of text together, avoid chaining [Combine](block-source.raw.md#concat-ref) blocks.
+    Instead, use a [Template](block-source.raw.md#template-ref) block. {% endhint %}
 
 Input:Input 1:First piece of text
 Input:Input 2:First piece of text
@@ -306,10 +306,10 @@ Output:Output:A [timestamp](datetimes) constructed from the given inputs
 Used to return a value from a action sequence.
 The output is always a JSON structure and the mime type used is `application/json`.
 Values are returned as key/value pairs by default.
-Multiple key/value pairs can be returned by using multiple [Output](block-source.raw.rst#actionoutput-ref) blocks.
+Multiple key/value pairs can be returned by using multiple [Output](block-source.raw.md#actionoutput-ref) blocks.
 
 If you wish to return a raw structure and not just key/value pairs,
-then use a single [Output](block-source.raw.rst#actionoutput-ref) block and pass the json structure in text form as the value
+then use a single [Output](block-source.raw.md#actionoutput-ref) block and pass the json structure in text form as the value
 and leave the Field name empty.
 
 ### Inputs
@@ -342,7 +342,7 @@ Input:Action:The action to execute.
 The Repeat Action block is used to loop through a list of data and execute an action for each item in the list.
 
 ### Specifying Inputs
-The input list can be a [result set](dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.rst#splittext-ref) block) or any javascript array (the output from a |javascript| block).
+The input list can be a [result set](dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.md#splittext-ref) block) or any javascript array (the output from a |javascript| block).
 
 ### Specifying the looping logic
 The way a repeat block works, is that it executes an [Action Start](actionstart-ref) block for each item in the input list.
@@ -410,7 +410,7 @@ Used to define a new action in a model
 {% hint style="seealso" %}
 
     Actions are covered in depth in
-    [Actions](actions.rst#actions)
+    [Actions](actions.md#actions)
 
 {% endhint %}
 
@@ -425,7 +425,7 @@ Used to listen for and react to events that are sent into the system.
 {% hint style="seealso" %}
 
     Events are covered in depth in
-    [Event Stream and Event Handling](events.rst#eventhandling)
+    [Event Stream and Event Handling](events.md#eventhandling)
 
 {% endhint %}
 
@@ -532,12 +532,12 @@ Field:Data Source:The name of the data source to query. The data source is defin
 Input:*Multiple*: Any parameters to be passed to the action can also be passed as inputs. Click the *Add Input Parameter* link in the Properties Panel to add additional inputs. You can quickly add multiple inputs at once by specifying them as a comma separated list.
 
 
-Output:*All Output*:Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.rst#repeataction-ref) block.
+Output:*All Output*:Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.
 Output:*Multiple*: You can can auto-extract values from the first result by adding new output pins. Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 {% hint style="seealso" %}
 
-    [Working with Data Sources](datasources.rst#datasources)
+    [Working with Data Sources](datasources.md#datasources)
 
 {% endhint %}
 
@@ -573,7 +573,7 @@ Input:Params:The parameters to pass to the weblet. This can either be a json obj
 
 .. seealso:
 
-    [Dictionaries and Objects](datatypes.rst#dictionaries)
+    [Dictionaries and Objects](datatypes.md#dictionaries)
 
 
 ..
@@ -761,7 +761,7 @@ The value written to the input pin is written to the output only when the trigge
 This is useful to ensure that certain parts of a sequene are executed before another.
 
 {% hint type="seealso" %}
-    See [Flow of Data and Execution](actionsequences.rst#dataflow) for more information on controlling data flow through a action sequence {% endhint %}
+    See [Flow of Data and Execution](actionsequences.md#dataflow) for more information on controlling data flow through a action sequence {% endhint %}
 
 Input:Value: The value to inject when something is written to the trigger port
 Output:Output: The value specified in the input. This is written only once the trigger port has a value written to it.
@@ -825,7 +825,7 @@ Sets the name associated with the current model instance.
 
 {% hint style="seealso" %}
 
-    [Attributes of |instances|](instances.rst#instanceattrs)
+    [Attributes of |instances|](instances.md#instanceattrs)
 
 {% endhint %}
 
@@ -902,7 +902,7 @@ The syntax for the loop is:
 Within the `for` block, you can use `#{loop-variable}` to access each item.
 You can also use `#{index}` to access the iteration count (starts with zero)
 
-Example (given a list of strings, say by using the [Split Text](block-source.raw.rst#splittext-ref) block):
+Example (given a list of strings, say by using the [Split Text](block-source.raw.md#splittext-ref) block):
 
 ```
 
@@ -1012,7 +1012,7 @@ Available Functions:
     * - escapexml(text)
       - Escapes the text so that its suitable for including within an xml block. Example: `escapexml([Ben & Jerrys])` translates to `Bend &amp; Jerrys`
     * - datetimeformat(timestamp ,[timezone])
-      - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.rst#timezonecodes) to convert the timestamp into before formatting
+      - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.md#timezonecodes) to convert the timestamp into before formatting
     * - dateformat(timestamp)
       - Given a [timestamp](datetimes), converts it into a nicely formatted date string according to the date format given in iviva account settings.
 
@@ -1035,7 +1035,7 @@ For reference on what functions are available in javascript, see the Javascript 
 
 {% hint style="seealso" %}
 
-    [Javascript Library](javascript.rst#javascriptlib)
+    [Javascript Library](javascript.md#javascriptlib)
 
 {% endhint %}
 
@@ -1051,7 +1051,7 @@ Field:Code:The actual javascript code
 
 ## Parse Date
 This block converts a textual representation of a [timestamp](datetimes) into an actual [timestamp](datetimes).
-See [Supported date and time formats](datatypes.rst#datetimeformats) for more information on the formats in which the input can be specified.
+See [Supported date and time formats](datatypes.md#datetimeformats) for more information on the formats in which the input can be specified.
 If the input is not in any of those formats, Lucy tries to make a guess as to how it should be intrepreted.
 Don't like the sound of that? Then specify the date in a valid format :)
 
@@ -1165,7 +1165,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 
 {% hint style="seealso" %}
 
-              [Publishing Messages](messagebus.rst#mbpublish)
+              [Publishing Messages](messagebus.md#mbpublish)
 
 {% endhint %}
 
@@ -1191,7 +1191,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 
 {% hint style="seealso" %}
 
-              [Publishing Messages](messagebus.rst#mbpublish)
+              [Publishing Messages](messagebus.md#mbpublish)
 
 {% endhint %}
 

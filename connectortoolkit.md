@@ -208,7 +208,7 @@ For the Value, you need to specify a JSONPath expression that will define how to
 
 {% hint style="seealso" %}
 
-    [Extract JSON Path](blocks.rst#jsonpath-ref)
+    [Extract JSON Path](blocks.md#jsonpath-ref)
 
 {% endhint %}
 

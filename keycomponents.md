@@ -21,7 +21,7 @@ This is a configuration tool to let you define your own connectors to external s
 
 {% hint style="seealso" %}
 
-    [Web Service Connector Toolkit](connectortoolkit.rst#connectortoolkit)
+    [Web Service Connector Toolkit](connectortoolkit.md#connectortoolkit)
 
 {% endhint %}
 
@@ -30,7 +30,7 @@ These are gateways that allow Lucy to talk to other systems in your organization
 
 {% hint style="seealso" %}
 
-    [Lucy Connector SDK](connectorsdk.rst#connectorsdk)
+    [Lucy Connector SDK](connectorsdk.md#connectorsdk)
 
 {% endhint %}
 
@@ -39,15 +39,15 @@ You can define arbitrary data collections in Lucy and use it to store and query 
 
 {% hint type="seealso" %}
     
-    [Data Collections](datacollections.rst#datacollections) {% endhint %}
+    [Data Collections](datacollections.md#datacollections) {% endhint %}
 
 ## Syncing Data
 Lucy provides tools to scalably and robustly sync data.
 
-You can make use of [Queues](queues.rst#queues) to setup and monitor data to be synced.
+You can make use of [Queues](queues.md#queues) to setup and monitor data to be synced.
 
 .. Metadata Explorer
 .. ------------------
 .. This is a tool to visualize and navigate through the relationships between items in your system.
 ### .. It integrates both iviva applications as well as Lucy models.
-.. See [Metadata Explorer](mde.rst#mde) for more information.
+.. See [Metadata Explorer](mde.md#mde) for more information.

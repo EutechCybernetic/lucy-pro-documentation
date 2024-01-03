@@ -93,7 +93,7 @@ The instance details page has two tabs:
 * Details
 
 The Dashboard tab will show any dashboard associated with this instance.
-See the section on [Dynamic Dashboards](dynamicdashboards.rst#dyndashboards) for how to create and use dynamic dashboards.
+See the section on [Dynamic Dashboards](dynamicdashboards.md#dyndashboards) for how to create and use dynamic dashboards.
 
 {% hint type="note" %}
     Its possible that your instance does not have any dashboard associated with it at all. In this case, the dashboard tab will be empty and the screen will default to showing the Details tab. {% endhint %}
@@ -102,7 +102,7 @@ The details tab contains all the important attributes of your instance.
 You can edit them from this screen by clicking the image:: images/pencil.png icon at the top right corner of each attribute.
 
 
-Only attributes you have chosen to show will be displayed here. See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information on how to configure what is shown.
+Only attributes you have chosen to show will be displayed here. See [Configuring Dynamic User Interfaces](dynamicuis.md#configdynuis) for more information on how to configure what is shown.
 
 {% hint style="info" %}
 
@@ -115,7 +115,7 @@ Only attributes you have chosen to show will be displayed here. See [Configuring
 From the instance details screen you can choose to deactivate the current instance. Click the **Deactivate** link in the sidebar to cause this instance to get deactivated.
 
 {% hint type="seealso" %}
-    [Removing |instances|](instances.rst#deactivateinstance) for more information. {% endhint %}
+    [Removing |instances|](instances.md#deactivateinstance) for more information. {% endhint %}
 
 <a name='instancecreationdialog'></a>
 
@@ -130,16 +130,16 @@ This screen can be accessed either
 When the dialog is invoked from an extension attribute screen, the relevant extension attribute's value will be auto filled.
 
 From the **UI** tab in the [Model Designer](model-designer) you can select which attributes will be captured in the dialog.
-If you have marked an attribute as `Required` in the [Attribute Editor](modeldesigner.rst#attributeeditor) then the dialog will validate that the attribute's field is filled when creating an instance. See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information on configuring the creation dialog.
+If you have marked an attribute as `Required` in the [Attribute Editor](modeldesigner.md#attributeeditor) then the dialog will validate that the attribute's field is filled when creating an instance. See [Configuring Dynamic User Interfaces](dynamicuis.md#configdynuis) for more information on configuring the creation dialog.
 
 
 #### Overriding the creation dialog
-You can override the default creation dialog by defining your own dialog screen in the [UI Composer Reference](uicomposer.rst#uicomposer). In the **UI** tab of the [Model Designer](model-designer) uncheck the option to auto-generate a creation dialog and instead, pick the dialog you have defined from the list.
+You can override the default creation dialog by defining your own dialog screen in the [UI Composer Reference](uicomposer.md#uicomposer). In the **UI** tab of the [Model Designer](model-designer) uncheck the option to auto-generate a creation dialog and instead, pick the dialog you have defined from the list.
 
 {% hint type="note" %}
     You need to create a dialog screen in the UI Bundle. Only dialog screens will be shown in the list of views to override with. {% endhint %}
 
-See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information.
+See [Configuring Dynamic User Interfaces](dynamicuis.md#configdynuis) for more information.
 
 ### Quick Information Bubble
 The quick-information bubble shows a small bubble of information about your instance along with a link to go to the instance details screen. This bubble is auto-generated and, just like the other auto-generated screens, you can choose what attributes you wish to show.
