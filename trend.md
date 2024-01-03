@@ -5,7 +5,7 @@
 ======
 # Trends
 
-Trends feature allows you to record a *data point* tied to a *specific timestamp*. This later provide the ability to extract trends from data points that were recorded over time. This techincally called as a `Time series <https://en.wikipedia.org/wiki/Time_series>`_ data.
+Trends feature allows you to record a *data point* tied to a *specific timestamp*. This later provide the ability to extract trends from data points that were recorded over time. This techincally called as a [Time series <https://en.wikipedia.org/wiki/Time_series>](#time-series-<https://en.wikipedia.org/wiki/time_series>) data.
 
 An example of a trend/timeseries would be recording energy usage of an equipment in a location. The *data point* would primarily have a *value*, *timestamp* and additional tags/metadata like *Location*, *Equipment ID*, *Equipment Type* and so on. Once you've gathered enough data points concering multiple equipments in multiple locations, you could extract trends like,
 
@@ -14,21 +14,21 @@ An example of a trend/timeseries would be recording energy usage of an equipment
 3. Energy usage by Equiptment Type
 4. Energy usage by Equipment ID
 
-Trends can be stored on a traditional SQL database like MySQL, Postgres SQL, SQL Server and so on. But, as data grows over time, it becomes hard to manage and really slow to query. That is where Lucy harnesses the power of timeseries databases like Cassandra, InfluxDB, TimescaleDB and so on, that are designed from ground up to handle this kind of data. Right now trends are backed by `InfluxDB <https://www.influxdata.com/>`_ and other backends are either being considered or under development.
+Trends can be stored on a traditional SQL database like MySQL, Postgres SQL, SQL Server and so on. But, as data grows over time, it becomes hard to manage and really slow to query. That is where Lucy harnesses the power of timeseries databases like Cassandra, InfluxDB, TimescaleDB and so on, that are designed from ground up to handle this kind of data. Right now trends are backed by [InfluxDB <https://www.influxdata.com/>](#influxdb-<https://www.influxdata.com/>) and other backends are either being considered or under development.
 
 # Working with Trends
 
 You can work with trends through the following interfaces,
 
-1. `Lucy Blocks`_
-2. `Javascript API`_
+1. [Lucy Blocks](#lucy-blocks)
+2. [Javascript API](#javascript-api)
 
 ## Lucy Blocks
 
 These blocks are your everyday Lucy blocks, that enable you to work with the trends visually. The following blocks are provided for you and we will go through each of them in detail,
 
-1. `Add Point`_
-2. `Query Points`_
+1. [Add Point](#add-point)
+2. [Query Points](#query-points)
 
 ### Add Point
 
@@ -138,11 +138,11 @@ On successful insert, you should get all data points in the *All Output* pin.
 
 ## Javascript API
 
-1. `addPoint`_
-2. `addPointSync`_
-3. `addPoints`_
-4. `addPointsSync`_
-5. `queryPoints`_
+1. [addPoint](#addpoint)
+2. [addPointSync](#addpointsync)
+3. [addPoints](#addpoints)
+4. [addPointsSync](#addpointssync)
+5. [queryPoints](#querypoints)
 
 ### addPoint
 
@@ -187,7 +187,7 @@ Insert one data point at a time.
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the trends API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
 **Example**
 
@@ -213,7 +213,7 @@ Insert one data point at a time.
 
 ### addPointSync
 
-Insert one data point at a time. This is similar to `addPoint`_, except that this API doesn't return a promise.
+Insert one data point at a time. This is similar to [addPoint](#addpoint), except that this API doesn't return a promise.
 
 **Syntax**
 
@@ -248,7 +248,7 @@ Insert one data point at a time. This is similar to `addPoint`_, except that thi
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the trends API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
 **Example**
 
@@ -301,7 +301,7 @@ Insert multiple data point at a time.
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the trends API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
 **Trend Point**
 
@@ -338,7 +338,7 @@ Insert multiple data point at a time.
 
 ### addPointsSync
 
-Insert multiple data point at a time. This is similar to `addPoints`_, except that this API doesn't return a promise.
+Insert multiple data point at a time. This is similar to [addPoints](#addpoints), except that this API doesn't return a promise.
 
 **Syntax**
 
@@ -363,7 +363,7 @@ Insert multiple data point at a time. This is similar to `addPoints`_, except th
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the trends API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
 **Trend Point**
 
@@ -451,7 +451,7 @@ Query multiple data points for a given trend.
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the trends API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
 **Example**
 

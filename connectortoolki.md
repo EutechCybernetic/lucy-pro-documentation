@@ -468,11 +468,11 @@ A simple usecase where this could be helpful is, when using webservices that wou
 
 Lets look at how to setup additional configuration as follows,
 
-1. `Create Additional Configuration`_
-2. `Update Additional Configuration`_
-3. `Delete Additional Configuration`_
-4. `Providing Value for Additional Configuration`_
-5. `Using the Additional Configuration`_
+1. [Create Additional Configuration](#create-additional-configuration)
+2. [Update Additional Configuration](#update-additional-configuration)
+3. [Delete Additional Configuration](#delete-additional-configuration)
+4. [Providing Value for Additional Configuration](#providing-value-for-additional-configuration)
+5. [Using the Additional Configuration](#using-the-additional-configuration)
 
 ### Create Additional Configuration
 

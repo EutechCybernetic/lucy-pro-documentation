@@ -305,7 +305,7 @@ Click any role to expand it and edit its name and description.
 Click the code/Save button to save your changes. Use the code/X to cancel your changes. Use the image:: images/trash.png icon to delete the role.
 
 {% hint type="warning" %}
-    |Lucy| internally uses the role names to keep track of permissions. So changing the role name is essentially similar to removing the old role and adding a new one. Only do this if you want to fix a typo in the name you have set. If you have already deployed models that this role is currently in use, do **not** change the name of the role. {% endhint %}
+    Lucy internally uses the role names to keep track of permissions. So changing the role name is essentially similar to removing the old role and adding a new one. Only do this if you want to fix a typo in the name you have set. If you have already deployed models that this role is currently in use, do **not** change the name of the role. {% endhint %}
 
 {% hint type="seealso" %}
     [permissions](permissions) {% endhint %}

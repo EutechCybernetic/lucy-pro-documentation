@@ -2100,7 +2100,7 @@ In this case, you can add two output pins to the action block to extract the val
     
     
 ### Order of execution
-|Lucy| makes no guarantees about the order of execution of items in the list.
+Lucy makes no guarantees about the order of execution of items in the list.
 They are sent to the actions in order, but Lucy may choose to optimize the sequence by running multiple items in parallel.
     
 ### Error Handling

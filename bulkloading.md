@@ -25,7 +25,7 @@ In the bulk import screen, you can see a list of currently importing items and t
 
 Click the image:: images/attradd.png icon to upload a new Excel sheet.
 
-Once the sheet is uploaded, |Lucy| will call an [action](actions) called code/BulkLoad in your model, once for every row in the excel sheet.
+Once the sheet is uploaded, Lucy will call an [action](actions) called code/BulkLoad in your model, once for every row in the excel sheet.
 
 {% hint type="note" %}
     The action name that is called is fixed as code/BulkLoad

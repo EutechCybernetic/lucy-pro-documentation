@@ -4,7 +4,7 @@
 <a name='testing'></a>
 
 # Testing and Debugging
-|Lucy| includes several tools to help you with testing and debugging your action sequences.
+Lucy includes several tools to help you with testing and debugging your action sequences.
 
 
 You can directly run your actions from the [Model Designer](model-designer) and view their output.

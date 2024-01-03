@@ -9,7 +9,7 @@ For example:
 1. A set of dashboard weblets that users can add to their dashboards
 2. Simplified screens to configure and create requests and objects
 
-|Lucy| includes a user interface builder to design screens that can be wired up to your models in the backend.
+Lucy includes a user interface builder to design screens that can be wired up to your models in the backend.
 
 <a name='linkuimodel'></a>
 

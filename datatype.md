@@ -144,7 +144,7 @@ The full list of timezones and their codes are available here: [Time Zone Codes]
 <a name='datetimeformats'></a>
 
 ### Supported date and time formats
-|Lucy| can recognize four date/time formats:
+Lucy can recognize four date/time formats:
 
 - ISO 8601 - see `https://en.wikipedia.org/wiki/ISO_8601` for more details
 - yyyyMMdd

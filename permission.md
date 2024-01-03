@@ -98,7 +98,7 @@ If you are defining your own custom user interface, then you need to specify an 
 ## Assigning App Roles to user roles
 Alright, so you defined your app roles and have used them in your models and user interfaces.
 Now you need to actually assign these roles to users so that they can access these actions and screens.
-To do that, you need to assign your app roles to one of the user roles defined in the |Lucy| app.
+To do that, you need to assign your app roles to one of the user roles defined in the Lucy app.
 
 To assign your app roles to user roles
 

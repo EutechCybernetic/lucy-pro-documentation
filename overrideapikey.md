@@ -8,12 +8,12 @@
 This feature allows you to provide a master API Key for your Lucy action or events, which would be preferred over the one passed. This is useful in the following scenarios,
 
 1. Lucy events generally don't have any API Keys in context. In such case, calling any iviva service that requires one could fail. Here, providing an API Key override would solve that issuee.
-2. Lucy actions can be published as API's for external access as mentioned in [Publishing APIs](_publishapi). You could choose not to have any authentication for this API, but might be calling an iviva service that requires one. Here, providing an API Key override would solve that issue.
+2. Lucy actions can be published as API's for external access as mentioned in [Publishing APIs](publishapi). You could choose not to have any authentication for this API, but might be calling an iviva service that requires one. Here, providing an API Key override would solve that issue.
 
 Let's look at how to configure and use API Key overrides for,
 
-1. `Lucy Actions`_
-2. `Lucy Events`_
+1. [Lucy Actions](#lucy-actions)
+2. [Lucy Events](#lucy-events)
 
 # Lucy Actions
 

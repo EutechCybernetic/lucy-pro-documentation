@@ -39,7 +39,7 @@ All the selected models will be exported together as a single JSON file.
 ## Import Models
 You can import the package that you exported to recover a backup or transfer your setup to a new environment.
 
-Go to the |Lucy| dashboard, click the image:: images/gear.png icon and then select **Import**.
+Go to the Lucy dashboard, click the image:: images/gear.png icon and then select **Import**.
 
 In the next screen, you can upload the package file - either click in the giant box in the middle of the screen and select the file, or just drag it into the box.
 

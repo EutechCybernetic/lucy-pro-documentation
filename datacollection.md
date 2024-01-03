@@ -31,8 +31,8 @@ Each model can have multiple collections.
 
 There two entities involved in *Data Collections*,
 
-1. `Collection`_
-2. `Attributes`_
+1. [Collection](#collection)
+2. [Attributes](#attributes)
 
 # Collection
 
@@ -147,16 +147,16 @@ So far, we saw how to define a collection & attributes. To actually write data i
 
 Data collection blocks are  Lucy blocks, that enable you to work with the collection you created earlier visually. The following blocks are provided for you and we will go through each of them in detail,
 
-1. `Insert one document`_
-2. `Insert all documents`_
-3. `Find one document`_
-4. `Find all documents`_
-5. `Update one document`_
-6. `Update all documents`_
-7. `Replace one document`_
-8. `Delete one document`_
-9. `Delete all documents`_
-10. `Count all documents`_
+1. [Insert one document](#insert-one-document)
+2. [Insert all documents](#insert-all-documents)
+3. [Find one document](#find-one-document)
+4. [Find all documents](#find-all-documents)
+5. [Update one document](#update-one-document)
+6. [Update all documents](#update-all-documents)
+7. [Replace one document](#replace-one-document)
+8. [Delete one document](#delete-one-document)
+9. [Delete all documents](#delete-all-documents)
+10. [Count all documents](#count-all-documents)
 
 ### Insert one document
 
@@ -249,7 +249,7 @@ The above process can go on repeatedly based on your filter requirements. Once y
 
 ###### Passing via Filter Input Pin
 
-Right now data collections are powered by *MongoDB* in the backend. So, to pass a filter via input, you could use [Make JSON Block](jsonobject-ref), [Javascript Block](javascript-ref) or [ES6 Javascript Block](es6javascript-ref) to construct your **JSON document**. Checkout the available filter options `here <https://docs.mongodb.com/manual/reference/operator/query/>`_. Few sample filters are given below,
+Right now data collections are powered by *MongoDB* in the backend. So, to pass a filter via input, you could use [Make JSON Block](jsonobject-ref), [Javascript Block](javascript-ref) or [ES6 Javascript Block](es6javascript-ref) to construct your **JSON document**. Checkout the available filter options [here <https://docs.mongodb.com/manual/reference/operator/query/>](#here-<https://docs.mongodb.com/manual/reference/operator/query/>). Few sample filters are given below,
 
 1. Match all documents whose *FirstName* is *John*
 
@@ -292,7 +292,7 @@ This block allows you to find the first matching document from your data collect
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 4. Outputs can be processed in the either of the follow ways,
     1. Extract collection's attributes as separate output pins
         1. Check *Receive Individual Fields* property of the block
@@ -317,7 +317,7 @@ This block allows you to find all matching documents from your data collection b
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 
 **Illustration**
 
@@ -335,7 +335,7 @@ This block allows you to update the first matching document in your data collect
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 4. Data can be passed in couple of ways,
     1. Update individual attributes
         1. Check *Update data as attributes* property of the block
@@ -381,7 +381,7 @@ This block allows you to update all matching documents in your data collection b
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 4. Data can be passed in couple of ways,
     1. Update individual attributes
         1. Check *Update data as attributes* property of the block
@@ -409,7 +409,7 @@ This block allows you to delete the first matching document entirely in your dat
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 4. Data can be passed in couple of ways,
     1. Update individual attributes
         1. Check *Update data as attributes* property of the block
@@ -419,7 +419,7 @@ This block allows you to delete the first matching document entirely in your dat
         2. Pass the document to *Data* input pin
 
 {% hint type="note" %}
-    The main difference from `Update one document`_ is that, you can *replace* entire document with a new one. But, with `Update one document`_ you can update individual fields in the document. {% endhint %}
+    The main difference from [Update one document](#update-one-document) is that, you can *replace* entire document with a new one. But, with [Update one document](#update-one-document) you can update individual fields in the document. {% endhint %}
 
     For example, if you *update* the document *{"FirstName": "John", "LastName": "Doe"}* with *{"Age": 28}*, the final state of the document would be *{"FirstName": "John", "LastName": "Doe", "Age": 28}*.
 
@@ -459,7 +459,7 @@ This block allows you to delete the first matching document in your data collect
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 
 **Illustration**
 
@@ -477,7 +477,7 @@ This block allows you to delete all the matching documents in your data collecti
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 
 **Illustration**
 
@@ -495,7 +495,7 @@ This block allows you to count all the matching documents in your data collectio
         2. Pass the data to *Filter* input pin
     2. Take filter from configuration (*default*)
         1. Uncheck *Take filter from pin* property of the block
-        2. Configure the filter as detailed  in `Filter Configuration`_ section
+        2. Configure the filter as detailed  in [Filter Configuration](#filter-configuration) section
 
 **Illustration**
 
@@ -507,17 +507,17 @@ This block allows you to count all the matching documents in your data collectio
 
 When you need more control while passing data to your collection or when processing the outputs, you can make use of *Data Collection API* provided via [ES6 Javascript Block](es6javascript-ref). The following *API's* are provided for you and we will go through each of them in detail,
 
-1. `insertOne`_
-2. `insertMany`_
-3. `findOne`_
-4. `findMany`_
-5. `updateOne`_
-6. `updateMany`_
-7. `replaceOne`_
-8. `deleteOne`_
-9. `deleteMany`_
-10. `count`_
-11. `aggregate`_
+1. [insertOne](#insertone)
+2. [insertMany](#insertmany)
+3. [findOne](#findone)
+4. [findMany](#findmany)
+5. [updateOne](#updateone)
+6. [updateMany](#updatemany)
+7. [replaceOne](#replaceone)
+8. [deleteOne](#deleteone)
+9. [deleteMany](#deletemany)
+10. [count](#count)
+11. [aggregate](#aggregate)
 
 {% hint style="info" %}
 
@@ -566,7 +566,7 @@ Insert one document at a time.
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1
@@ -635,7 +635,7 @@ Insert multiple documents at a time.
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 **Example**
 
@@ -670,7 +670,7 @@ Insert multiple documents at a time.
 
 ### findOne
 
-Find the first matching document for the given collection & filter condition. More information on `Filter Configuration`_.
+Find the first matching document for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 **Syntax**
 
@@ -696,7 +696,7 @@ Find the first matching document for the given collection & filter condition. Mo
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1
@@ -738,7 +738,7 @@ Find the first matching document for the given collection & filter condition. Mo
 
 ### findMany
 
-Find all matching documents for the given collection & filter condition. More information on `Filter Configuration`_.
+Find all matching documents for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 **Syntax**
 
@@ -764,7 +764,7 @@ Find all matching documents for the given collection & filter condition. More in
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1
@@ -816,7 +816,7 @@ Find all matching documents for the given collection & filter condition. More in
 
 ### updateOne
 
-Update first matching document with the given data for the given collection & filter condition. More information on `Filter Configuration`_.
+Update first matching document with the given data for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will get the following output, {% endhint %}
@@ -856,7 +856,7 @@ Update first matching document with the given data for the given collection & fi
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1
@@ -903,7 +903,7 @@ Update first matching document with the given data for the given collection & fi
 
 ### updateMany
 
-Update all matching documents with the given data for the given collection & filter condition. More information on `Filter Configuration`_.
+Update all matching documents with the given data for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will get the following output, {% endhint %}
@@ -943,7 +943,7 @@ Update all matching documents with the given data for the given collection & fil
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1
@@ -986,7 +986,7 @@ Update all matching documents with the given data for the given collection & fil
 
 ### replaceOne
 
-Replace first matching document is replaced with the given data for the given collection & filter condition. More information on `Filter Configuration`_.
+Replace first matching document is replaced with the given data for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will get the following output, {% endhint %}
@@ -999,7 +999,7 @@ Replace first matching document is replaced with the given data for the given co
 #####             "_id": "5e25b5636725d689afccf6e7"
 
 {% hint type="note" %}
-    The main difference from `Update one document`_ is that, you can *replace* entire document with a new one. But, with `Update one document`_ you can update individual fields in the document. {% endhint %}
+    The main difference from [Update one document](#update-one-document) is that, you can *replace* entire document with a new one. But, with [Update one document](#update-one-document) you can update individual fields in the document. {% endhint %}
 
     For example, if you *update* the document *{"FirstName": "John", "LastName": "Doe"}* with *{"Age": 28}*, the final state of the document would be *{"FirstName": "John", "LastName": "Doe", "Age": 28}*.
 
@@ -1033,7 +1033,7 @@ Replace first matching document is replaced with the given data for the given co
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1
@@ -1082,7 +1082,7 @@ Replace first matching document is replaced with the given data for the given co
 
 ### deleteOne
 
-Delete first matching document for the given collection & filter condition. More information on `Filter Configuration`_.
+Delete first matching document for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 **Syntax**
 
@@ -1108,7 +1108,7 @@ Delete first matching document for the given collection & filter condition. More
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 **Example**
 
@@ -1134,7 +1134,7 @@ Delete first matching document for the given collection & filter condition. More
 
 ### deleteMany
 
-Delete all matching documents for the given collection & filter condition. More information on `Filter Configuration`_.
+Delete all matching documents for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 **Syntax**
 
@@ -1160,7 +1160,7 @@ Delete all matching documents for the given collection & filter condition. More 
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 **Example**
 
@@ -1186,7 +1186,7 @@ Delete all matching documents for the given collection & filter condition. More 
 
 ### count
 
-Count all matching documents for the given collection & filter condition. More information on `Filter Configuration`_.
+Count all matching documents for the given collection & filter condition. More information on [Filter Configuration](#filter-configuration).
 
 **Syntax**
 
@@ -1212,7 +1212,7 @@ Count all matching documents for the given collection & filter condition. More i
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1
@@ -1249,7 +1249,7 @@ Count all matching documents for the given collection & filter condition. More i
 Perform various aggration on your documents like *sum*, *average*, *min*, *max*, etc for the given collection.
 
 {% hint type="note" %}
-    Right now data collections are powered by *MongoDB* in the backend. So, in order to use *Aggregate Pipelines*, checkout the documentation `here <https://docs.mongodb.com/manual/aggregation/>`_ {% endhint %}
+    Right now data collections are powered by *MongoDB* in the backend. So, in order to use *Aggregate Pipelines*, checkout the documentation [here <https://docs.mongodb.com/manual/aggregation/>](#here-<https://docs.mongodb.com/manual/aggregation/>) {% endhint %}
 
 **Syntax**
 
@@ -1275,7 +1275,7 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
     * - *options*
       - [JSON document](dt-json)
       - *true* (can be empty with no fields like **{}**)
-      - `Arbitrary Options`_ to be passed to the data collection API
+      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
 .. list-table:: Output
     :header-rows: 1

@@ -4,7 +4,7 @@
 <a name='uis'></a>
 
 # Building User Interfaces
-|Lucy| comes with User Interface Composer, allowing you to design user interfaces to present to users.
+Lucy comes with User Interface Composer, allowing you to design user interfaces to present to users.
 These interfaces can be supported in the backend by models as well as iviva applications and services.
 
 <a name='uibundles'></a>
@@ -36,7 +36,7 @@ It's only possible to query data sources that are defined in UI Bundles linked t
 See [configdynuis](configdynuis) for more information on overriding the model's default screens.
 
 ## Accessing and Editing UI Bundles
-UI Bundles can be accessed directly by going to the |Lucy| dashboard, clicking the image:: images/gear.png icon and then selecting 'View All User Interfaces'
+UI Bundles can be accessed directly by going to the Lucy dashboard, clicking the image:: images/gear.png icon and then selecting 'View All User Interfaces'
 
 From a model, you can directly go to its linked UI Bundle by going to the **UI** tab in the [Model Designer](model-designer) and following the link to view the user interfaces for that model.
 

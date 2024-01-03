@@ -13,10 +13,10 @@ Action sequences are triggered in three ways:
 
 
 ## Using Blocks
-In |Lucy|, blocks are the individual components that make up a action sequence.
+In Lucy, blocks are the individual components that make up a action sequence.
 Each block usually does a small and very specific task.
 Each block has input and output pins.
-When a block receives data on its input pins, it does its work and then writes data to its output pins. |Lucy| then takes that data and feeds into the inputs of any other blocks that have connections to the output pins of the previous block.
+When a block receives data on its input pins, it does its work and then writes data to its output pins. Lucy then takes that data and feeds into the inputs of any other blocks that have connections to the output pins of the previous block.
 
 You can visually build your action sequence by dragging and dropping blocks into the work area and then connecting the outputs of one block to the inputs of another. In this way you can describe the flow of your logic.
 
@@ -24,8 +24,8 @@ Some blocks are used for simple logical reasoning (`equals`, `greater`,`lessthan
 
 Others do much more complex pieces of work like adding a weblet to a dashboard, or making an http request to another service.
 
-|Lucy| comes with a large collection of blocks to do many tasks.
-In addition, |Lucy| can be extended by custom blocks published from a connector. You can also enhance lucy by building a library of your own blocks.
+Lucy comes with a large collection of blocks to do many tasks.
+In addition, Lucy can be extended by custom blocks published from a connector. You can also enhance lucy by building a library of your own blocks.
 
 See [shareactions](shareactions) for more information on how to build up a library of your own re-usable blocks.
 
