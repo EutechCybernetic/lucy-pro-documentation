@@ -53,7 +53,7 @@ There are several ways an instance of a model could be created:
 
 1. By defining an [action](actions) using an [Action Start](actionstart-ref) block with the mode set to [Trigger new Instance](actiontriggernewinstance). Then, calling this action on a model will automatically create a new instance of the model and run the action sequence for that action on this new instance.
 
-2. Creating an instance by listening to an incoming [event](eventhandling). The [Event Start](eventstart-ref) block must be set to [eventtriggernewinstance](eventtriggernewinstance) to make it trigger a new instance of the model.
+2. Creating an instance by listening to an incoming [event](eventhandling). The [Event Start](eventstart-ref) block must be set to [Trigger a new Instance](events.rst#eventtriggernewinstance) to make it trigger a new instance of the model.
 
 3. By invoking the instance creation dialog in a user interface.
 
@@ -72,9 +72,9 @@ There are three ways to deactivate an instance:
 
     1. From the instance details screen, click on the **Deactivate** link in the sidebar to deactivate the instance.
     2. Use a |deactivate| block in your action sequence to deactivate the current instance
-    3. Call the [jsdeactivate](jsdeactivate) function in a |javascript| block to deactivate an instance.
+    3. Call the [deactivate()](es6javascript.rst#jsdeactivate) function in a |javascript| block to deactivate an instance.
 
-Deativating an instance does not permanently remove it from the system. It sets the IsActive status to code/0.
+Deativating an instance does not permanently remove it from the system. It sets the IsActive status to `0`.
 
 Deactivated instances can still responed to actions and details about them can be viewed.
 However
@@ -83,14 +83,14 @@ However
 2. By default, they do not show up in the search page for that model, unless you specifically enable the *Include inactive items* filter.
 
 {% hint type="warning" %}
-    The system will periodically flush out inactive instances, so do not expect them to always be present. If you need some way of marking an instance as not valid but still want to see it in the system, then define your own custom attribute for this and as a convention, set its value to code/1 or code/0 to mark it as valid or invalid. {% endhint %}
+    The system will periodically flush out inactive instances, so do not expect them to always be present. If you need some way of marking an instance as not valid but still want to see it in the system, then define your own custom attribute for this and as a convention, set its value to `1` or `0` to mark it as valid or invalid. {% endhint %}
 
 {% hint type="note" %}
-    When composing a [data source](datasources) to list out instances, you almost always want to include a filter to remove inactive instances. Add the IsActive attribute to the datasource and set its value to code/1 under the *Conditions* section. {% endhint %}
+    When composing a [data source](datasources) to list out instances, you almost always want to include a filter to remove inactive instances. Add the IsActive attribute to the datasource and set its value to `1` under the *Conditions* section. {% endhint %}
 
 ## Instance Dashboards
 Each instance of a model can have a dynamic dashboard associated with it.
 Use this dashboard to track information in real-time and get up to date information. These dashboards are self-assembling - you can use logic in your action sequence to determine what to show and when to show it.
 
 {% hint type="seealso" %}
-    [instancedetailsui](instancedetailsui) {% endhint %}
+    [Instance Details Page](dynamicuis.rst#instancedetailsui) {% endhint %}

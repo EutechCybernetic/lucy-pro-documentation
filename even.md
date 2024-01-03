@@ -108,7 +108,7 @@ Events can be triggered in three different ways:
 
 
 ## Triggering on the Model
-To make an event trigger on the model, when selecting an [Event Start](eventstart-ref) block, in the properties panel, select the code/Run on model option.
+To make an event trigger on the model, when selecting an [Event Start](eventstart-ref) block, in the properties panel, select the `Run on model` option.
 
 In this mode, the triggered event is execued directly on the model.
 
@@ -128,10 +128,10 @@ In this mode, the triggered event is execued directly on the model.
 ## Trigger a new Instance
 In this mode, a new model instance is created from the model each time the event triggers. The rest of the blocks execute on the newly created model instance.
 
-To make an event trigger a new model instance, when selecting an [Event Start](eventstart-ref) block, in the properties panel, select the code/Trigger new Instance option.
+To make an event trigger a new model instance, when selecting an [Event Start](eventstart-ref) block, in the properties panel, select the `Trigger new Instance` option.
 
 A common use case for this is if you define a model that extends or shadows another object and want to create an instance of this model whenever that object gets created.
-In this case, you would listen to the object's code/created event and then trigger the event on a new instance of the model.
+In this case, you would listen to the object's `created` event and then trigger the event on a new instance of the model.
 
 {% hint type="note" %}
     Strictly speaking this mode can also be achieved by triggering the event on the model itself, and then calling an action that has *Instantiate* set to true. However doing it this way eliminates many steps. {% endhint %}
@@ -149,7 +149,7 @@ In this case, you would listen to the object's code/created event and then trigg
 ## Triggering on Instance
 In this mode, the event engine looks for any **instances** that have attributes correlating with the event and then executes sequences on those instances.
 
-To make an event trigger an existing model instance, when selecting an [Event Start](eventstart-ref) block, in the properties panel, select the code/Run on Instance option.
+To make an event trigger an existing model instance, when selecting an [Event Start](eventstart-ref) block, in the properties panel, select the `Run on Instance` option.
 
 When configuring correlation, parameters from the event are matched to values of attributes.
 If all such correlations match, then the instance is picked up for execution.

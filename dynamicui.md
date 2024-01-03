@@ -35,9 +35,9 @@ If you choose to use a dynamically generated user interface, there will be furth
 ### Instance Search Page
 The search page for your instance can be accessed by either
 
-* Going to the Lucy dashboard, click the image:: images/gear.png icon, then choose code/Models
+* Going to the Lucy dashboard, click the image:: images/gear.png icon, then choose `Models`
     * Locating your model, and then clicking the **Search** link next to it
-* Directing from the url: code/http://<ivivacloudurl>/Apps/Lucy/Models/<yourmodel>/search
+* Directing from the url: `http://<ivivacloudurl>/Apps/Lucy/Models/<yourmodel>/search`
 
 If you have not overriden your search page with a custom screen, the dynamically generated search page is shown.
 
@@ -93,7 +93,7 @@ The instance details page has two tabs:
 * Details
 
 The Dashboard tab will show any dashboard associated with this instance.
-See the section on [dyndashboards](dyndashboards) for how to create and use dynamic dashboards.
+See the section on [Dynamic Dashboards](dynamicdashboards.rst#dyndashboards) for how to create and use dynamic dashboards.
 
 {% hint type="note" %}
     Its possible that your instance does not have any dashboard associated with it at all. In this case, the dashboard tab will be empty and the screen will default to showing the Details tab. {% endhint %}
@@ -102,11 +102,11 @@ The details tab contains all the important attributes of your instance.
 You can edit them from this screen by clicking the image:: images/pencil.png icon at the top right corner of each attribute.
 
 
-Only attributes you have chosen to show will be displayed here. See [configdynuis](configdynuis) for more information on how to configure what is shown.
+Only attributes you have chosen to show will be displayed here. See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information on how to configure what is shown.
 
 {% hint style="info" %}
 
-    If you wish to see all attributes of the model (for testing or diagnostic purposes) beyond what you have configured to be shown, you can always go to: code/http://<ivivacloudurl>/Apps/Lucy/inspectinstance?key=<instancekey>
+    If you wish to see all attributes of the model (for testing or diagnostic purposes) beyond what you have configured to be shown, you can always go to: `http://<ivivacloudurl>/Apps/Lucy/inspectinstance?key=<instancekey>`
 
 {% endhint %}
 
@@ -115,7 +115,7 @@ Only attributes you have chosen to show will be displayed here. See [configdynui
 From the instance details screen you can choose to deactivate the current instance. Click the **Deactivate** link in the sidebar to cause this instance to get deactivated.
 
 {% hint type="seealso" %}
-    [deactivateinstance](deactivateinstance) for more information. {% endhint %}
+    [Removing |instances|](instances.rst#deactivateinstance) for more information. {% endhint %}
 
 <a name='instancecreationdialog'></a>
 
@@ -130,16 +130,16 @@ This screen can be accessed either
 When the dialog is invoked from an extension attribute screen, the relevant extension attribute's value will be auto filled.
 
 From the **UI** tab in the [Model Designer](model-designer) you can select which attributes will be captured in the dialog.
-If you have marked an attribute as code/Required in the [attributeeditor](attributeeditor) then the dialog will validate that the attribute's field is filled when creating an instance. See [configdynuis](configdynuis) for more information on configuring the creation dialog.
+If you have marked an attribute as `Required` in the [Attribute Editor](modeldesigner.rst#attributeeditor) then the dialog will validate that the attribute's field is filled when creating an instance. See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information on configuring the creation dialog.
 
 
 #### Overriding the creation dialog
-You can override the default creation dialog by defining your own dialog screen in the [uicomposer](uicomposer). In the **UI** tab of the [Model Designer](model-designer) uncheck the option to auto-generate a creation dialog and instead, pick the dialog you have defined from the list.
+You can override the default creation dialog by defining your own dialog screen in the [UI Composer Reference](uicomposer.rst#uicomposer). In the **UI** tab of the [Model Designer](model-designer) uncheck the option to auto-generate a creation dialog and instead, pick the dialog you have defined from the list.
 
 {% hint type="note" %}
     You need to create a dialog screen in the UI Bundle. Only dialog screens will be shown in the list of views to override with. {% endhint %}
 
-See [configdynuis](configdynuis) for more information.
+See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information.
 
 ### Quick Information Bubble
 The quick-information bubble shows a small bubble of information about your instance along with a link to go to the instance details screen. This bubble is auto-generated and, just like the other auto-generated screens, you can choose what attributes you wish to show.
@@ -150,13 +150,13 @@ You can override the default bubble with a custom one - that shows information i
 
 To create a custom quick info bubble:
 * Add a new quickinfo UI to your UI Bundle.
-* Add a page input called code/key. This parameter represents the key of the instance that is being shown
-* Use the code/key parameter to pull data and bind it to fields in the UI
+* Add a page input called `key`. This parameter represents the key of the instance that is being shown
+* Use the `key` parameter to pull data and bind it to fields in the UI
 * Give a unique id for your bubble and save it
 * In the **UI** tab of the [Model Designer](model-designer), uncheck the *Auto Generate Quick Info* option and select the quickinfo view you created from the list of views to override with.
 
 {% hint type="note" %}
-    The code/Required flag that you set for attributes is considered only if the dynamically generated dialog screen is used. If you choose to override the dialog with your own, you will have to perform your own validation - presumably in whatever action sequence you trigger from your custom dialog. {% endhint %}
+    The `Required` flag that you set for attributes is considered only if the dynamically generated dialog screen is used. If you choose to override the dialog with your own, you will have to perform your own validation - presumably in whatever action sequence you trigger from your custom dialog. {% endhint %}
 
 
 .. toctree::

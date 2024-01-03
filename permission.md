@@ -21,10 +21,10 @@ These user roles are defined within the individual applications and describes wh
 
 Each user role within the application is defined as a collection of app roles.
 These app roles describe fine-grained permissions to do various things.
-For example, one app role in the Asset application may be code/allowed to view warranty details.
+For example, one app role in the Asset application may be `allowed to view warranty details`.
 This app role must be enabled for a user to be able to access the Asset Warranty Details screen in iviva.
 
-An example of an app role in the Work Order application may be code/allowed to assign work order. Users who have this app role can assign work orders to technicians.
+An example of an app role in the Work Order application may be `allowed to assign work order`. Users who have this app role can assign work orders to technicians.
 
 As you can see, app roles tend to be specific to that application's domain.
 
@@ -86,11 +86,11 @@ Under each section, you can see a list of roles that have been applied for that 
 If you select multiple roles, the user needs to have any one of them to access the screen.
 
 {% hint type="seealso" %}
-    [configdynuis](configdynuis)
+    [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis)
     
     [uitab](uitab) {% endhint %}
 
-If you are defining your own custom user interface, then you need to specify an experssion in the [UI Composer](uicomposer), in the **Permissions** section of the UI screen configuration. See [uipermissions](uipermissions) for more information.
+If you are defining your own custom user interface, then you need to specify an experssion in the [UI Composer](uicomposer), in the **Permissions** section of the UI screen configuration. See [Applying Permissions to User Interfaces](uis.rst#uipermissions) for more information.
 
 {% hint type="note" %}
     When specifying roles in actions and dynamically generated UIs, you can only select roles within the current model. Custom UIs can specify roles in any model, using [iviva Expression](ice). {% endhint %}
@@ -110,7 +110,7 @@ To assign your app roles to user roles
 In the User Role screen, you can see a list of all user roles that have been define in the Lucy application.
 Click on any one of them to see a list of app roles in the Lucy app.
 Some of these are specific to *operating* Lucy (like roles related to restricting access to the model designer).
-At the end of the list, you will be able to see all the app roles that are defined in models. These roles have a code/[<Model Name>] prefix in front of them to help you see which model the role is defined in.
+At the end of the list, you will be able to see all the app roles that are defined in models. These roles have a `[<Model Name>]` prefix in front of them to help you see which model the role is defined in.
 Check-off the ones you want and assign them to the user role.
 
 ## User Groups

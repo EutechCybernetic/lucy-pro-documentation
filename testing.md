@@ -18,12 +18,12 @@ Either click the 'Play' icon in the toolbar or double-click the action or event 
 
 In the panel you will be prompted to specify values for any inputs that the sequence requires. 
 
-Hit the code/Execute button to run the sequence.
+Hit the `Execute` button to run the sequence.
 On the right you can see the output and any debug information as well.
 
 The debug output shows any messages printed by the |debug| block and any other debugging information that Lucy added while executing the action.
 
-If your action is marked to run on an instance, you will also be prompted (in the test bubble) to enter the code/Instance Key to use to run the action.
+If your action is marked to run on an instance, you will also be prompted (in the test bubble) to enter the `Instance Key` to use to run the action.
 
 If any error occurred while executing the action, the output panel will turn orange and the error message will be shown there.
 
@@ -80,8 +80,8 @@ From the debugger panel on the top right, you can shift to showing the global de
 This shows you a log of all debug statements that were logged by all models in your account.
 You can log items here from your [action](actions) in two ways:
 
-1. Use a [debug-ref](debug-ref)
-2. From a javascript block, using code/lucy.log()
+1. Use a [Debug](block-source.raw.rst#debug-ref)
+2. From a javascript block, using `lucy.log()`
 
 
 ### Performance Implications

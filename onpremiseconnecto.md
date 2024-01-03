@@ -65,7 +65,7 @@ Alternatively you can pre-configure your connectors and gateways and then build 
 
 ## Setting up a connector from [Model Designer](model-designer)
 You can easily setup a new connector from the model designer itself.
-Just drag in a block for that connector. Under 'Connector Name', select code/Add New +.
+Just drag in a block for that connector. Under 'Connector Name', select `Add New +`.
 
 You will be prompted to enter a connector name.
 Once you do so, you will be given a link to download the connector gateway program as well as a 'configuration key' you can use to easily configure the gateway while it is being installed.

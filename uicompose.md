@@ -17,12 +17,12 @@ The UI Composer is where you design and build your custom user interfaces for Lu
 
 The UI Composer consists of the following parts:
 
-1. [bundleexplorer](bundleexplorer)
-2. [datasourceexplorer](datasourceexplorer)
-3. [designsurface](designsurface)
-4. [datasourcetab](datasourcetab)
-5. [toolbox](toolbox)
-6. [propertywin](propertywin)
+1. [Bundle Explorer](uicomposer.rst#bundleexplorer)
+2. [DataSource Explorer](uicomposer.rst#datasourceexplorer)
+3. [Design Area](uicomposer.rst#designsurface)
+4. [Datasource Designer](uicomposer.rst#datasourcetab)
+5. [Toolbox](uicomposer.rst#toolbox)
+6. [Property Panel](uicomposer.rst#propertywin)
 
 <a name='bundleexplorer'></a>
 
@@ -31,7 +31,7 @@ The bundle explorer shows you all your [UI Bundles](uibundles).
 You can click the image:: images/attradd.png icon to add a new screen to the bundle.
 You can expand each item to see its sub components and ui elements. Clicking on any of them will select that widget or screen and show its properties in the property panel.
 
-See [uicontainers](uicontainers) for information on the types of screens you can create.
+See [Types of User Interfaces](uis.rst#uicontainers) for information on the types of screens you can create.
 
 <a name='datasourceexplorer'></a>
 
@@ -43,14 +43,14 @@ This includes:
 2. Any actions in a [linked model](linkuimodel)
 3. Any custom data sources that have been made available in the system.
 
-Custom Data Sources are published by iviva applications and can be added to the bundle. Click the code/Include a custom data source link to select a custom data source and add it. Custom data sources are useful to provide access to data that cannot otherwise be extracted using the datasource designer or model actions.
+Custom Data Sources are published by iviva applications and can be added to the bundle. Click the `Include a custom data source` link to select a custom data source and add it. Custom data sources are useful to provide access to data that cannot otherwise be extracted using the datasource designer or model actions.
 
 You can expand each data source to see its fields. The fields can be dragged into the design surface to bind them to ui elements.
 
-See [databinding](databinding) for more information on how to bind datasource fields to ui elements.
+See [Binding Data](uis.rst#databinding) for more information on how to bind datasource fields to ui elements.
 
 {% hint type="note" %}
-    Some datasources that represent model actions may not show any fields when expanding the source. You can still bind data to the fields using [iviva Expression](ice) syntax but interactive binding by drag and drop of those sources may not be possible. See [manualbinding](manualbinding) for information on how to do this. {% endhint %}
+    Some datasources that represent model actions may not show any fields when expanding the source. You can still bind data to the fields using [iviva Expression](ice) syntax but interactive binding by drag and drop of those sources may not be possible. See [Manually binding data](uis.rst#manualbinding) for information on how to do this. {% endhint %}
 
 <a name='designsurface'></a>
 
@@ -68,20 +68,20 @@ UI Elements can be selected by clicking on them. You can move them around by dra
 
 The property panel shows details about the selected ui element.
 
-You can select multiple ui elements by holding code/Shift and clicking on items.
+You can select multiple ui elements by holding `Shift` and clicking on items.
 
 {% hint type="note" %}
     The property panel only shows items for the first selected ui element {% endhint %}
 
 {% hint type="note" %}
-    You can also code/Shift+Click on items in the bundle explorer to select them. {% endhint %}
+    You can also `Shift+Click` on items in the bundle explorer to select them. {% endhint %}
 
 
 <a name='datasourcetab'></a>
 
 ## Datasource Designer
 The second tab in the UI Composer is where you design custom data sources.
-See [datasources](datasources) for a complete overview on how data sources work.
+See [Working with Data Sources](datasources.rst#datasources) for a complete overview on how data sources work.
 
 <a name='toolbox'></a>
 
@@ -100,10 +100,10 @@ Properties are divided into tabs with different properties being shown in differ
 
 The four common tas are:
 
-* image::  images/uic-general-tab.png - General properties like the element code/id and code/tag
-* image::  images/uic-spacing-tab.png - The spacing panel where dimension and position properties are set. See [uipositioning](uipositioning) for a completely boring but nevertheless thorough walk-through of how positioning works.
+* image::  images/uic-general-tab.png - General properties like the element `id` and `tag`
+* image::  images/uic-spacing-tab.png - The spacing panel where dimension and position properties are set. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for a completely boring but nevertheless thorough walk-through of how positioning works.
 * image::  images/uic-appearance-tab.png - Properties related to the appearance of the ui element. Includes text display properties.
-* image::  images/uic-actions-tab.png - The actions editor for ui elements that support invoking actions. See [uiactions](uiactions) for more information about invoking actions in UI screens.
+* image::  images/uic-actions-tab.png - The actions editor for ui elements that support invoking actions. See [User Interface Actions](uis.rst#uiactions) for more information about invoking actions in UI screens.
 
 From the property panel, you can also copy and paste selected ui elements.
 

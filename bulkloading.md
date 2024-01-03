@@ -25,18 +25,18 @@ In the bulk import screen, you can see a list of currently importing items and t
 
 Click the image:: images/attradd.png icon to upload a new Excel sheet.
 
-Once the sheet is uploaded, Lucy will call an [action](actions) called code/BulkLoad in your model, once for every row in the excel sheet.
+Once the sheet is uploaded, Lucy will call an [action](actions) called `BulkLoad` in your model, once for every row in the excel sheet.
 
 {% hint type="note" %}
-    The action name that is called is fixed as code/BulkLoad
-    To have your model support multiple types of bulk imports, read the section on [multipleimports](multipleimports) {% endhint %}
+    The action name that is called is fixed as `BulkLoad`
+    To have your model support multiple types of bulk imports, read the section on [Supporting Multiple Bulk Import Actions](bulkloading.rst#multipleimports) {% endhint %}
 
 The action will be sent a parameter for every column in the sheet. The column name will be used as the name of the parameter and the value will be the value of that cell in each row.
 
 Your action can then make use of that data in any way.
 If you are creating new model instances, then you can mark the action as *Trigger new instance* and then wire up all the parameters to |attributeset| blocks to assign attribute values from the sheet.
 
-If you are using the action sequence to do a custom import of iviva application data, then you can process that data and call iviva services using the [callservice-ref](callservice-ref) block.
+If you are using the action sequence to do a custom import of iviva application data, then you can process that data and call iviva services using the [Call Service](block-source.raw.rst#callservice-ref) block.
 
 ## Error Handling
 If any error occurs in your action and the action sequence terminates, then that particular record in the Excel sheet will be marked as an error and the import process will move on to the next row.
@@ -48,13 +48,13 @@ At the end, from the same bulk-import screen, you can download the excel sheet w
 ## Downloading Empty Templates
 It's a good idea to make it possible to download an empty excel sheet  that acts as a template for filling data. That will help guide your user towards filling the sheet in the correct way.
 The bulk-import screen has a sidebar link to downlaod an empty template.
-When the link is clicked, an action called code/DownloadBulkTemplate will be called in your model. You should then create an excel sheet and return it as binary data.
+When the link is clicked, an action called `DownloadBulkTemplate` will be called in your model. You should then create an excel sheet and return it as binary data.
 
-To generate the excel sheet, use the [genexcel](genexcel) function inside a javascript block.
+To generate the excel sheet, use the [generateExcelSheet(columns, items)](es6javascript.rst#genexcel) function inside a javascript block.
 
-Use a [actionbinaryoutput-ref](actionbinaryoutput-ref) block to return the data back.
+Use a [Binary Output](block-source.raw.rst#actionbinaryoutput-ref) block to return the data back.
 
-See [binarydata](binarydata) for more information on working with binary data.
+See [Working with Binary Data](datatypes.rst#binarydata) for more information on working with binary data.
 
 
 <a name='multipleimports'></a>
@@ -62,11 +62,11 @@ See [binarydata](binarydata) for more information on working with binary data.
 ## Supporting Multiple Bulk Import Actions
 It's possible to have more than one bulk-load and template-download action in your model.
 
-The default actions are called code/BulkLoad and code/DownloadBulkLoadTemplate respectively.
+The default actions are called `BulkLoad` and `DownloadBulkLoadTemplate` respectively.
 
-If you visit the bulk import page and specify a code/prefix query string parameter to the bulk-import page, you can have it use actions called code/BulkLoad<prefix> and code/Download<prefix>BulkLoadTemplate respectively.
+If you visit the bulk import page and specify a `prefix` query string parameter to the bulk-import page, you can have it use actions called `BulkLoad<prefix>` and `Download<prefix>BulkLoadTemplate` respectively.
 
-For example, if you add code/&prefix=EnergyData  to the bulk-import screen utl:
+For example, if you add `&prefix=EnergyData`  to the bulk-import screen utl:
 
 ```
 
@@ -74,16 +74,16 @@ For example, if you add code/&prefix=EnergyData  to the bulk-import screen utl:
 
 ```
 
-Then the importer will look for an action in your model called code/BulkLoadEnergyData.
-The empty template download link will look for an action called code/DownloadEnergyDataBulkLoadTemplate
+Then the importer will look for an action in your model called `BulkLoadEnergyData`.
+The empty template download link will look for an action called `DownloadEnergyDataBulkLoadTemplate`
 
 
 ## Excel Sheet Format
 For bulk imports to work, the Excel sheet must have a suitable format:
 
-1. The file format should be code/.xlsx (Excel 2007 or above)
+1. The file format should be `.xlsx` (Excel 2007 or above)
 2. The first row should have column headers in them
 3. All other rows should contain data
 
 {% hint type="note" %}
-    If your import logic needs to work with a variable number of columns, instead of specifying individual column names as parameters to the [Action Start](actionstart-ref) block, use the *All Output* pin to read all values together as a dictionary and then use that to probe for what keys are present (using either a |javascript| block or an [exists-ref](exists-ref) block) {% endhint %}
+    If your import logic needs to work with a variable number of columns, instead of specifying individual column names as parameters to the [Action Start](actionstart-ref) block, use the *All Output* pin to read all values together as a dictionary and then use that to probe for what keys are present (using either a |javascript| block or an [Exists](block-source.raw.rst#exists-ref) block) {% endhint %}

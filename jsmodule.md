@@ -27,14 +27,14 @@ From the modules panel, you can click the image:: images/attradd.png at the top 
 Provide a name for the module. This name will be what you use to reference the module in your code.
 
 {% hint type="note" %}
-    Modules are referenced using code/require()  so make sure you choose a "require-friendly" name {% endhint %}
+    Modules are referenced using `require()`  so make sure you choose a "require-friendly" name {% endhint %}
 
 Give a description and then at the bottom select the file or drag it in to upload it.
 
 
 ## Structuring Modules
 Javascript has a few ways in which modules can be built and exposed.
-For Lucy, the way to do it is by using the  code/exports dictionary in your code.
+For Lucy, the way to do it is by using the  `exports` dictionary in your code.
 
 A sample module:
 
@@ -49,7 +49,7 @@ A sample module:
 ```
 
 {% hint type="note" %}
-    You can't assign the code/exports dictionary directly. You can only set fields on it.
+    You can't assign the `exports` dictionary directly. You can only set fields on it.
     So use: {% endhint %}
 
 ```
@@ -68,7 +68,7 @@ A sample module:
 
 
 ## Referencing Javascript Modules
-You can reference these modules in your |javascript| blocks by using  code/require().
+You can reference these modules in your |javascript| blocks by using  `require()`.
 
 
 Using the sample module defined above:
@@ -97,5 +97,5 @@ However some restrictions and limitations to keep in mind:
 
 * The module must be available as a single file. Most JS libraries provide a distribution friendly version that is commpiled down to a single file.
 * The module can't reference any other external dependencies
-* The modules can't reference standard node modules (like code/fs)
-* The modules can't make use of standard browser exposed objects like code/window or code/document
+* The modules can't reference standard node modules (like `fs`)
+* The modules can't make use of standard browser exposed objects like `window` or `document`

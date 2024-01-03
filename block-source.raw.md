@@ -111,7 +111,7 @@ The minutes to add can be negative, allowing you to calculate a [timestamp](date
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [datetimeformats](datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of minutes to add
@@ -130,7 +130,7 @@ The days to add can be negative, allowing you to calculate a [timestamp](datetim
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [datetimeformats](datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of days to add
@@ -149,7 +149,7 @@ The months to add can be negative, allowing you to calculate a [timestamp](datet
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [datetimeformats](datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of months to add
@@ -168,7 +168,7 @@ The years to add can be negative, allowing you to calculate a [timestamp](dateti
 Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
-    [datetimeformats](datetimeformats) {% endhint %}
+    [Supported date and time formats](datatypes.rst#datetimeformats) {% endhint %}
 
 Input:Input 1:A valid [timestamp](datetimes)
 Input:Input 2:The number of years to add
@@ -184,8 +184,8 @@ Combines two pieces of text together.
 Any inputs which are not textual are converted to a textual representation before combining them.
 
 {% hint type="note" %}
-    If you need to combine multiple pieces of text together, avoid chaining [concat-ref](concat-ref) blocks.
-    Instead, use a [template-ref](template-ref) block. {% endhint %}
+    If you need to combine multiple pieces of text together, avoid chaining [Combine](block-source.raw.rst#concat-ref) blocks.
+    Instead, use a [Template](block-source.raw.rst#template-ref) block. {% endhint %}
 
 Input:Input 1:First piece of text
 Input:Input 2:First piece of text
@@ -306,10 +306,10 @@ Output:Output:A [timestamp](datetimes) constructed from the given inputs
 Used to return a value from a action sequence.
 The output is always a JSON structure and the mime type used is `application/json`.
 Values are returned as key/value pairs by default.
-Multiple key/value pairs can be returned by using multiple [actionoutput-ref](actionoutput-ref) blocks.
+Multiple key/value pairs can be returned by using multiple [Output](block-source.raw.rst#actionoutput-ref) blocks.
 
 If you wish to return a raw structure and not just key/value pairs,
-then use a single [actionoutput-ref](actionoutput-ref) block and pass the json structure in text form as the value
+then use a single [Output](block-source.raw.rst#actionoutput-ref) block and pass the json structure in text form as the value
 and leave the Field name empty.
 
 ### Inputs
@@ -342,7 +342,7 @@ Input:Action:The action to execute.
 The Repeat Action block is used to loop through a list of data and execute an action for each item in the list.
 
 ### Specifying Inputs
-The input list can be a [result set](dt-results), a list of strings (ex, output of a [splittext-ref](splittext-ref) block) or any javascript array (the output from a |javascript| block).
+The input list can be a [result set](dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.rst#splittext-ref) block) or any javascript array (the output from a |javascript| block).
 
 ### Specifying the looping logic
 The way a repeat block works, is that it executes an [Action Start](actionstart-ref) block for each item in the input list.
@@ -354,21 +354,21 @@ Since the logic is executed in a different action, you cannot link blocks from y
 Each time the action block is called, a single item from the list is passed as input to the action, along with any data specified in the *Extra* input.
 If the item being passed to the action block is a [dictionary](dictionaries) or [result set](dt-results), then it will be split into key/value pairs and sent to the action.
 This means, you can add output pins in the [Action Start](actionstart-ref) block to auto extract the fields of the [dictionary](dictionaries).
-The *Extra* parameter is passed as an extra key/value pair with the key name being code/Extra.
+The *Extra* parameter is passed as an extra key/value pair with the key name being `Extra`.
 
 {% hint style="info" %}
 
-    If your dictionary happens to have a key called code/Extra it will get overwritten by the *Extra* parameter passed into the repeat block.
+    If your dictionary happens to have a key called `Extra` it will get overwritten by the *Extra* parameter passed into the repeat block.
 
 {% endhint %}
 
 
-If the item being passed into the action block is *not* a [dictionary](dictionaries) or [result set](dt-results) then the item is passed as a single key/value pair with a key  code/Item.
-The *Extra* parameter is passed as a second key/value pair with the key name being code/Extra.
+If the item being passed into the action block is *not* a [dictionary](dictionaries) or [result set](dt-results) then the item is passed as a single key/value pair with a key  `Item`.
+The *Extra* parameter is passed as a second key/value pair with the key name being `Extra`.
 In this case, you can add two output pins to the action block to extract the values:
 
-    1. code/Item
-    2. code/Extra
+    1. `Item`
+    2. `Extra`
 
 
 ### Order of execution
@@ -396,7 +396,7 @@ Create a list from a comma separated list of items.
 Actually, create a list by splitting text by any delimiter.
 
 Input:Text:The text to split
-Input:Delimiter:The delimiter to use. Can be a character or some text. Typically, code/, is used
+Input:Delimiter:The delimiter to use. Can be a character or some text. Typically, `,` is used
 Output:Items:A list of split items.
 
 ..
@@ -410,7 +410,7 @@ Used to define a new action in a model
 {% hint style="seealso" %}
 
     Actions are covered in depth in
-    [actions](actions)
+    [Actions](actions.rst#actions)
 
 {% endhint %}
 
@@ -425,7 +425,7 @@ Used to listen for and react to events that are sent into the system.
 {% hint style="seealso" %}
 
     Events are covered in depth in
-    [eventhandling](eventhandling)
+    [Event Stream and Event Handling](events.rst#eventhandling)
 
 {% endhint %}
 
@@ -532,12 +532,12 @@ Field:Data Source:The name of the data source to query. The data source is defin
 Input:*Multiple*: Any parameters to be passed to the action can also be passed as inputs. Click the *Add Input Parameter* link in the Properties Panel to add additional inputs. You can quickly add multiple inputs at once by specifying them as a comma separated list.
 
 
-Output:*All Output*:Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [repeataction-ref](repeataction-ref) block.
+Output:*All Output*:Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.rst#repeataction-ref) block.
 Output:*Multiple*: You can can auto-extract values from the first result by adding new output pins. Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 {% hint style="seealso" %}
 
-    [datasources](datasources)
+    [Working with Data Sources](datasources.rst#datasources)
 
 {% endhint %}
 
@@ -573,7 +573,7 @@ Input:Params:The parameters to pass to the weblet. This can either be a json obj
 
 .. seealso:
 
-    [dictionaries](dictionaries)
+    [Dictionaries and Objects](datatypes.rst#dictionaries)
 
 
 ..
@@ -672,7 +672,7 @@ Only one of them will be executed.
 
    	 - **empty**
    	 - 0
-   	 - code/false
+   	 - `false`
 
    	 All other values are deemed to be **valid**
 
@@ -761,7 +761,7 @@ The value written to the input pin is written to the output only when the trigge
 This is useful to ensure that certain parts of a sequene are executed before another.
 
 {% hint type="seealso" %}
-    See [dataflow](dataflow) for more information on controlling data flow through a action sequence {% endhint %}
+    See [Flow of Data and Execution](actionsequences.rst#dataflow) for more information on controlling data flow through a action sequence {% endhint %}
 
 Input:Value: The value to inject when something is written to the trigger port
 Output:Output: The value specified in the input. This is written only once the trigger port has a value written to it.
@@ -825,7 +825,7 @@ Sets the name associated with the current model instance.
 
 {% hint style="seealso" %}
 
-    [instanceattrs](instanceattrs)
+    [Attributes of |instances|](instances.rst#instanceattrs)
 
 {% endhint %}
 
@@ -849,13 +849,13 @@ The templating system lets you do simple variable substitution, as well as loopi
 
 ### Template Syntax
 
-Any text you enter will get directly passed to the output, unless it is enclosed in either code/${...} or code/#{...} blocks.
+Any text you enter will get directly passed to the output, unless it is enclosed in either `${...}` or `#{...}` blocks.
 
 ####### Variables
-Variables can be specified using code/#{varname} syntax.
+Variables can be specified using `#{varname}` syntax.
 All inputs to the block are available as variables.  The names of the variables will be the names of the input pins.
 
-Example (assume two input pins have been added - code/name and code/ticketid):
+Example (assume two input pins have been added - `name` and `ticketid`):
 .. code::
 
     Dear #{name}
@@ -869,7 +869,7 @@ Example (assume two input pins have been added - code/name and code/ticketid):
     Support Team
 
 ####### Dictionaries and Result Sets
-If the input contains a [dictionary](dictionaries) or [result set](dt-results) then you can access fields of the object using code/. syntax.
+If the input contains a [dictionary](dictionaries) or [result set](dt-results) then you can access fields of the object using `.` syntax.
 
 Example (assuming the block has an input called `input1` which contains a dictionary of user details):
 
@@ -886,9 +886,9 @@ In the case of a [result set](dt-results), the first field from the first record
 
 ####### Lists
 If the inputs to the block contain a list of items (a list of strings, or a [result set](dt-results) for example),
-you can loop through the list using a code/${for }...${end} block.
+you can loop through the list using a `${for }...${end}` block.
 Any thing within that block will get repeated for each item in the list.
-The code/${for} blocks can also be nested for using loops within loops.
+The `${for}` blocks can also be nested for using loops within loops.
 
 The syntax for the loop is:
 
@@ -899,10 +899,10 @@ The syntax for the loop is:
 
 ```
 
-Within the `for` block, you can use code/#{loop-variable} to access each item.
-You can also use code/#{index} to access the iteration count (starts with zero)
+Within the `for` block, you can use `#{loop-variable}` to access each item.
+You can also use `#{index}` to access the iteration count (starts with zero)
 
-Example (given a list of strings, say by using the [splittext-ref](splittext-ref) block):
+Example (given a list of strings, say by using the [Split Text](block-source.raw.rst#splittext-ref) block):
 
 ```
 
@@ -913,7 +913,7 @@ Example (given a list of strings, say by using the [splittext-ref](splittext-ref
 
 ```
 
-If the list is a [result set](dt-results) then individual fields of the result could be accessed using the code/. operator.
+If the list is a [result set](dt-results) then individual fields of the result could be accessed using the `.` operator.
 
 Example (given an input coming from a datasource)
 
@@ -984,17 +984,17 @@ Available Functions:
       - Add `hours` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
 
     * - select(list,field-to-select,field-to-filter,value-to-filter)
-      - Given a list of items `list`, return the field `field-to-select` of the first result where the value of the field `field-to-filter` matches `value-to-filter`. Example: code/select(items,[Name],[UserKey],12) - selects the `FirstName` field of the user having code/UserKey=12
+      - Given a list of items `list`, return the field `field-to-select` of the first result where the value of the field `field-to-filter` matches `value-to-filter`. Example: `select(items,[Name],[UserKey],12)` - selects the `FirstName` field of the user having `UserKey=12`
 
     * - selectfromindex(list,index,field)
-      - Given a list of items `list`, return the field `field` from the item in the list with zero-based index `index`. Example: code/selectfromidnex(items,3,[Name]) - Selects the name field from the 4th item in the list
+      - Given a list of items `list`, return the field `field` from the item in the list with zero-based index `index`. Example: `selectfromidnex(items,3,[Name])` - Selects the name field from the 4th item in the list
 
     * - concat(item1,item2,item3,...)
       - Performs string concatenation on a list of items
     * - sum(item1,item2...)
       - Adds all the items together. Items are converted to integers before being added together.
     * - mod(item1,item2)
-      - Performs a modulus operation: code/item1 % item2. Both items are converted to integers first.
+      - Performs a modulus operation: `item1 % item2`. Both items are converted to integers first.
     * - div(item1,item2)
       - Divides item1 by item2. Both items are converted to integers first.
     * - mul(item1,item2,....)
@@ -1010,9 +1010,9 @@ Available Functions:
     * - substring(text,index,[length])
       - Returns a substring of `text` starting at `index`. If `length` is specified, then a maximum of that many characters is returned. Otherwise, the full text from the `index` up to the end of the text is returned.
     * - escapexml(text)
-      - Escapes the text so that its suitable for including within an xml block. Example: code/escapexml([Ben & Jerrys]) translates to code/Bend &amp; Jerrys
+      - Escapes the text so that its suitable for including within an xml block. Example: `escapexml([Ben & Jerrys])` translates to `Bend &amp; Jerrys`
     * - datetimeformat(timestamp ,[timezone])
-      - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [timezonecodes](timezonecodes) to convert the timestamp into before formatting
+      - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.rst#timezonecodes) to convert the timestamp into before formatting
     * - dateformat(timestamp)
       - Given a [timestamp](datetimes), converts it into a nicely formatted date string according to the date format given in iviva account settings.
 
@@ -1035,11 +1035,11 @@ For reference on what functions are available in javascript, see the Javascript 
 
 {% hint style="seealso" %}
 
-    [javascriptlib](javascriptlib)
+    [Javascript Library](javascript.rst#javascriptlib)
 
 {% endhint %}
 
-Input:*Multiple*:Any inputs you add can be accessed via code/inputs.inputName
+Input:*Multiple*:Any inputs you add can be accessed via `inputs.inputName`
 Output:*Multiple*:Any outputs you add can be written to via :code:'outputs.outputName'
 Field:Name:A label for the javascript block to show in the designer
 Field:Code:The actual javascript code
@@ -1051,7 +1051,7 @@ Field:Code:The actual javascript code
 
 ## Parse Date
 This block converts a textual representation of a [timestamp](datetimes) into an actual [timestamp](datetimes).
-See [datetimeformats](datetimeformats) for more information on the formats in which the input can be specified.
+See [Supported date and time formats](datatypes.rst#datetimeformats) for more information on the formats in which the input can be specified.
 If the input is not in any of those formats, Lucy tries to make a guess as to how it should be intrepreted.
 Don't like the sound of that? Then specify the date in a valid format :)
 
@@ -1165,7 +1165,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 
 {% hint style="seealso" %}
 
-              [mbpublish](mbpublish)
+              [Publishing Messages](messagebus.rst#mbpublish)
 
 {% endhint %}
 
@@ -1191,7 +1191,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 
 {% hint style="seealso" %}
 
-              [mbpublish](mbpublish)
+              [Publishing Messages](messagebus.rst#mbpublish)
 
 {% endhint %}
 

@@ -16,7 +16,7 @@ On the right, any related weblets will be shown for the node that is clicked on.
 To invoke the metadata explorer for a specific object, click the image:: images/mdeicon.png in that object's details screen. This will also work for any Lucy model instance details screen.
 
 The icon is also present in quick-info bubbles.
-You can also manually invoke it from a custom ui using the [axnmde](axnmde) action.
+You can also manually invoke it from a custom ui using the [Show Metadata Explorer](uis.rst#axnmde) action.
 
 The metadata explorer shows connections between objects automatically. If your model instance is connected to another object through an attribute, that connection will be shown.
 
@@ -31,6 +31,6 @@ In the configuration screen, select the object type you want to customize. This 
 After selecting one, go to the *Weblets* section below, click the image:: images/attradd.png icon,  and then choose a weblet from the list.
 The list of weblets shows all published weblets that are available - both in iviva apps as well as weblets published in any [UI Bundle](uibundles).
 
-When the weblet is displayed in the explorer after clicking a node, a code/key parameter is passed to the weblet which holds the object key of the node that was clicked on.
+When the weblet is displayed in the explorer after clicking a node, a `key` parameter is passed to the weblet which holds the object key of the node that was clicked on.
 
 You can use this parameter in your weblet to show customized information for that particular node.

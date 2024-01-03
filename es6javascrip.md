@@ -28,7 +28,7 @@ Sets an output for an action.
 
 {% hint style="seealso" %}
 
-    [actionoutput-ref](actionoutput-ref)
+    [Output](block-source.raw.rst#actionoutput-ref)
 
 {% endhint %}
 
@@ -70,10 +70,10 @@ Adds column headers and rows of data.
 .. list-table::
     :header-rows: 0
 
-    * - code/columns
+    * - `columns`
       - An array of column headers to add to the top.
-    * - code/items
-      - An array of objects to be populated as rows. Each object should have fields matching the items in the code/columns array
+    * - `items`
+      - An array of objects to be populated as rows. Each object should have fields matching the items in the `columns` array
 
 Example:
 
@@ -119,10 +119,10 @@ Converts a [timestamp](datetimes) from utc to a different timezone.
 .. list-table::
     :header-rows: 0
 
-    * - code/dt
+    * - `dt`
       - A [timestamp](datetimes) to convert to a different timezone
 
-    * - code/tz
+    * - `tz`
       - The [code](timezonecodes) of the timezone to convert to
 
 {% hint style="seealso" %}
@@ -142,10 +142,10 @@ Converts a [timestamp](datetimes) to utc from a different timezone.
 .. list-table::
     :header-rows: 0
 
-    * - code/dt
+    * - `dt`
       - A [timestamp](datetimes) to convert to UTC
 
-    * - code/tz
+    * - `tz`
       - The [code](timezonecodes) of the timezone the [timestamp](datetimes) was currently in.
 
 {% hint style="seealso" %}
@@ -203,7 +203,7 @@ string
 <a name='uploadData'></a>
 
 ### uploadData(name, data)
-Upload the given data to the iviva storage, using code/name as a base name.  The actual name used to store the data will be unique and randomly generated using code/name as part of it.
+Upload the given data to the iviva storage, using `name` as a base name.  The actual name used to store the data will be unique and randomly generated using `name` as part of it.
 This is to gaurantee no collisions with existing files.
 
 The actual name used to store the data is returned.
@@ -214,9 +214,9 @@ This name can be accessed via an http url of the form:
 .. list-table::
     :header-rows: 0
 
-    * - code/name
+    * - `name`
       - The base name for the file
-    * - code/data
+    * - `data`
       - [binary data object](binobjects) representing the data to be uploaded.
 
 
@@ -224,7 +224,7 @@ This name can be accessed via an http url of the form:
 string - the actual file name that the data is saved as.
 
 ### uploadDataWithExplicitName(name, data)
-Same as [uploadData](uploadData) except the name specified is the exact name used to save the file. No extra unique postfix is added to the name.
+Same as [uploadData(name, data)](es6javascript.rst#uploadData) except the name specified is the exact name used to save the file. No extra unique postfix is added to the name.
 
 {% hint type="warning" %}
     This could potentially cause existing uploads to be overwritten if not used carefully. Do not use this function unless you have a very good reason for maintaining file names. {% endhint %}
@@ -274,7 +274,7 @@ Deactivate the current instance. Only works when the current object is an model 
 <a name='setAttribute'></a>
 
 ### setAttribute(name,value)
-Asynchronously  the attribute code/name with the value code/value in the current model instance
+Asynchronously  the attribute `name` with the value `value` in the current model instance
 This function returns a promise that will complete once the attribute value is set.
 
 
@@ -301,8 +301,8 @@ Promise<object>
 
 
 ### queryDataSource(datasource, arguments)
-Query the datasource named code/datasource in the current object's model's linked UI.
-Pass code/arguments as parameters to the data source.
+Query the datasource named `datasource` in the current object's model's linked UI.
+Pass `arguments` as parameters to the data source.
 
 #### Returns
 [result set](dt-results)
@@ -311,7 +311,7 @@ Pass code/arguments as parameters to the data source.
 <a name='executeAction'></a>
 
 ### executeAction(action, object arguments)
-Asynchronously execute an action named code/action on the current object, passing code/arguments as parameters.
+Asynchronously execute an action named `action` on the current object, passing `arguments` as parameters.
 
 This method will return a Promise that will resolve to the result of the action upon completion.
 

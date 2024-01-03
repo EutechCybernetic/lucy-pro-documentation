@@ -26,7 +26,7 @@ By default the block has a single output pin called `All Outputs`. This pin cont
 
 
 An action can accept multiple inputs. To individually extract each input, just add a new output pin with the name of the field to be extracted.
-Select the [Action Start](actionstart-ref) block, then in the [propertiespanel](propertiespanel) click the 'Add Output' link to add a new output parameter. Multiple output paramaters can be specified at once by providing them as a comma separated list.
+Select the [Action Start](actionstart-ref) block, then in the [Properties Panel](modeldesigner.rst#propertiespanel) click the 'Add Output' link to add a new output parameter. Multiple output paramaters can be specified at once by providing them as a comma separated list.
 
 These pins can then be connected to other blocks to kickstart your logic for your action.
 
@@ -91,11 +91,11 @@ Lucy will automatically extract the value from that key/value pair and feed it i
 A list of all key/value pairs are available as a dictionary by reading the `All Output` pin.
 
 {% hint type="seealso" %}
-    [dictionaries](dictionaries) {% endhint %}
+    [Dictionaries and Objects](datatypes.rst#dictionaries) {% endhint %}
 
 ### Structured JSON
 More complex inputs can be received as structured JSON.
-A simple JSON dictionary can be parsed and accessed using a [fromjson-ref](fromjson-ref) block.
+A simple JSON dictionary can be parsed and accessed using a [Parse JSON](block-source.raw.rst#fromjson-ref) block.
 
 More complex structures can be parsed using a javascript block.
 
@@ -132,7 +132,7 @@ Can be parsed using the following javascript code inside a [Javascript](es6javas
 ### Binary Data
 
 {% hint type="seealso" %}
-    [binarydata](binarydata) {% endhint %}
+    [Working with Binary Data](datatypes.rst#binarydata) {% endhint %}
 
 ## Calling an action
 
@@ -156,16 +156,16 @@ Fill in the model name and the action name, and optionally, the instance key if 
 
 {% endhint %}
 
-For publishing your action as an API to be consumed by an external service, see [publishapi](publishapi)
+For publishing your action as an API to be consumed by an external service, see [Publishing an API](publishingapi.rst#publishapi)
 
 
 <a name='shareactions'></a>
 ## Publishing Actions
 You can make your action public if you feel it is useful as a generic service for other models to use.
-When you click the code/Publish Action checkbox in the property panel of the [Action Start](actionstart-ref) block, the action gets marked as public.
+When you click the `Publish Action` checkbox in the property panel of the [Action Start](actionstart-ref) block, the action gets marked as public.
 Public actions are available in the [shared library](sharedlibrary) in the [Model Designer](model-designer) and can be easily re-used in other action sequences.
 
 
 ## Restricting access to Actions
 You can restrict access to actions and allow them to only be executed by authorized users. This can be done by assigning roles to the action.
-See [permsactions](permsactions) for more information on how to do this.
+See [Applying Roles to Actions](permissions.rst#permsactions) for more information on how to do this.

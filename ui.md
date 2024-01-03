@@ -20,7 +20,7 @@ These UI Bundles are also typically linked to a model.
 
 Each model can be linked to a single ui bundle (typically having the same name as the model).
 Models are linked to bundles from the [Model Designer](model-designer).
-See [linkuimodel](linkuimodel) for more information on this.
+See [Linking your model to a user interface](customuis.rst#linkuimodel) for more information on this.
 
 {% hint type="note" %}
     Its only possible to link a model with a new UI bundle. You cannot link a model with an existing UI bundle. And a UI Bundle cannot be linked with multiple models. {% endhint %}
@@ -33,7 +33,7 @@ It's also required if the model needs to query any data sources using the |calld
 
 It's only possible to query data sources that are defined in UI Bundles linked to models.
 
-See [configdynuis](configdynuis) for more information on overriding the model's default screens.
+See [Configuring Dynamic User Interfaces](dynamicuis.rst#configdynuis) for more information on overriding the model's default screens.
 
 ## Accessing and Editing UI Bundles
 UI Bundles can be accessed directly by going to the Lucy dashboard, clicking the image:: images/gear.png icon and then selecting 'View All User Interfaces'
@@ -74,12 +74,12 @@ All ui containers have several common properties. These can be set by clicking o
     * - SetupScript
       - Any [javascript](clientscript) to be run when the screen loads
     * - Permissions
-      - The [permissions](uipermissions) associated with this is screen.
+      - The [Permissions and Authorization](permissions.rst#permissions) associated with this is screen.
 
 
 ## Types of UI Elements
 There are many UI elements that can be placed inside containers.
-Please see the [widgetreference](widgetreference) section for more information.
+Please see the [UI Element Reference](uifields.rst#widgetreference) section for more information.
 
 ## Designing the User Interface
 You start defining a user interface by picking one of the containers and adding it to the bundle.
@@ -88,7 +88,7 @@ Click on one of the 'Add' links at the top of the Bundle Explorer to add a conta
 
 Once this is done, you can drag [fields](widgetreference) from the toolbox into the container to add a field to your user interface.
 
-Depending on the field and container, you can drag around the field to place it where you want. In some containers, the layout is automatic an the field will go into a fixed position. See [uipositioning](uipositioning) for more information.
+Depending on the field and container, you can drag around the field to place it where you want. In some containers, the layout is automatic an the field will go into a fixed position. See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information.
 
 The next step is to bind data to your field.
 
@@ -115,22 +115,22 @@ For dialogs and quick info bubbles, the inputs must be specified by the screen t
 In the case of weblets, page inputs could come from either the query string of the page that the weblet is in, or it could come from the |addweblet| block which added the weblet, or from [Metadata Explorer](mde).
 
 ### How do you use page inputs?
-Typically, page inputs are used in the [datasources](datasources) that the screen refers to. If the datasource has any [parameters](datasourceparameters) with names matching any of the page inputs, those parameters will get filled by the corresponding page inputs.
+Typically, page inputs are used in the [Working with Data Sources](datasources.rst#datasources) that the screen refers to. If the datasource has any [parameters](datasourceparameters) with names matching any of the page inputs, those parameters will get filled by the corresponding page inputs.
 
-The one exception is datasources bound to a [celllist-widget](celllist-widget).
+The one exception is datasources bound to a [Search Results](uiref.rst#celllist-widget).
 For these, the parameters to the datasource come from the values specified in the datasource section of the ui element.
 
-Page Inputs can also be passed to [uiactions](uiactions) to be used as parameters to any action invoked by the user.
+Page Inputs can also be passed to [User Interface Actions](uis.rst#uiactions) to be used as parameters to any action invoked by the user.
 
 In addition, you may choose to use the page input parameters directly in the screens to populate labels or the visibility of certain sections.
-The page's parameters can be accessed via [iviva Expression](ice) using the syntax: code/{param.pageinputname}.
+The page's parameters can be accessed via [iviva Expression](ice) using the syntax: `{param.pageinputname}`.
 
-For example, if you want to pass a page input called code/isactive and have it control the visibility of a [action-widget](action-widget), set that ui element VisibilityExpression property to code/#{param.isactive?}
+For example, if you want to pass a page input called `isactive` and have it control the visibility of a [Action](uiref.rst#action-widget), set that ui element VisibilityExpression property to `#{param.isactive?}`
 
 {% hint type="warning" %}
     Showing or hiding elements based on page inputs is not secure!
     Page inputs can easily be modified by the user and spoofed.
-    See [uipermissions](uipermissions) for information on how to restrict access to screens. {% endhint %}
+    See [Applying Permissions to User Interfaces](uis.rst#uipermissions) for information on how to restrict access to screens. {% endhint %}
 
 <a name='databinding'></a>
 
@@ -144,19 +144,19 @@ When you drag a field over a ui element you will get feedback on whether or not 
 
 {% hint type="note" %}
     Many fields can be dragged into an empty area of a UI Container and have it automatically create a relevant ui element and bind data to it in one shot.
-    For example, dragging in a text field into an empty area creates a [label-widget](label-widget). Dragging in a object key creates an [objectlink-widget](objectlink-widget). {% endhint %}
+    For example, dragging in a text field into an empty area creates a [Label](uiref.rst#label-widget). Dragging in a object key creates an [Object Link](uiref.rst#objectlink-widget). {% endhint %}
 
 {% hint type="note" %}
-    When you drag an item into the content area of a [celllist-widget](celllist-widget) or a [repeater-widget](repeater-widget) then the data source that the field came from will get automatically bound as the datasource of that ui element.
+    When you drag an item into the content area of a [Search Results](uiref.rst#celllist-widget) or a [repeater-widget](repeater-widget) then the data source that the field came from will get automatically bound as the datasource of that ui element.
     However you have to be careful to make sure you only drag in fields from the same data source, as these ui elements can only be bound to a single source. {% endhint %}
 
 <a name='manualbinding'></a>
 
 ### Manually binding data
 You can manually bind data to properties of a ui element by specifying an [iviva Expression](ice).
-You can access fields in data sources by using the prefix code/#{services.datasourcename.field}
+You can access fields in data sources by using the prefix `#{services.datasourcename.field}`
 
-If you are binding data inside a [list](uilists) ui element, then use code/#{row.field} to access a specific field in each row of the [result set](dt-results).
+If you are binding data inside a [list](uilists) ui element, then use `#{row.field}` to access a specific field in each row of the [result set](dt-results).
 The actual datasource to use will be bound separately for those ui elements.
 
 {% hint type="note" %}
@@ -171,17 +171,17 @@ A common UI metaphor is to display a list of items, with each item in the list b
 There are two ui elements available for doing this:
 
 * [repeater-widget](repeater-widget)
-* [celllist-widget](celllist-widget)
+* [Search Results](uiref.rst#celllist-widget)
 
 Both ui elements are setup in similar ways but differ in how they work at runtime.
 
-[celllist-widget](celllist-widget) ui elements are designed to show a large volume of items (like search results) by showing only a few at a time and allowing the user to scroll down to view more details. As the user scrolls, the [data source](datasources) is requeried for more items. This is a highly effecient way of showing many items.
+[Search Results](uiref.rst#celllist-widget) ui elements are designed to show a large volume of items (like search results) by showing only a few at a time and allowing the user to scroll down to view more details. As the user scrolls, the [data source](datasources) is requeried for more items. This is a highly effecient way of showing many items.
 These ui elements also allow the parameters to the datasource to dynamically change.
-[Data Source Parameters](datasourceparameters)  can be bound to other ui elements such that whenever those ui elements change their value, the [celllist-widget](celllist-widget) will refresh itself with new data based on the new parameters passed to the data source.
+[Data Source Parameters](datasourceparameters)  can be bound to other ui elements such that whenever those ui elements change their value, the [Search Results](uiref.rst#celllist-widget) will refresh itself with new data based on the new parameters passed to the data source.
 
 {% hint type="note" %}
-    To make a datasource work with a [celllist-widget](celllist-widget) it must support incrementally returning data via a mechanism called pagination.
-    See the section [pagination](pagination) for more information on how this works. {% endhint %}
+    To make a datasource work with a [Search Results](uiref.rst#celllist-widget) it must support incrementally returning data via a mechanism called pagination.
+    See the section [Pagination in data sources](uis.rst#pagination) for more information on how this works. {% endhint %}
 
 [repeater-widget](repeater-widget) ui elements work by loading all data at once when the screen loads and showing it to the user. Use this when the number of items are small and you need to be able to see all the items at the same time.
 The height of the [repeater-widget](repeater-widget) will vary based on the number of items it is showing.
@@ -189,23 +189,23 @@ The height of the [repeater-widget](repeater-widget) will vary based on the numb
 To bind data to a list ui element, specify the datasource property of the ui element.
 
 ### Determining how each item in the list should look
-To design how each item in the results should look, drag ui elements into the content area of the [celllist-widget](celllist-widget) or [repeater-widget](repeater-widget)
+To design how each item in the results should look, drag ui elements into the content area of the [Search Results](uiref.rst#celllist-widget) or [repeater-widget](repeater-widget)
 
 <figure><img src=' images/uilists.png'></figure>
 
 Items in the content area get repeated for each row in the [result set](dt-results).
-To bind data to these items use the code/row variable in your [iviva Expression](ice).
+To bind data to these items use the `row` variable in your [iviva Expression](ice).
 
-For example, if you specify code/#{row.Name}  as the Text property of a label in the content area, then for every row in the result, the code/Name  field will be bound to that label.
+For example, if you specify `#{row.Name}`  as the Text property of a label in the content area, then for every row in the result, the `Name`  field will be bound to that label.
 
 {% hint type="note" %}
-    If you bind data by dragging items from the [Data Source Explorer](datasourceexplorer) they will automatically use the code/row variable if they are bound inside the content area of a list ui element. {% endhint %}
+    If you bind data by dragging items from the [Data Source Explorer](datasourceexplorer) they will automatically use the `row` variable if they are bound inside the content area of a list ui element. {% endhint %}
 
 
 <a name='pagination'></a>
 
 ### Pagination in data sources
-For data sources to work with [celllist-widget](celllist-widget) ui elements, they must support pagination.
+For data sources to work with [Search Results](uiref.rst#celllist-widget) ui elements, they must support pagination.
 By default, all datasources you define in the Data Source Designer support pagination.
 However, if your data source is a model action, then you need to take extra steps to support pagination.
 
@@ -214,10 +214,10 @@ To support pagination, your action must accept the following inputs:
 * **last** - The last value returned in the previous result. The action should use this value to seek ahead to the next set of results
 * **max** - The maximum number of results it should return in one shot. If less results are returned, this indicates the end of the full result set.
 
-The action's result must be a [result set](dt-results) and it must include one field in all results called code/__rowid__.
+The action's result must be a [result set](dt-results) and it must include one field in all results called `__rowid__`.
 This field is a unique identifier for each result and should be increasing in value as you go down the result set.
 
-(ie, a result later on cannot have a code/__rowid__ less than any of the previous results)
+(ie, a result later on cannot have a `__rowid__` less than any of the previous results)
 
 
 ## Hooking up to models
@@ -235,7 +235,7 @@ Multiple actions can be lined up in a sequence and they will execute one after a
 
 ### Using the action editor
 The action editor can be accessed from the property panel in the [UI Composer](uicomposer).
-It is available for ui elements that support invoking actions (currently, [icon-widget](icon-widget) and [action-widget](action-widget))
+It is available for ui elements that support invoking actions (currently, [Icon](uiref.rst#icon-widget) and [Action](uiref.rst#action-widget))
 
 <figure><img src=' images/actioneditor.png'></figure>
 
@@ -284,10 +284,10 @@ Querying a datasource on an action is not very useful unless you plan on using i
 ### Navigate to Url
 Specify a url to navigate to.
 This url can be relative or absolute.
-You can also use [iviva Expression](ice) here including parameters like code/baseurl to get the base url of the current iviva installation.
+You can also use [iviva Expression](ice) here including parameters like `baseurl` to get the base url of the current iviva installation.
 
 {% hint type="note" %}
-    If you want to navigate to a page within iviva, your url should be of the from: code/#{baseurl}/Apps/AppName/viewname {% endhint %}
+    If you want to navigate to a page within iviva, your url should be of the from: `#{baseurl}/Apps/AppName/viewname` {% endhint %}
 
 
 ### Notify
@@ -307,8 +307,8 @@ You need to specify the object id, object key and object type as [parameters](ax
 Similar to the quick-info action, invoke a dialog defined in the current bundle and show it in the center of the screen.
 You need to pick a dialog from the current UI bundle and specify any page input [parameters](axnparamconfig) that the selected dialog requires.
 
-Any actions after this action will be executed only if the [closedialogaxn](closedialogaxn) action is called within the dialog somewhere.
-So if someone dismisses the dialog without invoking any action n it that calls [closedialogaxn](closedialogaxn), the rest of the actions in this list will not run.
+Any actions after this action will be executed only if the [Close Current Dialog](uis.rst#closedialogaxn) action is called within the dialog somewhere.
+So if someone dismisses the dialog without invoking any action n it that calls [Close Current Dialog](uis.rst#closedialogaxn), the rest of the actions in this list will not run.
 
 
 ### Navigate to UI
@@ -321,7 +321,7 @@ Execute a Lucy model [action](actions).
 Select a model, then select an action to execute.
 When an action is selected, the required inputs will be listed and need to specified as [parameters](axnparamconfig).
 
-If the action is being executed on an instance of a model, then a special parameter called code/Instance.Key will be in the list of parameters. This parameter represents the key of the instance that this action needs to execute in.
+If the action is being executed on an instance of a model, then a special parameter called `Instance.Key` will be in the list of parameters. This parameter represents the key of the instance that this action needs to execute in.
 
 {% hint type="note" %}
     All actions are selectable here, not just the ones marked as public. {% endhint %}
@@ -335,7 +335,7 @@ Useful when setting up a UI for a model/action that has not yet been defined or 
 ### Javascript
 Execute arbitrary client-side javascript.
 You can add multiple [parameters](axnparamconfig) to be passed to the javascript.
-These parameters can be accessed in a javascript object called code/args.
+These parameters can be accessed in a javascript object called `args`.
 To abort execution of the action list and any items after the current one, throw an exception from javascript.
 
 
@@ -343,7 +343,7 @@ To abort execution of the action list and any items after the current one, throw
     if (!param1) throw 'Parameter 1 was not specified';
 
 {% hint type="seealso" %}
-    [clientscript](clientscript) {% endhint %}
+    [Client-Side Javascript in User Interfaces](uis.rst#clientscript) {% endhint %}
 
 <a name='closedialogaxn'></a>
 
@@ -379,7 +379,7 @@ There are two types of fixed layouts:
 * Vertical Layouts - This is the most common type of layout. UI Elements that are added to this container go to the bottom of the container below the previous last ui element. The order of ui elements can be changed by dragging them up or down. The width of the ui elements cannot be changed - they occupy the full space provided by the container.
 The height of the ui element can be adjusted if the individual ui element field allows for it.
 
-* Horiontal Layouts - Currently only the [fieldline-widget](fieldline-widget) supports horizontal layouts. In this case, widgets get added to the right of the previous one. You can drag them left/right to re-order them. They take up the full height available to it, but the width of ui elements can be adjusted.
+* Horiontal Layouts - Currently only the [Horizontal Layout](uiref.rst#fieldline-widget) supports horizontal layouts. In this case, widgets get added to the right of the previous one. You can drag them left/right to re-order them. They take up the full height available to it, but the width of ui elements can be adjusted.
 
 
 <a name='uifreelayout'></a>
@@ -390,29 +390,29 @@ In free layouts, ui elements can be placed anywhere in the container, can be dra
 ### Specifying positioning
 Along with dragging ui elements around to position them, you can do more sophisticated and accurate positioning of ui elements using the spacing panel in the [UI Composer](uicomposer).
 
-Here you can enter exact values for code/Left and code/Top properties of the ui element in order to state exactly how far from the left and top edges of the container the widget should be positioned.
+Here you can enter exact values for `Left` and `Top` properties of the ui element in order to state exactly how far from the left and top edges of the container the widget should be positioned.
 You can also use the arrows to nudge them slightly, one way or the other.
 
 <figure><img src=' images/sizing-panel.png'></figure>
 
 ### Anchoring items to the right or bottom
 There are many times when you may want to anchor an item to the *right* edge of the screen or to the bottom of the screen instead of the default behaviour of anchoring them relative to the left/top.
-This is useful in places like a [celllist-widget](celllist-widget) or a [repeater-widget](repeater-widget) where one item element (maybe a link or an icon) needs to be kept on the right edge of the screen, regardless of how big the screen is.
+This is useful in places like a [Search Results](uiref.rst#celllist-widget) or a [repeater-widget](repeater-widget) where one item element (maybe a link or an icon) needs to be kept on the right edge of the screen, regardless of how big the screen is.
 
-To anchor items to the right, you need to specify position values for the code/Right section in the spacing panel.
-When you specify a value for the code/Right section, any value set in the code/Left section will automatically be removed and will be kept empty.
+To anchor items to the right, you need to specify position values for the `Right` section in the spacing panel.
+When you specify a value for the `Right` section, any value set in the `Left` section will automatically be removed and will be kept empty.
 
-The value you specify for the code/Right section determines how much space should be present between the *right edge* of the ui element and the *right edge* of the container. The lower the value, the more closer to the right edge of the container, the widget will be placed.
+The value you specify for the `Right` section determines how much space should be present between the *right edge* of the ui element and the *right edge* of the container. The lower the value, the more closer to the right edge of the container, the widget will be placed.
 
-It is not technically possible to specify both a left and right value. Only one of them can be used. If both happen to be specified, then priority is given to the code/Left value.
-So you need to explicitly clear out the code/Left value in order to make use of right-anchoring.
-The [UI Composer](uicomposer) will clear the value automatically when you set a value for the code/Right section.
+It is not technically possible to specify both a left and right value. Only one of them can be used. If both happen to be specified, then priority is given to the `Left` value.
+So you need to explicitly clear out the `Left` value in order to make use of right-anchoring.
+The [UI Composer](uicomposer) will clear the value automatically when you set a value for the `Right` section.
 
 {% hint type="warning" %}
     Whenever you explicitly drag around a ui element,the left and top values automatically get specified, which wipes out any bottom/right anchoring values you have set. {% endhint %}
 
 {% hint type="note" %}
-    The easiest way to right-anchor an element is to simply go to the code/Right section and use the arrows to nudge it. This will automatically set a value for the code/Right section an empty out the value in the code/Left section. {% endhint %}
+    The easiest way to right-anchor an element is to simply go to the `Right` section and use the arrows to nudge it. This will automatically set a value for the `Right` section an empty out the value in the `Left` section. {% endhint %}
 
 {% hint type="note" %}
     When right-anchoring labels, remember to set the TextAlignment property as well to right-align the text. {% endhint %}
@@ -420,15 +420,15 @@ The [UI Composer](uicomposer) will clear the value automatically when you set a 
 
 ### Specifying Spacing
 Widget spacing in free layouts can be specified by dragging around the corner handles when selecting the widget.
-For more refined and precise spacing, use the code/Width and code/Height properties in the spacing panel to set specific values.
+For more refined and precise spacing, use the `Width` and `Height` properties in the spacing panel to set specific values.
 
-When setting values, the default is to use code/px. However, you can also set a width and height as a *percentage* by adding a code/% suffix to the value.
+When setting values, the default is to use `px`. However, you can also set a width and height as a *percentage* by adding a `%` suffix to the value.
 
 When specifying a width or height as a percentage, the ui element will take up space equal to that percentage of the container's space.
 
-For example, if you specify a ui element take code/50% width, then it will occupy a width equal to half of the width of the container its in.
+For example, if you specify a ui element take `50%` width, then it will occupy a width equal to half of the width of the container its in.
 
-You can use the code/Stretch links to automatically set the width/height to code/100%
+You can use the `Stretch` links to automatically set the width/height to `100%`
 
 
 ## Simple Pages
@@ -447,11 +447,11 @@ The url for the screen will be of the form:
 ```
 
 
-In addition to [commoncontainerprops](commoncontainerprops), pages can also have Page Inputs.
+In addition to [Common Properties](uis.rst#commoncontainerprops), pages can also have Page Inputs.
 These page inputs are specified by query string parameters to the url of the page.
 
 {% hint type="seealso" %}
-    [pageinputs](pageinputs) {% endhint %}
+    [Using inputs and parameters](uis.rst#pageinputs) {% endhint %}
 
 Every page has a title seciton where you can enter a title for the page.
 Just click in the title section and type to edit the title.
@@ -479,14 +479,14 @@ They have two sections:
 
 {% hint type="note" %}
     Weblets have a fixed height but can have a variable width depending on how the weblets are arranged. When positioning ui elements in your weblet, use percentage based dimensions and use left/right anchoring to get the spacing to look good regardless of the actual width of the weblet.
-    See [uipositioning](uipositioning) for more information. {% endhint %}
+    See [Positioning and Placement of ui elements](uis.rst#uipositioning) for more information. {% endhint %}
 
 {% hint type="note" %}
-    Weblets that are designed to be used in a [dynamic dashboard](dyndashboards) often take a code/key parameter as input - representing the code/key of the instance that the dashboard is in.
+    Weblets that are designed to be used in a [dynamic dashboard](dyndashboards) often take a `key` parameter as input - representing the `key` of the instance that the dashboard is in.
     However, if your weblet is meant to be added via an |addweblet| block, then you can specify any page inputs you want. The |addweblet| block's pins will reflect the inputs that you specify. {% endhint %}
 
-In addition to [commoncontainerprops](commoncontainerprops), weblets can also have Page Inputs.
-These page inputs are specified either by the url of the page containing the weblet, or as an input to the |addweblet| block, or as the code/key parameter of the node in the [Metadata Explorer](mde).
+In addition to [Common Properties](uis.rst#commoncontainerprops), weblets can also have Page Inputs.
+These page inputs are specified either by the url of the page containing the weblet, or as an input to the |addweblet| block, or as the `key` parameter of the node in the [Metadata Explorer](mde).
 
 They also have a **Publish** property which marks the weblet as published.
 Once a weblet is published, it is available in the weblet browser and other places where weblets can be chosen. You can unpublish a weblet by unchecking the box. Once a weblet is in published state, its id cannot be changed.
@@ -500,7 +500,7 @@ This is useful for adding new tabs to existing pages in iviva.
 
 This container uses a [fixed layout](uifixedlayout).
 
-In addition to [commoncontainerprops](commoncontainerprops), tabs can also have Page Inputs.
+In addition to [Common Properties](uis.rst#commoncontainerprops), tabs can also have Page Inputs.
 These will be read from the query string of the page that the tab is being injected into.
 
 
@@ -512,20 +512,20 @@ You can get the view name and app name for  a page from the url. The url is of t
 
 You can also specify a visiblity expression and a sidebarid.
 The visibility expression is an [iviva Expression](ice) that you can use to evaluate whether to show the tab or not.
-It will typically be something like code/#{services.ModelDetails.Key?}
+It will typically be something like `#{services.ModelDetails.Key?}`
 (Which means, show the page if ‘Key’ attribute of the datasource named ‘ModelDetails’  has a valid value)
 
 One way of using tabs may be to show one tab when no extension OI model exists (allowing the user to enter details to create the instance) and another when an extension model exists.
-So the ‘create new’ tab would have a visibility expression like code/#{!services.ModelDetails.Key?} - meaning it should show only if ‘Key’ doesn’t have a valid value.
-And the other tab would have a visibility expression of code/#{services.ModelDetails.Key?}
+So the ‘create new’ tab would have a visibility expression like `#{!services.ModelDetails.Key?}` - meaning it should show only if ‘Key’ doesn’t have a valid value.
+And the other tab would have a visibility expression of `#{services.ModelDetails.Key?}`
 
 The sidebar id can be used to show the existing screen’s common sidebar as part of the tab.
 You will need obtain this information from the application developer.
 
-Once your tab is ready, to allow it to actually be injected into the page, you need to publish it by checking off the code/Publish option in the properties panel.
+Once your tab is ready, to allow it to actually be injected into the page, you need to publish it by checking off the `Publish` option in the properties panel.
 
 {% hint type="seealso" %}
-    [ivivaintegration](ivivaintegration) {% endhint %}
+    [Integration with :mod:`iviva`](integration.rst#ivivaintegration) {% endhint %}
 
 ## Quick Info Bubbles
 Quick Info Bubbles are small bubbles of information that appear above an object when you click on it. They are used to provide extra information that may not be possible to put on the page itself. They can also be used for quick inputs and feedback. They disappear if the user clicks anywhere outside the bubble.
@@ -535,18 +535,18 @@ Every model instance, by default, has a dynamically generated quick-info bubble 
 Quick Info Bubbles use a [free layout](uifreelayout) so ui elements can be arbitrarily placed in them.
 They have two sections:
 
-* **Header** - The title section of the bubble - this contains the name of the item being viewed as a link that can navigate to that item's details page. You would typically use an [objectlink-widget](objectlink-widget) here.
+* **Header** - The title section of the bubble - this contains the name of the item being viewed as a link that can navigate to that item's details page. You would typically use an [Object Link](uiref.rst#objectlink-widget) here.
 
 * **Body** - The main content area of the quick info bubble. Place your content here.
 
 {% hint type="note" %}
         You can drag the right edge of the bubble to make it wider. {% endhint %}
 
-In addition to [commoncontainerprops](commoncontainerprops), quick info bubbles can also have Page Inputs.
-Typically, the bubble would take a code/key parameter as input, indicating what object the bubble is going to render information for.
+In addition to [Common Properties](uis.rst#commoncontainerprops), quick info bubbles can also have Page Inputs.
+Typically, the bubble would take a `key` parameter as input, indicating what object the bubble is going to render information for.
 
 ### Invoking Quick Info Bubbles
-Quick Info bubbles are invoked by calling the [showqiaxn](showqiaxn) action.
+Quick Info bubbles are invoked by calling the [Show QuickInfo](uis.rst#showqiaxn) action.
 They can only be called from other screens in the same UI Bundle.
 
 ## Dialogs
@@ -554,7 +554,7 @@ Dialogs are used to popup small modal screens on top of the current screen.
 They can be dismissed by clicking the 'X' on the top right or by clicking outside the dialog.
 Use dialogs to popup data entry and user feedback interfaces without having to navigate away from the current page.
 
-Use the [closedialogaxn](closedialogaxn) action to close a dialog through an action.
+Use the [Close Current Dialog](uis.rst#closedialogaxn) action to close a dialog through an action.
 
 
 Dialogs  use a [fixed layout](uifixedlayout)
@@ -564,7 +564,7 @@ Just click in the title section and type to edit the title.
 You can use [iviva Expression](ice) syntax in the title.
 
 
-In addition to [commoncontainerprops](commoncontainerprops),
+In addition to [Common Properties](uis.rst#commoncontainerprops),
 dialogs have two additional properties:
 
 * **Color Scheme** - specify a color scheme to use for the background of the dialog box.
@@ -572,7 +572,7 @@ dialogs have two additional properties:
 * **Page Width** - specify the width of the dialog in pixels. (Leave this empty to use a good default)
 
 ### Invoking Dialogs
-Dialogs are invoked by calling the [showdialogaxn](showdialogaxn) action.
+Dialogs are invoked by calling the [Show Dialog](uis.rst#showdialogaxn) action.
 They can only be called from other screens in the same UI Bundle.
 
 
@@ -597,10 +597,10 @@ The following javascript libraries are available to every page to make use of:
 <a name='uitags'></a>
 
 ### Accessing ui elements from javascript
-You do not have access to the actual code/id of the DOM elements that ui elements render into. Instead, you need to use the code/tag property of the ui element to identify it.
-Every ui element has a code/tag property which can be set to any identifier you want.
+You do not have access to the actual `id` of the DOM elements that ui elements render into. Instead, you need to use the `tag` property of the ui element to identify it.
+Every ui element has a `tag` property which can be set to any identifier you want.
 
-Once this is set, you can use the code/ServiceDesk.getFieldIDsByTag(tagname) function to retrieve all the DOM elements that match the tag you have given (ideally there should be only one result)
+Once this is set, you can use the `ServiceDesk.getFieldIDsByTag(tagname)` function to retrieve all the DOM elements that match the tag you have given (ideally there should be only one result)
 
 A Quick Example: Setup a text field with a tag called 'userid' and a checkbox called 'enable' and enter the following into the SetupScript property of the page.
 
@@ -630,13 +630,13 @@ This will cause the textbox to get enabled/disabled as you check/uncheck the che
 ## Applying Permissions to User Interfaces
 You can restrict access to user interfaces by setting permissions.
 Each UI Container has a **Permissions** property that can be set.
-If that property evaluates to code/false then the page will not be accessible.
+If that property evaluates to `false` then the page will not be accessible.
 
 You can use an [iviva Expression](ice) to specify rules that should evaluate to true or false.
 
-You can refer to [app roles](approles) that are defined in your models by the syntax: code/#{authrole.Lucy.models.modelname.rolename}
+You can refer to [app roles](approles) that are defined in your models by the syntax: `#{authrole.Lucy.models.modelname.rolename}`
 
-For example, if you have a model called code/StaffExtension and have defined two roles code/canupdate and code/candelete and want only users who have any of these roles to be able to access the page, you can specify an [iviva Expression](ice) like:
+For example, if you have a model called `StaffExtension` and have defined two roles `canupdate` and `candelete` and want only users who have any of these roles to be able to access the page, you can specify an [iviva Expression](ice) like:
 
 ```
 
@@ -647,4 +647,4 @@ For example, if you have a model called code/StaffExtension and have defined two
 Your expressions can incorporate page inputs and data sources and can be arbitrarily complex.
 
 {% hint type="seealso" %}
-    [permissions](permissions) {% endhint %}
+    [Permissions and Authorization](permissions.rst#permissions) {% endhint %}

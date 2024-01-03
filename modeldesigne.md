@@ -106,7 +106,7 @@ This includes:
 <a name='attributeeditor'></a>
 
 ## Attribute Editor
-This is where you can add, edit and remove [attributes](attributes) to your model.
+This is where you can add, edit and remove [Attributes](attributes.rst#attributes) to your model.
 
 To access it, click the image:: images/attrsettings.png icon in the left side of the screen.
 
@@ -165,14 +165,14 @@ To delete an attribute, expand the attribute by selecting it, then click the ima
 
 {% hint style="seealso" %}
 
-    [attributes](attributes)
+    [Attributes](attributes.rst#attributes)
 
 {% endhint %}
 
 
 ## Debugger
 The debugger lets you see a history of all actions and events that have triggered on the model and lets you step through them.
-See the [testing](testing) section for more information.
+See the [Testing and Debugging](testing.rst#testing) section for more information.
 
 
 ## Errors and Warnings Panel
@@ -232,7 +232,7 @@ All your logic sequences have to begin with a triggering block.
 
 There are currently two types of triggers available:
 
-- [Action Start](actionstart-ref) - These trigger when an action is explicitly called on your model. These sequences can use [actionoutput-ref](actionoutput-ref) blocks to return data to the caller.
+- [Action Start](actionstart-ref) - These trigger when an action is explicitly called on your model. These sequences can use [Output](block-source.raw.rst#actionoutput-ref) blocks to return data to the caller.
 
 - [Event Start](eventstart-ref) - These get triggered when an event is raised in the system. Your model can listen to specific events and have them trigger action sequences
 
@@ -260,7 +260,7 @@ The blocks in this list include:
 
 ## API Routes
 The API Routes panel is accessible from the sidebar and lets you publish and manage API end points for your model.
-See [publishapi](publishapi) to learn more about how to publish APIs.
+See [Publishing an API](publishingapi.rst#publishapi) to learn more about how to publish APIs.
 
 
 ## Search Panel
@@ -296,17 +296,17 @@ In this section, you can define and view [app roles](approles) for your model.
 Application Roles you define here will be available for selection when choosing roles for actions and user interfaces.
 These roles will also be selectable in the section where User Roles are configured for users.
 
-To add a new role, click the code/Add New Role button.
+To add a new role, click the `Add New Role` button.
 
 A new role will get added to the list.
 
 Click any role to expand it and edit its name and description.
 
-Click the code/Save button to save your changes. Use the code/X to cancel your changes. Use the image:: images/trash.png icon to delete the role.
+Click the `Save` button to save your changes. Use the `X` to cancel your changes. Use the image:: images/trash.png icon to delete the role.
 
 {% hint type="warning" %}
     Lucy internally uses the role names to keep track of permissions. So changing the role name is essentially similar to removing the old role and adding a new one. Only do this if you want to fix a typo in the name you have set. If you have already deployed models that this role is currently in use, do **not** change the name of the role. {% endhint %}
 
 {% hint type="seealso" %}
-    [permissions](permissions) {% endhint %}
+    [Permissions and Authorization](permissions.rst#permissions) {% endhint %}
 

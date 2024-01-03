@@ -68,17 +68,17 @@ Once this is done, you can start registering accounts.
 When registering a new account you will be taken to the authorization screen in the respective 3rd party application.
 Lucy will automatically keep track of your access token and refreh token and refresh it when appropriate.
 
-The access token is available as a variable called code/#{access_token}.
+The access token is available as a variable called `#{access_token}`.
 
 {% hint type="note" %}
     In mose cases, web services that use OAuth 2 will pass the access token in the authorizaton header in the format:
-    code/Authorization: Bearer #{access_token}. You can configure this custom header for each web service method. {% endhint %}
+    `Authorization: Bearer #{access_token}`. You can configure this custom header for each web service method. {% endhint %}
 
 
 ### Custom Authentication
 Use this if the service you're trying to connect to uses a API Key to connect.
 When this authentication method is setup, you will be prompted to specify the API Key when registering a new account for the web service.
-You can then use code/#{apikey} as a placeholder in your method definitions to define where it should be inserted in the request.
+You can then use `#{apikey}` as a placeholder in your method definitions to define where it should be inserted in the request.
 
 ## Web Service Method Definitions
 Now that you have setup your web service name and authentication information, you can start adding methods.
@@ -93,11 +93,11 @@ You will be prompted to enter a name for your method. This will be the name that
 You can also give the url for the web service end point and what HTTP Method to use.
 See the next section on how to specify the url.
 
-Click the code/Add button to save the web service method. You can now see a new item added to the _Methods_ section in the UI.
+Click the `Add` button to save the web service method. You can now see a new item added to the _Methods_ section in the UI.
 You can click the image:: images/pencil.png to edit the web service method.
 
 ### Specifying the URL and HTTP Method
-When specifying the end point for the web service, you need to give the full url including the code/https prefix.
+When specifying the end point for the web service, you need to give the full url including the `https` prefix.
 You can also specify [variables](wsvars) in the url.
 
 {% hint type="note" %}
@@ -109,10 +109,10 @@ Click the image:: images/attradd.png to add a new header. You need to specify a 
 Note that you can use [variables](wsvars) in header names and values.
 
 {% hint type="note" %}
-    You need to explicitly specify most headers including code/Content-Type.
-    Typically your content type would be either code/Content-Type: application/json or code/Content-Type: application/x-www-form-urlencoded.
-    When you use Basic authentication, the code/Authorization header is added automatically. In other authentication types, the Authorization header needs be explicitly added where required.
-    The code/Content-Length header will be set automatically. You should not specify that. {% endhint %}
+    You need to explicitly specify most headers including `Content-Type`.
+    Typically your content type would be either `Content-Type: application/json` or `Content-Type: application/x-www-form-urlencoded`.
+    When you use Basic authentication, the `Authorization` header is added automatically. In other authentication types, the Authorization header needs be explicitly added where required.
+    The `Content-Length` header will be set automatically. You should not specify that. {% endhint %}
 
 ### Query String Parameters
 Query string parameters get appended to the end of urls. You can specify them as separate key/value pairs.
@@ -126,22 +126,22 @@ You need to specify how the payload (if any) is sent to the web service.
 You can currently speecify them in two ways:
 
 1. Raw - you provide the raw body here. You can use [variables](wsvars) in the body in places where user input has to come.
-2. Key/Value Pairs - this is a helper that lets you easily specify key/value pairs when the body is expected in code/application/x-www-form-urlencoded format.
+2. Key/Value Pairs - this is a helper that lets you easily specify key/value pairs when the body is expected in `application/x-www-form-urlencoded` format.
 You can add a list of keys and corresponding valuesl You can use [variables](wsvars) in both the keys and values.
 
 {% hint type="note" %}
-    Sometimes if the payload is complex, it may be easier to just give a single variable in the raw payload - code/#{Payload} and use your Lucy model to craft the actual payload and send the whole thinng as input to the method. {% endhint %}
+    Sometimes if the payload is complex, it may be easier to just give a single variable in the raw payload - `#{Payload}` and use your Lucy model to craft the actual payload and send the whole thinng as input to the method. {% endhint %}
 
 
 .. info::
-    The body format is not used when the HTTP Method is  code/GET
+    The body format is not used when the HTTP Method is  `GET`
 
 <a name='wsvars'></a>
 
 ### Using placeholders in the method definitions
 Certain parameters for the web service will have to be provided by the user when they are using the web service.
 For inputs that the user has to provide, you can use variables in your method definition.
-As in other areas in Lucy, variables follow the code/#{variable} syntax by wrapping them in code/#{ and code/}.
+As in other areas in Lucy, variables follow the `#{variable}` syntax by wrapping them in `#{` and `}`.
 
 
 Certain variables are provided by the system for you. 
@@ -166,28 +166,28 @@ The following variables are made available to you by default:
     * - Variable
       - Description
       - Availability
-    * - code/#{access_token}
-      - This will contain the access token for OAuth2 authentication. Typically this is used in the Authorization header value as code/Bearer #{access_token}
+    * - `#{access_token}`
+      - This will contain the access token for OAuth2 authentication. Typically this is used in the Authorization header value as `Bearer #{access_token}`
       - This is available when the authentication type is OAuth2
-    * - code/#{apikey}
+    * - `#{apikey}`
       - The api key based on the account that this web service method is executing in. 
       - This is available when the authentication type is Custom
-    * - code/#{username}
+    * - `#{username}`
       - This is the username specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.
       - This is available when the authentication type is Basic
-    * - code/#{password}
+    * - `#{password}`
       - This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.
       - This is available when the authentication type is Basic
-    * - code/#{lucyurl}
+    * - `#{lucyurl}`
       - The url of the current Lucy account.
       - Always available
-    * - code/#{lucyid}
+    * - `#{lucyid}`
       - The name of the Lucy account that this connector is running in. This is often the subdomain name of the url.
       - Always available
-    * - code/#{lucycode}
+    * - `#{lucycode}`
       - This is a short code that is generated for your Lucy account. It can be used to uniquely identify this Lucy account.
       - Always available
-    * - code/#{password}
+    * - `#{password}`
       - This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.
       - Always available
 
@@ -195,7 +195,7 @@ The following variables are made available to you by default:
 ### Parsing Outputs
 Typically the full response from the web service call is made available as an output in your block called 'Output'
 However, if the output from the web service is JSON, you can choose to extract values out of it and make it avaialble as individual pins.
-For example, if you're building a connector to Salesforce, the code/id property from the JSON result may be extracted and presented in the block as an output called 'ID'.
+For example, if you're building a connector to Salesforce, the `id` property from the JSON result may be extracted and presented in the block as an output called 'ID'.
 Which can be directly used by the action sequence without having to parse it first.
 
 To do this, go to the Output tab in the method definition dialog and then change the type from *Raw* to *Key/Value Pairs*.
@@ -208,7 +208,7 @@ For the Value, you need to specify a JSONPath expression that will define how to
 
 {% hint style="seealso" %}
 
-    [jsonpath-ref](jsonpath-ref)
+    [Extract JSON Path](blocks.rst#jsonpath-ref)
 
 {% endhint %}
 
@@ -230,20 +230,20 @@ You may want to extract 3 outputs:
     * - Name
       - JSON Path
     * - ID
-     - code/$.id
+     - `$.id`
     * - Value
-      - code/$.data.value
+      - `$.data.value`
     * - DateTime
-      - code/$.data.lastupdate.timestamp
+      - `$.data.lastupdate.timestamp`
 
 
 ### Error Handling
 
-Any code/2xx response is considered successful.
+Any `2xx` response is considered successful.
 
-Any code/301 or code/302 redirect will be automatically followed.
+Any `301` or `302` redirect will be automatically followed.
 
-Any code/4xx or code/5xx response is considered an error.
+Any `4xx` or `5xx` response is considered an error.
 
 
 Errors can be processed using the error pin - the orange pin at the bottom right of the block.
@@ -293,7 +293,7 @@ Your script has access to the following objects that you can use to read the exi
 
 **Example 1**
 
-This example reads an two inputs - code/From and code/To and adds them as ISO8601 datetimes in the query string as parameters called  code/fromDate and code/toDate
+This example reads an two inputs - `From` and `To` and adds them as ISO8601 datetimes in the query string as parameters called  `fromDate` and `toDate`
 
 ```
 
@@ -331,7 +331,7 @@ Click the image:: images/attradd.png to add a new pin. You need to give it an id
 The id will be the internal name used to access the pin in your script. The label is what the user sees.
 
 In addition, you can allow the user to add multiple input pins of her choice when using the block. Check off the 'Allow additional pins' option to let the user add their own pins.
-You can access all the pins (both - those defined by you and those added by the user) in your preprocessing script through  the code/inputs variable.
+You can access all the pins (both - those defined by you and those added by the user) in your preprocessing script through  the `inputs` variable.
 
 
 ## Registering Accounts
@@ -355,7 +355,7 @@ In the case of OAuth, you will be asked to authorize the account. You will be ta
     If your web service doesn't require credentials, you can call it without explicitly specifying an account. {% endhint %}
 
 ## User Agents
-Lucy sets the User-Agent for every request to code/Lucy <ModelName>.
+Lucy sets the User-Agent for every request to `Lucy <ModelName>`.
 Model name will change based on the name of the model calling the API.
 If the service is running without a model name set (for example, you created a new model and are testing it without saving) then the User Agent will be simply 'Lucy Model'.
 
@@ -427,17 +427,17 @@ The object contains the following members:
 
     * - setHeaders(object)
       - function
-      - This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use code/request.headers to read the original set of headers, then manipulate that [dictionary](dictionaries) and set it again using this function.
+      - This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use `request.headers` to read the original set of headers, then manipulate that [dictionary](dictionaries) and set it again using this function.
       - PreProcessing Scripts
 
     * - setQuery(object)
       - function
-      - This function lets you set the final query string parameters that will be sent with the request. Any existing query strings that were configured will be removed. Its recommended you use code/request.query to read the original key/value pairs, then manipulate that [dictionary](dictionaries) and set it again using this function.
+      - This function lets you set the final query string parameters that will be sent with the request. Any existing query strings that were configured will be removed. Its recommended you use `request.query` to read the original key/value pairs, then manipulate that [dictionary](dictionaries) and set it again using this function.
       - PreProcessing Scripts
 
     * - setBody(string)
       - function
-      - Sets the raw payload that is sent as the body of the request (obviously not relevant for code/GET requests). The most typical use case is to build an object in javascript and then call code/runtime.setBody(JSON.stringify(obj))
+      - Sets the raw payload that is sent as the body of the request (obviously not relevant for `GET` requests). The most typical use case is to build an object in javascript and then call `runtime.setBody(JSON.stringify(obj))`
       - PreProcessing Scripts
 
     * - setUrl(string)

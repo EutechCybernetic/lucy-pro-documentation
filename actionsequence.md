@@ -27,7 +27,7 @@ Others do much more complex pieces of work like adding a weblet to a dashboard, 
 Lucy comes with a large collection of blocks to do many tasks.
 In addition, Lucy can be extended by custom blocks published from a connector. You can also enhance lucy by building a library of your own blocks.
 
-See [shareactions](shareactions) for more information on how to build up a library of your own re-usable blocks.
+See [Publishing Actions](actions.rst#shareactions) for more information on how to build up a library of your own re-usable blocks.
 
 
 ## Specifying Inputs

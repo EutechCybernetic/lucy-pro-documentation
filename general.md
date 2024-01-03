@@ -72,8 +72,8 @@
 .. [Array](dt-arrays) replace:: [Array](dt-arrays)
 
 
-.. [publishmessage-ref](publishmessage-ref) replace:: [publishmessage-ref](publishmessage-ref)
-.. [objectaction:System:PublishMessageToQueue-ref](objectaction:System:PublishMessageToQueue-ref) replace:: [objectaction:System:PublishMessageToQueue-ref](objectaction:System:PublishMessageToQueue-ref)
+.. [PublishMessage](blocks.rst#publishmessage-ref) replace:: [PublishMessage](blocks.rst#publishmessage-ref)
+.. [PublishMessageToQueue](blocks.rst#objectaction:System:PublishMessageToQueue-ref) replace:: [PublishMessageToQueue](blocks.rst#objectaction:System:PublishMessageToQueue-ref)
 
 .. weblet replace:: weblet
 .. weblets replace:: weblets
@@ -86,7 +86,7 @@
 .. UI Element replace:: UI Element
 .. UI Elements replace:: UI Elements
 
-.. [uiactions](uiactions) replace:: [uiactions](uiactions)
+.. [User Interface Actions](uis.rst#uiactions) replace:: [User Interface Actions](uis.rst#uiactions)
 .. [parameters](axnparamconfig) replace:: [parameters](axnparamconfig)
 
 .. [Bundle Explorer](bundleexplorer) replace:: [Bundle Explorer](bundleexplorer)
@@ -97,14 +97,14 @@
 .. [data bound](databinding) replace:: [data bound](databinding)
 .. color scheme replace:: color scheme
 
-.. [fromjson-ref](fromjson-ref) replace:: [fromjson-ref](fromjson-ref)
-.. [debug-ref](debug-ref) replace:: [debug-ref](debug-ref)
+.. [Parse JSON](block-source.raw.rst#fromjson-ref) replace:: [Parse JSON](block-source.raw.rst#fromjson-ref)
+.. [Debug](block-source.raw.rst#debug-ref) replace:: [Debug](block-source.raw.rst#debug-ref)
 
 .. [Bulk Loading Data](bulkloading) replace:: [Bulk Loading Data](bulkloading)
 .. [Execution Panel](executionpanel) replace:: [Execution Panel](executionpanel)
 .. [Version History](versionhistory) replace:: [Version History](versionhistory)
 .. [connectors](connectortoolkit) replace:: [connectors](connectortoolkit)
-.. [queues](queues) replace:: [queues](queues)
+.. [Queues](queues.rst#queues) replace:: [Queues](queues.rst#queues)
 .. [data collections](datacollections) replace:: [data collections](datacollections)
 .. [Trends](trends) replace:: [Trends](trends)
 .. [staging area](stagingarea) replace:: [staging area](stagingarea)
@@ -115,14 +115,14 @@
 .. [Javascript](es6javascript-ref) replace:: [Javascript](es6javascript-ref)
 .. [Action Start](actionstart-ref) replace:: [Action Start](actionstart-ref)
 .. [Event Start](eventstart-ref) replace:: [Event Start](eventstart-ref)
-.. [actionbinaryoutput-ref](actionbinaryoutput-ref) replace:: [actionbinaryoutput-ref](actionbinaryoutput-ref)
-.. [actionoutput-ref](actionoutput-ref) replace:: [actionoutput-ref](actionoutput-ref)
-.. [concat-ref](concat-ref) replace:: [concat-ref](concat-ref)
-.. [splittext-ref](splittext-ref) replace:: [splittext-ref](splittext-ref)
-.. [template-ref](template-ref) replace:: [template-ref](template-ref)
-.. |template-ref| replace:: [template-ref](template-ref)
-.. [repeataction-ref](repeataction-ref) replace:: [repeataction-ref](repeataction-ref)
-.. [timezonecodes](timezonecodes) replace:: [timezonecodes](timezonecodes)
-.. [tojson-ref](tojson-ref) replace:: [tojson-ref](tojson-ref)
-.. [callservice-ref](callservice-ref) replace:: [callservice-ref](callservice-ref)
-.. [exists-ref](exists-ref) replace:: [exists-ref](exists-ref)
+.. [Binary Output](block-source.raw.rst#actionbinaryoutput-ref) replace:: [Binary Output](block-source.raw.rst#actionbinaryoutput-ref)
+.. [Output](block-source.raw.rst#actionoutput-ref) replace:: [Output](block-source.raw.rst#actionoutput-ref)
+.. [Combine](block-source.raw.rst#concat-ref) replace:: [Combine](block-source.raw.rst#concat-ref)
+.. [Split Text](block-source.raw.rst#splittext-ref) replace:: [Split Text](block-source.raw.rst#splittext-ref)
+.. [Template](block-source.raw.rst#template-ref) replace:: [Template](block-source.raw.rst#template-ref)
+.. |template-ref| replace:: [Template](block-source.raw.rst#template-ref)
+.. [Repeat Action](block-source.raw.rst#repeataction-ref) replace:: [Repeat Action](block-source.raw.rst#repeataction-ref)
+.. [Time Zone Codes](timezonecodes.rst#timezonecodes) replace:: [Time Zone Codes](timezonecodes.rst#timezonecodes)
+.. [Serialize JSON](block-source.raw.rst#tojson-ref) replace:: [Serialize JSON](block-source.raw.rst#tojson-ref)
+.. [Call Service](block-source.raw.rst#callservice-ref) replace:: [Call Service](block-source.raw.rst#callservice-ref)
+.. [Exists](block-source.raw.rst#exists-ref) replace:: [Exists](block-source.raw.rst#exists-ref)
