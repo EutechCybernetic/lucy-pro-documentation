@@ -1,7 +1,7 @@
 
 
 
-[publishapi:](publishapi:)
+<a name='publishapi'></a>
 
 # Publishing an API
 
@@ -110,9 +110,11 @@ Each key/value pair is sent to the action as an input named after the key.
 
 For example, if your JSON payload is:
 
-.. code::
+```
 
     {"id":"ts001","value":25.3}
+
+```
 
 
 Then your [action](actions) should have two inputs: id and value.
@@ -125,9 +127,11 @@ The JSON dictionary is expected to be flat - that is, no nested objects.
 
 So you cannot use:
 
-.. code::
+```
 
     {"id":"ts001","value":{"v":25.3,"units":"C"}}
+
+```
 
 
 If you want to process a complex JSON object, set the body format to Raw Text and process the JSON within your [action](actions).
@@ -146,12 +150,14 @@ If you want to process a complex JSON object, set the body format to Raw Text an
     
 **Example**
 
-.. code::
+```
 
     POST /Lucy/TempSensor/value
     Authorization: SC:a:19291
     Content-Type: application/json
     {"value":"19,"id":"t01"}
+
+```
 
 ### Form Data
 
@@ -163,9 +169,11 @@ Each key/value pair is sent to the action as an input named after the key.
 
 For example, if your payload is
 
-.. code::
+```
 
     id=ts001&value=25.3
+
+```
 
 
 Then your [action](actions) should have two inputs: id and value.
@@ -185,12 +193,14 @@ Then your [action](actions) should have two inputs: id and value.
     
 **Example**
 
-.. code::
+```
 
     PUT /Lucy/TempSensor/value
     Authorization: SC:a:19291
     Content-Type: application/x-www-form-urlencoded
     value=19&id=ts01
+
+```
 
 
 ### Raw Text
@@ -215,7 +225,7 @@ The data is available as an input pin called Body.
     
 **Example**
 
-.. code::
+```
 
     PUT /Lucy/TempSensor/value
     Authorization: SC:a:19291
@@ -229,6 +239,8 @@ The data is available as an input pin called Body.
             "sensor",
             "temperature",
 ###### #####             "room01"
+
+```
 
 
 ### Binary
@@ -293,16 +305,20 @@ As part of your route, use {InstanceKey} in it. And then the caller can put the 
 
 Example of a route:
 
-.. code::
+```
 
     /sensors/{InstanceKey}/value
+
+```
 
 
 When the caller makes a request, the path they request to will be
 
-.. code::
+```
 
     /sensors/213/value
+
+```
 
 The action (if specified as 'Run on Instance') will then run in the context of instance with key=213.
 

@@ -1,7 +1,7 @@
 
 
 
-[connectorsdk:](connectorsdk:)
+<a name='connectorsdk'></a>
 
 # Lucy Connector SDK
 The Lucy Connector SDK allows you to build external connectors that can talk to Lucy and enable integration with external systems.

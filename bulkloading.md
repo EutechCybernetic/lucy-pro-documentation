@@ -1,7 +1,7 @@
 
 
 
-[bulkloading:](bulkloading:)
+<a name='bulkloading'></a>
 
 # Bulk Loading and Importing Data
 You can use Lucy to bulk import data from Excel spreadsheets.
@@ -57,7 +57,7 @@ Use a [actionbinaryoutput-ref](actionbinaryoutput-ref) block to return the data 
 See [binarydata](binarydata) for more information on working with binary data.
 
 
-[multipleimports:](multipleimports:)
+<a name='multipleimports'></a>
 
 ## Supporting Multiple Bulk Import Actions
 It's possible to have more than one bulk-load and template-download action in your model.
@@ -68,9 +68,11 @@ If you visit the bulk import page and specify a code/prefix query string paramet
 
 For example, if you add code/&prefix=EnergyData  to the bulk-import screen utl:
 
-.. code::
+```
 
     http://<ivivacloudurl>/Apps/System/bulkloadmetadata?key=112&prefix=EnergyData
+
+```
 
 Then the importer will look for an action in your model called code/BulkLoadEnergyData.
 The empty template download link will look for an action called code/DownloadEnergyDataBulkLoadTemplate

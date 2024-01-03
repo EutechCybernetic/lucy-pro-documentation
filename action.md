@@ -1,6 +1,6 @@
 
 
-[actions:](actions:)
+<a name='actions'></a>
 
 # Actions
 Actions are the easiest way to build logic in your model. An action begins with an [Action Start](actionstart-ref) block and triggers a action sequence in your model.
@@ -58,7 +58,7 @@ To call an action on an instance of the model, an instance key must be passed.
 Note that the |attributeget| and |attributeset| blocks (along with a few other related blocks) are only really valid in the context of an instance.
 
 
-[actiontriggernewinstance:](actiontriggernewinstance:)
+<a name='actiontriggernewinstance'></a>
 
 ### Trigger New Instance
 In this mode, the action sequence must be called on the model (not the instance). Calling this action will trigger the instantiation of a new instance of the model, any constructor blocks (`Initialize` blocks) for that model will run, and then the rest of the action sequence will execute on the newly created instance.
@@ -101,7 +101,7 @@ More complex structures can be parsed using a javascript block.
 
 For example, the following structure
 
-.. code::
+```
 
     {
         "locationName":"Building 1",
@@ -111,14 +111,18 @@ For example, the following structure
             {"id":"ASSET02","type":"FCU"},
 ####### ######             {"id":"ASSET03","type":"Temperature Sensor"},
 
+```
+
 Can be parsed using the following javascript code inside a [Javascript](es6javascript-ref) block:
 
-.. code::
+```
 
     var json = inputs.JSON;
     var obj = JSON.parse(json);
     var location = obj.locationName;
     var type = obj.locationType;
+
+```
 
     var assets = [];
     for(var i=0;i<obj.assets.length;i++) {
@@ -155,7 +159,7 @@ Fill in the model name and the action name, and optionally, the instance key if 
 For publishing your action as an API to be consumed by an external service, see [publishapi](publishapi)
 
 
-[shareactions:](shareactions:)
+<a name='shareactions'></a>
 ## Publishing Actions
 You can make your action public if you feel it is useful as a generic service for other models to use.
 When you click the code/Publish Action checkbox in the property panel of the [Action Start](actionstart-ref) block, the action gets marked as public.

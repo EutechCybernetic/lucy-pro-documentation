@@ -1,6 +1,6 @@
 
 
-[trends:](trends:)
+<a name='trends'></a>
 
 ======
 # Trends
@@ -156,7 +156,7 @@ Insert one data point at a time.
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     trends.addPoint("<trend_name>", "<value>", "<timestamp>", "<tags>", "<options>");
@@ -191,7 +191,7 @@ Insert one data point at a time.
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let trend = 'energy';
     let value = 120;
@@ -217,7 +217,7 @@ Insert one data point at a time. This is similar to `addPoint`_, except that thi
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     trends.addPoint("<trend_name>", "<value>", "<timestamp>", "<tags>", "<options>");
@@ -252,7 +252,7 @@ Insert one data point at a time. This is similar to `addPoint`_, except that thi
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let trend = 'energy';
     let value = 120;
@@ -280,7 +280,7 @@ Insert multiple data point at a time.
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     trends.addPoints("<points>", "<options>");
@@ -305,7 +305,7 @@ Insert multiple data point at a time.
 
 **Trend Point**
 
-.. code:: json
+``` json```
 
     {
       trend: "<trend_name>",
@@ -315,7 +315,7 @@ Insert multiple data point at a time.
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     let points = [];
@@ -342,7 +342,7 @@ Insert multiple data point at a time. This is similar to `addPoints`_, except th
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     trends.addPointsSync("<points>", "<options>");
@@ -367,7 +367,7 @@ Insert multiple data point at a time. This is similar to `addPoints`_, except th
 
 **Trend Point**
 
-.. code:: json
+``` json```
 
     {
       trend: "<trend_name>",
@@ -377,7 +377,7 @@ Insert multiple data point at a time. This is similar to `addPoints`_, except th
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     let points = [];
@@ -408,7 +408,7 @@ Query multiple data points for a given trend.
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     trends.queryPoints("<trend_name>", "<from>", "<to>", "<tags>", "<bucketType>", "<aggregationType>", "<options>");
@@ -455,7 +455,7 @@ Query multiple data points for a given trend.
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let trends = lucy.trends();
     let tags = {

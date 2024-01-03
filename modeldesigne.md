@@ -2,7 +2,7 @@
 
 
 
-[model-designer:](model-designer:)
+<a name='model-designer'></a>
 
 # Model Designer Reference
 
@@ -41,12 +41,12 @@ This section contains controls for taking actions on the model, navigating it an
 
 The following functions are available:
 
-[actionswitcher:](actionswitcher:)
+<a name='actionswitcher'></a>
 
 1. Action Switcher - Use this to switch to a different action sequence or to create a new sequence
 
 
-[modelactions:](modelactions:)
+<a name='modelactions'></a>
 
 2. Model Actions - This brings up a menu of actions that you can take on the model
 
@@ -80,7 +80,7 @@ The following functions are available:
 13. Save - Save your current changes. Everytime you make changes and save it, a new version of your model is created and the older versions are made accessible from the [Version History](versionhistory).
 
 
-[executionpanel:](executionpanel:)
+<a name='executionpanel'></a>
 
 ## Execution Panel
 Use the execution panel to test your action sequence.
@@ -103,7 +103,7 @@ This includes:
 2. Any warnings from Lucy about the execution of your action sequence
 
 
-[attributeeditor:](attributeeditor:)
+<a name='attributeeditor'></a>
 
 ## Attribute Editor
 This is where you can add, edit and remove [attributes](attributes) to your model.
@@ -205,7 +205,7 @@ This will help you prevent several people from trying to modify and save the mod
     Note that each version of the model that gets saved is recorded in the version history so you can always go back to it any point.
     See [Version History](versionhistory) for more information. {% endhint %}
 
-[propertiespanel:](propertiespanel:)
+<a name='propertiespanel'></a>
 
 ## Properties Panel
 The properties panel appears whenever a block is selected.
@@ -221,7 +221,7 @@ Click the image:: images/trash.png icon to delete a block.
 
 If you have selected the starting block of an [action](actions) you can rename the action from this properties panel.
 
-[stagingarea:](stagingarea:)
+<a name='stagingarea'></a>
 
 ## Staging Area
 The Staging Area is where you build all the logical sequences of your model.
@@ -239,7 +239,7 @@ There are currently two types of triggers available:
 You can add new action sequences by using the [action switcher](actionswitcher) and then adding a new one from the sheet.
 
 
-[blockpanel:](blockpanel:)
+<a name='blockpanel'></a>
 ## Block List
 The block list is located on the sidebar panel. It contains the full library of available blocks that can be used in your action sequence.
 Blocks are grouped under categories, so you first see a list of categories.
@@ -270,7 +270,7 @@ This is useful to find places where you have referenced some other model or some
 Search is done against block titles as well as in some cases, properties of the block.
 For example, the javascript blocks will search within the code. And for action blocks, within the model name and action name.
 
-[versionhistory:](versionhistory:)
+<a name='versionhistory'></a>
 
 ## Version History
 Lucy maintains a full version history of your model. Everytime you save your model - if any change was done to it, a new version will be created.

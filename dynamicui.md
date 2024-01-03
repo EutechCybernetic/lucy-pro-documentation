@@ -1,6 +1,6 @@
 
 
-[dynuis:](dynuis:)
+<a name='dynuis'></a>
 
 # Dynamic User Interfaces
 |Lucy| has the capability to dynamically assemble user interfaces for common tasks related to your model.
@@ -14,7 +14,7 @@ User interfaces can be generated for
 
 Each of these interfaces can also be optionally overriden with a custom user interface that you can design and build.
 
-[configdynuis:](configdynuis:)
+<a name='configdynuis'></a>
 
 ## Configuring Dynamic User Interfaces
 You have a certain amount of control over what the dynamically generated interfaces show.
@@ -71,7 +71,7 @@ Any attributes you select to show in search results will show up inbetween the N
     You can always view more attributes in the quick-info bubble. {% endhint %}
 
 
-[instancedetailsui:](instancedetailsui:)
+<a name='instancedetailsui'></a>
 
 ### Instance Details Page
 The details page for an instance shows information about that particular instance.
@@ -80,8 +80,8 @@ This includes a list of attributes of the instance, as well as any dynamic dashb
 Instances can be accessed by clicking a link in a instance search page.
 It can also be accessed by going to:
 
-  .. code::
-        http://<ivivacloudurl>/Apps/Lucy/Models/<modelname>/view?key=<instancekey>
+```
+        http://<ivivacloudurl>/Apps/Lucy/Models/<modelname>/view?key=<instancekey>```
 
 {% hint type="note" %}
     It is currently not possible to override the details page with your own. {% endhint %}
@@ -117,7 +117,7 @@ From the instance details screen you can choose to deactivate the current instan
 {% hint type="seealso" %}
     [deactivateinstance](deactivateinstance) for more information. {% endhint %}
 
-[instancecreationdialog:](instancecreationdialog:)
+<a name='instancecreationdialog'></a>
 
 ### Instance Creation Dialog
 Another interface that you get for free when you define a model is a dialog screen to create a new instance of that model.

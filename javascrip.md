@@ -1,13 +1,13 @@
 
 
-[javascriptlib:](javascriptlib:)
+<a name='javascriptlib'></a>
 
 # Javascript Library
 
 
 The following javascript functions are available for use with the |javascript| block.
 
-[jsoi:](jsoi:)
+<a name='jsoi'></a>
 ## oi
 
 ### model(name)
@@ -60,7 +60,7 @@ Parse a textual representation of a datetime.
 #### Returns
 [timestamp](datetimes)
 
-[legacygenexcel:](legacygenexcel:)
+<a name='legacygenexcel'></a>
 
 ### generateExcelSheet(columns, items)
 Generate an excel sheet in xlsx format.
@@ -110,7 +110,7 @@ The current time in UTC format
 #### Returns
 [timestamp](datetimes)
 
-[legacyjstzfunctions:](legacyjstzfunctions:)
+<a name='legacyjstzfunctions'></a>
 
 ### convertFromUtc(dt, tz)
 Converts a [timestamp](datetimes) from utc to a different timezone.
@@ -194,7 +194,7 @@ Generate a globally unique identifier.
 #### Returns
 string
 
-[legacyuploadData:](legacyuploadData:)
+<a name='legacyuploadData'></a>
 
 ### uploadData(name, data)
 Upload the given data to the iviva storage, using code/name as a base name.  The actual name used to store the data will be unique and randomly generated using code/name as part of it.
@@ -251,7 +251,7 @@ Encode the specified text data as a QR code image in png format.
 [binary data object](binobjects)
 
 
-[legacymetadataobject:](legacymetadataobject:)
+<a name='legacymetadataobject'></a>
 
 ## model
 ### isInstance()
@@ -260,7 +260,7 @@ Returns true if the object represents an model instance (as opposed to a model)
 #### Returns
 bool
 
-[legacyjsdeactivate:](legacyjsdeactivate:)
+<a name='legacyjsdeactivate'></a>
 
 ### deactivate()
 Deactivate the current instance. Only works when the current object is an model instance

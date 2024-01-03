@@ -1,6 +1,6 @@
 
 
-[datacollections:](datacollections:)
+<a name='datacollections'></a>
 
 ================
 # Data Collections
@@ -141,7 +141,7 @@ So far, we saw how to define a collection & attributes. To actually write data i
 1. [Using lucy data collection blocks](lucy-data-collection-blocks)
 2. [Using Javascript data collection API](js-data-collection-api)
 
-[lucy-data-collection-blocks:](lucy-data-collection-blocks:)
+<a name='lucy-data-collection-blocks'></a>
 
 ## Lucy Data Collection Blocks
 
@@ -162,7 +162,7 @@ Data collection blocks are  Lucy blocks, that enable you to work with the collec
 
 This block allows you to insert one document at a time. *Document* here can be explained with a simple analogy. If you have details about 10 users from **User 1** to **User 10**, then each detail here can be consisdered a *document*. A document is a simple **JSON** structure, that looks like the following,
 
-.. code:: json
+``` json```
 
     {
         "FirstName": "John",
@@ -187,7 +187,7 @@ The following steps illustrate how you can insert a document,
 
 On the executing the action, you should see the following output for both methods described above,
 
-.. code:: json
+``` json```
 
     {
         "_id": "5e21b3aecee5d8514cbfefa0",
@@ -253,14 +253,14 @@ Right now data collections are powered by *MongoDB* in the backend. So, to pass 
 
 1. Match all documents whose *FirstName* is *John*
 
-.. code:: json
+``` json```
 
     {
 #####         {"FirstName": {"$eq": "John"}}
 
 2. Match all documents whose *FirstName* is *John* and *LastName* is *Doe*
 
-.. code:: json
+``` json```
 
     {
         "$and": [
@@ -269,7 +269,7 @@ Right now data collections are powered by *MongoDB* in the backend. So, to pass 
 
 3. Match all documents whose *FirstName* is *John* or *LastName* is *Doe* or if the *Age* is between 20 and 30
 
-.. code:: json
+``` json```
 
     {
         "$or": [
@@ -346,7 +346,7 @@ This block allows you to update the first matching document in your data collect
 
 **Sample Output**
 
-.. code:: json
+``` json```
 
     {
         matchedCount: 1,
@@ -358,7 +358,7 @@ This block allows you to update the first matching document in your data collect
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will see the following output, {% endhint %}
 
-    .. code:: json
+``` json```
 
         {
             "matchedCount": 0,
@@ -427,7 +427,7 @@ This block allows you to delete the first matching document entirely in your dat
 
 **Sample Output**
 
-.. code:: json
+``` json```
 
     {
         matchedCount: 1,
@@ -436,7 +436,7 @@ This block allows you to delete the first matching document entirely in your dat
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will see the following output, {% endhint %}
 
-    .. code:: json
+``` json```
 
         {
             "matchedCount": 0,
@@ -501,7 +501,7 @@ This block allows you to count all the matching documents in your data collectio
 
 <figure><img src=' images/data-collections/blocks/count-n-doc.png'></figure>
 
-[js-data-collection-api: ](js-data-collection-api: )
+<a name='js-data-collection-api:'></a>
 
 ## Javascript Data Collection API
 
@@ -525,7 +525,7 @@ When you need more control while passing data to your collection or when process
 
 {% endhint %}
 
-    .. code:: javascript
+``` javascript```
 
         let model = lucy.currentModel();
         // or,
@@ -544,7 +544,7 @@ Insert one document at a time.
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.insertOne("<collection_name>", "<document>", "<options>");
 
@@ -576,7 +576,7 @@ Insert one document at a time.
     * - [JSON document](dt-json)
       - Document that was inserted into the collection
 
-        .. code:: json
+``` json```
 
             {
                 "_id": "5e21b3aecee5d8514cbfefa0",
@@ -586,7 +586,7 @@ Insert one document at a time.
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -613,7 +613,7 @@ Insert multiple documents at a time.
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.insertMany("<collection_name>", "<documents>", "<options>");
 
@@ -639,7 +639,7 @@ Insert multiple documents at a time.
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -674,7 +674,7 @@ Find the first matching document for the given collection & filter condition. Mo
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.findOne("<collection_name>", "<filter>", "<options>");
 
@@ -706,7 +706,7 @@ Find the first matching document for the given collection & filter condition. Mo
     * - [JSON document](dt-json)
       - First document that matched the filter condition
 
-        .. code:: json
+``` json```
 
             {
                 "_id": "5e21b3aecee5d8514cbfefa0",
@@ -716,7 +716,7 @@ Find the first matching document for the given collection & filter condition. Mo
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -742,7 +742,7 @@ Find all matching documents for the given collection & filter condition. More in
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.findMany("<collection_name>", "<filter>", "<options>");
 
@@ -774,7 +774,7 @@ Find all matching documents for the given collection & filter condition. More in
     * - [JSON document](dt-json)
       - Array of documents that matched the filter condition
 
-        .. code:: json
+``` json```
 
 ####             [
                     "_id": "5e21b3aecee5d8514cbfefa0",
@@ -794,7 +794,7 @@ Find all matching documents for the given collection & filter condition. More in
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -821,7 +821,7 @@ Update first matching document with the given data for the given collection & fi
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will get the following output, {% endhint %}
 
-    .. code:: json
+``` json```
 
         {
             "matchedCount": 0,
@@ -830,7 +830,7 @@ Update first matching document with the given data for the given collection & fi
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.updateOne("<collection_name>", "<filter>", "<data>", "<options>");
 
@@ -866,7 +866,7 @@ Update first matching document with the given data for the given collection & fi
     * - [JSON document](dt-json)
       - Replacement result
 
-        .. code:: json
+``` json```
 
             {
                 matchedCount: 1,
@@ -878,7 +878,7 @@ Update first matching document with the given data for the given collection & fi
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -908,7 +908,7 @@ Update all matching documents with the given data for the given collection & fil
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will get the following output, {% endhint %}
 
-    .. code:: json
+``` json```
 
         {
             "matchedCount": 0,
@@ -917,7 +917,7 @@ Update all matching documents with the given data for the given collection & fil
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.updateMany("<collection_name>", "<filter>", "<data>", "<options>");
 
@@ -953,7 +953,7 @@ Update all matching documents with the given data for the given collection & fil
     * - [JSON document](dt-json)
       - Replacement result
 
-        .. code:: json
+``` json```
 
             {
                 matchedCount: 10,
@@ -961,7 +961,7 @@ Update all matching documents with the given data for the given collection & fil
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -991,7 +991,7 @@ Replace first matching document is replaced with the given data for the given co
 {% hint type="note" %}
     If no documents match the given filter, then a new document is created in the collection. In which case you will get the following output, {% endhint %}
 
-    .. code:: json
+``` json```
 
         {
             "matchedCount": 0,
@@ -1007,7 +1007,7 @@ Replace first matching document is replaced with the given data for the given co
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.replaceOne("<collection_name>", "<filter>", "<data>", "<options>");
 
@@ -1043,7 +1043,7 @@ Replace first matching document is replaced with the given data for the given co
     * - [JSON document](dt-json)
       - Replacement result
 
-        .. code:: json
+``` json```
 
             {
                 matchedCount: 1,
@@ -1055,7 +1055,7 @@ Replace first matching document is replaced with the given data for the given co
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -1086,7 +1086,7 @@ Delete first matching document for the given collection & filter condition. More
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.deleteOne("<collection_name>", "<filter>", "<options>");
 
@@ -1112,7 +1112,7 @@ Delete first matching document for the given collection & filter condition. More
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -1138,7 +1138,7 @@ Delete all matching documents for the given collection & filter condition. More 
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.deleteOne("<collection_name>", "<filter>", "<options>");
 
@@ -1164,7 +1164,7 @@ Delete all matching documents for the given collection & filter condition. More 
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -1190,7 +1190,7 @@ Count all matching documents for the given collection & filter condition. More i
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.count("<collection_name>", "<filter>", "<options>");
 
@@ -1224,7 +1224,7 @@ Count all matching documents for the given collection & filter condition. More i
 
 **Example**
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,
@@ -1253,7 +1253,7 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
 
 **Syntax**
 
-.. code:: javascript
+``` javascript```
 
     collections.aggregate("<collection_name>", "<pipeline_stages>", "<options>");
 
@@ -1289,7 +1289,7 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
 
 Here, we need to find the electricity usage of a city. So, we group the data by *City* in our data collection whose *Usage* is more than *50000*, and calculate the *sum* from *Usage* field, and have the aggregation result in *total* field. The result would be,
 
-.. code:: json
+``` json```
 
 ####     [
             "_id" : "New York",
@@ -1304,7 +1304,7 @@ Here, we need to find the electricity usage of a city. So, we group the data by 
             "_id" : "Chennai",
 ####### #####             "total": 123456.7890
 
-.. code:: javascript
+``` javascript```
 
     let model = lucy.currentModel();
     // or,

@@ -38,7 +38,7 @@ For Lucy, the way to do it is by using the  code/exports dictionary in your code
 
 A sample module:
 
-.. code::
+```
 
     exports.isValidStatusCode = function(code) {
         if (code < 200) return false;
@@ -46,19 +46,25 @@ A sample module:
 ###         return true;
     exports.MaxTimeout = 25;
 
+```
+
 {% hint type="note" %}
     You can't assign the code/exports dictionary directly. You can only set fields on it.
     So use: {% endhint %}
 
-    .. code::
+```
 
         exports.myFunction = function(){};
 
+```
+
     and not
 
-    .. code::
+```
 
         exports = {myFunction:function(){} };
+
+```
 
 
 ## Referencing Javascript Modules
@@ -67,10 +73,12 @@ You can reference these modules in your |javascript| blocks by using  code/requi
 
 Using the sample module defined above:
 
-.. code::
+```
 
     const {isValidStatusCode,MaxTimeout} = require('my-module');
     if (isValidStatusCode()) {runtime.done({ok:1});
+
+```
 
     
 

@@ -1,7 +1,7 @@
 
 
 
-[messagebus:](messagebus:)
+<a name='messagebus'></a>
 
 # Message Bus
 The Message Bus is a key component of Lucy for communicating with other models and external systems using a `publish/subscribe` interface.
@@ -24,13 +24,13 @@ Using this mechanism, it is possible to talk to externally connected devices wit
 {% hint type="warning" %}
     Messages published on the message bus are ephemeral by default. This means, if a listener is not currently subscribed to a channel or is not listening for some reason (say, because of network connectivity issues), then they will not receive messages during that period of time. Messages are not stored and sent later - they are sent immediately to anyone who is actively listening. If you want more robust message handling, see below on using a messaging queue. {% endhint %}
 
-[mbpublish:](mbpublish:)
+<a name='mbpublish'></a>
 
 ## Publishing Messages
 You can publish messages to a channel by using the [publishmessage-ref](publishmessage-ref) block in your action sequence. You need to specify a channel name and a message to send.
 The message should be in text form. If you want to pass a `dictionary` then first serialize it to JSON using the [tojson-ref](tojson-ref) block.
 
-[mbsubscribe:](mbsubscribe:)
+<a name='mbsubscribe'></a>
 
 ## Subscribing to a channel
 See the Lucy Connector SDK documentation for how your component can subscribe to a channel.
@@ -46,7 +46,7 @@ The Message Queue provides a more robust system for publishing messages. Message
 {% endhint %}
 
 
-[mbqpublish:](mbqpublish:)
+<a name='mbqpublish'></a>
 
 ### Publishing Messages
 Publishing messages on a queue works the same way it does for ephemral messages. The block for publishing to the queue is different - [objectaction:System:PublishMessageToQueue-ref](objectaction:System:PublishMessageToQueue-ref) - but takes the same inputs with an additional expiry input that specifies the lifetime of the message.
@@ -54,7 +54,7 @@ Publishing messages on a queue works the same way it does for ephemral messages.
 When a message is published onto a queue for a given channel, it persists there until it is removed. The message is also pushed down to all subscribers.
 Subscribers also have the option of retrieving messages from the queue at any time.
 
-[mbqsubscribe:](mbqsubscribe:)
+<a name='mbqsubscribe'></a>
 
 ### Subscribing to a channel
 There are two ways in which a subscriber can retrieve messages from the queue for a given channel:

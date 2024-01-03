@@ -1,13 +1,13 @@
 
 
 
-[uis:](uis:)
+<a name='uis'></a>
 
 # Building User Interfaces
 |Lucy| comes with User Interface Composer, allowing you to design user interfaces to present to users.
 These interfaces can be supported in the backend by models as well as iviva applications and services.
 
-[uibundles:](uibundles:)
+<a name='uibundles'></a>
 
 ## UI Bundles
 All the user interfaces you define go into *UI Bundles*.
@@ -40,7 +40,7 @@ UI Bundles can be accessed directly by going to the |Lucy| dashboard, clicking t
 
 From a model, you can directly go to its linked UI Bundle by going to the **UI** tab in the [Model Designer](model-designer) and following the link to view the user interfaces for that model.
 
-[uicontainers:](uicontainers:)
+<a name='uicontainers'></a>
 
 ## Types of User Interfaces
 All user interfaces that can be designed in Lucy are web-based. They are responsive and render on desktops, tablets and mobile devices.
@@ -55,7 +55,7 @@ The available containers are:
 - Dialog - Use this to design a popup dialog that can be invoked from somewhere
 - Quick Info - Use this to design a  quick-information bubble that hovers above the page
 
-[commoncontainerprops:](commoncontainerprops:)
+<a name='commoncontainerprops'></a>
 
 ### Common Properties
 All ui containers have several common properties. These can be set by clicking on that ui container in the [Bundle Explorer](bundleexplorer).
@@ -96,7 +96,7 @@ The next step is to bind data to your field.
 Data Sources are the central mechanism for gathering data to bind into a user interface.
 You can design data sources to select the attributes you need, filter out data, group and sort them.
 
-[pageinputs:](pageinputs:)
+<a name='pageinputs'></a>
 
 ## Using inputs and parameters
 Input parameters are important to the flow of UI screens and data within them.
@@ -132,7 +132,7 @@ For example, if you want to pass a page input called code/isactive and have it c
     Page inputs can easily be modified by the user and spoofed.
     See [uipermissions](uipermissions) for information on how to restrict access to screens. {% endhint %}
 
-[databinding:](databinding:)
+<a name='databinding'></a>
 
 ## Binding Data
 Once you have your ui elements setup, you can start binding data to it.
@@ -150,7 +150,7 @@ When you drag a field over a ui element you will get feedback on whether or not 
     When you drag an item into the content area of a [celllist-widget](celllist-widget) or a [repeater-widget](repeater-widget) then the data source that the field came from will get automatically bound as the datasource of that ui element.
     However you have to be careful to make sure you only drag in fields from the same data source, as these ui elements can only be bound to a single source. {% endhint %}
 
-[manualbinding:](manualbinding:)
+<a name='manualbinding'></a>
 
 ### Manually binding data
 You can manually bind data to properties of a ui element by specifying an [iviva Expression](ice).
@@ -163,7 +163,7 @@ The actual datasource to use will be bound separately for those ui elements.
     You can drag fields from the [Data Source Explorer](datasourceexplorer) into Parameter Value entry fields in the action list property editor to automatically create a relevant [iviva Expression](ice) binding. Properties that support direct binding from the [Data Source Explorer](datasourceexplorer) will turn green when you drag a field over them. {% endhint %}
 
 
-[uilists:](uilists:)
+<a name='uilists'></a>
 
 ## Working with lists of items
 A common UI metaphor is to display a list of items, with each item in the list being represented by a single result from a data source.
@@ -202,7 +202,7 @@ For example, if you specify code/#{row.Name}  as the Text property of a label in
     If you bind data by dragging items from the [Data Source Explorer](datasourceexplorer) they will automatically use the code/row variable if they are bound inside the content area of a list ui element. {% endhint %}
 
 
-[pagination:](pagination:)
+<a name='pagination'></a>
 
 ### Pagination in data sources
 For data sources to work with [celllist-widget](celllist-widget) ui elements, they must support pagination.
@@ -222,7 +222,7 @@ This field is a unique identifier for each result and should be increasing in va
 
 ## Hooking up to models
 
-[uiactions:](uiactions:)
+<a name='uiactions'></a>
 
 ## User Interface Actions
 Certain ui elements can react to user interactions (currently only *click* interactions are supported) and execute a sequence of UI actions in response to the click.
@@ -242,7 +242,7 @@ It is available for ui elements that support invoking actions (currently, [icon-
 
 Multiple actions can be added. The configuration for each action will defer based on the type of the action.
 
-[axnparamconfig:](axnparamconfig:)
+<a name='axnparamconfig'></a>
 
 ### Configuring Parameters
 Several of the action types take parameters as inputs.
@@ -267,7 +267,7 @@ You need to specify the service to call and any [parameters](axnparamconfig) to 
 In the case of an error, an alert will be shown with the error message.
 
 
-[showqiaxn:](showqiaxn:)
+<a name='showqiaxn'></a>
 
 ### Show QuickInfo
 Show a quick-info bubble near the ui element that was clicked on.
@@ -294,14 +294,14 @@ You can also use [iviva Expression](ice) here including parameters like code/bas
 Flash a notification message to the user briefly, for a few seconds.
 
 
-[axnmde:](axnmde:)
+<a name='axnmde'></a>
 
 ### Show Metadata Explorer
 Show [Metadata Explorer](mde) and focus on a specific object.
 You need to specify the object id, object key and object type as [parameters](axnparamconfig).
 
 
-[showdialogaxn:](showdialogaxn:)
+<a name='showdialogaxn'></a>
 
 ### Show Dialog
 Similar to the quick-info action, invoke a dialog defined in the current bundle and show it in the center of the screen.
@@ -345,7 +345,7 @@ To abort execution of the action list and any items after the current one, throw
 {% hint type="seealso" %}
     [clientscript](clientscript) {% endhint %}
 
-[closedialogaxn:](closedialogaxn:)
+<a name='closedialogaxn'></a>
 
 ### Close Current Dialog
 This action is only useful when being run within a dialog UI.
@@ -360,7 +360,7 @@ Exactly what it says :)
 These are not the droids you are looking for. Move along, move along.
 (This action is deprecated)
 
-[uipositioning:](uipositioning:)
+<a name='uipositioning'></a>
 
 ## Positioning and Placement of ui elements
 How ui elements are placed and sized in an interface depends on the ui element as well as the container that it is placed in.
@@ -369,7 +369,7 @@ Most containers have a **fixed layout** and so, adding a ui element to it will m
 Other containers have a **free layout** in which ui elements can be freely moved around and sized independently of any other.
 
 
-[uifixedlayout:](uifixedlayout:)
+<a name='uifixedlayout'></a>
 
 ### Fixed Layouts
 In fixed-layout containers, the ui elements will automatically occupy a given position and space within the container. The position of the widget can be changed by dragging them up/down (or left/right if the container stacks items horizontally).
@@ -382,7 +382,7 @@ The height of the ui element can be adjusted if the individual ui element field 
 * Horiontal Layouts - Currently only the [fieldline-widget](fieldline-widget) supports horizontal layouts. In this case, widgets get added to the right of the previous one. You can drag them left/right to re-order them. They take up the full height available to it, but the width of ui elements can be adjusted.
 
 
-[uifreelayout:](uifreelayout:)
+<a name='uifreelayout'></a>
 
 ### Free Layouts
 In free layouts, ui elements can be placed anywhere in the container, can be dragged around to any position and can be sized by dragging the corner handles of the ui element.
@@ -440,9 +440,11 @@ This is the only type of UI screen which can be directly accessed via a url.
 
 The url for the screen will be of the form:
 
-.. code::
+```
 
     http://<ivivacloudurl>/Apps/Lucy/cv-<bundleid>-<pageid>
+
+```
 
 
 In addition to [commoncontainerprops](commoncontainerprops), pages can also have Page Inputs.
@@ -461,7 +463,7 @@ You can use [iviva Expression](ice) syntax in the title.
     Remember to save your UI Bundle first! {% endhint %}
 
 
-[weblets:](weblets:)
+<a name='weblets'></a>
 
 ## Weblets
 Weblets are the small widgets that make up dashboards in iviva.
@@ -490,7 +492,7 @@ They also have a **Publish** property which marks the weblet as published.
 Once a weblet is published, it is available in the weblet browser and other places where weblets can be chosen. You can unpublish a weblet by unchecking the box. Once a weblet is in published state, its id cannot be changed.
 
 
-[tabinjections:](tabinjections:)
+<a name='tabinjections'></a>
 
 ## Tab Injections
 This container represents a single tab that can be *injected* into the tab set of another page.
@@ -574,7 +576,7 @@ Dialogs are invoked by calling the [showdialogaxn](showdialogaxn) action.
 They can only be called from other screens in the same UI Bundle.
 
 
-[clientscript:](clientscript:)
+<a name='clientscript'></a>
 
 ## Client-Side Javascript in User Interfaces
 .. warning::
@@ -592,7 +594,7 @@ The following javascript libraries are available to every page to make use of:
 * date.js 1.0 Alpha-1 - Date parsing and manipulation
 * v3 - This is the iviva javascript library. Please consult the iviva documentation for information on how to use it beyond what is discussed here.
 
-[uitags:](uitags:)
+<a name='uitags'></a>
 
 ### Accessing ui elements from javascript
 You do not have access to the actual code/id of the DOM elements that ui elements render into. Instead, you need to use the code/tag property of the ui element to identify it.
@@ -602,10 +604,12 @@ Once this is set, you can use the code/ServiceDesk.getFieldIDsByTag(tagname) fun
 
 A Quick Example: Setup a text field with a tag called 'userid' and a checkbox called 'enable' and enter the following into the SetupScript property of the page.
 
-.. code::
+```
 
     var checkboxID = ServiceDesk.getFieldIDsByTag('enabled')[0];
     var textboxID = ServiceDesk.getFieldIDsByTag('userid')[0];
+
+```
 
     var cb = $(document.getElementById(checkboxID));
     var tb = $(document.getElementById(textboxID));
@@ -621,7 +625,7 @@ A Quick Example: Setup a text field with a tag called 'userid' and a checkbox ca
 This will cause the textbox to get enabled/disabled as you check/uncheck the checkbox.
 
 
-[uipermissions:](uipermissions:)
+<a name='uipermissions'></a>
 
 ## Applying Permissions to User Interfaces
 You can restrict access to user interfaces by setting permissions.
@@ -634,9 +638,11 @@ You can refer to [app roles](approles) that are defined in your models by the sy
 
 For example, if you have a model called code/StaffExtension and have defined two roles code/canupdate and code/candelete and want only users who have any of these roles to be able to access the page, you can specify an [iviva Expression](ice) like:
 
-.. code::
+```
 
     #{authrole.Lucy.models.StaffExtension.canupdate? or authrole.Lucy.models.StaffExtension.candelete?}
+
+```
 
 Your expressions can incorporate page inputs and data sources and can be arbitrarily complex.
 

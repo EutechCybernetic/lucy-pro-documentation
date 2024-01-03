@@ -1,7 +1,7 @@
 
 
 
-[permissions:](permissions:)
+<a name='permissions'></a>
 
 # Permissions and Authorization
 This section outlines how you can configure user-based restrictions in your Lucy models and user interfaces.
@@ -29,18 +29,18 @@ An example of an app role in the Work Order application may be code/allowed to a
 As you can see, app roles tend to be specific to that application's domain.
 
 
-[approles:](approles:)
+<a name='approles'></a>
 ## Defining App Roles for Models
 You can define fine-grained app roles for your models.
 In each model, go to the **Permissions** sidebar panel of the [Model Designer](model-designer).
 There, you can add app roles for that model.
 Some example app roles
 
-.. code::
+```
     canturnonlight
     canquerylightstatus
     canconfigurelight
-    canviewlightconfiguration
+    canviewlightconfiguration```
 
 Here, we've defined four roles. Two related to turning on and off a light, and two related to reading a light bulb configuration and modifying a light bulb configuration.
 
@@ -49,7 +49,7 @@ Once we have these roles, we need to do two things:
 1. Apply these roles to our actions and screens
 2. Assign these roles to various users.
 
-[permsactions:](permsactions:)
+<a name='permsactions'></a>
 
 ### Applying Roles to Actions
 You can define a set of app roles that are allowed to execute an action by specifying them in the [Action Start](actionstart-ref) block of an action. Click on the block and then in the properties panel, find the section called **Permissions**.
@@ -76,7 +76,7 @@ When an action is called via a user interface, then the user who is logged-in at
 When the action is invoked via an [API](publishapi) call, then the user associated with the [API Key](apikey) that was passed will be used to determine permissions.
 
 
-[permsuis:](permsuis:)
+<a name='permsuis'></a>
 
 ### Applying Roles to User Interfaces
 For dynamically generated user interfaces, roles can be applied to them from the **UI** tab of the [Model Designer](model-designer).

@@ -1,7 +1,7 @@
 
 
 
-[ice:](ice:)
+<a name='ice'></a>
 
 # iviva Expression Langauge
 The iviva expression language is a domain-specific mini-language that lets you express logic and formatting instructions in textual form. It provides flexibility to intersperse expressions with regular text.
@@ -15,9 +15,11 @@ Any text outside of those blocks are treated as literal text.
 
 The following is a valid expression:
 
-.. code::
+```
 
     Good morning, #{auth.Name}!
+
+```
 
 In this case, the part wrapped in code/#{...} will be evaluated and the result will be replaced back in the text.
 The final text output might be:
@@ -54,24 +56,26 @@ to group expressions
 
 Example:
 
-.. code::
-    #{not (firstvar? and secondvar?)}
+```
+    #{not (firstvar? and secondvar?)}```
 
 Returns true if either of the values are false
 
 If/else syntax is also supported to evaluate expressions:
 
-.. code::
+```
 
     #{if firstvar? then secondvar else thirdvar }
+
+```
 
 This evaluates to code/secondvar if code/firstvar is true, else it evalutes to code/thirdvar
 
 ## Formatting
 If you need to include literal text inside an expression, put it inside square brackets:
 
-.. code::
-    #{if authorized? then [Ok] else [Sorry, no access permitted]}
+```
+    #{if authorized? then [Ok] else [Sorry, no access permitted]}```
 
 If the code/authorized variable is true then evaluate to the text "Ok" else evaluate to the text "Sorry, no access permitted"
 
@@ -82,9 +86,11 @@ Put a pipe (code/|) character after an expression and then the name of the trans
 One such transformer is the [datetimeformat-transformer](datetimeformat-transformer) transformer.
 That transforms an expression which evaluated to a [timestamp](datetimes) into a nicely formatted textual representation of the [timestamp](datetimes) according to the logged-in user's format preferences.
 
-.. code::
+```
 
     #{services.details.CreatedDateTime|datetimeformat}
+
+```
 
 
 This returns the CreateDateTime value in a nicely formatted text.
@@ -93,12 +99,12 @@ This returns the CreateDateTime value in a nicely formatted text.
 There are several predefined functions that can be used within expressions.
 The syntax for functions is:
 
-.. code::
-    #{function(arg1,arg2,arg3)}
+```
+    #{function(arg1,arg2,arg3)}```
 
 Functions can be nested.
 
-[icevars:](icevars:)
+<a name='icevars'></a>
 
 ## Available Variables and Objects
 
@@ -162,56 +168,56 @@ Where code/FieldName can be any  of the following:
 
 
 ## Available Transformers
-[int-transformer:](int-transformer:)
+<a name='int-transformer'></a>
 
 ### int
 convert to an integer
 
-[str-transformer:](str-transformer:)
+<a name='str-transformer'></a>
 
 ### str
 convert to a string
 
-[exists-transformer:](exists-transformer:)
+<a name='exists-transformer'></a>
 
 ### exists
 check if the value is null or empty
 
-[validint-transformer:](validint-transformer:)
+<a name='validint-transformer'></a>
 
 ### validint
 check if the value is a non-zero integer
 
-[float-transformer:](float-transformer:)
+<a name='float-transformer'></a>
 
 ### float
 convert to a floating point value
 
-[floatstr-transformer:](floatstr-transformer:)
+<a name='floatstr-transformer'></a>
 
 ### floatstr(precision)
 converts to a formatted string with given precision (from 1 - 7)
 Example:
 
-.. code::
+```
     #{row.Value|floatstr(2)} yields 2.23
-    #{row.Value|floatstr(3)} yields 2.230
+    #{row.Value|floatstr(3)} yields 2.230```
 
-[clip-transformer:](clip-transformer:)
+<a name='clip-transformer'></a>
 
 ### clip(length)
 clip to a specified length and add ellipsis at the end
 
-.. code::
-    #{row.Description|clip(25)} - clips the text to have a max of 25 chars and shows ‘…’ at the end
+```
+    #{row.Description|clip(25)} - clips the text to have a max of 25 chars and shows ‘…’ at the end```
 
-[trim-transformer:](trim-transformer:)
+<a name='trim-transformer'></a>
 
 ### trim
 Trim out the leading and trailing space of strings
 
 
-[duration-transformer:](duration-transformer:)
+<a name='duration-transformer'></a>
 
 ### duration
 Converts an integer (in minutes) into a user friendly duration
@@ -219,90 +225,90 @@ Example:
 .. code::
     #{row.TotalMinutes|duration} - returns ‘10min’ or ‘1hr 30min’ or ‘2 days’ etc...
 
-[capitalize-transformer:](capitalize-transformer:)
+<a name='capitalize-transformer'></a>
 
 ### capitalize
 Capitalizes the first character of the specified text
 
-[dateformat-transformer:](dateformat-transformer:)
+<a name='dateformat-transformer'></a>
 
 ### dateformat
 Convert the date value into text formatted in the user’s preferred date format
 
-[minutesago-transformer:](minutesago-transformer:)
+<a name='minutesago-transformer'></a>
 
 ### minutesago
 return how many minutes have passed since the datetime value specified
 
-[datetimeformat-transformer:](datetimeformat-transformer:)
+<a name='datetimeformat-transformer'></a>
 
 ### datetimeformat
 Converts the datetime into text using the user’s preferred datetime format and in the user’s timezone
 
-[timeformat-transformer:](timeformat-transformer:)
+<a name='timeformat-transformer'></a>
 
 ### timeformat
 Converts the time into text using the user’s preferred time format
 
 
 ## Available Functions
-[concat-function:](concat-function:)
+<a name='concat-function'></a>
 
 ### concat(str1,str2,…)
 combines multiple strings together
 Example:
 
-.. code::
-    #{concat(row.Url,[?key=],row.Key)} - combines row.Url + ‘?key=‘ + row.Key
+```
+    #{concat(row.Url,[?key=],row.Key)} - combines row.Url + ‘?key=‘ + row.Key```
 
-[sum-function:](sum-function:)
+<a name='sum-function'></a>
 
 ### sum(i1,i2...)
 sum of multiple integers
 
 
-[mod-function:](mod-function:)
+<a name='mod-function'></a>
 
 ### mod(i1,i2)
 i1 % i2
 
 
-[mul-function:](mul-function:)
+<a name='mul-function'></a>
 
 ### mul(i1,i2,…)
  multiply multiple integers
 
-[fmul-function:](fmul-function:)
+<a name='fmul-function'></a>
 
 ### fmul(f1,f2,…)
  multiply multiple floating point values
 
 
-[random-function:](random-function:)
+<a name='random-function'></a>
 
 ### random(start,end)
  returns a random number between start and end
 
-[randomchoice-function:](randomchoice-function:)
+<a name='randomchoice-function'></a>
 
 ### randomchoice(item1,item2,…)
 returns one of the specified items at random
 Example:
 
-.. code::
-    #{randomchoice([A],[B],[C])} - returns either ‘A’ ‘B’ or ‘C’ at random
+```
+    #{randomchoice([A],[B],[C])} - returns either ‘A’ ‘B’ or ‘C’ at random```
 
-[startswith-function:](startswith-function:)
+<a name='startswith-function'></a>
 
 ### startswith(a,b)
 returns true if b is a prefix of a (case insensitive)
 
-[substring-function:](substring-function:)
+<a name='substring-function'></a>
 
 ### substring(a,i1)
 return a substring of ‘a’ starting at i1 (zero-based index)
 
-[substring-function:](substring-function:)
+<a name='substring-function'></a>
 
 ### substring(a,i1,i2)
 return a substring of ‘a’ starting at i1 and i2 characters long

@@ -1,6 +1,6 @@
 
 
-[connectortoolkit:](connectortoolkit:)
+<a name='connectortoolkit'></a>
 
 # Web Service Connector Toolkit
 
@@ -136,7 +136,7 @@ You can add a list of keys and corresponding valuesl You can use [variables](wsv
 .. info::
     The body format is not used when the HTTP Method is  code/GET
 
-[wsvars:](wsvars:)
+<a name='wsvars'></a>
 
 ### Using placeholders in the method definitions
 Certain parameters for the web service will have to be provided by the user when they are using the web service.
@@ -253,7 +253,7 @@ That pin will receive the error message from which you can build logic to handle
     If you do not explicitly handle the error, the block will raise an error if the web service call failed, and will propogate the error back to the caller.
     This is often the exact behaviour you want - but in some cases where you expect errors as part of the flow, you should explicitly handle it. {% endhint %}
 
-[wspreprocess:](wspreprocess:)
+<a name='wspreprocess'></a>
 
 ### Custom Pre-Processing
 Sometimes you need to do more complex transformations on your inputs before calling the actual web service.
@@ -295,11 +295,13 @@ Your script has access to the following objects that you can use to read the exi
 
 This example reads an two inputs - code/From and code/To and adds them as ISO8601 datetimes in the query string as parameters called  code/fromDate and code/toDate
 
-    .. code::
+```
 
         let fromDate = runtime.parseDate(inputs['From']);
         let toDate = runtime.parseDate(inputs['To']);
         runtime.setQuery({fromDate,toDate});
+
+```
 
     
 
@@ -308,13 +310,15 @@ This example reads an two inputs - code/From and code/To and adds them as ISO860
 
 This example takes all input pins except 'Password' and puts them into a JSON dictionary and sets this as the payload of the request.
 
-    .. code::
+```
 
         let payload = {};
         for(let k in inputs) {
             if (k === 'Password') continue;
 #####             payload[k] = inputs[k];
         runtime.setBody(JSON.stringify(payload));
+
+```
 
 ### Input Pin Configuration
 When designing your method, you should think about what inputs you expect to get from the user when they use the block corresponding to your web service method.
@@ -379,7 +383,7 @@ Either pick one from the list or add a new one.
 ## Javascript objects
 The following javascript objects are available for preprocessing and/or postprocessing scripts for web services.
 
-[wsjsrequest:](wsjsrequest:)
+<a name='wsjsrequest'></a>
 
 ### request
 This object is only available for pre-processing scripts in web services.
@@ -406,7 +410,7 @@ The object contains the following members:
       - The url of the web service
   
 
-[wsjsruntime:](wsjsruntime:)
+<a name='wsjsruntime'></a>
 
 ### runtime
 This object lets you manipulate requests by changing the payload/query string/headers.
@@ -555,15 +559,19 @@ To use the additional configuration we just registered, we can use the following
 
 **Syntax**
 
-.. code::
+```
 
     #{accountparam([<configuration_name>]}
 
+```
+
 **Example**
 
-    .. code::
+```
 
     #{accountparam([SubscriptionKey]}
+
+```
 
 {% hint style="info" %}
 

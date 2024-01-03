@@ -1,6 +1,6 @@
 
 
-[dyndashboards:](dyndashboards:)
+<a name='dyndashboards'></a>
 
 # Dynamic Dashboards
 All |instances| in Lucy have the option of presenting a dynamic dashboard to users.

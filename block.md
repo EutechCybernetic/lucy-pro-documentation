@@ -5,7 +5,7 @@ This section documents the standard available blocks in Lucy.
 
 
     
-[actionbinaryoutput-ref:](actionbinaryoutput-ref:)
+<a name='actionbinaryoutput-ref'></a>
 
 
 ## Binary Output
@@ -33,17 +33,16 @@ Content-Disposition header is sent:
       - An optional file name to use when the data is downloaded.
 
         
-[actionjsonoutput-ref:](actionjsonoutput-ref:)
+<a name='actionjsonoutput-ref'></a>
 
 
 ## JSON Output
 
 This block is used to make a action sequence return json data.
 
+```
     
-.. code::
-    
-    Content-Disposition:attachment; filename=<filename>
+    Content-Disposition:attachment; filename=<filename>```
 
 ### Inputs
 .. list-table::
@@ -55,7 +54,7 @@ This block is used to make a action sequence return json data.
       - A [JSON](dt-json) object or text
 
         
-[actionoutput-ref:](actionoutput-ref:)
+<a name='actionoutput-ref'></a>
 
 
 ## Output
@@ -91,7 +90,7 @@ and leave the Field name empty.
       - The value to return
 
         
-[actionstart-ref:](actionstart-ref:)
+<a name='actionstart-ref'></a>
 
 
 ## Action
@@ -112,7 +111,7 @@ and leave the Field name empty.
     
 
         
-[activate-ref:](activate-ref:)
+<a name='activate-ref'></a>
 
 
 ## Activate
@@ -131,7 +130,7 @@ Marks the current model instance as active.
 
 
         
-[adddays-ref:](adddays-ref:)
+<a name='adddays-ref'></a>
 
 
 ## AddDays
@@ -168,7 +167,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
 
 
         
-[adder-ref:](adder-ref:)
+<a name='adder-ref'></a>
 
 
 ## Add
@@ -198,7 +197,7 @@ If any non-numeric values are passed (like text), then zero is is used in place 
 
 
         
-[addminutes-ref:](addminutes-ref:)
+<a name='addminutes-ref'></a>
 
 
 ## AddMinutes
@@ -235,7 +234,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
 
 
         
-[addmonths-ref:](addmonths-ref:)
+<a name='addmonths-ref'></a>
 
 
 ## AddMonths
@@ -272,7 +271,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
 
 
         
-[addweblet-ref:](addweblet-ref:)
+<a name='addweblet-ref'></a>
 
 
 ## AddWeblet
@@ -307,7 +306,7 @@ dashboard configuration. This should be a number from 1-12.
       - The parameters to pass to the weblet. This can either be a json object as text or a dictionary.
 
         
-[addyears-ref:](addyears-ref:)
+<a name='addyears-ref'></a>
 
 
 ## AddYears
@@ -344,7 +343,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
 
 
         
-[attributeget-ref:](attributeget-ref:)
+<a name='attributeget-ref'></a>
 
 
 ## Get Attribute
@@ -371,7 +370,7 @@ then the same value is returned each time it is called.
 
 
         
-[attributeset-ref:](attributeset-ref:)
+<a name='attributeset-ref'></a>
 
 
 ## Set Attribute
@@ -398,7 +397,7 @@ then the same value is returned each time it is called.
 
 
         
-[callaction-ref:](callaction-ref:)
+<a name='callaction-ref'></a>
 
 
 ## CallAction
@@ -454,7 +453,7 @@ Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 
         
-[calldatasource-ref:](calldatasource-ref:)
+<a name='calldatasource-ref'></a>
 
 
 ## Call Data Source
@@ -510,7 +509,7 @@ All data sources return a [result set](dt-results).
 
 
         
-[callservice-ref:](callservice-ref:)
+<a name='callservice-ref'></a>
 
 
 ## Call Service
@@ -558,7 +557,7 @@ Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 
         
-[callwebservice-ref:](callwebservice-ref:)
+<a name='callwebservice-ref'></a>
 
 
 ## Call Web Service
@@ -566,7 +565,7 @@ Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 Use this block to call any third party webservice
 
         
-[concat-ref:](concat-ref:)
+<a name='concat-ref'></a>
 
 
 ## Combine
@@ -600,7 +599,7 @@ Any inputs which are not textual are converted to a textual representation befor
 
 
         
-[currentitem-ref:](currentitem-ref:)
+<a name='currentitem-ref'></a>
 
 
 ## CurrentItem
@@ -620,7 +619,7 @@ If the action sequence is running on a model then 0 is returned.
 
 
         
-[currentuser-ref:](currentuser-ref:)
+<a name='currentuser-ref'></a>
 
 
 ## CurrentUser
@@ -640,7 +639,7 @@ If the action sequence is run by some automated job in the backend, then no user
 - **SiteKey**: The key of the site that the user belongs to
 
         
-[datetime-ref:](datetime-ref:)
+<a name='datetime-ref'></a>
 
 
 ## DateTime
@@ -671,7 +670,7 @@ Construct a new [timestamp](datetimes) from an year/month/day/hour/minute/second
 
 
         
-[dayofmonth-ref:](dayofmonth-ref:)
+<a name='dayofmonth-ref'></a>
 
 
 ## Day Of Month
@@ -698,7 +697,7 @@ Extracts the day component of a date/time field.
 
 
         
-[dayofweek-ref:](dayofweek-ref:)
+<a name='dayofweek-ref'></a>
 
 
 ## Day Of Week
@@ -725,7 +724,7 @@ Extracts the day of week for the date/time field.
 
 
         
-[deactivate-ref:](deactivate-ref:)
+<a name='deactivate-ref'></a>
 
 
 ## Deactivate
@@ -734,7 +733,7 @@ Deactivae the current model instance.
 This block has no effect when being called from a model.
 
         
-[deadband-ref:](deadband-ref:)
+<a name='deadband-ref'></a>
 
 
 ## Deadband
@@ -774,7 +773,7 @@ This block has no effect when being called from a model.
 
 
         
-[debug-ref:](debug-ref:)
+<a name='debug-ref'></a>
 
 
 ## Debug
@@ -807,7 +806,7 @@ Use the Debug block to log data to the debug console.
 
 
         
-[delay-ref:](delay-ref:)
+<a name='delay-ref'></a>
 
 
 ## Delay
@@ -827,7 +826,7 @@ Use the Debug block to log data to the debug console.
       - The number of milliseconds to pause
 
         
-[divider-ref:](divider-ref:)
+<a name='divider-ref'></a>
 
 
 ## Divider
@@ -844,7 +843,7 @@ Use the Debug block to log data to the debug console.
       - The second value to operate on
 
         
-[equals-ref:](equals-ref:)
+<a name='equals-ref'></a>
 
 
 ## Equals
@@ -877,7 +876,7 @@ Comparisons are case-insensitive.
 
 
         
-[es6javascript-ref:](es6javascript-ref:)
+<a name='es6javascript-ref'></a>
 
 
 ## ES6Javascript
@@ -943,7 +942,7 @@ Comparisons are case-insensitive.
 
 
         
-[eventstart-ref:](eventstart-ref:)
+<a name='eventstart-ref'></a>
 
 
 ## Event Trigger
@@ -956,7 +955,7 @@ Used to listen for and react to events that are sent into the system.
     [eventhandling](eventhandling)
 
         
-[exception-ref:](exception-ref:)
+<a name='exception-ref'></a>
 
 
 ## Exception
@@ -975,7 +974,7 @@ This is useful to signal error conditions in the action sequence as well as for 
       - The error message to be used when the error is generated
 
         
-[exists-ref:](exists-ref:)
+<a name='exists-ref'></a>
 
 
 ## Exists
@@ -1016,7 +1015,7 @@ Only one of them will be executed.
 
 
         
-[extractvalue-ref:](extractvalue-ref:)
+<a name='extractvalue-ref'></a>
 
 
 ## ExtractValue
@@ -1055,7 +1054,7 @@ If the dictionary does not contain the given field, empty text will be written t
 
 
         
-[fireevent-ref:](fireevent-ref:)
+<a name='fireevent-ref'></a>
 
 
 ## Fire Event
@@ -1085,7 +1084,7 @@ Any input parameters you specify get sent as part of the event payload.
       - Add new inputs by clicking the 'Add Input Parameter' link in the properties panel.
 
         
-[fromjson-ref:](fromjson-ref:)
+<a name='fromjson-ref'></a>
 
 
 ## Convert JSON
@@ -1113,7 +1112,7 @@ The input json structure must either be an object or an array of homogenous obje
 
 
         
-[getfromredis-ref:](getfromredis-ref:)
+<a name='getfromredis-ref'></a>
 
 
 ## Get Value
@@ -1141,7 +1140,7 @@ The input json structure must either be an object or an array of homogenous obje
 
 
         
-[gt-ref:](gt-ref:)
+<a name='gt-ref'></a>
 
 
 ## Greater
@@ -1174,7 +1173,7 @@ Checks if the first value is greater than the second value.
 
 
         
-[gtd-ref:](gtd-ref:)
+<a name='gtd-ref'></a>
 
 
 ## After
@@ -1206,7 +1205,7 @@ Checks if the first datetime occurs after the second date time.
 
 
         
-[hour-ref:](hour-ref:)
+<a name='hour-ref'></a>
 
 
 ## Hour
@@ -1233,7 +1232,7 @@ Extracts the hours component of a date/time field.
 
 
         
-[incrementbyvalue-ref:](incrementbyvalue-ref:)
+<a name='incrementbyvalue-ref'></a>
 
 
 ## Increment By Value
@@ -1275,7 +1274,7 @@ Extracts the hours component of a date/time field.
 
 
         
-[injectheaders-ref:](injectheaders-ref:)
+<a name='injectheaders-ref'></a>
 
 
 ## Add Headers
@@ -1283,7 +1282,7 @@ Extracts the hours component of a date/time field.
 Add additional headers to be included in the api response
 
         
-[javascript-ref:](javascript-ref:)
+<a name='javascript-ref'></a>
 
 
 ## Javascript
@@ -1329,7 +1328,7 @@ For reference on what functions are available in javascript, see the Javascript 
 
 
         
-[jsonarray-ref:](jsonarray-ref:)
+<a name='jsonarray-ref'></a>
 
 
 ## Make JSON Array
@@ -1345,7 +1344,7 @@ For reference on what functions are available in javascript, see the Javascript 
     
 
         
-[jsonexception-ref:](jsonexception-ref:)
+<a name='jsonexception-ref'></a>
 
 
 ## Exception with JSON
@@ -1369,7 +1368,7 @@ For reference on what functions are available in javascript, see the Javascript 
     
 
         
-[jsonobject-ref:](jsonobject-ref:)
+<a name='jsonobject-ref'></a>
 
 
 ## Make JSON Object
@@ -1400,7 +1399,7 @@ For reference on what functions are available in javascript, see the Javascript 
 
 
         
-[jsonpath-ref:](jsonpath-ref:)
+<a name='jsonpath-ref'></a>
 
 
 ## Extract JSON Path
@@ -1436,7 +1435,7 @@ For reference on what functions are available in javascript, see the Javascript 
 
 
         
-[lookup-ref:](lookup-ref:)
+<a name='lookup-ref'></a>
 
 
 ## Lookup
@@ -1470,7 +1469,7 @@ For reference on what functions are available in javascript, see the Javascript 
 
 
         
-[lt-ref:](lt-ref:)
+<a name='lt-ref'></a>
 
 
 ## Less
@@ -1503,7 +1502,7 @@ Checks if the first value is less than the second value.
 
 
         
-[ltd-ref:](ltd-ref:)
+<a name='ltd-ref'></a>
 
 
 ## Before
@@ -1535,7 +1534,7 @@ Checks if the first datetime occurs prior to the second date time.
 
 
         
-[mergedata-ref:](mergedata-ref:)
+<a name='mergedata-ref'></a>
 
 
 ## Merge Data
@@ -1576,7 +1575,7 @@ a name *value* and the value being the input value.
 
 
         
-[minute-ref:](minute-ref:)
+<a name='minute-ref'></a>
 
 
 ## Minute
@@ -1603,7 +1602,7 @@ Extracts the minutes component of a date/time field.
 
 
         
-[mqttpublish-ref:](mqttpublish-ref:)
+<a name='mqttpublish-ref'></a>
 
 
 ## MqttPublish
@@ -1625,7 +1624,7 @@ Extracts the minutes component of a date/time field.
       - The message to send. This should be text
 
         
-[multiplier-ref:](multiplier-ref:)
+<a name='multiplier-ref'></a>
 
 
 ## Multiply
@@ -1642,7 +1641,7 @@ Extracts the minutes component of a date/time field.
       - The second value to operate on
 
         
-[nequals-ref:](nequals-ref:)
+<a name='nequals-ref'></a>
 
 
 ## Not Equal
@@ -1675,7 +1674,7 @@ Comparisons are case-insensitive.
 
 
         
-[notinstalledblock-ref:](notinstalledblock-ref:)
+<a name='notinstalledblock-ref'></a>
 
 
 ## Not Installed
@@ -1683,7 +1682,7 @@ Comparisons are case-insensitive.
 This block represents a block that has not been installed
 
         
-[objectaction:System:GenerateID-ref:](objectaction:System:GenerateID-ref:)
+<a name='objectaction:System:GenerateID-ref'></a>
 
 
 ## GenerateID
@@ -1695,12 +1694,14 @@ Generate a unique id for an object by using the default ID format settings in iv
           You can also choose to pick up the settings for a given ID prefix but override the actual prefix in the ID with one of your own. 
           This is useful, for example, if you want to generate IDs for devices using the format:
 
-          .. code::
+```
 
               DVC/<devicetype>/<running number>
               Ex: DVC/AHU/01
                   DVC/FCU/02
                   DVC/PUMP/03
+
+```
 
 
           If want the running number to remain the same for all devices regardless of the device type, then use 'DVC' as the prefix, but override the actual generated prefix with 'DVC/<deivcetype>'
@@ -1728,7 +1729,7 @@ Generate a unique id for an object by using the default ID format settings in iv
 
 
         
-[objectaction:System:GetAccountSetting-ref:](objectaction:System:GetAccountSetting-ref:)
+<a name='objectaction:System:GetAccountSetting-ref'></a>
 
 
 ## GetAccountSetting
@@ -1757,7 +1758,7 @@ Reads a global setting in the current iviva account.
 
 
         
-[objectaction:System:GetUserByID-ref:](objectaction:System:GetUserByID-ref:)
+<a name='objectaction:System:GetUserByID-ref'></a>
 
 
 ## GetUserByID
@@ -1786,7 +1787,7 @@ Retrieve the iviva user key for the user having the specified login id.
 
 
         
-[objectaction:System:Now-ref:](objectaction:System:Now-ref:)
+<a name='objectaction:System:Now-ref'></a>
 
 
 ## Now
@@ -1804,7 +1805,7 @@ Returns the current [timestamp](datetimes) in UTC format.
 
 
         
-[objectaction:System:PublishMessage-ref:](objectaction:System:PublishMessage-ref:)
+<a name='objectaction:System:PublishMessage-ref'></a>
 
 
 ## PublishMessage
@@ -1830,7 +1831,7 @@ Publish a message to the message bus.
       -  The message to publish. This should be text.
 
         
-[objectaction:System:PublishMessageToQueue-ref:](objectaction:System:PublishMessageToQueue-ref:)
+<a name='objectaction:System:PublishMessageToQueue-ref'></a>
 
 
 ## PublishMessageToQueue
@@ -1875,7 +1876,7 @@ Publish a message to the message queue.
 
 
         
-[objectaction:System:SetAccountSetting-ref:](objectaction:System:SetAccountSetting-ref:)
+<a name='objectaction:System:SetAccountSetting-ref'></a>
 
 
 ## SetAccountSetting
@@ -1906,7 +1907,7 @@ Writes a global setting in the current iviva account.
 
 
         
-[parsedate-ref:](parsedate-ref:)
+<a name='parsedate-ref'></a>
 
 
 ## Parse Date
@@ -1936,7 +1937,7 @@ Don't like the sound of that? Then specify the date in a valid format :)
 
 
         
-[parsejson-ref:](parsejson-ref:)
+<a name='parsejson-ref'></a>
 
 
 ## Parse JSON
@@ -1966,7 +1967,7 @@ Don't like the sound of that? Then specify the date in a valid format :)
 
 
         
-[passvalue-ref:](passvalue-ref:)
+<a name='passvalue-ref'></a>
 
 
 ## InjectValue
@@ -1999,7 +2000,7 @@ This is useful to ensure that certain parts of a sequene are executed before ano
 
 
         
-[publishmessage-ref:](publishmessage-ref:)
+<a name='publishmessage-ref'></a>
 
 
 ## PublishMessage
@@ -2026,7 +2027,7 @@ This is useful to ensure that certain parts of a sequene are executed before ano
       -  The message to publish. This should be text.
 
         
-[regexcapture-ref:](regexcapture-ref:)
+<a name='regexcapture-ref'></a>
 
 
 ## RegexCapture
@@ -2063,7 +2064,7 @@ All input text that matches each capture group will be written to the correspond
 
 
         
-[repeataction-ref:](repeataction-ref:)
+<a name='repeataction-ref'></a>
 
 
 ## Repeat Action
@@ -2130,7 +2131,7 @@ Each will get executed independent of errors to any previous executions.
 
 
         
-[scheduleaction-ref:](scheduleaction-ref:)
+<a name='scheduleaction-ref'></a>
 
 
 ## Schedule Action
@@ -2155,7 +2156,7 @@ The action is executed exactly once and the schedule is removed once the action 
       - The action to execute.
 
         
-[setinredis-ref:](setinredis-ref:)
+<a name='setinredis-ref'></a>
 
 
 ## Set Value
@@ -2189,7 +2190,7 @@ The action is executed exactly once and the schedule is removed once the action 
       - The value to write
 
         
-[setname-ref:](setname-ref:)
+<a name='setname-ref'></a>
 
 
 ## SetName
@@ -2220,7 +2221,7 @@ Sets the name associated with the current model instance.
 
 
         
-[splittext-ref:](splittext-ref:)
+<a name='splittext-ref'></a>
 
 
 ## Split Text
@@ -2251,7 +2252,7 @@ Actually, create a list by splitting text by any delimiter.
 
 
         
-[stringinterpolate-ref:](stringinterpolate-ref:)
+<a name='stringinterpolate-ref'></a>
 
 
 ## String Interpolation
@@ -2260,7 +2261,7 @@ Actually, create a list by splitting text by any delimiter.
     This block has been deprecated. Use a |template-ref| block instead. {% endhint %}
 
         
-[subtractor-ref:](subtractor-ref:)
+<a name='subtractor-ref'></a>
 
 
 ## Subtract
@@ -2290,7 +2291,7 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
 
 
         
-[template-ref:](template-ref:)
+<a name='template-ref'></a>
 
 
 ## Template
@@ -2330,10 +2331,12 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
 
     Example (assuming the block has an input called `input1` which contains a dictionary of user details):
 
-    .. code::
+```
 
             Dear #{input1.FirstName},
             Your blah blah blah will be available shortly
+
+```
 
             thanks
 
@@ -2347,43 +2350,51 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
 
     The syntax for the loop is:
 
-    .. code::
+```
 
 ######         ${for loop-variable in list}
         ${end}
+
+```
 
     Within the `for` block, you can use code/#{loop-variable} to access each item.
     You can also use code/#{index} to access the iteration count (starts with zero)
 
     Example (given a list of strings, say by using the [splittext-ref](splittext-ref) block):
 
-    .. code::
+```
 
             Here are your tasks:
             ${for x in items}
                 * #{x}
             ${end}
 
+```
+
     If the list is a [result set](dt-results) then individual fields of the result could be accessed using the code/. operator.
 
     Example (given an input coming from a datasource)
 
-    .. code::
+```
 
             Here are your tasks:
             ${for row in tasks}
                 #${row.TaskName} - Due on: #{row.Deadline}
             ${end}
 
+```
+
 
 #####     Functions
     The templating system has many functions that can be used to transform variables or generate values.
     Functions use the following syntax:
 
-    .. code::
+```
 
         functionname()
         functionname(arg1,arg2,arg3,...)
+
+```
 
     Each argument could be a variable, a string literal, a number or the result of another function call.
 
@@ -2391,9 +2402,11 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
 
     Example:
 
-    .. code::
+```
 
         functionname(arg1func(),12,[third argument])
+
+```
 
 
 Available Functions:
@@ -2491,7 +2504,7 @@ Available Functions:
 
 
         
-[tojson-ref:](tojson-ref:)
+<a name='tojson-ref'></a>
 
 
 ## Serialize JSON
@@ -2537,7 +2550,7 @@ Any other type of input gets converted to text and stored in a JSON object with 
 
 
         
-[unknownaction-ref:](unknownaction-ref:)
+<a name='unknownaction-ref'></a>
 
 
 ## Unknown Action
@@ -2545,7 +2558,7 @@ Any other type of input gets converted to text and stored in a JSON object with 
 This block represents all blocks that could not be loaded. This likely means you imported a model without having all the connectors in place
 
         
-[waitonchannel-ref:](waitonchannel-ref:)
+<a name='waitonchannel-ref'></a>
 
 
 ## Wait on Channel
@@ -2578,7 +2591,7 @@ This block represents all blocks that could not be loaded. This likely means you
 
 
         
-[year-ref:](year-ref:)
+<a name='year-ref'></a>
 
 
 ## Year

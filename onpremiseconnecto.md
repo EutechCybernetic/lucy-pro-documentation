@@ -1,7 +1,7 @@
 
 
 
-[onpremiseconnectors:](onpremiseconnectors:)
+<a name='onpremiseconnectors'></a>
 
 # On-Premise Connectors
 On-Premise Connectors allow Lucy to securely communicate with building control systems, databases, files and other systems that are deployed on your premises.
@@ -70,7 +70,7 @@ Just drag in a block for that connector. Under 'Connector Name', select code/Add
 You will be prompted to enter a connector name.
 Once you do so, you will be given a link to download the connector gateway program as well as a 'configuration key' you can use to easily configure the gateway while it is being installed.
 
-[opconnectorlist:](opconnectorlist:)
+<a name='opconnectorlist'></a>
 
 ## Setting up a connector separately
 Setting up the connector from the model designer is an easy way to get started. But you will likely want to do the setup independently of the Lucy model.

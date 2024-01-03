@@ -1,7 +1,7 @@
 
 
 
-[designpatterns:](designpatterns:)
+<a name='designpatterns'></a>
 
 # Design Patterns
 So lets talk about the various design patterns that are commonly used for deploying a solution on top of Lucy. These are patterns that we see commonly and are useful enough that you will probably come across them too and may want to make use of them for your solution.

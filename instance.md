@@ -23,7 +23,7 @@ All of them will share the same action sequences and the same set of attributes,
 
 .. [#] that's a technical term
 
-[instanceattrs:](instanceattrs:)
+<a name='instanceattrs'></a>
 
 ## Attributes of |instances|
 Along with inheriting the attributes of the model from which the model instance was created, each model instance also has a few special attributes:
@@ -63,7 +63,7 @@ There are several ways an instance of a model could be created:
 {% hint type="note" %}
     Probably the most common way you will create an instance is by using an action with the mode set to [trigger a new instance](actiontriggernewinstance). This action can, in-turn be bound to some custom user interface that you build and present to the user. {% endhint %}
 
-[deactivateinstance:](deactivateinstance:)
+<a name='deactivateinstance'></a>
 
 ## Removing |instances|
 You can disable or *deactivate* an instance of a model from the instance's details screen.

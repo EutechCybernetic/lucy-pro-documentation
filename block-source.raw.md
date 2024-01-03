@@ -2,7 +2,7 @@
 ..
     NEW BLOCK: equals
 
-[equals-ref:](equals-ref:)
+<a name='equals-ref'></a>
 
 ## Equals
 Compares if two inputs are equal. When matching, both inputs are converted to text and matched.
@@ -16,7 +16,7 @@ Output:False:Writes the first input to this port if the condition is not met. El
 ..
     NEW BLOCK: nequals
 
-[nequals-ref:](nequals-ref:)
+<a name='nequals-ref'></a>
 
 ## Not Equal
 Compares if two inputs are not equal. When matching, both inputs are converted to text and matched.
@@ -30,7 +30,7 @@ Output:False:Writes the first input to this port if the condition is not met. El
 ..
     NEW BLOCK: ltd
 
-[ltd-ref:](ltd-ref:)
+<a name='ltd-ref'></a>
 
 ## Before
 Checks if the first datetime occurs prior to the second date time.
@@ -44,7 +44,7 @@ Output:False:Writes the first input to this port if the condition is not met. El
 ..
     NEW BLOCK: gtd
 
-[gtd-ref:](gtd-ref:)
+<a name='gtd-ref'></a>
 
 ## After
 Checks if the first datetime occurs after the second date time.
@@ -58,7 +58,7 @@ Output:False:Writes the first input to this port if the condition is not met. El
 ..
     NEW BLOCK: gt
 
-[gt-ref:](gt-ref:)
+<a name='gt-ref'></a>
 
 ## Greater
 Checks if the first value is greater than the second value.
@@ -73,7 +73,7 @@ Output:False:Writes the first input to this port if the condition is not met. El
 ..
     NEW BLOCK: lt
 
-[lt-ref:](lt-ref:)
+<a name='lt-ref'></a>
 
 ## Less
 Checks if the first value is less than the second value.
@@ -88,7 +88,7 @@ Output:False:Writes the first input to this port if the condition is not met. El
 ..
     NEW BLOCK: adder
 
-[adder-ref:](adder-ref:)
+<a name='adder-ref'></a>
 
 ## Add
 Adds two floating point numbers together.
@@ -101,7 +101,7 @@ Input:Input 2:The second value to operate on
 ..
     NEW BLOCK: addminutes
 
-[addminutes-ref:](addminutes-ref:)
+<a name='addminutes-ref'></a>
 
 ## AddMinutes
 Adds the given number of minutes to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
@@ -120,7 +120,7 @@ Output:Output:A new [timestamp](datetimes)
 ..
     NEW BLOCK: adddays
 
-[adddays-ref:](adddays-ref:)
+<a name='adddays-ref'></a>
 
 ## AddDays
 Adds the given number of days to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
@@ -139,7 +139,7 @@ Output:Output:A new [timestamp](datetimes)
 ..
     NEW BLOCK: addmonths
 
-[addmonths-ref:](addmonths-ref:)
+<a name='addmonths-ref'></a>
 
 ## AddMonths
 Adds the given number of months to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
@@ -158,7 +158,7 @@ Output:Output:A new [timestamp](datetimes)
 ..
     NEW BLOCK: addyears
 
-[addyears-ref:](addyears-ref:)
+<a name='addyears-ref'></a>
 
 ## AddYears
 Adds the given number of years to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
@@ -177,7 +177,7 @@ Output:Output:A new [timestamp](datetimes)
 ..
     NEW BLOCK: concat
 
-[concat-ref:](concat-ref:)
+<a name='concat-ref'></a>
 
 ## Combine
 Combines two pieces of text together.
@@ -195,7 +195,7 @@ Output:Output:The combined text
 ..
     NEW BLOCK: subtractor
 
-[subtractor-ref:](subtractor-ref:)
+<a name='subtractor-ref'></a>
 
 ## Subtract
 Subtract the second floating point number from the first one.
@@ -208,7 +208,7 @@ Output:Output:The result of the subtraction
 ..
     NEW BLOCK: multiplier
 
-[multiplier-ref:](multiplier-ref:)
+<a name='multiplier-ref'></a>
 
 ## Multiply
 
@@ -218,7 +218,7 @@ Input:Input 2:The second value to operate on
 ..
     NEW BLOCK: divider
 
-[divider-ref:](divider-ref:)
+<a name='divider-ref'></a>
 
 ## Divider
 
@@ -228,7 +228,7 @@ Input:Input 2:The second value to operate on
 ..
     NEW BLOCK: minute
 
-[minute-ref:](minute-ref:)
+<a name='minute-ref'></a>
 
 ## Minute
 Extracts the minutes component of a date/time field.
@@ -239,7 +239,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 ..
     NEW BLOCK: hour
 
-[hour-ref:](hour-ref:)
+<a name='hour-ref'></a>
 
 ## Hour
 Extracts the hours component of a date/time field.
@@ -250,7 +250,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 ..
     NEW BLOCK: dayofweek
 
-[dayofweek-ref:](dayofweek-ref:)
+<a name='dayofweek-ref'></a>
 
 ## Day Of Week
 Extracts the day of week for the date/time field.
@@ -261,7 +261,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 ..
     NEW BLOCK: dayofmonth
 
-[dayofmonth-ref:](dayofmonth-ref:)
+<a name='dayofmonth-ref'></a>
 
 ## Day Of Month
 Extracts the day component of a date/time field.
@@ -272,7 +272,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 ..
     NEW BLOCK: year
 
-[year-ref:](year-ref:)
+<a name='year-ref'></a>
 
 ## Year
 Extracts the year component of a date/time field.
@@ -283,7 +283,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 ..
     NEW BLOCK: datetime
 
-[datetime-ref:](datetime-ref:)
+<a name='datetime-ref'></a>
 
 ## DateTime
 Construct a new [timestamp](datetimes) from an year/month/day/hour/minute/second
@@ -300,7 +300,7 @@ Output:Output:A [timestamp](datetimes) constructed from the given inputs
 ..
     NEW BLOCK: actionoutput
 
-[actionoutput-ref:](actionoutput-ref:)
+<a name='actionoutput-ref'></a>
 
 ## Output
 Used to return a value from a action sequence.
@@ -320,7 +320,7 @@ Field:Field:The key name to use
 ..
     NEW BLOCK: scheduleaction
 
-[scheduleaction-ref:](scheduleaction-ref:)
+<a name='scheduleaction-ref'></a>
 
 ## Schedule Action
 Schedule an action to be executed later.
@@ -336,7 +336,7 @@ Input:Action:The action to execute.
 ..
     NEW BLOCK: repeataction
 
-[repeataction-ref:](repeataction-ref:)
+<a name='repeataction-ref'></a>
 
 ## Repeat Action
 The Repeat Action block is used to loop through a list of data and execute an action for each item in the list.
@@ -388,7 +388,7 @@ Output:Done:The number of items processed is written to this output once all inp
 ..
     NEW BLOCK: splittext
 
-[splittext-ref:](splittext-ref:)
+<a name='splittext-ref'></a>
 
 ## Split Text
 Create a list from a comma separated list of items.
@@ -402,7 +402,7 @@ Output:Items:A list of split items.
 ..
     NEW BLOCK: actionstart
 
-[actionstart-ref:](actionstart-ref:)
+<a name='actionstart-ref'></a>
 
 ## Action
 Used to define a new action in a model
@@ -417,7 +417,7 @@ Used to define a new action in a model
 ..
     NEW BLOCK: eventstart
 
-[eventstart-ref:](eventstart-ref:)
+<a name='eventstart-ref'></a>
 
 ## Event Trigger
 Used to listen for and react to events that are sent into the system.
@@ -432,7 +432,7 @@ Used to listen for and react to events that are sent into the system.
 ..
     NEW BLOCK: callaction
 
-[callaction-ref:](callaction-ref:)
+<a name='callaction-ref'></a>
 
 ## CallAction
 Call an action in a model.
@@ -463,7 +463,7 @@ Output:All Output:Contains the output from calling the action
 ..
     NEW BLOCK: fireevent
 
-[fireevent-ref:](fireevent-ref:)
+<a name='fireevent-ref'></a>
 
 ## Fire Event
 Use this block to trigger a new event.
@@ -478,7 +478,7 @@ Input:*Multiple*:Add new inputs by clicking the 'Add Input Parameter' link in th
 ..
     NEW BLOCK: callservice
 
-[callservice-ref:](callservice-ref:)
+<a name='callservice-ref'></a>
 
 ## Call Service
 Call a service in an iviva app.
@@ -486,15 +486,19 @@ Call a service in an iviva app.
 All service return a [result set](dt-results). You can auto-extract values by adding new output pins.
 Services are of two forms:
 
-.. code::
+```
 
     <app>.<model>:<service>
 
+```
+
 or
 
-.. code::
+```
 
     <app>.<service>
+
+```
 
 {% hint style="warning" %}
 
@@ -510,7 +514,7 @@ Output:All Output:Contains the [result set](dt-results) from calling the service
 ..
     NEW BLOCK: calldatasource
 
-[calldatasource-ref:](calldatasource-ref:)
+<a name='calldatasource-ref'></a>
 
 ## Call Data Source
 Query a [data source](datasources) in a linked [UI Bundle](uibundles) and return the result of it.
@@ -541,7 +545,7 @@ Output:*Multiple*: You can can auto-extract values from the first result by addi
 ..
     NEW BLOCK: activate
 
-[activate-ref:](activate-ref:)
+<a name='activate-ref'></a>
 
 ## Activate
 Marks the current model instance as active.
@@ -551,7 +555,7 @@ Output:Output:The key of the model instance
 ..
     NEW BLOCK: addweblet
 
-[addweblet-ref:](addweblet-ref:)
+<a name='addweblet-ref'></a>
 
 ## AddWeblet
 Add a weblet to the dynamic dashboard of a model.
@@ -575,7 +579,7 @@ Input:Params:The parameters to pass to the weblet. This can either be a json obj
 ..
     NEW BLOCK: constructor
 
-[constructor-ref:](constructor-ref:)
+<a name='constructor-ref'></a>
 
 ## Initialize
 This is a starting block used to trigger a action sequence whenever a new model instance is created.
@@ -585,7 +589,7 @@ You can have multiple of these blocks and they will all execute.
 ..
     NEW BLOCK: currentitem
 
-[currentitem-ref:](currentitem-ref:)
+<a name='currentitem-ref'></a>
 
 ## CurrentItem
 Returns the key of the current model instance the action sequence is running.
@@ -596,7 +600,7 @@ Output:Output:The key of the current model instance. 0 if the current action seq
 ..
     NEW BLOCK: currentuser
 
-[currentuser-ref:](currentuser-ref:)
+<a name='currentuser-ref'></a>
 
 ## CurrentUser
 Returns information about the user the current action sequence is being executed by.
@@ -616,7 +620,7 @@ If the action sequence is run by some automated job in the backend, then no user
 ..
     NEW BLOCK: deactivate
 
-[deactivate-ref:](deactivate-ref:)
+<a name='deactivate-ref'></a>
 
 ## Deactivate
 Deactivae the current model instance.
@@ -625,7 +629,7 @@ This block has no effect when being called from a model.
 ..
     NEW BLOCK: debug
 
-[debug-ref:](debug-ref:)
+<a name='debug-ref'></a>
 
 ## Debug
 Use the Debug block to log data to the debug console.
@@ -643,7 +647,7 @@ Output:Output:The objectt that was sent as input is passed through as output
 ..
     NEW BLOCK: exception
 
-[exception-ref:](exception-ref:)
+<a name='exception-ref'></a>
 
 ## Exception
 Generate an error and halt execution of the action sequence.
@@ -656,7 +660,7 @@ Input:Message:The error message to be used when the error is generated
 ..
     NEW BLOCK: exists
 
-[exists-ref:](exists-ref:)
+<a name='exists-ref'></a>
 
 ## Exists
 Checks if the input value is valid.
@@ -679,7 +683,7 @@ Output:False:The input value is written to this output if the input is invalid
 ..
     NEW BLOCK: extractvalue
 
-[extractvalue-ref:](extractvalue-ref:)
+<a name='extractvalue-ref'></a>
 
 ## ExtractValue
 Extracts a value from a [dictionary](dictionaries).
@@ -693,7 +697,7 @@ Field:Field: The name of the field, for which a value should be extracted.
 ..
     NEW BLOCK: attributeget
 
-[attributeget-ref:](attributeget-ref:)
+<a name='attributeget-ref'></a>
 
 ## Get Attribute
 Gets the value of an attribute in an model instance.
@@ -711,7 +715,7 @@ Output:Output:The value of the attribute when the block is executed.
 ..
     NEW BLOCK: mergedata
 
-[mergedata-ref:](mergedata-ref:)
+<a name='mergedata-ref'></a>
 
 ## Merge Data
 Merge a name/value pair into a [dictionary](dictionaries).
@@ -736,7 +740,7 @@ Output:Output:The new dictionary containing the newly added name and value
 ..
     NEW BLOCK: fromjson
 
-[fromjson-ref:](fromjson-ref:)
+<a name='fromjson-ref'></a>
 
 ## Parse JSON
 Parses a json block into a [dictionary](dictionaries) or a [result set](dt-results)
@@ -748,7 +752,7 @@ Output:Output:The resulting [dictionary](dictionaries) or [result set](dt-result
 ..
     NEW BLOCK: passvalue
 
-[passvalue-ref:](passvalue-ref:)
+<a name='passvalue-ref'></a>
 
 ## InjectValue
 Used to inject a value into a block.
@@ -765,15 +769,17 @@ Output:Output: The value specified in the input. This is written only once the t
 ..
     NEW BLOCK: tojson
 
-[tojson-ref:](tojson-ref:)
+<a name='tojson-ref'></a>
 
 ## Serialize JSON
 Serialize the input object into JSON text.
 If the input is a [dictionary](dictionaries), it will get serialized as a JSON object:
 
-.. code::
+```
 
     {"key1":"value1","key2":"value2"}
+
+```
 
 If the input is a [result set](dt-results), it will get serialzed as an array of objects:
 
@@ -785,9 +791,11 @@ If the input is a [result set](dt-results), it will get serialzed as an array of
 
 Any other type of input gets converted to text and stored in a JSON object with a key called 'value'
 
-.. code::
+```
 
     {"value":"2015-01-01 12:240"}
+
+```
 
 Input:Input:The object to be serialized as JSON.
 Output:Output:The serialized JSON.
@@ -795,7 +803,7 @@ Output:Output:The serialized JSON.
 ..
     NEW BLOCK: attributeset
 
-[attributeset-ref:](attributeset-ref:)
+<a name='attributeset-ref'></a>
 
 ## Set Attribute
 Sets the value of an attribute in an model instance.
@@ -810,7 +818,7 @@ Output:Output:The newly written value is passed to the output pin.
 ..
     NEW BLOCK: setname
 
-[setname-ref:](setname-ref:)
+<a name='setname-ref'></a>
 
 ## SetName
 Sets the name associated with the current model instance.
@@ -827,7 +835,7 @@ Output:Output:The name is passed through to the output.
 ..
     NEW BLOCK: template
 
-[template-ref:](template-ref:)
+<a name='template-ref'></a>
 
 ## Template
 Use a template to generate textual output.
@@ -865,10 +873,12 @@ If the input contains a [dictionary](dictionaries) or [result set](dt-results) t
 
 Example (assuming the block has an input called `input1` which contains a dictionary of user details):
 
-.. code::
+```
 
         Dear #{input1.FirstName},
         Your blah blah blah will be available shortly
+
+```
 
         thanks
 
@@ -882,43 +892,51 @@ The code/${for} blocks can also be nested for using loops within loops.
 
 The syntax for the loop is:
 
-.. code::
+```
 
 #     ${for loop-variable in list}
     ${end}
+
+```
 
 Within the `for` block, you can use code/#{loop-variable} to access each item.
 You can also use code/#{index} to access the iteration count (starts with zero)
 
 Example (given a list of strings, say by using the [splittext-ref](splittext-ref) block):
 
-.. code::
+```
 
         Here are your tasks:
         ${for x in items}
             * #{x}
         ${end}
 
+```
+
 If the list is a [result set](dt-results) then individual fields of the result could be accessed using the code/. operator.
 
 Example (given an input coming from a datasource)
 
-.. code::
+```
 
         Here are your tasks:
         ${for row in tasks}
             #${row.TaskName} - Due on: #{row.Deadline}
         ${end}
 
+```
+
 
 ####### Functions
 The templating system has many functions that can be used to transform variables or generate values.
 Functions use the following syntax:
 
-.. code::
+```
 
     functionname()
     functionname(arg1,arg2,arg3,...)
+
+```
 
 Each argument could be a variable, a string literal, a number or the result of another function call.
 
@@ -926,9 +944,11 @@ String literals are enclosed in square brackets: `[this is a string literal]`
 
 Example:
 
-.. code::
+```
 
     functionname(arg1func(),12,[third argument])
+
+```
 
 
 Available Functions:
@@ -1004,7 +1024,7 @@ Field:Template:The actual template to use.
 ..
     NEW BLOCK: javascript
 
-[javascript-ref:](javascript-ref:)
+<a name='javascript-ref'></a>
 
 ## Javascript
 Executes custom javascript you write. This block has access to its inputs by reading data from inputs.inputName;
@@ -1027,7 +1047,7 @@ Field:Code:The actual javascript code
 ..
     NEW BLOCK: parsedate
 
-[parsedate-ref:](parsedate-ref:)
+<a name='parsedate-ref'></a>
 
 ## Parse Date
 This block converts a textual representation of a [timestamp](datetimes) into an actual [timestamp](datetimes).
@@ -1041,7 +1061,7 @@ Output:Output Date:The [timestamp](datetimes)
 ..
     NEW BLOCK: regexcapture
 
-[regexcapture-ref:](regexcapture-ref:)
+<a name='regexcapture-ref'></a>
 
 ## RegexCapture
 Specify a regular expression with capture groups and extract all matches from a given input text.
@@ -1061,7 +1081,7 @@ Output:*Multiple*:Add an output for each capture group in your regular expressio
 ..
     NEW BLOCK: actionbinaryoutput
 
-[actionbinaryoutput-ref:](actionbinaryoutput-ref:)
+<a name='actionbinaryoutput-ref'></a>
 
 ## Binary Output
 This block is used to make a action sequence return binary data.
@@ -1069,9 +1089,11 @@ If no content type is supplied, a default of `application/octet-stream` is used.
 When called via a web service call, if a file name is specified, then an additional
 Content-Disposition header is sent:
 
-.. code::
+```
 
     Content-Disposition:attachment; filename=<filename>
+
+```
 
 Input:Data:A [binary data object](binobjects) object or text
 Input:Content Type:The mime type of the content being returned
@@ -1080,7 +1102,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 ..
     NEW BLOCK: objectaction_System_Now
 
-[objectaction_System_Now-ref:](objectaction_System_Now-ref:)
+<a name='objectaction_System_Now-ref'></a>
 
 ## Now
 
@@ -1092,7 +1114,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 ..
     NEW BLOCK: objectaction_System_GetAccountSetting
 
-[objectaction_System_GetAccountSetting-ref:](objectaction_System_GetAccountSetting-ref:)
+<a name='objectaction_System_GetAccountSetting-ref'></a>
 
 ## GetAccountSetting
 
@@ -1106,7 +1128,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 ..
     NEW BLOCK: objectaction_System_SetAccountSetting
 
-[objectaction_System_SetAccountSetting-ref:](objectaction_System_SetAccountSetting-ref:)
+<a name='objectaction_System_SetAccountSetting-ref'></a>
 
 ## SetAccountSetting
 
@@ -1121,7 +1143,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 ..
     NEW BLOCK: objectaction_System_GetUserByID
 
-[objectaction_System_GetUserByID-ref:](objectaction_System_GetUserByID-ref:)
+<a name='objectaction_System_GetUserByID-ref'></a>
 
 ## GetUserByID
 
@@ -1135,7 +1157,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 ..
     NEW BLOCK: objectaction_System_PublishMessage
 
-[objectaction_System_PublishMessage-ref:](objectaction_System_PublishMessage-ref:)
+<a name='objectaction_System_PublishMessage-ref'></a>
 
 ## PublishMessage
 
@@ -1154,7 +1176,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 ..
     NEW BLOCK: objectaction_System_PublishMessageToQueue
 
-[objectaction_System_PublishMessageToQueue-ref:](objectaction_System_PublishMessageToQueue-ref:)
+<a name='objectaction_System_PublishMessageToQueue-ref'></a>
 
 ## PublishMessageToQueue
 
@@ -1183,7 +1205,7 @@ Input:File Name:An optional file name to use when the data is downloaded.
 ..
     NEW BLOCK: objectaction_System_GenerateID
 
-[objectaction_System_GenerateID-ref:](objectaction_System_GenerateID-ref:)
+<a name='objectaction_System_GenerateID-ref'></a>
 
 ## GenerateID
 
@@ -1194,12 +1216,14 @@ Input:File Name:An optional file name to use when the data is downloaded.
           You can also choose to pick up the settings for a given ID prefix but override the actual prefix in the ID with one of your own.
           This is useful, for example, if you want to generate IDs for devices using the format:
 
-          .. code::
+```
 
               DVC/<devicetype>/<running number>
               Ex: DVC/AHU/01
                   DVC/FCU/02
                   DVC/PUMP/03
+
+```
 
 
           If want the running number to remain the same for all devices regardless of the device type, then use 'DVC' as the prefix, but override the actual generated prefix with 'DVC/<deivcetype>'

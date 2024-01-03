@@ -1,6 +1,6 @@
 
 
-[timezonecodes:](timezonecodes:)
+<a name='timezonecodes'></a>
 
 # Time Zone Codes
 

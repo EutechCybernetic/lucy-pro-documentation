@@ -1,7 +1,7 @@
 
 
 
-[ivivaintegration:](ivivaintegration:)
+<a name='ivivaintegration'></a>
 
 # Integration with iviva
 This section outlines how you can provide deeper integration between your Lucy models and iviva and extend iviva application functionality with the use of Lucy.
@@ -17,7 +17,7 @@ If you need to enhance existing iviva objects by capturing more details, present
 4. Build tabs that can be injected into existing iviva applications
 5. Design weblets that are tailored to your new use-cases
 
-[extensionmodels:](extensionmodels:)
+<a name='extensionmodels'></a>
 
 ## Defining an Extension Model
 An extension model is just like a normal Lucy model, except one of its attributes is marked as an *extension* of another object.
@@ -60,8 +60,8 @@ To do this,
 ### Locating the event
 Most iviva application generated events are of the form:
 
-.. code::
-    Application.Object:Action
+```
+    Application.Object:Action```
 
 Virtually all of them emit a code/Created event and a code/Modified event. Both of  them pass the code/ObjectKey of the newly created/modifeid object as parameters.
 

@@ -1,13 +1,13 @@
 
 
-[es6javascriptlib:](es6javascriptlib:)
+<a name='es6javascriptlib'></a>
 
 # Javascript Library
 
 
 The following javascript functions are available for use with the |javascript| block.
 
-[es6jsoi:](es6jsoi:)
+<a name='es6jsoi'></a>
 
 ## lucy
 
@@ -61,7 +61,7 @@ Parse a textual representation of a datetime.
 #### Returns
 [timestamp](datetimes)
 
-[genexcel:](genexcel:)
+<a name='genexcel'></a>
 
 ### generateExcelSheet(columns, items)
 Generate an excel sheet in xlsx format.
@@ -111,7 +111,7 @@ The current time in UTC format
 #### Returns
 [timestamp](datetimes)
 
-[jstzfunctions:](jstzfunctions:)
+<a name='jstzfunctions'></a>
 
 ### convertFromUtc(dt, tz)
 Converts a [timestamp](datetimes) from utc to a different timezone.
@@ -200,7 +200,7 @@ Generate a globally unique identifier.
 #### Returns
 string
 
-[uploadData:](uploadData:)
+<a name='uploadData'></a>
 
 ### uploadData(name, data)
 Upload the given data to the iviva storage, using code/name as a base name.  The actual name used to store the data will be unique and randomly generated using code/name as part of it.
@@ -257,7 +257,7 @@ Encode the specified text data as a QR code image in png format.
 [binary data object](binobjects)
 
 
-[metadataobject:](metadataobject:)
+<a name='metadataobject'></a>
 
 ## model
 ### isInstance()
@@ -266,19 +266,19 @@ Returns true if the object represents an model instance (as opposed to a model)
 #### Returns
 bool
 
-[jsdeactivate:](jsdeactivate:)
+<a name='jsdeactivate'></a>
 
 ### deactivate()
 Deactivate the current instance. Only works when the current object is an model instance
 
-[setAttribute:](setAttribute:)
+<a name='setAttribute'></a>
 
 ### setAttribute(name,value)
 Asynchronously  the attribute code/name with the value code/value in the current model instance
 This function returns a promise that will complete once the attribute value is set.
 
 
-[getAttribute:](getAttribute:)
+<a name='getAttribute'></a>
 
 ### getAttribute(name)
 Gets the value of the specified attribute in the model instance.
@@ -288,10 +288,12 @@ This function returns a promise that will resolve to the attribute's value once 
 
 Example:
 
-.. code::
+```
 
     var p = instance.getAttribute('UserName');
     p.then(user => runtime.done({UserID:user}));
+
+```
 
 
 #### Returns
@@ -306,7 +308,7 @@ Pass code/arguments as parameters to the data source.
 [result set](dt-results)
 
 
-[executeAction:](executeAction:)
+<a name='executeAction'></a>
 
 ### executeAction(action, object arguments)
 Asynchronously execute an action named code/action on the current object, passing code/arguments as parameters.

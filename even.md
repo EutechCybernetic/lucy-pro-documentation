@@ -1,6 +1,6 @@
 
 
-[eventhandling:](eventhandling:)
+<a name='eventhandling'></a>
 
 # Event Stream and Event Handling
 The Lucy Event Stream is a powerfull component of the overall architecture.
@@ -37,30 +37,36 @@ The `EventID` field is the most important of these. The `EventID` uniquely ident
 ## Event ID Naming Convention
 The EventID can be anything unique but we recommend using the url path format:
 
-.. code::
+```
 
     /object-type/modifier
     /object-type/subobject-type/modifier
 
+```
+
 Some examples of events:
 
-.. code::
+```
 
     /WorkOrder/created
     /Asset/updated
     /sensor/reading
     /ibms/alarm
 
-[eventsregister:](eventsregister:)
+```
+
+<a name='eventsregister'></a>
 
 ## Registering Events
 Events can be registered in the system in order to make them easily discoverable for use in models.
 
 To view or register events in the system, go to
 
-.. code::
+```
 
     http://<lucyurl>/Apps/System/eventsregister
+
+```
 
 From here, you can search for and view a list of all events that have been registered. Click on any of one of them to update it.
 
@@ -72,12 +78,14 @@ This JSON block should be an object with keys that represent the payload paramet
 
 For example:
 
-.. code::
+```
 
     {
         "asset":"The asset that is sending the reading",
         "value":"The actual value of the reading",
 ####         "unit":"The units in which the reading is being sent"
+
+```
 
 {% hint style="info" %}
 
@@ -115,7 +123,7 @@ In this mode, the triggered event is execued directly on the model.
   1. Event Engine triggers the sequence on that model
 
 
-[eventtriggernewinstance:](eventtriggernewinstance:)
+<a name='eventtriggernewinstance'></a>
 
 ## Trigger a new Instance
 In this mode, a new model instance is created from the model each time the event triggers. The rest of the blocks execute on the newly created model instance.

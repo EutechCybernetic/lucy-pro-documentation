@@ -1,5 +1,5 @@
 
-[fieldblock-widget:](fieldblock-widget:)
+<a name='fieldblock-widget'></a>
 
 # Vertical Layout
 A container in which ui elements can be placed vertically, one below another.
@@ -53,7 +53,7 @@ Drag the ui element around to re-arrange the order in which they are displayed.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[fieldline-widget:](fieldline-widget:)
+<a name='fieldline-widget'></a>
 
 # Horizontal Layout
 A container in which ui elements can be placed horizontally, one next to another.
@@ -109,7 +109,7 @@ This container is useful for arranging a sequence of buttons together on a singl
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[label-widget:](label-widget:)
+<a name='label-widget'></a>
 
 # Label
 Displays a simple text label on the screen.
@@ -174,7 +174,7 @@ The label's text property can be [data bound](databinding).
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[objectlink-widget:](objectlink-widget:)
+<a name='objectlink-widget'></a>
 
 # Object Link
 This ui element renders an object as a link. Clicking the link will either
@@ -261,7 +261,7 @@ the ObjectKey, ObjectType and ObjectID fields.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[icon-widget:](icon-widget:)
+<a name='icon-widget'></a>
 
 # Icon
 This element displays an icon on the screen.
@@ -330,7 +330,7 @@ The font-size property controls the size of the icon.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[celllist-widget:](celllist-widget:)
+<a name='celllist-widget'></a>
 
 # Search Results
 This ui element is used to show a dynamic, scrolling set of results from a [data source](datasources).
@@ -423,7 +423,7 @@ display a dialog when clicked, in which the user can edit and save details about
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[dynamiclist-widget:](dynamiclist-widget:)
+<a name='dynamiclist-widget'></a>
 
 # Object Picker
 This ui element is used to select an element from a list.
@@ -496,7 +496,7 @@ You must specify either
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[list-widget:](list-widget:)
+<a name='list-widget'></a>
 
 # List Box
 This ui element shows a simple list of items from which one can be selected.
@@ -507,15 +507,15 @@ The list of items to use can be specified in four ways:
 1. A simple list - you can specify a comma separated list of possible values. Put the text into the `Items` property.
 For example,
 
-.. code::
-    Yes,No
+```
+    Yes,No```
 
 2. A json dictionary of key/text pairs. The key represents the internal value. The text represents what is displayed in the list.
 Put the json definition into the `Items` property.
 For example,
 
-.. code::
-    {'1':'Yes, do it!','0':'Nah, forget it'}
+```
+    {'1':'Yes, do it!','0':'Nah, forget it'}```
 
 3. An object type - specify the `Object Type` property. A list of all objects of that type will be shown in the list.
 The Value property is represented by the object's key.
@@ -599,7 +599,7 @@ the text to be shown.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[text-widget:](text-widget:)
+<a name='text-widget'></a>
 
 # Text
 A text input field where users can type in any text.
@@ -652,7 +652,7 @@ The Text property can be [data bound](databinding).
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[hidden-widget:](hidden-widget:)
+<a name='hidden-widget'></a>
 
 # Hidden
 This ui element does not display any user interface.
@@ -713,7 +713,7 @@ Its main use is to hold a piece of data to be accessed by client-side javascript
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[datetime-widget:](datetime-widget:)
+<a name='datetime-widget'></a>
 
 # DateTime
 This element lets you edit a [timestamp](datetimes) value.
@@ -767,7 +767,7 @@ The [timestamp](datetimes) will be displayed in the current logged-in user's tim
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[date-widget:](date-widget:)
+<a name='date-widget'></a>
 
 # Date
 This element lets you edit a date value.
@@ -821,7 +821,7 @@ The time property is ignored when bound to a [timestamp](datetimes) value.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[time-widget:](time-widget:)
+<a name='time-widget'></a>
 
 # Time
 This element lets you edit a time value.
@@ -875,7 +875,7 @@ The date property is ignored when bound to a [timestamp](datetimes) value.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[checkbox-widget:](checkbox-widget:)
+<a name='checkbox-widget'></a>
 
 # Checkbox
 Displays a checkbox.
@@ -945,7 +945,7 @@ Typically, the CheckedValue will be set to code/1 and the unchecked value will b
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[fieldlist-widget:](fieldlist-widget:)
+<a name='fieldlist-widget'></a>
 
 # Field List
 A container that's used to layout widgets with titles/labels next to them.
@@ -1007,7 +1007,7 @@ Use this container to lay out data entry forms and data display forms easily.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[action-widget:](action-widget:)
+<a name='action-widget'></a>
 
 # Action
 A button element that invokes one or more actions when clicked.
@@ -1072,7 +1072,7 @@ This element can be styled as a button or a link.
     * - Width
       - The width of the ui element See [uipositioning](uipositioning) for more information on how widgets are positioned and sized.
 
-[html-widget:](html-widget:)
+<a name='html-widget'></a>
 
 # Html Block
 This is a generic container for arbitrary html.

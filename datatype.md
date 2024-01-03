@@ -1,6 +1,6 @@
 
 
-[datatypes:](datatypes:)
+<a name='datatypes'></a>
 
 
 # Datatypes in Lucy
@@ -22,7 +22,7 @@ Broadly speaking, these are the types of data you can see:
 9. [Null](dt-null)
 
 
-[dt-text:](dt-text:)
+<a name='dt-text'></a>
 
 ## Text Data
 Text data is the most common form of data you will use and see. All text is UTF-8 encoded.
@@ -34,14 +34,14 @@ In [Javascript](es6javascript-ref) blocks, these are available as regular javasc
 .. info::
     Any value which is unknown is by default, converted to a string.
 
-[dt-numbers:](dt-numbers:)
+<a name='dt-numbers'></a>
 
 ## Numeric Data
 Numeric data could either be integers, floating point values or double-precision values.
 In [Javascript](es6javascript-ref) blocks these are available as Javascript Number types
 
 
-[dt-datetimes:](dt-datetimes:)
+<a name='dt-datetimes'></a>
 
 ## DateTimes
 DateTimes represent timestamps - a combination of a date and a time.
@@ -50,7 +50,7 @@ In [Javascript](es6javascript-ref) blocks these are available as regular Javascr
 
 See [datetimes](datetimes) for more information.
 
-[dt-dictionaries:](dt-dictionaries:)
+<a name='dt-dictionaries'></a>
 
 ## Dictionaries
 Dictionaries are key/value pairs where the key is a string and the value is any other data type.
@@ -59,7 +59,7 @@ In [Javascript](es6javascript-ref) blocks, these are converted to Javascript Obj
 See [dictionaries](dictionaries) for more information about them.
 
 
-[dt-json:](dt-json:)
+<a name='dt-json'></a>
 
 ## JSON
 JSON types represent _parsed_ json objects. They can be objects or arrays or values.
@@ -71,7 +71,7 @@ In [Javascript](es6javascript-ref) blocks, these are available as regular Javasc
 
 JSON can typically be used in all the places where dictionaries are expected.
 
-[dt-results:](dt-results:)
+<a name='dt-results'></a>
 
 ## Result Sets
 Result Sets are essentially a list of dictionaries, with all dictionaries having the same set keys. You can think of it as a table of data - each row is a dictionary with the columns as keys.
@@ -82,7 +82,7 @@ When sent as an input to [Javascript](es6javascript-ref) blocks these are conver
 
 Javascript code cannot create these result sets.
 
-[dt-arrays:](dt-arrays:)
+<a name='dt-arrays'></a>
 
 ## Arrays
 Arrays represent a list of values with values within it being any supported data type.
@@ -90,18 +90,18 @@ These can be fed into any block that takes a list of items - like a repeater blo
 [Javascript](es6javascript-ref) blocks convert these into Javascript arrays internally.
 
 
-[dt-binary:](dt-binary:)
+<a name='dt-binary'></a>
 
 ## Binary Data
 See [binobjects](binobjects) for more information about working with binary data
 
-[dt-null:](dt-null:)
+<a name='dt-null'></a>
 
 ## Null Data
 These values are used where no value was present. These are converted to code/null in Javascript blocks.
 When an output pin has a code/null value, it will typically not be fed into the next block.
 
-[dictionaries:](dictionaries:)
+<a name='dictionaries'></a>
 
 ## Dictionaries and Objects
 Dictionaries are how Lucy internally represents sets of key/value pairs.
@@ -111,9 +111,11 @@ Dictionaries can be created by
 
 - Using a [fromjson-ref](fromjson-ref) block to parse a simple JSON object of the form
 
-.. code::
+```
 
     {"key1":"value1","key2":"value2",etc...}
+
+```
 
 - Creating a javascript object within a [Javascript](es6javascript-ref) block. Javascript objects are automatically converted to Lucy dictoinaries
 
@@ -122,12 +124,12 @@ Dictionaries can be created by
 - Using a |mergedata| block to create a new dictionary or to add data to an existing dictionary
 
 
-[datetimes:](datetimes:)
+<a name='datetimes'></a>
 
 ## Working with Dates and Times
 In Lucy dates, times and timestamps are stored internally in a special format that makes it easy to manipulate using standard date time functions. However, there are some things to be aware of.
 
-[timezones:](timezones:)
+<a name='timezones'></a>
 ### Working with Timezones
 All date/time values in Lucy are stored and represented in UTC format.
 They are converted to other time zones only for display purposes.
@@ -139,7 +141,7 @@ The full list of timezones and their codes are available here: [Time Zone Codes]
 
 ### Formatting dates and times for display
 
-[datetimeformats:](datetimeformats:)
+<a name='datetimeformats'></a>
 
 ### Supported date and time formats
 |Lucy| can recognize four date/time formats:
@@ -150,7 +152,7 @@ The full list of timezones and their codes are available here: [Time Zone Codes]
 - yyyyMMdd HH:mm:ss
 
 
-[binarydata:](binarydata:)
+<a name='binarydata'></a>
 
 ## Working with Binary Data
 You can pass around binary data in action sequences by creating a |BinObject|.
@@ -168,7 +170,7 @@ In addition, the following functions also return [binary data object](binobjects
 
 You can also save the data to the iviva storage system by calling `oi.uploadData` or `oi.uploadDataWithExplicitName`
 
-[binobjects:](binobjects:)
+<a name='binobjects'></a>
 #### Binart Data Objects
 Binary data objects encapsulate binary data to be passed around in action sequences in Lucy. They can be accessed by blocks as well as javascript.
 These objects contain the actual data as a byte array, an optional content-type and filename.

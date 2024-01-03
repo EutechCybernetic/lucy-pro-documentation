@@ -1,7 +1,7 @@
 
 
 
-[datasources:](datasources:)
+<a name='datasources'></a>
 
 # Working with Data Sources
 Data Sources are the central mechanism for gathering data.
@@ -107,7 +107,7 @@ You can use [parameters](datasourceparameters) in the second text box to specify
 The value in the second text box should be a number representing the key of a parent location.
 
 
-[emptyvalues:](emptyvalues:)
+<a name='emptyvalues'></a>
 ## Dealing with Empty Values
 Some conditional operators check if the attibute has an empty value or not.
 What is an empty value?
@@ -140,7 +140,7 @@ So if you use a parameter called code/key, then in the condition's value text bo
     Since parameter names will often map directly to page query strings or other forms of inputs, its best that parameters are limited to alphanumeric characters only {% endhint %}
 
 
-[datasourceparameters:](datasourceparameters:)
+<a name='datasourceparameters'></a>
 
 ## Specifying input parameter values
 When querying a data source, you need to specify values for the actual parameters. How you do this depends on how the data source is used.

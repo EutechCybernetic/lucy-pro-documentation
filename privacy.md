@@ -2,7 +2,7 @@
 
 
 
-[privacy:](privacy:)
+<a name='privacy'></a>
 
 # Understanding Privacy Implications
 

@@ -1,6 +1,6 @@
 
 
-[attributes:](attributes:)
+<a name='attributes'></a>
 
 # Attributes
 Attributes are basically pieces of metadata that you associate with your model.

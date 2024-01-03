@@ -1,7 +1,7 @@
 
 
 
-[actionsequences:](actionsequences:)
+<a name='actionsequences'></a>
 
 # Action Sequences
 
@@ -63,7 +63,7 @@ Use the image:: images/trash.png icon to delete an output pin.
     Just like with inputs, when you delete an output pin, it removes all connections that go out from it. {% endhint %}
 
 
-[dataflow:](dataflow:)
+<a name='dataflow'></a>
 
 ## Flow of Data and Execution
 
@@ -85,7 +85,7 @@ The basic rules for determining when a block is executed are as follows:
 
 In psuedo code, the execution can be considered to run roughly like this:
 
-.. code::
+```
 
       def executeBlock(block)
         # do the work for that block
@@ -95,6 +95,8 @@ In psuedo code, the execution can be considered to run roughly like this:
             block.Execute()
           else
             block.defer()
+
+```
 
     executeBlock(startingBlock)
     for block in deferredBlocks:

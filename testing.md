@@ -1,7 +1,7 @@
 
 
 
-[testing:](testing:)
+<a name='testing'></a>
 
 # Testing and Debugging
 |Lucy| includes several tools to help you with testing and debugging your action sequences.

@@ -1,6 +1,6 @@
 
 
-[models:](models:)
+<a name='models'></a>
 
 # Models
 Models are the central component of Lucy.
@@ -28,4 +28,4 @@ Other examples of models include:
 {% hint type="note" %}
     There are many other types of models you may create. We'll visit more of them in the section on Design Patterns {% endhint %}
 
-[attributes:](attributes:)
+<a name='attributes'></a>

@@ -11,7 +11,7 @@ For example:
 
 |Lucy| includes a user interface builder to design screens that can be wired up to your models in the backend.
 
-[linkuimodel:](linkuimodel:)
+<a name='linkuimodel'></a>
 
 ## Linking your model to a user interface
 The easiest way to get started is to go to the **UI** tab of the [Model Designer](model-designer) and click the *Create a user interface for this model* button. That will generate a new UI Bundle and link it to the current model. You can then select views from that bundle to override the dynamically generated interfaces. See [configdynuis](configdynuis) for more information.

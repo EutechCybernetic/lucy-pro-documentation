@@ -1,7 +1,7 @@
 
 
 
-[uicomposer:](uicomposer:)
+<a name='uicomposer'></a>
 
 # UI Composer Reference
 
@@ -24,7 +24,7 @@ The UI Composer consists of the following parts:
 5. [toolbox](toolbox)
 6. [propertywin](propertywin)
 
-[bundleexplorer:](bundleexplorer:)
+<a name='bundleexplorer'></a>
 
 ## Bundle Explorer
 The bundle explorer shows you all your [UI Bundles](uibundles).
@@ -33,7 +33,7 @@ You can expand each item to see its sub components and ui elements. Clicking on 
 
 See [uicontainers](uicontainers) for information on the types of screens you can create.
 
-[datasourceexplorer:](datasourceexplorer:)
+<a name='datasourceexplorer'></a>
 
 ## DataSource Explorer
 The data source explorer shows you all the datasources that are accessible in this bundle.
@@ -52,7 +52,7 @@ See [databinding](databinding) for more information on how to bind datasource fi
 {% hint type="note" %}
     Some datasources that represent model actions may not show any fields when expanding the source. You can still bind data to the fields using [iviva Expression](ice) syntax but interactive binding by drag and drop of those sources may not be possible. See [manualbinding](manualbinding) for information on how to do this. {% endhint %}
 
-[designsurface:](designsurface:)
+<a name='designsurface'></a>
 
 ## Design Area
 This is the center area where you can see your user interface screens, edit them, place ui elements in them and edit their properties.
@@ -77,20 +77,20 @@ You can select multiple ui elements by holding code/Shift and clicking on items.
     You can also code/Shift+Click on items in the bundle explorer to select them. {% endhint %}
 
 
-[datasourcetab:](datasourcetab:)
+<a name='datasourcetab'></a>
 
 ## Datasource Designer
 The second tab in the UI Composer is where you design custom data sources.
 See [datasources](datasources) for a complete overview on how data sources work.
 
-[toolbox:](toolbox:)
+<a name='toolbox'></a>
 
 ## Toolbox
 The toolbox contains a list of all available ui elements. To add a ui element to a screen, drag that item from the toolbox into the design area.
 
 For a full list of available ui elements, see [wigetreference](wigetreference)
 
-[propertywin:](propertywin:)
+<a name='propertywin'></a>
 
 ## Property Panel
 The property panel shows details about the currently selected object.
