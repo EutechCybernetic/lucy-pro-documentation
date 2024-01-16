@@ -72,6 +72,6 @@ There are two ways in which a subscriber can retrieve messages from the queue fo
 
 {% hint style="seealso" %}
 
-    [Lucy Connector SDK](connectorsdk.md#connectorsdk) - for more information on retreiving and removing items from the message queue
+    [sdk](connectorsdk.md#connectorsdk) - for more information on retreiving and removing items from the message queue
 
 {% endhint %}

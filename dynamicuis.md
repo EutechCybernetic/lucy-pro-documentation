@@ -115,7 +115,7 @@ Only attributes you have chosen to show will be displayed here. See [Configuring
 From the instance details screen you can choose to deactivate the current instance. Click the **Deactivate** link in the sidebar to cause this instance to get deactivated.
 
 {% hint type="seealso" %}
-    [Removing |instances|](instances.md#deactivateinstance) for more information. {% endhint %}
+    [Removing instances](instances.md#deactivateinstance) for more information. {% endhint %}
 
 <a name='instancecreationdialog'></a>
 
@@ -130,7 +130,7 @@ This screen can be accessed either
 When the dialog is invoked from an extension attribute screen, the relevant extension attribute's value will be auto filled.
 
 From the **UI** tab in the [Model Designer](model-designer) you can select which attributes will be captured in the dialog.
-If you have marked an attribute as `Required` in the [Attribute Editor](modeldesigner.md#attributeeditor) then the dialog will validate that the attribute's field is filled when creating an instance. See [Configuring Dynamic User Interfaces](dynamicuis.md#configdynuis) for more information on configuring the creation dialog.
+If you have marked an attribute as `Required` in the [Attr Editor](modeldesigner.md#attributeeditor) then the dialog will validate that the attribute's field is filled when creating an instance. See [Configuring Dynamic User Interfaces](dynamicuis.md#configdynuis) for more information on configuring the creation dialog.
 
 
 #### Overriding the creation dialog

@@ -30,7 +30,7 @@ These are gateways that allow Lucy to talk to other systems in your organization
 
 {% hint style="seealso" %}
 
-    [Lucy Connector SDK](connectorsdk.md#connectorsdk)
+    [sdk](connectorsdk.md#connectorsdk)
 
 {% endhint %}
 

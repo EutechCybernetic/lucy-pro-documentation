@@ -2199,7 +2199,7 @@ Sets the name associated with the current model instance.
     
 .. seealso::
     
-    [Attributes of |instances|](instances.md#instanceattrs)
+    [Attributes of instances](instances.md#instanceattrs)
 
 ### Inputs
 .. list-table::

@@ -106,7 +106,7 @@ This includes:
 <a name='attributeeditor'></a>
 
 ## Attribute Editor
-This is where you can add, edit and remove [Attributes](attributes.md#attributes) to your model.
+This is where you can add, edit and remove [Attrs](attributes.md#attributes) to your model.
 
 To access it, click the image:: images/attrsettings.png icon in the left side of the screen.
 
@@ -165,7 +165,7 @@ To delete an attribute, expand the attribute by selecting it, then click the ima
 
 {% hint style="seealso" %}
 
-    [Attributes](attributes.md#attributes)
+    [Attrs](attributes.md#attributes)
 
 {% endhint %}
 

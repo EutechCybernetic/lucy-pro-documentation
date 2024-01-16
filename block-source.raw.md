@@ -825,7 +825,7 @@ Sets the name associated with the current model instance.
 
 {% hint style="seealso" %}
 
-    [Attributes of |instances|](instances.md#instanceattrs)
+    [Attributes of instances](instances.md#instanceattrs)
 
 {% endhint %}
 

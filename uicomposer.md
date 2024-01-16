@@ -101,7 +101,7 @@ Properties are divided into tabs with different properties being shown in differ
 The four common tas are:
 
 * image::  images/uic-general-tab.png - General properties like the element `id` and `tag`
-* image::  images/uic-spacing-tab.png - The spacing panel where dimension and position properties are set. See [Positioning and Placement of ui elements](uis.md#uipositioning) for a completely boring but nevertheless thorough walk-through of how positioning works.
+* image::  images/uic-spacing-tab.png - The spacing panel where dimension and position properties are set. See [Positioning and Placement of widgets](uis.md#uipositioning) for a completely boring but nevertheless thorough walk-through of how positioning works.
 * image::  images/uic-appearance-tab.png - Properties related to the appearance of the ui element. Includes text display properties.
 * image::  images/uic-actions-tab.png - The actions editor for ui elements that support invoking actions. See [User Interface Actions](uis.md#uiactions) for more information about invoking actions in UI screens.
 

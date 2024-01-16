@@ -72,14 +72,14 @@ All ui containers have several common properties. These can be set by clicking o
     * - Description
       - A description of what the screen represents. Currently used only for weblets - this description will appear in the weblet browser.
     * - SetupScript
-      - Any [javascript](clientscript) to be run when the screen loads
+      - Any [Javascript Library](javascript.md) to be run when the screen loads
     * - Permissions
       - The [Permissions and Authorization](permissions.md#permissions) associated with this is screen.
 
 
 ## Types of UI Elements
 There are many UI elements that can be placed inside containers.
-Please see the [UI Element Reference](uifields.md#widgetreference) section for more information.
+Please see the [Widget Reference](uifields.md#widgetreference) section for more information.
 
 ## Designing the User Interface
 You start defining a user interface by picking one of the containers and adding it to the bundle.
@@ -88,7 +88,7 @@ Click on one of the 'Add' links at the top of the Bundle Explorer to add a conta
 
 Once this is done, you can drag [fields](widgetreference) from the toolbox into the container to add a field to your user interface.
 
-Depending on the field and container, you can drag around the field to place it where you want. In some containers, the layout is automatic an the field will go into a fixed position. See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information.
+Depending on the field and container, you can drag around the field to place it where you want. In some containers, the layout is automatic an the field will go into a fixed position. See [Positioning and Placement of widgets](uis.md#uipositioning) for more information.
 
 The next step is to bind data to your field.
 
@@ -278,7 +278,7 @@ You need to pick a quickinfo from the current UI bundle and specify any page inp
 Query a [data source](datasources) in the current bundle and return the result of it.
 You can specify [parameters](axnparamconfig) to the data source.
 
-Querying a datasource on an action is not very useful unless you plan on using it with [javascript](clientscript) later on.
+Querying a datasource on an action is not very useful unless you plan on using it with [Javascript Library](javascript.md) later on.
 
 
 ### Navigate to Url
@@ -479,7 +479,7 @@ They have two sections:
 
 {% hint type="note" %}
     Weblets have a fixed height but can have a variable width depending on how the weblets are arranged. When positioning ui elements in your weblet, use percentage based dimensions and use left/right anchoring to get the spacing to look good regardless of the actual width of the weblet.
-    See [Positioning and Placement of ui elements](uis.md#uipositioning) for more information. {% endhint %}
+    See [Positioning and Placement of widgets](uis.md#uipositioning) for more information. {% endhint %}
 
 {% hint type="note" %}
     Weblets that are designed to be used in a [dynamic dashboard](dyndashboards) often take a `key` parameter as input - representing the `key` of the instance that the dashboard is in.
@@ -525,7 +525,7 @@ You will need obtain this information from the application developer.
 Once your tab is ready, to allow it to actually be injected into the page, you need to publish it by checking off the `Publish` option in the properties panel.
 
 {% hint type="seealso" %}
-    [Integration with :mod:`iviva`](integration.md#ivivaintegration) {% endhint %}
+    [Integration with iviva](integration.md#ivivaintegration) {% endhint %}
 
 ## Quick Info Bubbles
 Quick Info Bubbles are small bubbles of information that appear above an object when you click on it. They are used to provide extra information that may not be possible to put on the page itself. They can also be used for quick inputs and feedback. They disappear if the user clicks anywhere outside the bubble.
