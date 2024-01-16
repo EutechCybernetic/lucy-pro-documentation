@@ -3,7 +3,7 @@
 <a name='actions'></a>
 
 # Actions
-Actions are the easiest way to build logic in your model. An action begins with an [Action Start](actionstart-ref) block and triggers a action sequence in your model.
+Actions are the easiest way to build logic in your model. An action begins with an [Action Start](block-source.raw.md#actionstart-ref) block and triggers a action sequence in your model.
 
 Actions can take inputs and return outputs.
 Every action has an `http` end point that can be used to call the action as a web service call.
@@ -17,7 +17,7 @@ Use actions to
 
 ## Defining an action
 
-Drag an [Action Start](actionstart-ref) block into the Action Sequence Designer to define a new action.
+Drag an [Action Start](block-source.raw.md#actionstart-ref) block into the Action Sequence Designer to define a new action.
 
 By default the block has a single output pin called `All Outputs`. This pin contains all the inputs that were received by the action. They are passed directly to the block's output.
 
@@ -26,7 +26,7 @@ By default the block has a single output pin called `All Outputs`. This pin cont
 
 
 An action can accept multiple inputs. To individually extract each input, just add a new output pin with the name of the field to be extracted.
-Select the [Action Start](actionstart-ref) block, then in the [Properties Panel](modeldesigner.md#propertiespanel) click the 'Add Output' link to add a new output parameter. Multiple output paramaters can be specified at once by providing them as a comma separated list.
+Select the [Action Start](block-source.raw.md#actionstart-ref) block, then in the [Properties Panel](modeldesigner.md#propertiespanel) click the 'Add Output' link to add a new output parameter. Multiple output paramaters can be specified at once by providing them as a comma separated list.
 
 These pins can then be connected to other blocks to kickstart your logic for your action.
 
@@ -113,7 +113,7 @@ For example, the following structure
 
 ```
 
-Can be parsed using the following javascript code inside a [Javascript](es6javascript-ref) block:
+Can be parsed using the following javascript code inside a [Javascript](blocks.md#es6javascript-ref) block:
 
 ```
 
@@ -162,8 +162,8 @@ For publishing your action as an API to be consumed by an external service, see 
 <a name='shareactions'></a>
 ## Publishing Actions
 You can make your action public if you feel it is useful as a generic service for other models to use.
-When you click the `Publish Action` checkbox in the property panel of the [Action Start](actionstart-ref) block, the action gets marked as public.
-Public actions are available in the [shared library](sharedlibrary) in the [Model Designer](model-designer) and can be easily re-used in other action sequences.
+When you click the `Publish Action` checkbox in the property panel of the [Action Start](block-source.raw.md#actionstart-ref) block, the action gets marked as public.
+Public actions are available in the [shared library](sharedlibrary) in the [Model Designer](modeldesigner.md#model-designer) and can be easily re-used in other action sequences.
 
 
 ## Restricting access to Actions

@@ -12,7 +12,7 @@ The following javascript functions are available for use with the |javascript| b
 ## lucy
 
 ### model(name)
-Creates a new [model reference](metadataobject) for the model with the given name
+Creates a new [model reference](es6javascript.md#metadataobject) for the model with the given name
 
 #### Returns
 [MetadataObject](MetadataObject)
@@ -55,11 +55,11 @@ Obtain a reference to the current executing model instance.
 Parse a textual representation of a datetime.
 
 {% hint type="seealso" %}
-    [Valid Date/Time Formats](datetimeformats) {% endhint %}
+    [Valid Date/Time Formats](datatypes.md#datetimeformats) {% endhint %}
 
 
 #### Returns
-[timestamp](datetimes)
+[timestamp](datatypes.md#datetimes)
 
 <a name='genexcel'></a>
 
@@ -89,13 +89,13 @@ Example:
 
 
 #### Returns
-[binary data object](binobjects) - the excel sheet as a binary data stream
+[binary data object](datatypes.md#binobjects) - the excel sheet as a binary data stream
 
 ### currentUser()
 Get attributes about the current logged-in user.
 
 #### Returns
-[dictionary](dictionaries) - a dictionary of attributes for the user.
+[dictionary](datatypes.md#dictionaries) - a dictionary of attributes for the user.
 Available fields are:
 
 - UserKey - the iviva user key for the user
@@ -109,61 +109,61 @@ Available fields are:
 The current time in UTC format
 
 #### Returns
-[timestamp](datetimes)
+[timestamp](datatypes.md#datetimes)
 
 <a name='jstzfunctions'></a>
 
 ### convertFromUtc(dt, tz)
-Converts a [timestamp](datetimes) from utc to a different timezone.
+Converts a [timestamp](datatypes.md#datetimes) from utc to a different timezone.
 
 .. list-table::
     :header-rows: 0
 
     * - `dt`
-      - A [timestamp](datetimes) to convert to a different timezone
+      - A [timestamp](datatypes.md#datetimes) to convert to a different timezone
 
     * - `tz`
-      - The [code](timezonecodes) of the timezone to convert to
+      - The [code](timezonecodes.md#timezonecodes) of the timezone to convert to
 
 {% hint style="seealso" %}
 
-    [Working with time zones](timezones)
+    [Working with time zones](datatypes.md#timezones)
 
 {% endhint %}
 
-    [Time Zone Codes](timezonecodes)
+    [Time Zone Codes](timezonecodes.md#timezonecodes)
 
 #### Returns
-[timestamp](datetimes) converted to a different time zone
+[timestamp](datatypes.md#datetimes) converted to a different time zone
 
 ### convertToUtc(now, tz)
-Converts a [timestamp](datetimes) to utc from a different timezone.
+Converts a [timestamp](datatypes.md#datetimes) to utc from a different timezone.
 
 .. list-table::
     :header-rows: 0
 
     * - `dt`
-      - A [timestamp](datetimes) to convert to UTC
+      - A [timestamp](datatypes.md#datetimes) to convert to UTC
 
     * - `tz`
-      - The [code](timezonecodes) of the timezone the [timestamp](datetimes) was currently in.
+      - The [code](timezonecodes.md#timezonecodes) of the timezone the [timestamp](datatypes.md#datetimes) was currently in.
 
 {% hint style="seealso" %}
 
-    [Working with time zones](timezones)
+    [Working with time zones](datatypes.md#timezones)
 
 {% endhint %}
 
-    [Time Zone Codes](timezonecodes)
+    [Time Zone Codes](timezonecodes.md#timezonecodes)
 
 #### Returns
-[timestamp](datetimes) converted to a different time zone
+[timestamp](datatypes.md#datetimes) converted to a different time zone
 
 ### dateOnly(now)
 Returns the date only with the time stripped out.
 
 #### Returns
-[timestamp](datetimes)
+[timestamp](datatypes.md#datetimes)
 
 ### escapeXml(name)
 Escapes the character sequences suitable for embedding in xml.
@@ -186,13 +186,13 @@ You can pass in multiple objects here and they will be serialized as JSON and wr
 Execute an iviva service
 
 #### Returns
-[result set](dt-results)
+[result set](datatypes.md#dt-results)
 
 ### executeService(service,parameters)
 Execute an iviva service, passing the given parameters
 
 #### Returns
-[result set](dt-results)
+[result set](datatypes.md#dt-results)
 
 ### guid()
 Generate a globally unique identifier.
@@ -217,7 +217,7 @@ This name can be accessed via an http url of the form:
     * - `name`
       - The base name for the file
     * - `data`
-      - [binary data object](binobjects) representing the data to be uploaded.
+      - [binary data object](datatypes.md#binobjects) representing the data to be uploaded.
 
 
 #### Returns
@@ -233,28 +233,28 @@ Same as [uploadData(name, data)](es6javascript.md#uploadData) except the name sp
 string
 
 ### parseDataURI(uri)
-Parse a data uri (specified as a string) into a [binary data object](binobjects)
+Parse a data uri (specified as a string) into a [binary data object](datatypes.md#binobjects)
 
 #### Returns
-[binary data object](binobjects)
+[binary data object](datatypes.md#binobjects)
 
 ### fromBase64(data)
-Convert a base64 representation of data into a [binary data object](binobjects)
+Convert a base64 representation of data into a [binary data object](datatypes.md#binobjects)
 
 #### Returns
-[binary data object](binobjects)
+[binary data object](datatypes.md#binobjects)
 
 ### binaryBlobFromText(txt)
-Convert text into a [binary data object](binobjects)
+Convert text into a [binary data object](datatypes.md#binobjects)
 
 #### Returns
-[binary data object](binobjects)
+[binary data object](datatypes.md#binobjects)
 
 ### generateQRCode(data)
 Encode the specified text data as a QR code image in png format.
 
 #### Returns
-[binary data object](binobjects)
+[binary data object](datatypes.md#binobjects)
 
 
 <a name='metadataobject'></a>
@@ -305,7 +305,7 @@ Query the datasource named `datasource` in the current object's model's linked U
 Pass `arguments` as parameters to the data source.
 
 #### Returns
-[result set](dt-results)
+[result set](datatypes.md#dt-results)
 
 
 <a name='executeAction'></a>
@@ -316,4 +316,4 @@ Asynchronously execute an action named `action` on the current object, passing `
 This method will return a Promise that will resolve to the result of the action upon completion.
 
 #### Returns
-Promise<[dictionary](dictionaries)>
+Promise<[dictionary](datatypes.md#dictionaries)>

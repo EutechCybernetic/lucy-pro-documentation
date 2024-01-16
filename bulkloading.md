@@ -9,14 +9,14 @@ You can use Lucy to bulk import data from Excel spreadsheets.
 Two common scenarios:
 
 1. Uploading data in bulk to create model instances
-2. Uploading data to repeatedy execute an [action](actions)
+2. Uploading data to repeatedy execute an [action](actions.md#actions)
 
 
 Both scenarios use the same underlying technique.
 
 ## Uploading Data
 
-To upload data in bulk, click on the [Model Actions](modelactions) icon in the toolbar and then choose 'Bulk Load Data'.
+To upload data in bulk, click on the [Model Actions](modeldesigner.md#modelactions) icon in the toolbar and then choose 'Bulk Load Data'.
 
 <figure><img src=' images/bulkimport.png'></figure>
 
@@ -25,7 +25,7 @@ In the bulk import screen, you can see a list of currently importing items and t
 
 Click the image:: images/attradd.png icon to upload a new Excel sheet.
 
-Once the sheet is uploaded, Lucy will call an [action](actions) called `BulkLoad` in your model, once for every row in the excel sheet.
+Once the sheet is uploaded, Lucy will call an [action](actions.md#actions) called `BulkLoad` in your model, once for every row in the excel sheet.
 
 {% hint type="note" %}
     The action name that is called is fixed as `BulkLoad`
@@ -43,7 +43,7 @@ If any error occurs in your action and the action sequence terminates, then that
 At the end, from the same bulk-import screen, you can download the excel sheet with a new **Errors** column at the end showing the error that was raised for that particular row. You can then fix the error (or fix the action sequence as the case may be) and then upload again.
 
 {% hint type="note" %}
-    You need to take care of handling multiple uploads of the same data. Your action sequence needs to incorporate logic to check if that particular piece of data was already uploaded or not. A good way to check this is to require some unique column in the sheet, and then run a [data source](datasources) query to check if an item having that unique attribute already exists and if so, do an update to the existing item instead of creating a new one. {% endhint %}
+    You need to take care of handling multiple uploads of the same data. Your action sequence needs to incorporate logic to check if that particular piece of data was already uploaded or not. A good way to check this is to require some unique column in the sheet, and then run a [data source](datasources.md#datasources) query to check if an item having that unique attribute already exists and if so, do an update to the existing item instead of creating a new one. {% endhint %}
 
 ## Downloading Empty Templates
 It's a good idea to make it possible to download an empty excel sheet  that acts as a template for filling data. That will help guide your user towards filling the sheet in the correct way.
@@ -86,4 +86,4 @@ For bulk imports to work, the Excel sheet must have a suitable format:
 3. All other rows should contain data
 
 {% hint type="note" %}
-    If your import logic needs to work with a variable number of columns, instead of specifying individual column names as parameters to the [Action Start](actionstart-ref) block, use the *All Output* pin to read all values together as a dictionary and then use that to probe for what keys are present (using either a |javascript| block or an [Exists](block-source.raw.md#exists-ref) block) {% endhint %}
+    If your import logic needs to work with a variable number of columns, instead of specifying individual column names as parameters to the [Action Start](block-source.raw.md#actionstart-ref) block, use the *All Output* pin to read all values together as a dictionary and then use that to probe for what keys are present (using either a |javascript| block or an [Exists](block-source.raw.md#exists-ref) block) {% endhint %}

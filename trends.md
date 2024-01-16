@@ -42,26 +42,26 @@ This blocks allows you to record a data point for the given trend.
       - Required
       - Description
     * - *Trend Name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the trend you are capturing like *energy* or *temperature*
     * - *Value*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *true*
       - Value of the data point you are capturing like *12.07* or *100*
     * - *Timestamp*
-      - [Datetime](dt-datetimes)
+      - [Datetime](datatypes.md#dt-datetimes)
       - *false* (*default*: current time)
       - Records the time when the data point was captured
     * - *Tag List*
-      - [JSON Document](dt-json)
+      - [JSON Document](datatypes.md#dt-json)
       - *false*
       - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*
 
 The following steps illustrate how you can add a point,
 
 1. From the blocks menu, choose **Time Series** -> **Add Point** & add it to your lucy action
-2. Pass values to the input pins. For *Tag List* input pin, you can either use [Make JSON Block](jsonobject-ref), [Javascript Block](javascript-ref) or [ES6 Javascript Block](es6javascript-ref) to construct your **JSON document** and pass it as value.
+2. Pass values to the input pins. For *Tag List* input pin, you can either use [Make JSON Block](blocks.md#jsonobject-ref), [Javascript Block](block-source.raw.md#javascript-ref) or [ES6 Javascript Block](blocks.md#es6javascript-ref) to construct your **JSON document** and pass it as value.
 
 On successful insert, you should get an output of **1** from the *All Output* pin.
 
@@ -81,39 +81,39 @@ This blocks allows you to query data points for the given trend.
       - Required
       - Description
     * - *Trend Name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the trend you want to query like *energy* or *temperature*
     * - *Bucket Type*
-      - [text](dt-text)
+      - [text](datatypes.md#dt-text)
       - *false*
       - Time buckets to group data points by.
 
         Available buckets - Hour, Day, Week, Month, Year
     * - *Aggregation Type*
-      - [text](dt-text)
+      - [text](datatypes.md#dt-text)
       - *false*
       - Aggregation to be performed on the data
 
         Available aggregation - Sum, Average, Max, Min
     * - *From*
-      - [Datetime](dt-datetimes)
+      - [Datetime](datatypes.md#dt-datetimes)
       - *false*
       - Timestamp from which data points should be gathered
     * - *To*
-      - [Datetime](dt-datetimes)
+      - [Datetime](datatypes.md#dt-datetimes)
       - *false*
       - Timestamp until which data points should be gathered
     * - *Tag List*
-      - [JSON Document](dt-json)
+      - [JSON Document](datatypes.md#dt-json)
       - *false*
       - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*. This will be used to filter out the data points
     * - *Offset*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false* (*default*: 0)
       - Number of data points to skip
     * - *Descending*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false* (*default*: 0)
       - Sort order for the data points
 
@@ -121,14 +121,14 @@ This blocks allows you to query data points for the given trend.
 
         *default* is **0**
     * - *Limit*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false* (*default*: 50)
       - Maximum number of data points to return
 
 The following steps illustrate how you can add a point,
 
 1. From the blocks menu, choose **Time Series** -> **Query Points** & add it to your lucy action
-2. Pass values to the input pins. For *Tag List* input pin, you can either use [Make JSON Block](jsonobject-ref), [Javascript Block](javascript-ref) or [ES6 Javascript Block](es6javascript-ref) to construct your **JSON document** and pass it as value.
+2. Pass values to the input pins. For *Tag List* input pin, you can either use [Make JSON Block](blocks.md#jsonobject-ref), [Javascript Block](block-source.raw.md#javascript-ref) or [ES6 Javascript Block](blocks.md#es6javascript-ref) to construct your **JSON document** and pass it as value.
 
 On successful insert, you should get all data points in the *All Output* pin.
 
@@ -169,23 +169,23 @@ Insert one data point at a time.
       - Required
       - Description
     * - *trend_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the trend you are capturing like *energy* or *temperature*
     * - *value*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *true*
       - Value of the data point you are capturing like *12.07* or *100*
     * - *timestamp*
-      - [Datetime](dt-datetimes)
+      - [Datetime](datatypes.md#dt-datetimes)
       - *true*
       - Records the time when the data point was captured
     * - *tags*
-      - [JSON Document](dt-json)
+      - [JSON Document](datatypes.md#dt-json)
       - *true*
       - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
@@ -230,23 +230,23 @@ Insert one data point at a time. This is similar to [addPoint](#addpoint), excep
       - Required
       - Description
     * - *trend_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the trend you are capturing like *energy* or *temperature*
     * - *value*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *true*
       - Value of the data point you are capturing like *12.07* or *100*
     * - *timestamp*
-      - [Datetime](dt-datetimes)
+      - [Datetime](datatypes.md#dt-datetimes)
       - *true*
       - Records the time when the data point was captured
     * - *tags*
-      - [JSON Document](dt-json)
+      - [JSON Document](datatypes.md#dt-json)
       - *true*
       - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
@@ -293,13 +293,13 @@ Insert multiple data point at a time.
       - Required
       - Description
     * - *points*
-      - [JSON Documents](dt-json)
+      - [JSON Documents](datatypes.md#dt-json)
       - *true*
       - Array of JSON documents comprising of trend points
       
         Refer to **Trend Point** structure below
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
@@ -355,13 +355,13 @@ Insert multiple data point at a time. This is similar to [addPoints](#addpoints)
       - Required
       - Description
     * - *points*
-      - [JSON Documents](dt-json)
+      - [JSON Documents](datatypes.md#dt-json)
       - *true*
       - Array of JSON documents comprising of trend points
       
         Refer to **Trend Point** structure below
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
@@ -421,35 +421,35 @@ Query multiple data points for a given trend.
       - Required
       - Description
     * - *trend_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the trend you want to query like *energy* or *temperature*
     * - *from*
-      - [Datetime](dt-datetimes)
+      - [Datetime](datatypes.md#dt-datetimes)
       - *true*
       - Timestamp from which data points should be gathered
     * - *to*
-      - [Datetime](dt-datetimes)
+      - [Datetime](datatypes.md#dt-datetimes)
       - *true*
       - Timestamp until which data points should be gathered
     * - *bucket_type*
-      - [text](dt-text)
+      - [text](datatypes.md#dt-text)
       - *true*
       - Time buckets to group data points by.
 
         Available buckets - hour, day, week, month, year
     * - *aggregation_type*
-      - [text](dt-text)
+      - [text](datatypes.md#dt-text)
       - *true*
       - Aggregation to be performed on the data
 
         Available aggregation - sum, average, max, min
     * - *tags*
-      - [JSON Document](dt-json)
+      - [JSON Document](datatypes.md#dt-json)
       - *false*
       - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*. This will be used to filter out the data points
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
 
@@ -490,19 +490,19 @@ This is provided in order to pass any additional configuration to the backend tr
       - Required
       - Description
     * - *limit*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false*
       - Maximum number of trends to return
         
         *default* is **0**
     * - *offset*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false*
       - Number of trends to skip
 
         *default* is **0**
     * - *sort*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false*
       - Order to sort the data points
 

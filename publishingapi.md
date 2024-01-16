@@ -13,12 +13,12 @@ All APIs in Lucy are published from a model.
 
 Within a model, you can open the API Panel from the sidebar to manage your APIs.
 
-Each API end point you define will map to an [action](actions) within your model.
+Each API end point you define will map to an [action](actions.md#actions) within your model.
 
 There are 4 major sections in defining an API End Point:
 
 ## Action to bind to
-Every API will execute an [action](actions) in your model.
+Every API will execute an [action](actions.md#actions) in your model.
 You need to specify which action will execute for each end point.
 
 {% hint type="note" %}
@@ -44,7 +44,7 @@ As an example:
 
 When you give this path, your end point can be accessed at http://<lucyurl>/Lucy/<model>/sensors/123/value
 
-And 123 will be passed to the your [action](actions) as an input called sensorid.
+And 123 will be passed to the your [action](actions.md#actions) as an input called sensorid.
 
 You also need to specify the HTTP method to use. All the standard methods are available.
 
@@ -96,9 +96,9 @@ You can set the Authentication flag to No Authentication Required to publish an 
 
 
 ## Body format
-Finally, you need to decide how you will receive inputs from your API end point and how they will map to inputs in your [action](actions)
+Finally, you need to decide how you will receive inputs from your API end point and how they will map to inputs in your [action](actions.md#actions)
 
-There are several ways in which you can receive your inputs. Which one you choose will depend on how you have defined inputs in your [action](actions). Conversely, you may want to structure your action based on what you choose for your API.
+There are several ways in which you can receive your inputs. Which one you choose will depend on how you have defined inputs in your [action](actions.md#actions). Conversely, you may want to structure your action based on what you choose for your API.
 
 {% hint type="note" %}
     None of these body formats apply to API end points that use the GET HTTP method as the HTTP Standard doesn't allow GET requests to have a body. If you want to pass inputs to a GET API, use parameters in your route or query string parameters. See below for how to use query string parameters. {% endhint %}
@@ -117,7 +117,7 @@ For example, if your JSON payload is:
 ```
 
 
-Then your [action](actions) should have two inputs: id and value.
+Then your [action](actions.md#actions) should have two inputs: id and value.
 
 {% hint type="note" %}
     If your action block is missing some input pins that were specified in the API request, then those parameters will be dropped and will not be available in your action. Conversely, if your action block specifies input pins that were not mapped to any item in the actual request then those will have a null value. {% endhint %}
@@ -134,7 +134,7 @@ So you cannot use:
 ```
 
 
-If you want to process a complex JSON object, set the body format to Raw Text and process the JSON within your [action](actions).
+If you want to process a complex JSON object, set the body format to Raw Text and process the JSON within your [action](actions.md#actions).
 
 **Required Headers**
 
@@ -176,7 +176,7 @@ For example, if your payload is
 ```
 
 
-Then your [action](actions) should have two inputs: id and value.
+Then your [action](actions.md#actions) should have two inputs: id and value.
 
 **Required Headers**
 
@@ -245,7 +245,7 @@ The data is available as an input pin called Body.
 
 ### Binary
 If your input is to be processed as binary data, use Binary as the body format.
-This is similar to Raw Text body format except the Body input will be a [binary data object](binobjects) instead of UTF-8 text.
+This is similar to Raw Text body format except the Body input will be a [binary data object](datatypes.md#binobjects) instead of UTF-8 text.
 
 ## Using path variables
 
@@ -263,16 +263,16 @@ The inputs are:
 .. list-table::
 
     * - Query
-      - This will be a [dictionary](dictionaries) containing all query string parameters that were part of the request
+      - This will be a [dictionary](datatypes.md#dictionaries) containing all query string parameters that were part of the request
     
     * - Headers
-      - This will be a [dictionary](dictionaries) containing all HTTP headers that were sent as part of the request.
+      - This will be a [dictionary](datatypes.md#dictionaries) containing all HTTP headers that were sent as part of the request.
 
     * - HttpMethod
       - This will be the name of the HTTP method that was used. This is useful if you want mulitple APIs mapped to a single action.
     
     * - ContentType
-      - This is the value of the Content-Type header that was sent. You can also retrieve this from the Headers [dictionary](dictionaries) mentioned above, so this is just a convenience since as its the most-accessed header.
+      - This is the value of the Content-Type header that was sent. You can also retrieve this from the Headers [dictionary](datatypes.md#dictionaries) mentioned above, so this is just a convenience since as its the most-accessed header.
     
     * - InstanceKey
       - If a query string parameter called InstanceKey was passed to the API, that will be available here. If your action was set to run on an instance, then this value will be used to decide which instance to run on.

@@ -27,7 +27,7 @@ The UI Composer consists of the following parts:
 <a name='bundleexplorer'></a>
 
 ## Bundle Explorer
-The bundle explorer shows you all your [UI Bundles](uibundles).
+The bundle explorer shows you all your [UI Bundles](uis.md#uibundles).
 You can click the image:: images/attradd.png icon to add a new screen to the bundle.
 You can expand each item to see its sub components and ui elements. Clicking on any of them will select that widget or screen and show its properties in the property panel.
 
@@ -40,7 +40,7 @@ The data source explorer shows you all the datasources that are accessible in th
 This includes:
 
 1. Data sources defined in the datasource designer.
-2. Any actions in a [linked model](linkuimodel)
+2. Any actions in a [linked model](customuis.md#linkuimodel)
 3. Any custom data sources that have been made available in the system.
 
 Custom Data Sources are published by iviva applications and can be added to the bundle. Click the `Include a custom data source` link to select a custom data source and add it. Custom data sources are useful to provide access to data that cannot otherwise be extracted using the datasource designer or model actions.
@@ -50,7 +50,7 @@ You can expand each data source to see its fields. The fields can be dragged int
 See [Binding Data](uis.md#databinding) for more information on how to bind datasource fields to ui elements.
 
 {% hint type="note" %}
-    Some datasources that represent model actions may not show any fields when expanding the source. You can still bind data to the fields using [iviva Expression](ice) syntax but interactive binding by drag and drop of those sources may not be possible. See [Manually binding data](uis.md#manualbinding) for information on how to do this. {% endhint %}
+    Some datasources that represent model actions may not show any fields when expanding the source. You can still bind data to the fields using [iviva Expression](ice.md#ice) syntax but interactive binding by drag and drop of those sources may not be possible. See [Manually binding data](uis.md#manualbinding) for information on how to do this. {% endhint %}
 
 <a name='designsurface'></a>
 

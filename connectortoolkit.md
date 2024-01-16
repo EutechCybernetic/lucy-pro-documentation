@@ -20,9 +20,9 @@ Here's how it works:
 1. Define a WebService - this is the application to which you want to connect
 2. Configure the type of authentication it uses.
 3. Add methods to the web service - one for each API that the application exposes
-4. Create Accounts for the web service - these accounts contain specific credentials for calling the service. These can be configured either from the web service screen or from the [Model Designer](model-designer) within the block itself. You can have multiple accounts and choose one when actually running the connector.
+4. Create Accounts for the web service - these accounts contain specific credentials for calling the service. These can be configured either from the web service screen or from the [Model Designer](modeldesigner.md#model-designer) within the block itself. You can have multiple accounts and choose one when actually running the connector.
 
-In the [Model Designer](model-designer), in the blocklist you'll find a new group for your webservice and separate blocks for each method.
+In the [Model Designer](modeldesigner.md#model-designer), in the blocklist you'll find a new group for your webservice and separate blocks for each method.
 
 Lets look into it in detail:
 
@@ -98,7 +98,7 @@ You can click the image:: images/pencil.png to edit the web service method.
 
 ### Specifying the URL and HTTP Method
 When specifying the end point for the web service, you need to give the full url including the `https` prefix.
-You can also specify [variables](wsvars) in the url.
+You can also specify [variables](connectortoolkit.md#wsvars) in the url.
 
 {% hint type="note" %}
     Plain http end points are also supported though obviously not recommeended. {% endhint %}
@@ -106,7 +106,7 @@ You can also specify [variables](wsvars) in the url.
 ### Editing Headers
 When you edit the method definition, in the second tab, you can edit the headers that need to be sent.
 Click the image:: images/attradd.png to add a new header. You need to specify a header name and a header value.
-Note that you can use [variables](wsvars) in header names and values.
+Note that you can use [variables](connectortoolkit.md#wsvars) in header names and values.
 
 {% hint type="note" %}
     You need to explicitly specify most headers including `Content-Type`.
@@ -118,16 +118,16 @@ Note that you can use [variables](wsvars) in header names and values.
 Query string parameters get appended to the end of urls. You can specify them as separate key/value pairs.
 This is done in the third tab of the method definition dialog.
 Click the image:: images/attradd.png icon to add a new pair. Give the name and then in the table, edit the value.
-You can use [variables](wsvars) in either names or values of query string parameters.
+You can use [variables](connectortoolkit.md#wsvars) in either names or values of query string parameters.
 
 
 ### Defining the body format
 You need to specify how the payload (if any) is sent to the web service.
 You can currently speecify them in two ways:
 
-1. Raw - you provide the raw body here. You can use [variables](wsvars) in the body in places where user input has to come.
+1. Raw - you provide the raw body here. You can use [variables](connectortoolkit.md#wsvars) in the body in places where user input has to come.
 2. Key/Value Pairs - this is a helper that lets you easily specify key/value pairs when the body is expected in `application/x-www-form-urlencoded` format.
-You can add a list of keys and corresponding valuesl You can use [variables](wsvars) in both the keys and values.
+You can add a list of keys and corresponding valuesl You can use [variables](connectortoolkit.md#wsvars) in both the keys and values.
 
 {% hint type="note" %}
     Sometimes if the payload is complex, it may be easier to just give a single variable in the raw payload - `#{Payload}` and use your Lucy model to craft the actual payload and send the whole thinng as input to the method. {% endhint %}
@@ -279,13 +279,13 @@ Your script has access to the following objects that you can use to read the exi
     * - Variable
       - Description
     * - inputs
-      - A [dictionary](dictionaries) of inputs that were passed to the block. The dictionary keys are pin names. Values are the actual values fed to the block during execution. You can read values from here and transform them in some way before sending to the web service.
+      - A [dictionary](datatypes.md#dictionaries) of inputs that were passed to the block. The dictionary keys are pin names. Values are the actual values fed to the block during execution. You can read values from here and transform them in some way before sending to the web service.
     * - request
-      - The [request object](wsjsrequest). Gives you access to the details configured for the method including the url, query string and headers
+      - The [request object](connectortoolkit.md#wsjsrequest). Gives you access to the details configured for the method including the url, query string and headers
     * - runtime
       - The runtime object. Has methods that let you override the request configuration details. Use this to override any configured data.
     * - auth
-      - A [dictionary](dictionaries) that contains any authentication information associated with the request and account profile. The following keys are available:
+      - A [dictionary](datatypes.md#dictionaries) that contains any authentication information associated with the request and account profile. The following keys are available:
         * accessToken - If the API uses OAuth 2, this will be the latest bearer token that was generated
         * apiKey - If the API uses custom authentication, this is the custom api key that was configured for the web service account.
         * username - If BASIC authentication was specified, this is the username that was given for the account profile that's being used in the execution
@@ -322,9 +322,9 @@ This example takes all input pins except 'Password' and puts them into a JSON di
 
 ### Input Pin Configuration
 When designing your method, you should think about what inputs you expect to get from the user when they use the block corresponding to your web service method.
-By default, if you use any [placeholders](wsvars) in your configuration, those will be made available as input pins in the block.
+By default, if you use any [placeholders](connectortoolkit.md#wsvars) in your configuration, those will be made available as input pins in the block.
 
-However you sometimes may want to provide additional input pins (when you are using a [custom preprocessing script](wspreprocess)).
+However you sometimes may want to provide additional input pins (when you are using a [custom preprocessing script](connectortoolkit.md#wspreprocess)).
 
 From the method configuration dialog, in the 'Input Pin Configuration' tab - you can specify additional input pins.
 Click the image:: images/attradd.png to add a new pin. You need to give it an id and a label.
@@ -365,15 +365,15 @@ Lucy supports TLS 1.0, 1.1 and 1.2 when calling web services.
 
 ## Using connectors
 Once you have setup your web service and methods, you can start using it in your action sequence.
-In the [block panel](blockpanel) a new category will appear representing your web service.
+In the [block panel](modeldesigner.md#blockpanel) a new category will appear representing your web service.
 You can expand it to find blocks representing each method that you defined.
 
-When you drop the block into the [staging area](stagingarea) you will see that each [variable](wsvars) that you used will appear as an input (except the reserved variables that are automatically made available).
+When you drop the block into the [staging area](modeldesigner.md#stagingarea) you will see that each [variable](connectortoolkit.md#wsvars) that you used will appear as an input (except the reserved variables that are automatically made available).
 The account to use is also available as an input pin.
 
 If you configured any custom output processing, those pins will show up as outputs of the block.
 
-In the [property panel](propertiespanel) you can select the account to use for executing the service.
+In the [property panel](modeldesigner.md#propertiespanel) you can select the account to use for executing the service.
 Either pick one from the list or add a new one.
 
 {% hint type="note" %}
@@ -397,11 +397,11 @@ The object contains the following members:
       - Type
       - Description
     * - headers
-      - [dictionary](dictionaries)
-      - A [dictionary](dictionaries) of header name/value pairs that have been configured.
+      - [dictionary](datatypes.md#dictionaries)
+      - A [dictionary](datatypes.md#dictionaries) of header name/value pairs that have been configured.
     * - query
-      - [dictionary](dictionaries)
-      - A [dictionary](dictionaries) of  query string names and values.
+      - [dictionary](datatypes.md#dictionaries)
+      - A [dictionary](datatypes.md#dictionaries) of  query string names and values.
     * - body
       - string
       - The raw payload that is ready to be sent.
@@ -427,12 +427,12 @@ The object contains the following members:
 
     * - setHeaders(object)
       - function
-      - This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use `request.headers` to read the original set of headers, then manipulate that [dictionary](dictionaries) and set it again using this function.
+      - This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use `request.headers` to read the original set of headers, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.
       - PreProcessing Scripts
 
     * - setQuery(object)
       - function
-      - This function lets you set the final query string parameters that will be sent with the request. Any existing query strings that were configured will be removed. Its recommended you use `request.query` to read the original key/value pairs, then manipulate that [dictionary](dictionaries) and set it again using this function.
+      - This function lets you set the final query string parameters that will be sent with the request. Any existing query strings that were configured will be removed. Its recommended you use `request.query` to read the original key/value pairs, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.
       - PreProcessing Scripts
 
     * - setBody(string)
@@ -452,7 +452,7 @@ The object contains the following members:
     
     * - parseDate(object-or-string)
       - function
-      - This is a useful helper function that will take an input and parse it into a valid [datetime](datetimes) object. The input could be a string representation of a date or a [datetime](datetimes) object.
+      - This is a useful helper function that will take an input and parse it into a valid [datetime](datatypes.md#datetimes) object. The input could be a string representation of a date or a [datetime](datatypes.md#datetimes) object.
       - PreProcessing and PostProcessing
 
     * - setError(string,code)
@@ -555,7 +555,7 @@ Now we can provide values for a configuration the following ways,
 
 ### Using the Additional Configuration
 
-To use the additional configuration we just registered, we can use the following function exposed via [iviva Expression](ice).
+To use the additional configuration we just registered, we can use the following function exposed via [iviva Expression](ice.md#ice).
 
 **Syntax**
 

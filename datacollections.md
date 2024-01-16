@@ -136,10 +136,10 @@ The following steps illustrate deleting a collection,
 
 # Working with Collections
 
-So far, we saw how to define a collection & attributes. To actually write data into the collection & work on the data, you need to either use one of the blocks related to data collections or use our [Javascript](es6javascript-ref) api.
+So far, we saw how to define a collection & attributes. To actually write data into the collection & work on the data, you need to either use one of the blocks related to data collections or use our [Javascript](blocks.md#es6javascript-ref) api.
 
-1. [Using lucy data collection blocks](lucy-data-collection-blocks)
-2. [Using Javascript data collection API](js-data-collection-api)
+1. [Using lucy data collection blocks](datacollections.md#lucy-data-collection-blocks)
+2. [Using Javascript data collection API](datacollections.md#js-data-collection-api)
 
 <a name='lucy-data-collection-blocks'></a>
 
@@ -176,7 +176,7 @@ The following steps illustrate how you can insert a document,
 3. You can insert a document in couple of ways,
     1. Pass a JSON structure (*default*)
         1. Uncheck the **Update data as attributes** option from the block's property menu.
-        2. Use [Make JSON Block](jsonobject-ref), [Javascript Block](javascript-ref) or [ES6 Javascript Block](es6javascript-ref) to construct your **JSON document**
+        2. Use [Make JSON Block](blocks.md#jsonobject-ref), [Javascript Block](block-source.raw.md#javascript-ref) or [ES6 Javascript Block](blocks.md#es6javascript-ref) to construct your **JSON document**
         3. Pass the *output* from the above block into *Data* pin of this block
     2. Pass individual attributes
         1. Check the **Update data as attributes** option from the block's property menu.
@@ -205,7 +205,7 @@ This block allows you to insert multiple documents at a time. The following step
 
 1. From the blocks menu, choose **Collections** -> **Insert all documents** & add it to you lucy action
 2. From the block's property menu, choose a collection from **Collection Name** dropdown
-3. Use [Make JSON Array Block](jsonarray-ref), [Javascript Block](javascript-ref) or [ES6 Javascript Block](es6javascript-ref) to construct your **JSON document**
+3. Use [Make JSON Array Block](blocks.md#jsonarray-ref), [Javascript Block](block-source.raw.md#javascript-ref) or [ES6 Javascript Block](blocks.md#es6javascript-ref) to construct your **JSON document**
 4. Pass the *output* from the above block into *Data* pin of this block 
 
 <figure><img src=' images/data-collections/blocks/insert-n-doc.png'></figure>
@@ -249,7 +249,7 @@ The above process can go on repeatedly based on your filter requirements. Once y
 
 ###### Passing via Filter Input Pin
 
-Right now data collections are powered by *MongoDB* in the backend. So, to pass a filter via input, you could use [Make JSON Block](jsonobject-ref), [Javascript Block](javascript-ref) or [ES6 Javascript Block](es6javascript-ref) to construct your **JSON document**. Checkout the available filter options [here <https://docs.mongodb.com/manual/reference/operator/query/>](#here-<https://docs.mongodb.com/manual/reference/operator/query/>). Few sample filters are given below,
+Right now data collections are powered by *MongoDB* in the backend. So, to pass a filter via input, you could use [Make JSON Block](blocks.md#jsonobject-ref), [Javascript Block](block-source.raw.md#javascript-ref) or [ES6 Javascript Block](blocks.md#es6javascript-ref) to construct your **JSON document**. Checkout the available filter options [here <https://docs.mongodb.com/manual/reference/operator/query/>](#here-<https://docs.mongodb.com/manual/reference/operator/query/>). Few sample filters are given below,
 
 1. Match all documents whose *FirstName* is *John*
 
@@ -505,7 +505,7 @@ This block allows you to count all the matching documents in your data collectio
 
 ## Javascript Data Collection API
 
-When you need more control while passing data to your collection or when processing the outputs, you can make use of *Data Collection API* provided via [ES6 Javascript Block](es6javascript-ref). The following *API's* are provided for you and we will go through each of them in detail,
+When you need more control while passing data to your collection or when processing the outputs, you can make use of *Data Collection API* provided via [ES6 Javascript Block](blocks.md#es6javascript-ref). The following *API's* are provided for you and we will go through each of them in detail,
 
 1. [insertOne](#insertone)
 2. [insertMany](#insertmany)
@@ -556,15 +556,15 @@ Insert one document at a time.
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to store the document under
     * - *document*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Document to be stored
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -573,7 +573,7 @@ Insert one document at a time.
 
     * - Data Type
       - Description
-    * - [JSON document](dt-json)
+    * - [JSON document](datatypes.md#dt-json)
       - Document that was inserted into the collection
 
 ``` json```
@@ -625,15 +625,15 @@ Insert multiple documents at a time.
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to store the documents under
     * - *documents*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Array of documents to be stored
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -686,15 +686,15 @@ Find the first matching document for the given collection & filter condition. Mo
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to find the documents
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -703,7 +703,7 @@ Find the first matching document for the given collection & filter condition. Mo
 
     * - Data Type
       - Description
-    * - [JSON document](dt-json)
+    * - [JSON document](datatypes.md#dt-json)
       - First document that matched the filter condition
 
 ``` json```
@@ -754,15 +754,15 @@ Find all matching documents for the given collection & filter condition. More in
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to find the documents
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -771,7 +771,7 @@ Find all matching documents for the given collection & filter condition. More in
 
     * - Data Type
       - Description
-    * - [JSON document](dt-json)
+    * - [JSON document](datatypes.md#dt-json)
       - Array of documents that matched the filter condition
 
 ``` json```
@@ -842,19 +842,19 @@ Update first matching document with the given data for the given collection & fi
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to update the documents for
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *data*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Document to be updated with
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -863,7 +863,7 @@ Update first matching document with the given data for the given collection & fi
 
     * - Data Type
       - Description
-    * - [JSON document](dt-json)
+    * - [JSON document](datatypes.md#dt-json)
       - Replacement result
 
 ``` json```
@@ -929,19 +929,19 @@ Update all matching documents with the given data for the given collection & fil
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to update the documents under for
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *data*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Document to be updated with
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -950,7 +950,7 @@ Update all matching documents with the given data for the given collection & fil
 
     * - Data Type
       - Description
-    * - [JSON document](dt-json)
+    * - [JSON document](datatypes.md#dt-json)
       - Replacement result
 
 ``` json```
@@ -1019,19 +1019,19 @@ Replace first matching document is replaced with the given data for the given co
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to replace the documents in
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *data*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Document to be replaced with
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -1040,7 +1040,7 @@ Replace first matching document is replaced with the given data for the given co
 
     * - Data Type
       - Description
-    * - [JSON document](dt-json)
+    * - [JSON document](datatypes.md#dt-json)
       - Replacement result
 
 ``` json```
@@ -1098,15 +1098,15 @@ Delete first matching document for the given collection & filter condition. More
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to delete the documents from
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -1150,15 +1150,15 @@ Delete all matching documents for the given collection & filter condition. More 
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to delete the documents from
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -1202,15 +1202,15 @@ Count all matching documents for the given collection & filter condition. More i
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to count the documents from
     * - *filter*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Filter condition to filter documents by
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -1219,7 +1219,7 @@ Count all matching documents for the given collection & filter condition. More i
 
     * - Data Type
       - Description
-    * - [number](dt-numbers)
+    * - [number](datatypes.md#dt-numbers)
       - Number of documents that matched the filter condition
 
 **Example**
@@ -1265,15 +1265,15 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
       - Required
       - Description
     * - *collection_name*
-      - [Text](dt-text)
+      - [Text](datatypes.md#dt-text)
       - *true*
       - Name of the collection to count the documents from
     * - *pipeline_stages*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true*
       - Array of pipeline stages to process the data through for aggregation
     * - *options*
-      - [JSON document](dt-json)
+      - [JSON document](datatypes.md#dt-json)
       - *true* (can be empty with no fields like **{}**)
       - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
@@ -1282,7 +1282,7 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
 
     * - Data Type
       - Description
-    * - [JSON document](dt-json)
+    * - [JSON document](datatypes.md#dt-json)
       - Aggregation result
 
 **Example**
@@ -1341,19 +1341,19 @@ This is provided in order to pass any additional configuration to the backend da
       - Required
       - Description
     * - *limit*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false*
       - Maximum number of documents to return
         
         *default* is **0**
     * - *skip*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false*
       - Number of documents to skip that match the filter condition
 
         *default* is **0**
     * - *sort*
-      - [number](dt-numbers)
+      - [number](datatypes.md#dt-numbers)
       - *false*
       - Order to sort the matched documents
 

@@ -26,7 +26,7 @@ Content-Disposition header is sent:
     * - Input Name
       - Description
     * - Data
-      - A [binary data object](binobjects) object or text
+      - A [binary data object](datatypes.md#binobjects) object or text
     * - Content Type
       - The mime type of the content being returned
     * - File Name
@@ -51,7 +51,7 @@ This block is used to make a action sequence return json data.
     * - Input Name
       - Description
     * - Data
-      - A [JSON](dt-json) object or text
+      - A [JSON](datatypes.md#dt-json) object or text
 
         
 <a name='actionoutput-ref'></a>
@@ -97,13 +97,13 @@ and leave the Field name empty.
 
 
     Used to define a new action in a model.
-    This block represents the action as a whole and properties for the entire action sequence are set from the [property panel](propertiespanel) for this block.
-    You cannot add or delete this block from the [block panel](blockpanel) as this block is mandatory for an action to exist.
+    This block represents the action as a whole and properties for the entire action sequence are set from the [property panel](modeldesigner.md#propertiespanel) for this block.
+    You cannot add or delete this block from the [block panel](modeldesigner.md#blockpanel) as this block is mandatory for an action to exist.
     When you add a new action, this block gets created automatically.
-    You can add and remove parameters for the action from the [property panel](propertiespanel).
-    You can also rename the action from the [property panel](propertiespanel) by using the `Change Name` link.
+    You can add and remove parameters for the action from the [property panel](modeldesigner.md#propertiespanel).
+    You can also rename the action from the [property panel](modeldesigner.md#propertiespanel) by using the `Change Name` link.
     When you delete this block, the entire action sequence will be deleted.
-    You can also delete the entire action sequence by going to the [action switcher](actionswitcher) and using the image:: images/trash.png icon for the corresponding action sequence.
+    You can also delete the entire action sequence by going to the [action switcher](modeldesigner.md#actionswitcher) and using the image:: images/trash.png icon for the corresponding action sequence.
 
 {% hint type="seealso" %}
       Actions are covered in depth in [Actions](actions.md#actions) {% endhint %}
@@ -135,11 +135,11 @@ Marks the current model instance as active.
 
 ## AddDays
 
-Adds the given number of days to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The days to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of days to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The days to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
     
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
     
     
 .. seealso::
@@ -152,7 +152,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Input Name
       - Description
     * - Input 1
-      - A valid [timestamp](datetimes)
+      - A valid [timestamp](datatypes.md#datetimes)
     * - Input 2
       - The number of days to add
 
@@ -163,7 +163,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Output Name
       - Description
     * - Output
-      - A new [timestamp](datetimes)
+      - A new [timestamp](datatypes.md#datetimes)
 
 
         
@@ -202,11 +202,11 @@ If any non-numeric values are passed (like text), then zero is is used in place 
 
 ## AddMinutes
 
-Adds the given number of minutes to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The minutes to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of minutes to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The minutes to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
     
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
     
     
 .. seealso::
@@ -219,7 +219,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Input Name
       - Description
     * - Input 1
-      - A valid [timestamp](datetimes)
+      - A valid [timestamp](datatypes.md#datetimes)
     * - Input 2
       - The number of minutes to add
 
@@ -230,7 +230,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Output Name
       - Description
     * - Output
-      - A new [timestamp](datetimes)
+      - A new [timestamp](datatypes.md#datetimes)
 
 
         
@@ -239,11 +239,11 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
 
 ## AddMonths
 
-Adds the given number of months to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The months to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of months to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The months to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
     
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
     
     
 .. seealso::
@@ -256,7 +256,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Input Name
       - Description
     * - Input 1
-      - A valid [timestamp](datetimes)
+      - A valid [timestamp](datatypes.md#datetimes)
     * - Input 2
       - The number of months to add
 
@@ -267,7 +267,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Output Name
       - Description
     * - Output
-      - A new [timestamp](datetimes)
+      - A new [timestamp](datatypes.md#datetimes)
 
 
         
@@ -311,11 +311,11 @@ dashboard configuration. This should be a number from 1-12.
 
 ## AddYears
 
-Adds the given number of years to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The years to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of years to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The years to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
     
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
     
     
 .. seealso::
@@ -328,7 +328,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Input Name
       - Description
     * - Input 1
-      - A valid [timestamp](datetimes)
+      - A valid [timestamp](datatypes.md#datetimes)
     * - Input 2
       - The number of years to add
 
@@ -339,7 +339,7 @@ Since [timestamp](datetimes) values are in UTC, no day-light savings are observe
     * - Output Name
       - Description
     * - Output
-      - A new [timestamp](datetimes)
+      - A new [timestamp](datatypes.md#datetimes)
 
 
         
@@ -458,13 +458,13 @@ Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 ## Call Data Source
 
-Query a [data source](datasources) in a linked [UI Bundle](uibundles) and return the result of it.
+Query a [data source](datasources.md#datasources) in a linked [UI Bundle](uis.md#uibundles) and return the result of it.
 The data source must be defined in a UI bundle that is linked to the specified model.
     
 If an error ocurred during execution of the action, then the current action sequence is aborted 
 with an error.
     
-All data sources return a [result set](dt-results).
+All data sources return a [result set](datatypes.md#dt-results).
 
 
 ### Inputs
@@ -503,7 +503,7 @@ All data sources return a [result set](dt-results).
     * - Output Name
       - Description
     * - *All Output*
-      - Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.
+      - Contains the output from calling the action. This will be a [result set](datatypes.md#dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.
     * - *Multiple*
       -  You can can auto-extract values from the first result by adding new output pins. Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
@@ -516,7 +516,7 @@ All data sources return a [result set](dt-results).
 
 Call a service in an iviva app.
     
-All service return a [result set](dt-results). You can auto-extract values by adding new output pins.
+All service return a [result set](datatypes.md#dt-results). You can auto-extract values by adding new output pins.
 Services are of two forms:
     
 .. code::
@@ -553,7 +553,7 @@ Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
     * - Output Name
       - Description
     * - All Output
-      - Contains the [result set](dt-results) from calling the service
+      - Contains the [result set](datatypes.md#dt-results) from calling the service
 
 
         
@@ -644,7 +644,7 @@ If the action sequence is run by some automated job in the backend, then no user
 
 ## DateTime
 
-Construct a new [timestamp](datetimes) from an year/month/day/hour/minute/second
+Construct a new [timestamp](datatypes.md#datetimes) from an year/month/day/hour/minute/second
 
 ### Inputs
 .. list-table::
@@ -666,7 +666,7 @@ Construct a new [timestamp](datetimes) from an year/month/day/hour/minute/second
     * - Output Name
       - Description
     * - Output
-      - A [timestamp](datetimes) constructed from the given inputs
+      - A [timestamp](datatypes.md#datetimes) constructed from the given inputs
 
 
         
@@ -684,7 +684,7 @@ Extracts the day component of a date/time field.
     * - Input Name
       - Description
     * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ### Outputs
 .. list-table::
@@ -711,7 +711,7 @@ Extracts the day of week for the date/time field.
     * - Input Name
       - Description
     * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ### Outputs
 .. list-table::
@@ -1020,7 +1020,7 @@ Only one of them will be executed.
 
 ## ExtractValue
 
-Extracts a value from a [dictionary](dictionaries).
+Extracts a value from a [dictionary](datatypes.md#dictionaries).
 Specify an input dictionary and a field, and the value  for that field from the dictionary will be written to the output.
 If the dictionary does not contain the given field, empty text will be written to the output.
 
@@ -1089,7 +1089,7 @@ Any input parameters you specify get sent as part of the event payload.
 
 ## Convert JSON
 
-Parses a json block into a [dictionary](dictionaries) or a [result set](dt-results)
+Parses a json block into a [dictionary](datatypes.md#dictionaries) or a [result set](datatypes.md#dt-results)
 The input json structure must either be an object or an array of homogenous objects.
 
 ### Inputs
@@ -1108,7 +1108,7 @@ The input json structure must either be an object or an array of homogenous obje
     * - Output Name
       - Description
     * - Output
-      - The resulting [dictionary](dictionaries) or [result set](dt-results)
+      - The resulting [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results)
 
 
         
@@ -1219,7 +1219,7 @@ Extracts the hours component of a date/time field.
     * - Input Name
       - Description
     * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ### Outputs
 .. list-table::
@@ -1358,9 +1358,9 @@ For reference on what functions are available in javascript, see the Javascript 
     The values fed to the pins can be:
 
     1. text
-    2. a [dictionary](dictionaries)
+    2. a [dictionary](datatypes.md#dictionaries)
     3. a |JSON| value
-    4. an [Array](dt-arrays)
+    4. an [Array](datatypes.md#dt-arrays)
 
     This block is useful for building an API action sequence that will return an error in JSON format.
     You can use the Code pin to specify an HTTP Status Code for the response.
@@ -1383,9 +1383,9 @@ For reference on what functions are available in javascript, see the Javascript 
     The input can be
 
     1. text
-    2. a [dictionary](dictionaries)
+    2. a [dictionary](datatypes.md#dictionaries)
     3. a |JSON| value
-    4. an [Array](dt-arrays)
+    4. an [Array](datatypes.md#dt-arrays)
 
 
 ### Outputs
@@ -1405,7 +1405,7 @@ For reference on what functions are available in javascript, see the Javascript 
 ## Extract JSON Path
 
 
-    Takes the input [JSON](dt-json) value and extracts a sub-component of it using the path expression given.
+    Takes the input [JSON](datatypes.md#dt-json) value and extracts a sub-component of it using the path expression given.
 
 {% hint type="seealso" %}
         http://jsonpath.com for more information {% endhint %}
@@ -1418,7 +1418,7 @@ For reference on what functions are available in javascript, see the Javascript 
     * - Input Name
       - Description
     * - JSON Object
-      - The JSON to extract a sub-component from. This can be a text representation of JSON or a [JSON](dt-json) value.
+      - The JSON to extract a sub-component from. This can be a text representation of JSON or a [JSON](datatypes.md#dt-json) value.
     * - Path
       - The JSON Path expression to use to find the component to extract from it.
 
@@ -1447,7 +1447,7 @@ For reference on what functions are available in javascript, see the Javascript 
     and if it matches any keys, the corresponding value is sent to the output.
 
     This is useful to take, say, a department as input and return the email address of the department's supervisor.
-    Use the `Edit Data` link in the [property panel](propertiespanel) to bring up the editor where you can edit the key/value pairs.
+    Use the `Edit Data` link in the [property panel](modeldesigner.md#propertiespanel) to bring up the editor where you can edit the key/value pairs.
 
 ### Inputs
 .. list-table::
@@ -1539,7 +1539,7 @@ Checks if the first datetime occurs prior to the second date time.
 
 ## Merge Data
 
-Merge a name/value pair into a [dictionary](dictionaries).
+Merge a name/value pair into a [dictionary](datatypes.md#dictionaries).
 Use this to add a name/value pair to an existing dictionary.
 Or, to create a new dictionary with a given name/value pair.
 If the `Input` dictionary is empty, then a new dictionary is created and the name/value pair are added to it.
@@ -1589,7 +1589,7 @@ Extracts the minutes component of a date/time field.
     * - Input Name
       - Description
     * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ### Outputs
 .. list-table::
@@ -1792,7 +1792,7 @@ Retrieve the iviva user key for the user having the specified login id.
 
 ## Now
 
-Returns the current [timestamp](datetimes) in UTC format.
+Returns the current [timestamp](datatypes.md#datetimes) in UTC format.
 
 ### Outputs
 .. list-table::
@@ -1801,7 +1801,7 @@ Returns the current [timestamp](datetimes) in UTC format.
     * - Output Name
       - Description
     * - Output
-      - The current [timestamp](datetimes)
+      - The current [timestamp](datatypes.md#datetimes)
 
 
         
@@ -1912,7 +1912,7 @@ Writes a global setting in the current iviva account.
 
 ## Parse Date
 
-This block converts a textual representation of a [timestamp](datetimes) into an actual [timestamp](datetimes).
+This block converts a textual representation of a [timestamp](datatypes.md#datetimes) into an actual [timestamp](datatypes.md#datetimes).
 See [Supported date and time formats](datatypes.md#datetimeformats) for more information on the formats in which the input can be specified.
 If the input is not in any of those formats, Lucy tries to make a guess as to how it should be intrepreted.
 Don't like the sound of that? Then specify the date in a valid format :)
@@ -1924,7 +1924,7 @@ Don't like the sound of that? Then specify the date in a valid format :)
     * - Input Name
       - Description
     * - Input String
-      - The string to convert into a [timestamp](datetimes)
+      - The string to convert into a [timestamp](datatypes.md#datetimes)
 
 ### Outputs
 .. list-table::
@@ -1933,7 +1933,7 @@ Don't like the sound of that? Then specify the date in a valid format :)
     * - Output Name
       - Description
     * - Output Date
-      - The [timestamp](datetimes)
+      - The [timestamp](datatypes.md#datetimes)
 
 
         
@@ -1943,7 +1943,7 @@ Don't like the sound of that? Then specify the date in a valid format :)
 ## Parse JSON
 
 
-    This block parses json text into a [JSON](dt-json) object.
+    This block parses json text into a [JSON](datatypes.md#dt-json) object.
 
     If the input does not contain valid json, this block will raise an error.
 
@@ -1963,7 +1963,7 @@ Don't like the sound of that? Then specify the date in a valid format :)
     * - Output Name
       - Description
     * - Output
-      -  The corresponding [JSON](dt-json) value.
+      -  The corresponding [JSON](datatypes.md#dt-json) value.
 
 
         
@@ -2072,18 +2072,18 @@ All input text that matches each capture group will be written to the correspond
 The Repeat Action block is used to loop through a list of data and execute an action for each item in the list.
     
 ### Specifying Inputs
-The input list can be a [result set](dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.md#splittext-ref) block) or any javascript array (the output from a |javascript| block).
+The input list can be a [result set](datatypes.md#dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.md#splittext-ref) block) or any javascript array (the output from a |javascript| block).
     
 ### Specifying the looping logic
-The way a repeat block works, is that it executes an [Action Start](actionstart-ref) block for each item in the input list.
-To specify what action should execute, drop in an [Action Start](actionstart-ref) block and then link the *Action* output pin of the Repeat block to the blue pin on the [Action Start](actionstart-ref) block.
+The way a repeat block works, is that it executes an [Action Start](block-source.raw.md#actionstart-ref) block for each item in the input list.
+To specify what action should execute, drop in an [Action Start](block-source.raw.md#actionstart-ref) block and then link the *Action* output pin of the Repeat block to the blue pin on the [Action Start](block-source.raw.md#actionstart-ref) block.
 This action will be executed for each item in the loop. 
 Since the logic is executed in a different action, you cannot link blocks from your current sequence (where your repeat block is) to items in the loop action.
     
 #### Passing items to the action
 Each time the action block is called, a single item from the list is passed as input to the action, along with any data specified in the *Extra* input.
-If the item being passed to the action block is a [dictionary](dictionaries) or [result set](dt-results), then it will be split into key/value pairs and sent to the action.
-This means, you can add output pins in the [Action Start](actionstart-ref) block to auto extract the fields of the [dictionary](dictionaries).
+If the item being passed to the action block is a [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results), then it will be split into key/value pairs and sent to the action.
+This means, you can add output pins in the [Action Start](block-source.raw.md#actionstart-ref) block to auto extract the fields of the [dictionary](datatypes.md#dictionaries).
 The *Extra* parameter is passed as an extra key/value pair with the key name being `Extra`.
     
 .. note::
@@ -2091,7 +2091,7 @@ The *Extra* parameter is passed as an extra key/value pair with the key name bei
     If your dictionary happens to have a key called `Extra` it will get overwritten by the *Extra* parameter passed into the repeat block.
     
 
-If the item being passed into the action block is *not* a [dictionary](dictionaries) or [result set](dt-results) then the item is passed as a single key/value pair with a key  `Item`.
+If the item being passed into the action block is *not* a [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results) then the item is passed as a single key/value pair with a key  `Item`.
 The *Extra* parameter is passed as a second key/value pair with the key name being `Extra`.
 In this case, you can add two output pins to the action block to extract the values:
     
@@ -2116,7 +2116,7 @@ Each will get executed independent of errors to any previous executions.
     * - Action
       - The action block to execute for each item in the list
     * - Items
-      - The list of items to execute. This can be a [result set](dt-results) or a list or array
+      - The list of items to execute. This can be a [result set](datatypes.md#dt-results) or a list or array
     * - Extra
       - Any extra data to be passed along to the action that is called for each item in the list. Use this to send some extra fixed set of information to each item.
 
@@ -2137,8 +2137,8 @@ Each will get executed independent of errors to any previous executions.
 ## Schedule Action
 
 Schedule an action to be executed later.
-To schedule an action, drag in an [Action Start](actionstart-ref) block and build your flow in that block.
-Then link the *Action* pin from the schedule block to the blue pin of the [Action Start](actionstart-ref) block.
+To schedule an action, drag in an [Action Start](block-source.raw.md#actionstart-ref) block and build your flow in that block.
+Then link the *Action* pin from the schedule block to the blue pin of the [Action Start](block-source.raw.md#actionstart-ref) block.
 Then, when the schedule block fires, it will setup a scheduler to execute that action at some later point.
     
 The action is executed exactly once and the schedule is removed once the action is executed.
@@ -2151,7 +2151,7 @@ The action is executed exactly once and the schedule is removed once the action 
     * - Input Name
       - Description
     * - Time
-      - The [timestamp](datetimes) at which the action should be executed
+      - The [timestamp](datatypes.md#datetimes) at which the action should be executed
     * - Action
       - The action to execute.
 
@@ -2327,7 +2327,7 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
         Support Team
 
 #####     Dictionaries and Result Sets
-    If the input contains a [dictionary](dictionaries) or [result set](dt-results) then you can access fields of the object using `.` syntax.
+    If the input contains a [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results) then you can access fields of the object using `.` syntax.
 
     Example (assuming the block has an input called `input1` which contains a dictionary of user details):
 
@@ -2340,10 +2340,10 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
 
             thanks
 
-    In the case of a [result set](dt-results), the first field from the first record in the [result set](dt-results) is  used.
+    In the case of a [result set](datatypes.md#dt-results), the first field from the first record in the [result set](datatypes.md#dt-results) is  used.
 
 #####     Lists
-    If the inputs to the block contain a list of items (a list of strings, or a [result set](dt-results) for example),
+    If the inputs to the block contain a list of items (a list of strings, or a [result set](datatypes.md#dt-results) for example),
     you can loop through the list using a `${for }...${end}` block.
     Any thing within that block will get repeated for each item in the list.
     The `${for}` blocks can also be nested for using loops within loops.
@@ -2371,7 +2371,7 @@ Both inputs are converted into floating point - if any non-numeric inputs are pa
 
 ```
 
-    If the list is a [result set](dt-results) then individual fields of the result could be accessed using the `.` operator.
+    If the list is a [result set](datatypes.md#dt-results) then individual fields of the result could be accessed using the `.` operator.
 
     Example (given an input coming from a datasource)
 
@@ -2421,25 +2421,25 @@ Available Functions:
           - Escape the html inside `content`. This converts '<' into &amp; and so on
 
         * - date(text)
-          - Parses a textual representation of a date/time into a [timestamp](datetimes)
+          - Parses a textual representation of a date/time into a [timestamp](datatypes.md#datetimes)
 
         * - dateonly(date)
-          - Removes the time component of a [timestamp](datetimes) - ie, sets the time to 12:00AM
+          - Removes the time component of a [timestamp](datatypes.md#datetimes) - ie, sets the time to 12:00AM
 
         * - addmonths(date,months)
-          - Add `months` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+          - Add `months` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
         * - adddays(date,months)
-          - Add `days` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+          - Add `days` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
         * - addyears(date,months)
-          - Add `years` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+          - Add `years` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
         * - addminutes(date,months)
-          - Add `minutes` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+          - Add `minutes` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
         * - addhours(date,months)
-          - Add `hours` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+          - Add `hours` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
         * - select(list,field-to-select,field-to-filter,value-to-filter)
           - Given a list of items `list`, return the field `field-to-select` of the first result where the value of the field `field-to-filter` matches `value-to-filter`. Example: `select(items,[Name],[UserKey],12)` - selects the `FirstName` field of the user having `UserKey=12`
@@ -2470,9 +2470,9 @@ Available Functions:
         * - escapexml(text)
           - Escapes the text so that its suitable for including within an xml block. Example: `escapexml([Ben & Jerrys])` translates to `Bend &amp; Jerrys`
         * - datetimeformat(timestamp ,[timezone])
-          - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.md#timezonecodes) to convert the timestamp into before formatting
+          - Given a [timestamp](datatypes.md#datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.md#timezonecodes) to convert the timestamp into before formatting
         * - dateformat(timestamp)
-          - Given a [timestamp](datetimes), converts it into a nicely formatted date string according to the date format given in iviva account settings.
+          - Given a [timestamp](datatypes.md#datetimes), converts it into a nicely formatted date string according to the date format given in iviva account settings.
 
 
 ### Fields
@@ -2510,13 +2510,13 @@ Available Functions:
 ## Serialize JSON
 
 Serialize the input object into JSON text.
-If the input is a [dictionary](dictionaries), it will get serialized as a JSON object:
+If the input is a [dictionary](datatypes.md#dictionaries), it will get serialized as a JSON object:
     
 .. code::
     
     {"key1":"value1","key2":"value2"}
     
-If the input is a [result set](dt-results), it will get serialzed as an array of objects:
+If the input is a [result set](datatypes.md#dt-results), it will get serialzed as an array of objects:
     
 ####### .. code::
         {"key1":"value1","key2":"value2"},
@@ -2605,7 +2605,7 @@ Extracts the year component of a date/time field.
     * - Input Name
       - Description
     * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ### Outputs
 .. list-table::

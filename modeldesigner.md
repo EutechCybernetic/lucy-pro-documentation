@@ -11,7 +11,7 @@
     Alternatively, you can search for an existing model and click it to open it up in the model designer.
 
 
-The [Model Designer](model-designer) is where you design, test and deploy your models.
+The [Model Designer](modeldesigner.md#model-designer) is where you design, test and deploy your models.
 It has a visual interface for building your action sequences, defining your attributes and testing and debugging them.
 
 <figure><img src=' images/modeldesigner.png'></figure>
@@ -52,14 +52,14 @@ The following functions are available:
 
     * Copy this model - Make a copy of the current model
     * Create New Instance - Used to create a new model instance - you will get a dialog where you can fill in attribute values for the instance that will be created
-    * Bulk Load Data - This will take you to a screen where you can upload an excel sheet of data to be bulk loaded. See [Bulk Loading Data](bulkloading) for more information about this.
-    * Export Model - This will take you to a screen where you can export this model as well as any dependencies it has. See [Importing and Exporting Models](importexport) for more information.
+    * Bulk Load Data - This will take you to a screen where you can upload an excel sheet of data to be bulk loaded. See [Bulk Loading Data](bulkloading.md#bulkloading) for more information about this.
+    * Export Model - This will take you to a screen where you can export this model as well as any dependencies it has. See [Importing and Exporting Models](importexport.md#importexport) for more information.
     * Make Inactive - Mark the current model as 'inactive'. Once a model is inactive it will no longer appear in the model search page by default. Actions on the model will not execute and events it listens to will not be picked up.
     * Deactivate all Instances - This will deactivate all instances of the model. Do not do this lightly! Use this only if have made massive changes to your model and it invalidates the behaviour of all instances that were created.
 
 3. Undo/Redo - Use this to undo/redo any changes you make to your model. Multi-level undo and redo is supported.
 
-4. Execute Action - Use this to test the currently selected action sequence. See [Execution Panel](executionpanel) for more information.
+4. Execute Action - Use this to test the currently selected action sequence. See [Execution Panel](modeldesigner.md#executionpanel) for more information.
 
 5. Arrange Blocks - This tool will auto arrange the blocks in the current action sequence to lay it out in an ordered sequence. Note that sometimes the sequence it selects may not be to your liking. You can always undo the changne to bring back any arrangement of blocks that you manually did.
 
@@ -77,7 +77,7 @@ The following functions are available:
 
 12. Basic Details - This shows you the name of your model. Click it to open the [Basic Details](basicdetails) panel. In that panel you can edit the name and description of your model.
 
-13. Save - Save your current changes. Everytime you make changes and save it, a new version of your model is created and the older versions are made accessible from the [Version History](versionhistory).
+13. Save - Save your current changes. Everytime you make changes and save it, a new version of your model is created and the older versions are made accessible from the [Version History](modeldesigner.md#versionhistory).
 
 
 <a name='executionpanel'></a>
@@ -146,17 +146,17 @@ as well as other objects and models defined in the system.
 
 There are also icons that can be dragged into the action sequence design area to create blocks that can read or write to the attribute.
 
-When you define an attribute, two blocks are automatically made available in the [block panel](blockpanel).
+When you define an attribute, two blocks are automatically made available in the [block panel](modeldesigner.md#blockpanel).
 
 1. Get Value - Used to read this attributes value from the current instance
 2. Set Value- Used to write this attribute's value in the current instance
 
-These blocks are under the category 'Attributes' in the [block panel](blockpanel).
+These blocks are under the category 'Attributes' in the [block panel](modeldesigner.md#blockpanel).
 
 {% hint style="info" %}
 
     In previous versions of Lucy, the Attribute Editor itself had icons to drag into the staging area for reading and writing values.
-    That is no longer there. All blocks are available in the [block panel](blockpanel) for consistency.
+    That is no longer there. All blocks are available in the [block panel](modeldesigner.md#blockpanel) for consistency.
 
 {% endhint %}
 
@@ -203,7 +203,7 @@ This will help you prevent several people from trying to modify and save the mod
 
 {% hint type="note" %}
     Note that each version of the model that gets saved is recorded in the version history so you can always go back to it any point.
-    See [Version History](versionhistory) for more information. {% endhint %}
+    See [Version History](modeldesigner.md#versionhistory) for more information. {% endhint %}
 
 <a name='propertiespanel'></a>
 
@@ -219,7 +219,7 @@ Here, you can view and edit properties of the block including:
 
 Click the image:: images/trash.png icon to delete a block.
 
-If you have selected the starting block of an [action](actions) you can rename the action from this properties panel.
+If you have selected the starting block of an [action](actions.md#actions) you can rename the action from this properties panel.
 
 <a name='stagingarea'></a>
 
@@ -232,11 +232,11 @@ All your logic sequences have to begin with a triggering block.
 
 There are currently two types of triggers available:
 
-- [Action Start](actionstart-ref) - These trigger when an action is explicitly called on your model. These sequences can use [Output](block-source.raw.md#actionoutput-ref) blocks to return data to the caller.
+- [Action Start](block-source.raw.md#actionstart-ref) - These trigger when an action is explicitly called on your model. These sequences can use [Output](block-source.raw.md#actionoutput-ref) blocks to return data to the caller.
 
-- [Event Start](eventstart-ref) - These get triggered when an event is raised in the system. Your model can listen to specific events and have them trigger action sequences
+- [Event Start](block-source.raw.md#eventstart-ref) - These get triggered when an event is raised in the system. Your model can listen to specific events and have them trigger action sequences
 
-You can add new action sequences by using the [action switcher](actionswitcher) and then adding a new one from the sheet.
+You can add new action sequences by using the [action switcher](modeldesigner.md#actionswitcher) and then adding a new one from the sheet.
 
 
 <a name='blockpanel'></a>
@@ -254,8 +254,8 @@ Click the Back arrow to go back to the cateogry list.
 The blocks in this list include:
 
 1. The standard blocks that come with Lucy
-2. Any external [connectors](connectortoolkit) that you define.
-3. Any actions that you have [published](shareactions)
+2. Any external [connectors](connectortoolkit.md#connectortoolkit) that you define.
+3. Any actions that you have [published](actions.md#shareactions)
 4. Any blocks published from an external connector
 
 ## API Routes
@@ -292,7 +292,7 @@ This can be invoked from the main menu in the sidebar.
 <figure><img src=' images/roles-editor.png'></figure>
 
 
-In this section, you can define and view [app roles](approles) for your model.
+In this section, you can define and view [app roles](permissions.md#approles) for your model.
 Application Roles you define here will be available for selection when choosing roles for actions and user interfaces.
 These roles will also be selectable in the section where User Roles are configured for users.
 

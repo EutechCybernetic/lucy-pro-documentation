@@ -104,18 +104,18 @@ Input:Input 2:The second value to operate on
 <a name='addminutes-ref'></a>
 
 ## AddMinutes
-Adds the given number of minutes to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The minutes to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of minutes to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The minutes to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
 
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
     [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
-Input:Input 1:A valid [timestamp](datetimes)
+Input:Input 1:A valid [timestamp](datatypes.md#datetimes)
 Input:Input 2:The number of minutes to add
-Output:Output:A new [timestamp](datetimes)
+Output:Output:A new [timestamp](datatypes.md#datetimes)
 
 ..
     NEW BLOCK: adddays
@@ -123,18 +123,18 @@ Output:Output:A new [timestamp](datetimes)
 <a name='adddays-ref'></a>
 
 ## AddDays
-Adds the given number of days to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The days to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of days to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The days to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
 
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
     [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
-Input:Input 1:A valid [timestamp](datetimes)
+Input:Input 1:A valid [timestamp](datatypes.md#datetimes)
 Input:Input 2:The number of days to add
-Output:Output:A new [timestamp](datetimes)
+Output:Output:A new [timestamp](datatypes.md#datetimes)
 
 ..
     NEW BLOCK: addmonths
@@ -142,18 +142,18 @@ Output:Output:A new [timestamp](datetimes)
 <a name='addmonths-ref'></a>
 
 ## AddMonths
-Adds the given number of months to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The months to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of months to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The months to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
 
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
     [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
-Input:Input 1:A valid [timestamp](datetimes)
+Input:Input 1:A valid [timestamp](datatypes.md#datetimes)
 Input:Input 2:The number of months to add
-Output:Output:A new [timestamp](datetimes)
+Output:Output:A new [timestamp](datatypes.md#datetimes)
 
 ..
     NEW BLOCK: addyears
@@ -161,18 +161,18 @@ Output:Output:A new [timestamp](datetimes)
 <a name='addyears-ref'></a>
 
 ## AddYears
-Adds the given number of years to a [timestamp](datetimes) and outputs a new [timestamp](datetimes).
-The first input specifies a valid [timestamp](datetimes). It can also be a textual representation of a [timestamp](datetimes)
-The years to add can be negative, allowing you to calculate a [timestamp](datetimes) in the past.
+Adds the given number of years to a [timestamp](datatypes.md#datetimes) and outputs a new [timestamp](datatypes.md#datetimes).
+The first input specifies a valid [timestamp](datatypes.md#datetimes). It can also be a textual representation of a [timestamp](datatypes.md#datetimes)
+The years to add can be negative, allowing you to calculate a [timestamp](datatypes.md#datetimes) in the past.
 
-Since [timestamp](datetimes) values are in UTC, no day-light savings are observed.
+Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light savings are observed.
 
 {% hint type="seealso" %}
     [Supported date and time formats](datatypes.md#datetimeformats) {% endhint %}
 
-Input:Input 1:A valid [timestamp](datetimes)
+Input:Input 1:A valid [timestamp](datatypes.md#datetimes)
 Input:Input 2:The number of years to add
-Output:Output:A new [timestamp](datetimes)
+Output:Output:A new [timestamp](datatypes.md#datetimes)
 
 ..
     NEW BLOCK: concat
@@ -234,7 +234,7 @@ Input:Input 2:The second value to operate on
 Extracts the minutes component of a date/time field.
 
 Output:Output:The minutes component of the date/time (0-59)
-Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ..
     NEW BLOCK: hour
@@ -245,7 +245,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 Extracts the hours component of a date/time field.
 
 Output:Output:The hours component of the date/time (0-23)
-Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ..
     NEW BLOCK: dayofweek
@@ -256,7 +256,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 Extracts the day of week for the date/time field.
 
 Output:Output: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
-Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ..
     NEW BLOCK: dayofmonth
@@ -267,7 +267,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 Extracts the day component of a date/time field.
 
 Output:Output:The day of the month (0-28/30/31)
-Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ..
     NEW BLOCK: year
@@ -278,7 +278,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 Extracts the year component of a date/time field.
 
 Output:Output:The year, as a number
-Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datetimeformats)
+Input:Input:A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
 
 ..
     NEW BLOCK: datetime
@@ -286,7 +286,7 @@ Input:Input:A valid datetime object or the datetime as text specified in a [vali
 <a name='datetime-ref'></a>
 
 ## DateTime
-Construct a new [timestamp](datetimes) from an year/month/day/hour/minute/second
+Construct a new [timestamp](datatypes.md#datetimes) from an year/month/day/hour/minute/second
 
 Input:Year:
 Input:Month:
@@ -295,7 +295,7 @@ Input:Hour:
 Input:Minute:
 Input:Second:
 
-Output:Output:A [timestamp](datetimes) constructed from the given inputs
+Output:Output:A [timestamp](datatypes.md#datetimes) constructed from the given inputs
 
 ..
     NEW BLOCK: actionoutput
@@ -324,13 +324,13 @@ Field:Field:The key name to use
 
 ## Schedule Action
 Schedule an action to be executed later.
-To schedule an action, drag in an [Action Start](actionstart-ref) block and build your flow in that block.
-Then link the *Action* pin from the schedule block to the blue pin of the [Action Start](actionstart-ref) block.
+To schedule an action, drag in an [Action Start](block-source.raw.md#actionstart-ref) block and build your flow in that block.
+Then link the *Action* pin from the schedule block to the blue pin of the [Action Start](block-source.raw.md#actionstart-ref) block.
 Then, when the schedule block fires, it will setup a scheduler to execute that action at some later point.
 
 The action is executed exactly once and the schedule is removed once the action is executed.
 
-Input:Time:The [timestamp](datetimes) at which the action should be executed
+Input:Time:The [timestamp](datatypes.md#datetimes) at which the action should be executed
 Input:Action:The action to execute.
 
 ..
@@ -342,18 +342,18 @@ Input:Action:The action to execute.
 The Repeat Action block is used to loop through a list of data and execute an action for each item in the list.
 
 ### Specifying Inputs
-The input list can be a [result set](dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.md#splittext-ref) block) or any javascript array (the output from a |javascript| block).
+The input list can be a [result set](datatypes.md#dt-results), a list of strings (ex, output of a [Split Text](block-source.raw.md#splittext-ref) block) or any javascript array (the output from a |javascript| block).
 
 ### Specifying the looping logic
-The way a repeat block works, is that it executes an [Action Start](actionstart-ref) block for each item in the input list.
-To specify what action should execute, drop in an [Action Start](actionstart-ref) block and then link the *Action* output pin of the Repeat block to the blue pin on the [Action Start](actionstart-ref) block.
+The way a repeat block works, is that it executes an [Action Start](block-source.raw.md#actionstart-ref) block for each item in the input list.
+To specify what action should execute, drop in an [Action Start](block-source.raw.md#actionstart-ref) block and then link the *Action* output pin of the Repeat block to the blue pin on the [Action Start](block-source.raw.md#actionstart-ref) block.
 This action will be executed for each item in the loop.
 Since the logic is executed in a different action, you cannot link blocks from your current sequence (where your repeat block is) to items in the loop action.
 
 #### Passing items to the action
 Each time the action block is called, a single item from the list is passed as input to the action, along with any data specified in the *Extra* input.
-If the item being passed to the action block is a [dictionary](dictionaries) or [result set](dt-results), then it will be split into key/value pairs and sent to the action.
-This means, you can add output pins in the [Action Start](actionstart-ref) block to auto extract the fields of the [dictionary](dictionaries).
+If the item being passed to the action block is a [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results), then it will be split into key/value pairs and sent to the action.
+This means, you can add output pins in the [Action Start](block-source.raw.md#actionstart-ref) block to auto extract the fields of the [dictionary](datatypes.md#dictionaries).
 The *Extra* parameter is passed as an extra key/value pair with the key name being `Extra`.
 
 {% hint style="info" %}
@@ -363,7 +363,7 @@ The *Extra* parameter is passed as an extra key/value pair with the key name bei
 {% endhint %}
 
 
-If the item being passed into the action block is *not* a [dictionary](dictionaries) or [result set](dt-results) then the item is passed as a single key/value pair with a key  `Item`.
+If the item being passed into the action block is *not* a [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results) then the item is passed as a single key/value pair with a key  `Item`.
 The *Extra* parameter is passed as a second key/value pair with the key name being `Extra`.
 In this case, you can add two output pins to the action block to extract the values:
 
@@ -380,7 +380,7 @@ Any error that occurs during the execution of the loop action does not affect su
 Each will get executed independent of errors to any previous executions.
 
 Input:Action:The action block to execute for each item in the list
-Input:Items:The list of items to execute. This can be a [result set](dt-results) or a list or array
+Input:Items:The list of items to execute. This can be a [result set](datatypes.md#dt-results) or a list or array
 Input:Extra:Any extra data to be passed along to the action that is called for each item in the list. Use this to send some extra fixed set of information to each item.
 Output:Done:The number of items processed is written to this output once all inputs have been processed. Anthing attached to this pin will execute after the full loop is done.
 
@@ -483,7 +483,7 @@ Input:*Multiple*:Add new inputs by clicking the 'Add Input Parameter' link in th
 ## Call Service
 Call a service in an iviva app.
 
-All service return a [result set](dt-results). You can auto-extract values by adding new output pins.
+All service return a [result set](datatypes.md#dt-results). You can auto-extract values by adding new output pins.
 Services are of two forms:
 
 ```
@@ -509,7 +509,7 @@ or
 Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 Field:Service:The service to be called
-Output:All Output:Contains the [result set](dt-results) from calling the service
+Output:All Output:Contains the [result set](datatypes.md#dt-results) from calling the service
 
 ..
     NEW BLOCK: calldatasource
@@ -517,13 +517,13 @@ Output:All Output:Contains the [result set](dt-results) from calling the service
 <a name='calldatasource-ref'></a>
 
 ## Call Data Source
-Query a [data source](datasources) in a linked [UI Bundle](uibundles) and return the result of it.
+Query a [data source](datasources.md#datasources) in a linked [UI Bundle](uis.md#uibundles) and return the result of it.
 The data source must be defined in a UI bundle that is linked to the specified model.
 
 If an error ocurred during execution of the action, then the current action sequence is aborted
 with an error.
 
-All data sources return a [result set](dt-results).
+All data sources return a [result set](datatypes.md#dt-results).
 
 Field:Model:The name of the model in which the action to be called is defined in
 Field:Data Source:The name of the data source to query. The data source is defined in the UI Bundle linked to the specified model.
@@ -532,7 +532,7 @@ Field:Data Source:The name of the data source to query. The data source is defin
 Input:*Multiple*: Any parameters to be passed to the action can also be passed as inputs. Click the *Add Input Parameter* link in the Properties Panel to add additional inputs. You can quickly add multiple inputs at once by specifying them as a comma separated list.
 
 
-Output:*All Output*:Contains the output from calling the action. This will be a [result set](dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.
+Output:*All Output*:Contains the output from calling the action. This will be a [result set](datatypes.md#dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.
 Output:*Multiple*: You can can auto-extract values from the first result by adding new output pins. Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 {% hint style="seealso" %}
@@ -686,7 +686,7 @@ Output:False:The input value is written to this output if the input is invalid
 <a name='extractvalue-ref'></a>
 
 ## ExtractValue
-Extracts a value from a [dictionary](dictionaries).
+Extracts a value from a [dictionary](datatypes.md#dictionaries).
 Specify an input dictionary and a field, and the value  for that field from the dictionary will be written to the output.
 If the dictionary does not contain the given field, empty text will be written to the output.
 
@@ -718,7 +718,7 @@ Output:Output:The value of the attribute when the block is executed.
 <a name='mergedata-ref'></a>
 
 ## Merge Data
-Merge a name/value pair into a [dictionary](dictionaries).
+Merge a name/value pair into a [dictionary](datatypes.md#dictionaries).
 Use this to add a name/value pair to an existing dictionary.
 Or, to create a new dictionary with a given name/value pair.
 If the `Input` dictionary is empty, then a new dictionary is created and the name/value pair are added to it.
@@ -743,11 +743,11 @@ Output:Output:The new dictionary containing the newly added name and value
 <a name='fromjson-ref'></a>
 
 ## Parse JSON
-Parses a json block into a [dictionary](dictionaries) or a [result set](dt-results)
+Parses a json block into a [dictionary](datatypes.md#dictionaries) or a [result set](datatypes.md#dt-results)
 The input json structure must either be an object or an array of homogenous objects.
 
 Input:Input:The json text to be parsed
-Output:Output:The resulting [dictionary](dictionaries) or [result set](dt-results)
+Output:Output:The resulting [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results)
 
 ..
     NEW BLOCK: passvalue
@@ -773,7 +773,7 @@ Output:Output: The value specified in the input. This is written only once the t
 
 ## Serialize JSON
 Serialize the input object into JSON text.
-If the input is a [dictionary](dictionaries), it will get serialized as a JSON object:
+If the input is a [dictionary](datatypes.md#dictionaries), it will get serialized as a JSON object:
 
 ```
 
@@ -781,7 +781,7 @@ If the input is a [dictionary](dictionaries), it will get serialized as a JSON o
 
 ```
 
-If the input is a [result set](dt-results), it will get serialzed as an array of objects:
+If the input is a [result set](datatypes.md#dt-results), it will get serialzed as an array of objects:
 
 ##### .. code::
         {"key1":"value1","key2":"value2"},
@@ -869,7 +869,7 @@ Example (assume two input pins have been added - `name` and `ticketid`):
     Support Team
 
 ####### Dictionaries and Result Sets
-If the input contains a [dictionary](dictionaries) or [result set](dt-results) then you can access fields of the object using `.` syntax.
+If the input contains a [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results) then you can access fields of the object using `.` syntax.
 
 Example (assuming the block has an input called `input1` which contains a dictionary of user details):
 
@@ -882,10 +882,10 @@ Example (assuming the block has an input called `input1` which contains a dictio
 
         thanks
 
-In the case of a [result set](dt-results), the first field from the first record in the [result set](dt-results) is  used.
+In the case of a [result set](datatypes.md#dt-results), the first field from the first record in the [result set](datatypes.md#dt-results) is  used.
 
 ####### Lists
-If the inputs to the block contain a list of items (a list of strings, or a [result set](dt-results) for example),
+If the inputs to the block contain a list of items (a list of strings, or a [result set](datatypes.md#dt-results) for example),
 you can loop through the list using a `${for }...${end}` block.
 Any thing within that block will get repeated for each item in the list.
 The `${for}` blocks can also be nested for using loops within loops.
@@ -913,7 +913,7 @@ Example (given a list of strings, say by using the [Split Text](block-source.raw
 
 ```
 
-If the list is a [result set](dt-results) then individual fields of the result could be accessed using the `.` operator.
+If the list is a [result set](datatypes.md#dt-results) then individual fields of the result could be accessed using the `.` operator.
 
 Example (given an input coming from a datasource)
 
@@ -963,25 +963,25 @@ Available Functions:
       - Escape the html inside `content`. This converts '<' into &amp; and so on
 
     * - date(text)
-      - Parses a textual representation of a date/time into a [timestamp](datetimes)
+      - Parses a textual representation of a date/time into a [timestamp](datatypes.md#datetimes)
 
     * - dateonly(date)
-      - Removes the time component of a [timestamp](datetimes) - ie, sets the time to 12:00AM
+      - Removes the time component of a [timestamp](datatypes.md#datetimes) - ie, sets the time to 12:00AM
 
     * - addmonths(date,months)
-      - Add `months` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+      - Add `months` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
     * - adddays(date,months)
-      - Add `days` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+      - Add `days` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
     * - addyears(date,months)
-      - Add `years` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+      - Add `years` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
     * - addminutes(date,months)
-      - Add `minutes` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+      - Add `minutes` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
     * - addhours(date,months)
-      - Add `hours` to the [timestamp](datetimes) `date` and return the new [timestamp](datetimes)
+      - Add `hours` to the [timestamp](datatypes.md#datetimes) `date` and return the new [timestamp](datatypes.md#datetimes)
 
     * - select(list,field-to-select,field-to-filter,value-to-filter)
       - Given a list of items `list`, return the field `field-to-select` of the first result where the value of the field `field-to-filter` matches `value-to-filter`. Example: `select(items,[Name],[UserKey],12)` - selects the `FirstName` field of the user having `UserKey=12`
@@ -1012,9 +1012,9 @@ Available Functions:
     * - escapexml(text)
       - Escapes the text so that its suitable for including within an xml block. Example: `escapexml([Ben & Jerrys])` translates to `Bend &amp; Jerrys`
     * - datetimeformat(timestamp ,[timezone])
-      - Given a [timestamp](datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.md#timezonecodes) to convert the timestamp into before formatting
+      - Given a [timestamp](datatypes.md#datetimes), converts it into a nicely formatted string according to the date and time formats given in iviva account settings. Optionally specify a [Time Zone Codes](timezonecodes.md#timezonecodes) to convert the timestamp into before formatting
     * - dateformat(timestamp)
-      - Given a [timestamp](datetimes), converts it into a nicely formatted date string according to the date format given in iviva account settings.
+      - Given a [timestamp](datatypes.md#datetimes), converts it into a nicely formatted date string according to the date format given in iviva account settings.
 
 
 Input:*Multiple*:The inputs to be accessed as variables. You can define as many as you need.
@@ -1050,13 +1050,13 @@ Field:Code:The actual javascript code
 <a name='parsedate-ref'></a>
 
 ## Parse Date
-This block converts a textual representation of a [timestamp](datetimes) into an actual [timestamp](datetimes).
+This block converts a textual representation of a [timestamp](datatypes.md#datetimes) into an actual [timestamp](datatypes.md#datetimes).
 See [Supported date and time formats](datatypes.md#datetimeformats) for more information on the formats in which the input can be specified.
 If the input is not in any of those formats, Lucy tries to make a guess as to how it should be intrepreted.
 Don't like the sound of that? Then specify the date in a valid format :)
 
-Input:Input String:The string to convert into a [timestamp](datetimes)
-Output:Output Date:The [timestamp](datetimes)
+Input:Input String:The string to convert into a [timestamp](datatypes.md#datetimes)
+Output:Output Date:The [timestamp](datatypes.md#datetimes)
 
 ..
     NEW BLOCK: regexcapture
@@ -1095,7 +1095,7 @@ Content-Disposition header is sent:
 
 ```
 
-Input:Data:A [binary data object](binobjects) object or text
+Input:Data:A [binary data object](datatypes.md#binobjects) object or text
 Input:Content Type:The mime type of the content being returned
 Input:File Name:An optional file name to use when the data is downloaded.
 
@@ -1106,9 +1106,9 @@ Input:File Name:An optional file name to use when the data is downloaded.
 
 ## Now
 
-          Returns the current [timestamp](datetimes) in UTC format.
+          Returns the current [timestamp](datatypes.md#datetimes) in UTC format.
 
-          Output:Output:The current [timestamp](datetimes)
+          Output:Output:The current [timestamp](datatypes.md#datetimes)
 
 
 ..

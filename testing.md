@@ -7,12 +7,12 @@
 Lucy includes several tools to help you with testing and debugging your action sequences.
 
 
-You can directly run your actions from the [Model Designer](model-designer) and view their output.
+You can directly run your actions from the [Model Designer](modeldesigner.md#model-designer) and view their output.
 
 You can also use the Orchestration Debugger to step through your flows and examine their inputs and outputs at each stage.
 
 ## Testing Actions
-You can test your action sequences by using the [execution panel](executionpanel) from the [Model Designer](model-designer).
+You can test your action sequences by using the [execution panel](modeldesigner.md#executionpanel) from the [Model Designer](modeldesigner.md#model-designer).
 
 Either click the 'Play' icon in the toolbar or double-click the action or event start block to bring it up.
 
@@ -64,11 +64,11 @@ You can use the arrows on top to step forward and backwards through the sequence
 
 You can also jump to a specific block by clicking on it.
 
-When you select on a block in the sequence list, the block gets highlighted in the [staging area](stagingarea) with other blocks grayed out.
+When you select on a block in the sequence list, the block gets highlighted in the [staging area](modeldesigner.md#stagingarea) with other blocks grayed out.
 Below the block in the debugger, you can see all the inputs and outputs to the block as well as any error if one was generated.
 
-The inputs and outputs section show the name of the input/output, a symbol representing the [data type](datatypes) of the value, and the actual value itself.
-Depending on the [data type](datatypes) of the value, you may be able to click on the value to expand it and see it in detail.
+The inputs and outputs section show the name of the input/output, a symbol representing the [data type](datatypes.md#datatypes) of the value, and the actual value itself.
+Depending on the [data type](datatypes.md#datatypes) of the value, you may be able to click on the value to expand it and see it in detail.
 
 <figure><img src=' images/debugger-action.png'></figure>
 
@@ -78,7 +78,7 @@ Depending on the [data type](datatypes) of the value, you may be able to click o
 
 From the debugger panel on the top right, you can shift to showing the global debug log.
 This shows you a log of all debug statements that were logged by all models in your account.
-You can log items here from your [action](actions) in two ways:
+You can log items here from your [action](actions.md#actions) in two ways:
 
 1. Use a [Debug](block-source.raw.md#debug-ref)
 2. From a javascript block, using `lucy.log()`
@@ -88,4 +88,4 @@ You can log items here from your [action](actions) in two ways:
 Because of the wealth of information recorded during debugging, it is recommended that you turn it off in production where you expect your action to get executed often and/or expect it to run without any latency.
 
 ### Privacy Implications
-Please see [Privacy](privacy) for more information on the privacy implications of debugging.
+Please see [Privacy](privacy.md#privacy) for more information on the privacy implications of debugging.

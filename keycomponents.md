@@ -6,12 +6,12 @@ In order to help you get to know Lucy better, it would help to understand the va
 
 ## Model Designer
 This is the tool you will use to design and create your models and action sequences in Lucy. This is a web-based visual interface to easily put together your solution.
-See [Model Designer](model-designer) for more information.
+See [Model Designer](modeldesigner.md#model-designer) for more information.
 
 .. UI Composer
 .. ------------
 .. This is a graphical tool to design your user interface elements that you will deploy as part of your Lucy development.
-.. See [UI Composer](uicomposer) for more information.
+.. See [UI Composer](uicomposer.md#uicomposer) for more information.
 
 ## Orchestration Engine
 This is the backend service responsible for executing the action sequences that you design and for storing data that you require

@@ -29,7 +29,7 @@ To configure this, go to the Lucy dashboard, click the image:: images/gear.png i
 
 In the configuration screen, select the object type you want to customize. This list will include all iviva objects as well as Lucy models.
 After selecting one, go to the *Weblets* section below, click the image:: images/attradd.png icon,  and then choose a weblet from the list.
-The list of weblets shows all published weblets that are available - both in iviva apps as well as weblets published in any [UI Bundle](uibundles).
+The list of weblets shows all published weblets that are available - both in iviva apps as well as weblets published in any [UI Bundle](uis.md#uibundles).
 
 When the weblet is displayed in the explorer after clicking a node, a `key` parameter is passed to the weblet which holds the object key of the node that was clicked on.
 

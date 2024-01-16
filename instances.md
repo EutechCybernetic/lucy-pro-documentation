@@ -51,9 +51,9 @@ Along with inheriting the attributes of the model from which the model instance 
 ## Creating |instances|
 There are several ways an instance of a model could be created:
 
-1. By defining an [action](actions) using an [Action Start](actionstart-ref) block with the mode set to [Trigger new Instance](actiontriggernewinstance). Then, calling this action on a model will automatically create a new instance of the model and run the action sequence for that action on this new instance.
+1. By defining an [action](actions.md#actions) using an [Action Start](block-source.raw.md#actionstart-ref) block with the mode set to [Trigger new Instance](actions.md#actiontriggernewinstance). Then, calling this action on a model will automatically create a new instance of the model and run the action sequence for that action on this new instance.
 
-2. Creating an instance by listening to an incoming [event](eventhandling). The [Event Start](eventstart-ref) block must be set to [Trigger a new Instance](events.md#eventtriggernewinstance) to make it trigger a new instance of the model.
+2. Creating an instance by listening to an incoming [event](events.md#eventhandling). The [Event Start](block-source.raw.md#eventstart-ref) block must be set to [Trigger a new Instance](events.md#eventtriggernewinstance) to make it trigger a new instance of the model.
 
 3. By invoking the instance creation dialog in a user interface.
 
@@ -61,7 +61,7 @@ There are several ways an instance of a model could be created:
     2. If you define an extension attribute in your model, then from that extension's interface, you can click the |mapextension| icon to create a new instance of the model.
 
 {% hint type="note" %}
-    Probably the most common way you will create an instance is by using an action with the mode set to [trigger a new instance](actiontriggernewinstance). This action can, in-turn be bound to some custom user interface that you build and present to the user. {% endhint %}
+    Probably the most common way you will create an instance is by using an action with the mode set to [trigger a new instance](actions.md#actiontriggernewinstance). This action can, in-turn be bound to some custom user interface that you build and present to the user. {% endhint %}
 
 <a name='deactivateinstance'></a>
 
@@ -86,7 +86,7 @@ However
     The system will periodically flush out inactive instances, so do not expect them to always be present. If you need some way of marking an instance as not valid but still want to see it in the system, then define your own custom attribute for this and as a convention, set its value to `1` or `0` to mark it as valid or invalid. {% endhint %}
 
 {% hint type="note" %}
-    When composing a [data source](datasources) to list out instances, you almost always want to include a filter to remove inactive instances. Add the IsActive attribute to the datasource and set its value to `1` under the *Conditions* section. {% endhint %}
+    When composing a [data source](datasources.md#datasources) to list out instances, you almost always want to include a filter to remove inactive instances. Add the IsActive attribute to the datasource and set its value to `1` under the *Conditions* section. {% endhint %}
 
 ## Instance Dashboards
 Each instance of a model can have a dynamic dashboard associated with it.

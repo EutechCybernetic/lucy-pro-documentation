@@ -2,7 +2,7 @@
 
 # Using Javascript Modules
 
-The [Javascript](es6javascript-ref) block is extremely useful to run complex logic and formulas that are otherwise difficult to express in a visual environment.
+The [Javascript](blocks.md#es6javascript-ref) block is extremely useful to run complex logic and formulas that are otherwise difficult to express in a visual environment.
 The Javascipt engine is ES6 compliant and now has support for referencing external javascipt modules.
 
 With Javascipt modules you can:
@@ -16,7 +16,7 @@ Curently, javascript modules are associated with specific Lucy models.
 This means if you want to reference the same module in a different Lucy model, you need to attach it to that model as well.
 When you export a Lucy model, any associated Javascript modules get exported as well.
 
-To attach a javascript module to a Lucy model, from the [Model Designer](model-designer) click the menu and choose 'JS Modules'.
+To attach a javascript module to a Lucy model, from the [Model Designer](modeldesigner.md#model-designer) click the menu and choose 'JS Modules'.
 
 
 <figure><img src=' images/jsmodules.png'></figure>

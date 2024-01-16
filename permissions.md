@@ -32,7 +32,7 @@ As you can see, app roles tend to be specific to that application's domain.
 <a name='approles'></a>
 ## Defining App Roles for Models
 You can define fine-grained app roles for your models.
-In each model, go to the **Permissions** sidebar panel of the [Model Designer](model-designer).
+In each model, go to the **Permissions** sidebar panel of the [Model Designer](modeldesigner.md#model-designer).
 There, you can add app roles for that model.
 Some example app roles
 
@@ -52,7 +52,7 @@ Once we have these roles, we need to do two things:
 <a name='permsactions'></a>
 
 ### Applying Roles to Actions
-You can define a set of app roles that are allowed to execute an action by specifying them in the [Action Start](actionstart-ref) block of an action. Click on the block and then in the properties panel, find the section called **Permissions**.
+You can define a set of app roles that are allowed to execute an action by specifying them in the [Action Start](block-source.raw.md#actionstart-ref) block of an action. Click on the block and then in the properties panel, find the section called **Permissions**.
 
 <figure><img src=' images/roles-properties.png'></figure>
 
@@ -73,13 +73,13 @@ If you select multiple roles, then the user executing the action must have any o
 #### How does iviva know which user executed an action?
 When an action is called via a user interface, then the user who is logged-in at that time will be considered as the user who executed an action. This applies even to any background tasks that are occurring on a web page that the user is looking at.
 
-When the action is invoked via an [API](publishapi) call, then the user associated with the [API Key](apikey) that was passed will be used to determine permissions.
+When the action is invoked via an [API](publishingapi.md#publishapi) call, then the user associated with the [API Key](apikey) that was passed will be used to determine permissions.
 
 
 <a name='permsuis'></a>
 
 ### Applying Roles to User Interfaces
-For dynamically generated user interfaces, roles can be applied to them from the **UI** tab of the [Model Designer](model-designer).
+For dynamically generated user interfaces, roles can be applied to them from the **UI** tab of the [Model Designer](modeldesigner.md#model-designer).
 
 Under each section, you can see a list of roles that have been applied for that interface. To change them, click the image:: images/glass.png icon next to the header where it says **Roles** and then choose the required roles from a list.
 
@@ -90,10 +90,10 @@ If you select multiple roles, the user needs to have any one of them to access t
     
     [uitab](uitab) {% endhint %}
 
-If you are defining your own custom user interface, then you need to specify an experssion in the [UI Composer](uicomposer), in the **Permissions** section of the UI screen configuration. See [Applying Permissions to User Interfaces](uis.md#uipermissions) for more information.
+If you are defining your own custom user interface, then you need to specify an experssion in the [UI Composer](uicomposer.md#uicomposer), in the **Permissions** section of the UI screen configuration. See [Applying Permissions to User Interfaces](uis.md#uipermissions) for more information.
 
 {% hint type="note" %}
-    When specifying roles in actions and dynamically generated UIs, you can only select roles within the current model. Custom UIs can specify roles in any model, using [iviva Expression](ice). {% endhint %}
+    When specifying roles in actions and dynamically generated UIs, you can only select roles within the current model. Custom UIs can specify roles in any model, using [iviva Expression](ice.md#ice). {% endhint %}
 
 ## Assigning App Roles to user roles
 Alright, so you defined your app roles and have used them in your models and user interfaces.

@@ -84,7 +84,7 @@ Transformers are special functions that transform an expression in some way.
 Put a pipe (`|`) character after an expression and then the name of the transformer to transform that expression.
 
 One such transformer is the [datetimeformat](ice.md#datetimeformat-transformer) transformer.
-That transforms an expression which evaluated to a [timestamp](datetimes) into a nicely formatted textual representation of the [timestamp](datetimes) according to the logged-in user's format preferences.
+That transforms an expression which evaluated to a [timestamp](datatypes.md#datetimes) into a nicely formatted textual representation of the [timestamp](datatypes.md#datetimes) according to the logged-in user's format preferences.
 
 ```
 

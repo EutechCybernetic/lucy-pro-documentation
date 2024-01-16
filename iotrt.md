@@ -46,7 +46,7 @@ Lucy will pick an appropriate value.
 #### Event ID
 This is the event that will be fired in Lucy when a message is received on a topic matching the given pattern.
 You can fill in any name for your event.
-If the event has not yet been [registered](eventsregister), it will automatically get registered.
+If the event has not yet been [registered](events.md#eventsregister), it will automatically get registered.
 
 {% hint type="seealso" %}
     [Event Stream and Event Handling](events.md#eventhandling)  for more information on how to handle events. {% endhint %}

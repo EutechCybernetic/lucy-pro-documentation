@@ -9,7 +9,7 @@ You can design data sources to select the attributes you need, filter out data, 
 You can use data sources to gather data from instances of your models, from objects in iviva or a combination of both.
 
 ## Defining Data Sources
-You can define data sources using the **DataSource** tab of the [UI Composer](uicomposer).
+You can define data sources using the **DataSource** tab of the [UI Composer](uicomposer.md#uicomposer).
 
 <figure><img src=' images/datasource.png'></figure>
 
@@ -68,24 +68,24 @@ Depending on the operator, you may need to specify another field or value.
 The following operators are available:
 
 ### Exists
-Returns true if the specified attribute has a value that is not null or an [empty value](emptyvalues).
+Returns true if the specified attribute has a value that is not null or an [empty value](datasources.md#emptyvalues).
 
 ### Does not exist
-Returns true if the specified attribute has a value that is null or an [empty value](emptyvalues).
+Returns true if the specified attribute has a value that is null or an [empty value](datasources.md#emptyvalues).
 
 ### Equals
-Returns true if the specified attribute hasa value equal to the value specified in the second text box. You can use [parameters](datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
+Returns true if the specified attribute hasa value equal to the value specified in the second text box. You can use [parameters](datasources.md#datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
 
 ### Not Equal To
 Returns true if the specified attribute is not equal to the value specified in the second text box.
-You can use [parameters](datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
+You can use [parameters](datasources.md#datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
 
 ### Contains
-Returns true if the specified attribute is one of the values specified in the second text box. The second text box must contain a comma separated list of possible values. You can use [parameters](datasourceparameters) in the second text box to specify that the values to check against should be taken from an input parameter.
+Returns true if the specified attribute is one of the values specified in the second text box. The second text box must contain a comma separated list of possible values. You can use [parameters](datasources.md#datasourceparameters) in the second text box to specify that the values to check against should be taken from an input parameter.
 
 ### Contains Text
 Returns true if the specified attribute contains the text specified in the second text box. The match does not have to be exact. If the specified text is contained anywhere within the attribute value, it will match.
-You can use [parameters](datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
+You can use [parameters](datasources.md#datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
 
 ### Include in text search
 If an attribute is specified with this option, then this attributed is checked against a global text parameter, defined by a parameter named `q` to see if it matches.
@@ -93,17 +93,17 @@ This is different from the *Contains Text* operator in that multiple attributes 
 
 ### Greater Than
 Checks if the attribute is greater than the value specified in the second text box.
-You can use [parameters](datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
-This is only available for attributes that represent numbers or [timestamp](datetimes) values.
+You can use [parameters](datasources.md#datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
+This is only available for attributes that represent numbers or [timestamp](datatypes.md#datetimes) values.
 
 ### Less Than
 Checks if the attribute is less than the value specified in the second text box.
-You can use [parameters](datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
-This is only available for attributes that represent numbers or [timestamp](datetimes) values.
+You can use [parameters](datasources.md#datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
+This is only available for attributes that represent numbers or [timestamp](datatypes.md#datetimes) values.
 
 ### Is Within Location
 This operator is only available when the attribute represents a valid iviva Location Key. This operator matches if the location represented by the attribute is a child location (or an exact match) of the location specified in the second text box.
-You can use [parameters](datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
+You can use [parameters](datasources.md#datasourceparameters) in the second text box to specify that the value should be taken from an input parameter.
 The value in the second text box should be a number representing the key of a parent location.
 
 

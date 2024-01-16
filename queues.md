@@ -24,7 +24,7 @@ To use queues as part of your integration, you can use the Queue block.
 
 
 The Queue block is under the list category. 
-This will look similar to a repeater block in that it will have an input side and the output side will have a link to an [action](actions) block. 
+This will look similar to a repeater block in that it will have an input side and the output side will have a link to an [action](actions.md#actions) block. 
 
 When the block receives inputs, it will put the input into a queue. 
 There will be a separate task to read items from the queue and execute the linked action, passing each item as a parameter to it.
@@ -50,7 +50,7 @@ There will be a separate task to read items from the queue and execute the linke
       - Description
     
     * -  Output
-      - This is linked to a [action](actions) block. The linked action will execute to process each item in the queue. Any data returned from the linked action (using a 
+      - This is linked to a [action](actions.md#actions) block. The linked action will execute to process each item in the queue. Any data returned from the linked action (using a 
 
     * - Queue Id 
       - This will return a unique id for the item that got queued. 

@@ -26,7 +26,7 @@ For example, if we want to enhance the *Staff* object in iviva to add more attri
 This will have an attribute that points to the iviva staff object (`Organization.OrgStaff`) and will be marked as an extension.
 We will also add any other attributes that need to be captured about the staff.
 
-To mark an attribute as an extension, go to the [Attribute Editor](attributeeditor), click on the image:: images/attrsettings.png icon next to the attribute and check-off the **Extension** checkbox.
+To mark an attribute as an extension, go to the [Attribute Editor](modeldesigner.md#attributeeditor), click on the image:: images/attrsettings.png icon next to the attribute and check-off the **Extension** checkbox.
 Once this is done, this model will now be marked as an extension of the `Organization.OrgStaff` object.
 
 When you visit the iviva Staff details screen, at the top right corner, you should see a image:: images/metadatamap.png icon. Click on it to bring up a list of any extensions that exist for this object.
@@ -67,9 +67,9 @@ Virtually all of them emit a `Created` event and a `Modified` event. Both of  th
 
 For example, if we want to create our StaffExtension when a new staff gets registered, we need to trap the `Organization.OrgStaff:Created` event and handle it.
 
-1. Locate that event in the [Model Designer](model-designer) event tab
+1. Locate that event in the [Model Designer](modeldesigner.md#model-designer) event tab
 2. drop the block into the design surface.
-3. Set the mode of the [Event Start](eventstart-ref) block to *Trigger new Instance*
+3. Set the mode of the [Event Start](block-source.raw.md#eventstart-ref) block to *Trigger new Instance*
 4. Read the `ObjectKey` parameter from the event and assign to your extension attribute
 
 That's it!  Your StaffExtension instance will now get created whenever a new Staff is created in the system.
@@ -89,7 +89,7 @@ To do this, listen to an event that gets emitted from the iviva application. Mar
 The easiest way to integrate into an iviva application screen is by tab injection.
 Most iviva objects have screens arranged around tabs and have provisions for adding new tabs to them dynamically.
 
-To inject a tab, you need to design a tab in the [UI Composer](uicomposer).
+To inject a tab, you need to design a tab in the [UI Composer](uicomposer.md#uicomposer).
 First create a new UI bundle for your model.
 See [Linking your model to a user interface](customuis.md#linkuimodel) for more information on how to do this.
 

@@ -33,7 +33,7 @@ This is more unlikely but it's possible that your model itself has sensitive dat
 A common case would be if you hard-coded values to any blocks, or in javascript code, or used any sensitive account-names for connectors.
 
 1. The best approach again is to overwrite the data by removing it from your model and saving it.
-2. Keep in mind that Lucy maintains a full version history of your model, so you will have to delete all previous versions of the model as well. See [Version History](versionhistory) for more information on how to do this.
+2. Keep in mind that Lucy maintains a full version history of your model, so you will have to delete all previous versions of the model as well. See [Version History](modeldesigner.md#versionhistory) for more information on how to do this.
 3. All your models are backed-up as part of our regular database backups. Upon request, we can purge backups from a given time period.
 4. If you have exported your models to your local computer or given to someone else, those will have to be deleted by you.
 
