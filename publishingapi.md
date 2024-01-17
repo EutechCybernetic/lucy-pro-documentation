@@ -233,6 +233,7 @@ The inputs are:
 
 
 |Query|This will be a [dictionary](datatypes.md#dictionaries) containing all query string parameters that were part of the request|
+|--|--|
 |Headers|This will be a [dictionary](datatypes.md#dictionaries) containing all HTTP headers that were sent as part of the request.|
 |HttpMethod|This will be the name of the HTTP method that was used. This is useful if you want mulitple APIs mapped to a single action.|
 |ContentType|This is the value of the Content-Type header that was sent. You can also retrieve this from the Headers [dictionary](datatypes.md#dictionaries) mentioned above, so this is just a convenience since as its the most-accessed header.|

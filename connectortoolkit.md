@@ -378,6 +378,7 @@ The object contains the following members:
 
 
 |Member|Type|Description|Availability|
+|----|----|----|----|
 |setHeaders(object)|function|This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use `request.headers` to read the original set of headers, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.|PreProcessing Scripts|
 |setQuery(object)|function|This function lets you set the final query string parameters that will be sent with the request. Any existing query strings that were configured will be removed. Its recommended you use `request.query` to read the original key/value pairs, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.|PreProcessing Scripts|
 |setBody(string)|function|Sets the raw payload that is sent as the body of the request (obviously not relevant for `GET` requests). The most typical use case is to build an object in javascript and then call `runtime.setBody(JSON.stringify(obj))`|PreProcessing Scripts|
