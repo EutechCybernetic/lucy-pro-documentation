@@ -378,43 +378,16 @@ The object contains the following members:
 
 
 |Member|Type|Description|Availability|
-|----|----|----|----|
 |setHeaders(object)|function|This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use `request.headers` to read the original set of headers, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.|PreProcessing Scripts|
+|setQuery(object)|function|This function lets you set the final query string parameters that will be sent with the request. Any existing query strings that were configured will be removed. Its recommended you use `request.query` to read the original key/value pairs, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.|PreProcessing Scripts|
+|setBody(string)|function|Sets the raw payload that is sent as the body of the request (obviously not relevant for `GET` requests). The most typical use case is to build an object in javascript and then call `runtime.setBody(JSON.stringify(obj))`|PreProcessing Scripts|
+|setUrl(string)|function|Override the actual web service url with a new one. This is useful if you need to specially craft segments of the url based on inputs|PreProcessing Scripts|
+|log(string)|function|Used to log text to the LucyEngine console.|PreProcessing and PostProcessing|
+|parseDate(object-or-string)|function|This is a useful helper function that will take an input and parse it into a valid [datetime](datatypes.md#datetimes) object. The input could be a string representation of a date or a [datetime](datatypes.md#datetimes) object.|PreProcessing and PostProcessing|
+|setError(string,code)|function|Use this to signal an error in the web service call. The first parameter is an error message string. The second is an http status code.|PreProcessing and PostProcessing
+## Additional WebService Configuration
+This feature allows you to specify some additional set of configuration for a webservice and values for each configuration can be provided per webservice account.|
  
-
-    * - setQuery(object)
-      - function
-      - This function lets you set the final query string parameters that will be sent with the request. Any existing query strings that were configured will be removed. Its recommended you use `request.query` to read the original key/value pairs, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.
-      - PreProcessing Scripts
-
-    * - setBody(string)
-      - function
-      - Sets the raw payload that is sent as the body of the request (obviously not relevant for `GET` requests). The most typical use case is to build an object in javascript and then call `runtime.setBody(JSON.stringify(obj))`
-      - PreProcessing Scripts
-
-    * - setUrl(string)
-      - function
-      - Override the actual web service url with a new one. This is useful if you need to specially craft segments of the url based on inputs
-      - PreProcessing Scripts
-    
-    * - log(string)
-      - function
-      - Used to log text to the LucyEngine console. 
-      - PreProcessing and PostProcessing
-    
-    * - parseDate(object-or-string)
-      - function
-      - This is a useful helper function that will take an input and parse it into a valid [datetime](datatypes.md#datetimes) object. The input could be a string representation of a date or a [datetime](datatypes.md#datetimes) object.
-      - PreProcessing and PostProcessing
-
-    * - setError(string,code)
-      - function
-      - Use this to signal an error in the web service call. The first parameter is an error message string. The second is an http status code.
-      - PreProcessing and PostProcessing
- 
-## Additional WebService Configuration 
-
-This feature allows you to specify some additional set of configuration for a webservice and values for each configuration can be provided per webservice account.
 
 A simple usecase where this could be helpful is, when using webservices that would require you to provide an additional access key like a *Subscription Key*, along with your usual *Access Token*. Now, we could have an additional pin in webservice block and use that in webservice method. But, you would have to pass the value into the Lucy action, which might not be secure. So instead, you could simply create a configuration in your webservice, provide it with a value when creating an account or updating an existing one and use that in your webservice method.
 
