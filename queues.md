@@ -33,8 +33,8 @@ There will be a separate task to read items from the queue and execute the linke
 
 
 
-|Label|Description||
-|---|---|---|
+|Label|Description|
+|--|--|
 |Input 01|This is the default input pin. You can remove this add and add other inputs as you require.|
  
 
@@ -43,48 +43,14 @@ There will be a separate task to read items from the queue and execute the linke
 
 
 
-|Label|Description||
-|---|---|---|
+|Label|Description|
+|--|--|
 |Output|This is linked to a [action](actions.md#actions) block. The linked action will execute to process each item in the queue. Any data returned from the linked action (using a|
- 
-
-    * - Queue Id 
-      - This will return a unique id for the item that got queued. 
-
+|Queue Id|This will return a unique id for the item that got queued.
 {% hint type="note" %}
-    You are unable to add output pins to the queue block but You can add output pins to action block. {% endhint %}
+You are unable to add output pins to the queue block but You can add output pins to action block. {% endhint %}|
+ 
 
 {% hint type="note" %}
     When adding output pins to the action block, make sure that names of the output pins are identicle to the input pins in the queue block {% endhint %}
 
-
-
-|Label|Mandatory/Optional|Description|Default Value||
-|-----|-----|-----|-----|-----|
-|Queue Name|Mandatory|Name ot the queue. This will be used to list queue items|empty|
- 
-
-    * - Retry Immediately
-      - Optional
-      - Enable disable retry immediate. If retry Immediately is enabled, when an error happen it will retry (5 times) with an exponential backoff.
-      - disabled
-
-    * - Retry Count 
-      - Mandatory
-      - This will determine how meny times to retry when an error happens
-      - 3
-
-    * - Retry In(seconds)
-      - Mandatory
-      - This will determine when to retry when an error happens
-      - 5000
-    
-    * - Process Multiple Items In Parallel
-      - Optional
-      - Enable/disable multiple processes. If enabled it will process multiple items in the queue Parallely. If disabled it will process only one queue item at a time
-      - disabled
-
-    * - Parallel Job Count 
-      - Optional
-      - Determines how many Parallel process to run. This is required if only |Process Multiple Items In Parallel| is enabled
-      - 1

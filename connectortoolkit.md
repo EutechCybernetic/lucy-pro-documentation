@@ -171,15 +171,13 @@ The following variables are made available to you by default:
 |`#{lucyurl}`|The url of the current Lucy account.|Always available|
 |`#{lucyid}`|The name of the Lucy account that this connector is running in. This is often the subdomain name of the url.|Always available|
 |`#{lucycode}`|This is a short code that is generated for your Lucy account. It can be used to uniquely identify this Lucy account.|Always available|
-|`#{password}`|This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.|Always available|
- 
-
-
+|`#{password}`|This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.|Always available
 ### Parsing Outputs
 Typically the full response from the web service call is made available as an output in your block called 'Output'
 However, if the output from the web service is JSON, you can choose to extract values out of it and make it avaialble as individual pins.
 For example, if you're building a connector to Salesforce, the `id` property from the JSON result may be extracted and presented in the block as an output called 'ID'.
-Which can be directly used by the action sequence without having to parse it first.
+Which can be directly used by the action sequence without having to parse it first.|
+ 
 
 To do this, go to the Output tab in the method definition dialog and then change the type from *Raw* to *Key/Value Pairs*.
 Then add multiple items - one for each output you want to extract.
@@ -213,11 +211,9 @@ You may want to extract 3 outputs:
 |--|--|
 |ID|`$.id`|
 |Value|`$.data.value`|
-|DateTime|`$.data.lastupdate.timestamp`|
+|DateTime|`$.data.lastupdate.timestamp`
+### Error Handling|
  
-
-
-### Error Handling
 
 Any `2xx` response is considered successful.
 
@@ -260,14 +256,13 @@ Your script has access to the following objects that you can use to read the exi
 |inputs|A [dictionary](datatypes.md#dictionaries) of inputs that were passed to the block. The dictionary keys are pin names. Values are the actual values fed to the block during execution. You can read values from here and transform them in some way before sending to the web service.|
 |request|The [request object](connectortoolkit.md#wsjsrequest). Gives you access to the details configured for the method including the url, query string and headers|
 |runtime|The runtime object. Has methods that let you override the request configuration details. Use this to override any configured data.|
-|auth|A [dictionary](datatypes.md#dictionaries) that contains any authentication information associated with the request and account profile. The following keys are available:|
-|accessToken - If the API uses OAuth 2, this will be the latest bearer token that was generated|
-|apiKey - If the API uses custom authentication, this is the custom api key that was configured for the web service account.|
-|username - If BASIC authentication was specified, this is the username that was given for the account profile that's being used in the execution|
-|password - If BASIC authentication was specified, this is the password that was given for the account profile that's being used in the execution|
+|auth|A [dictionary](datatypes.md#dictionaries) that contains any authentication information associated with the request and account profile. The following keys are available:
+* accessToken - If the API uses OAuth 2, this will be the latest bearer token that was generated
+* apiKey - If the API uses custom authentication, this is the custom api key that was configured for the web service account.
+* username - If BASIC authentication was specified, this is the username that was given for the account profile that's being used in the execution
+* password - If BASIC authentication was specified, this is the password that was given for the account profile that's being used in the execution
+**Example 1**|
  
-
-**Example 1**
 
 This example reads an two inputs - `From` and `To` and adds them as ISO8601 datetimes in the query string as parameters called  `fromDate` and `toDate`
 
@@ -367,15 +362,14 @@ The object contains the following members:
 
 
 
-|.. list-table::|:header-rows: 0|
 |Member|Type|Description|
+|---|---|---|
 |headers|[dictionary](datatypes.md#dictionaries)|A [dictionary](datatypes.md#dictionaries) of header name/value pairs that have been configured.|
 |query|[dictionary](datatypes.md#dictionaries)|A [dictionary](datatypes.md#dictionaries) of  query string names and values.|
 |body|string|The raw payload that is ready to be sent.|
-|url|string|The url of the web service||
+|url|string|The url of the web service
+<a name='wsjsruntime'></a>|
  
-
-<a name='wsjsruntime'></a>
 
 ### runtime
 This object lets you manipulate requests by changing the payload/query string/headers.
@@ -383,14 +377,10 @@ The object contains the following members:
 
 
 
-|.. list-table::|:header-rows: 0|
 |Member|Type|Description|Availability|
+|----|----|----|----|
+|setHeaders(object)|function|This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use `request.headers` to read the original set of headers, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.|PreProcessing Scripts|
  
-
-    * - setHeaders(object)
-      - function
-      - This function lets you set the final set of headers that will be sent with the request. Any existing headers that were configured will be removed. Its recommended you use `request.headers` to read the original set of headers, then manipulate that [dictionary](datatypes.md#dictionaries) and set it again using this function.
-      - PreProcessing Scripts
 
     * - setQuery(object)
       - function

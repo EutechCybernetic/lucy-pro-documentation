@@ -69,11 +69,9 @@ Adds column headers and rows of data.
 
 
 |`columns`|An array of column headers to add to the top.|
-|--|--|
-|`items`|An array of objects to be populated as rows. Each object should have fields matching the items in the `columns` array|
+|`items`|An array of objects to be populated as rows. Each object should have fields matching the items in the `columns` array
+Example:|
  
-
-Example:
 
 ```
 
@@ -119,11 +117,8 @@ Converts a [timestamp](datatypes.md#datetimes) from utc to a different timezone.
 
 
 |`dt`|A [timestamp](datatypes.md#datetimes) to convert to a different timezone|
-|--|--|
+|`tz`|The [code](timezonecodes.md#timezonecodes) of the timezone to convert to|
  
-
-    * - `tz`
-      - The [code](timezonecodes.md#timezonecodes) of the timezone to convert to
 
 {% hint style="seealso" %}
 
@@ -142,11 +137,8 @@ Converts a [timestamp](datatypes.md#datetimes) to utc from a different timezone.
 
 
 |`dt`|A [timestamp](datatypes.md#datetimes) to convert to UTC|
-|--|--|
+|`tz`|The [code](timezonecodes.md#timezonecodes) of the timezone the [timestamp](datatypes.md#datetimes) was currently in.|
  
-
-    * - `tz`
-      - The [code](timezonecodes.md#timezonecodes) of the timezone the [timestamp](datatypes.md#datetimes) was currently in.
 
 {% hint style="seealso" %}
 
@@ -209,13 +201,10 @@ This name can be accessed via an http url of the form:
 
 
 |`name`|The base name for the file|
-|--|--|
-|`data`|[binary data object](datatypes.md#binobjects) representing the data to be uploaded.|
- 
-
-
+|`data`|[binary data object](datatypes.md#binobjects) representing the data to be uploaded.
 #### Returns
-string - the actual file name that the data is saved as.
+string - the actual file name that the data is saved as.|
+ 
 
 ### uploadDataWithExplicitName(name, data)
 Same as [uploadData(name, data)](es6javascript.md#uploadData) except the name specified is the exact name used to save the file. No extra unique postfix is added to the name.

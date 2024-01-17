@@ -20,20 +20,16 @@ Content-Disposition header is sent:
     Content-Disposition:attachment; filename=<filename>
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Data
-      - A [binary data object](datatypes.md#binobjects) object or text
-    * - Content Type
-      - The mime type of the content being returned
-    * - File Name
-      - An optional file name to use when the data is downloaded.
 
-        
-<a name='actionjsonoutput-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Data|A [binary data object](datatypes.md#binobjects) object or text|
+|Content Type|The mime type of the content being returned|
+|File Name|An optional file name to use when the data is downloaded.
+<a name='actionjsonoutput-ref'></a>|
+ 
 
 
 ## JSON Output
@@ -45,16 +41,14 @@ This block is used to make a action sequence return json data.
     Content-Disposition:attachment; filename=<filename>```
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Data
-      - A [JSON](datatypes.md#dt-json) object or text
 
-        
-<a name='actionoutput-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Data|A [JSON](datatypes.md#dt-json) object or text
+<a name='actionoutput-ref'></a>|
+ 
 
 
 ## Output
@@ -72,25 +66,22 @@ and leave the Field name empty.
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
 
-    * - Field Name
-      - Description
-    * - Field
-      - The key name to use
 
-### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Value
-      - The value to return
+|Field Name|Description|
+|--|--|
+|Field|The key name to use
+### Inputs|
+ 
 
-        
-<a name='actionstart-ref'></a>
+
+
+|Input Name|Description|
+|--|--|
+|Value|The value to return
+<a name='actionstart-ref'></a>|
+ 
 
 
 ## Action
@@ -120,17 +111,14 @@ Marks the current model instance as active.
 
 
 ### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The key of the model instance
 
 
-        
-<a name='adddays-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|Output|The key of the model instance
+<a name='adddays-ref'></a>|
+ 
 
 
 ## AddDays
@@ -146,28 +134,23 @@ Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light saving
     [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - A valid [timestamp](datatypes.md#datetimes)
-    * - Input 2
-      - The number of days to add
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - A new [timestamp](datatypes.md#datetimes)
 
 
-        
-<a name='adder-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|A valid [timestamp](datatypes.md#datetimes)|
+|Input 2|The number of days to add
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|A new [timestamp](datatypes.md#datetimes)
+<a name='adder-ref'></a>|
+ 
 
 
 ## Add
@@ -176,28 +159,23 @@ Adds two floating point numbers together.
 If any non-numeric values are passed (like text), then zero is is used in place of that input.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to operate on
-    * - Input 2
-      - The second value to operate on
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The result of both numbers added together.
 
 
-        
-<a name='addminutes-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to operate on|
+|Input 2|The second value to operate on
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The result of both numbers added together.
+<a name='addminutes-ref'></a>|
+ 
 
 
 ## AddMinutes
@@ -213,28 +191,23 @@ Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light saving
     [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - A valid [timestamp](datatypes.md#datetimes)
-    * - Input 2
-      - The number of minutes to add
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - A new [timestamp](datatypes.md#datetimes)
 
 
-        
-<a name='addmonths-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|A valid [timestamp](datatypes.md#datetimes)|
+|Input 2|The number of minutes to add
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|A new [timestamp](datatypes.md#datetimes)
+<a name='addmonths-ref'></a>|
+ 
 
 
 ## AddMonths
@@ -250,28 +223,23 @@ Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light saving
     [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - A valid [timestamp](datatypes.md#datetimes)
-    * - Input 2
-      - The number of months to add
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - A new [timestamp](datatypes.md#datetimes)
 
 
-        
-<a name='addweblet-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|A valid [timestamp](datatypes.md#datetimes)|
+|Input 2|The number of months to add
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|A new [timestamp](datatypes.md#datetimes)
+<a name='addweblet-ref'></a>|
+ 
 
 
 ## AddWeblet
@@ -297,16 +265,14 @@ dashboard configuration. This should be a number from 1-12.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Params
-      - The parameters to pass to the weblet. This can either be a json object as text or a dictionary.
 
-        
-<a name='addyears-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Params|The parameters to pass to the weblet. This can either be a json object as text or a dictionary.
+<a name='addyears-ref'></a>|
+ 
 
 
 ## AddYears
@@ -322,28 +288,23 @@ Since [timestamp](datatypes.md#datetimes) values are in UTC, no day-light saving
     [Supported date and time formats](datatypes.md#datetimeformats)
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - A valid [timestamp](datatypes.md#datetimes)
-    * - Input 2
-      - The number of years to add
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - A new [timestamp](datatypes.md#datetimes)
 
 
-        
-<a name='attributeget-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|A valid [timestamp](datatypes.md#datetimes)|
+|Input 2|The number of years to add
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|A new [timestamp](datatypes.md#datetimes)
+<a name='attributeget-ref'></a>|
+ 
 
 
 ## Get Attribute
@@ -360,17 +321,14 @@ then the same value is returned each time it is called.
 
 
 ### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The value of the attribute when the block is executed.
 
 
-        
-<a name='attributeset-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|Output|The value of the attribute when the block is executed.
+<a name='attributeset-ref'></a>|
+ 
 
 
 ## Set Attribute
@@ -387,17 +345,14 @@ then the same value is returned each time it is called.
 
 
 ### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The value of the attribute when the block is executed.
 
 
-        
-<a name='callaction-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|Output|The value of the attribute when the block is executed.
+<a name='callaction-ref'></a>|
+ 
 
 
 ## CallAction
@@ -423,37 +378,31 @@ If the action returns a [Dictionary](dictionary) then you can auto-extract value
 Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Model
-      - The name of the model in which the action to be called is defined in
-    * - Action
-      - The name of the action to call
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Instance
-      - the key for the model instance to call the action in. If left off, the action will be called on the model.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - All Output
-      - Contains the output from calling the action
 
 
-        
-<a name='calldatasource-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Model|The name of the model in which the action to be called is defined in|
+|Action|The name of the action to call
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|Instance|the key for the model instance to call the action in. If left off, the action will be called on the model.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|All Output|Contains the output from calling the action
+<a name='calldatasource-ref'></a>|
+ 
 
 
 ## Call Data Source
@@ -477,39 +426,32 @@ All data sources return a [result set](datatypes.md#dt-results).
 {% endhint %}
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Model
-      - The name of the model in which the action to be called is defined in
-    * - Data Source
-      - The name of the data source to query. The data source is defined in the UI Bundle linked to the specified model.
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - *Multiple*
-      -  Any parameters to be passed to the action can also be passed as inputs. Click the *Add Input Parameter* link in the Properties Panel to add additional inputs. You can quickly add multiple inputs at once by specifying them as a comma separated list.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - *All Output*
-      - Contains the output from calling the action. This will be a [result set](datatypes.md#dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.
-    * - *Multiple*
-      -  You can can auto-extract values from the first result by adding new output pins. Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 
-        
-<a name='callservice-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Model|The name of the model in which the action to be called is defined in|
+|Data Source|The name of the data source to query. The data source is defined in the UI Bundle linked to the specified model.
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|*Multiple|Any parameters to be passed to the action can also be passed as inputs. Click the *Add Input Parameter* link in the Properties Panel to add additional inputs. You can quickly add multiple inputs at once by specifying them as a comma separated list.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|*All Output|Contains the output from calling the action. This will be a [result set](datatypes.md#dt-results). This will often contain multiple ditionaries. You can treat it as a single dictionary in which case, retrieving values will return from the first item. You can also feed the output to any list processing block like a [Repeat Action](block-source.raw.md#repeataction-ref) block.|
+|*Multiple|You can can auto-extract values from the first result by adding new output pins. Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
+<a name='callservice-ref'></a>|
+ 
 
 
 ## Call Service
@@ -537,27 +479,22 @@ Click the 'Add Output Parameter' link in the Properties Panel to add outputs.
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Service
-      - The service to be called
 
 
-### Outputs
-.. list-table::
-    :header-rows: 1
 
-    * - Output Name
-      - Description
-    * - All Output
-      - Contains the [result set](datatypes.md#dt-results) from calling the service
+|Field Name|Description|
+|--|--|
+|Service|The service to be called
+### Outputs|
+ 
 
 
-        
-<a name='callwebservice-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|All Output|Contains the [result set](datatypes.md#dt-results) from calling the service
+<a name='callwebservice-ref'></a>|
+ 
 
 
 ## Call Web Service
@@ -578,28 +515,23 @@ Any inputs which are not textual are converted to a textual representation befor
     Instead, use a [Template](block-source.raw.md#template-ref) block.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - First piece of text
-    * - Input 2
-      - First piece of text
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The combined text
 
 
-        
-<a name='currentitem-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|First piece of text|
+|Input 2|First piece of text
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The combined text
+<a name='currentitem-ref'></a>|
+ 
 
 
 ## CurrentItem
@@ -609,17 +541,14 @@ If the action sequence is running on a model then 0 is returned.
 
 
 ### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The key of the current model instance. 0 if the current action sequence is running in a model.
 
 
-        
-<a name='currentuser-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|Output|The key of the current model instance. 0 if the current action sequence is running in a model.
+<a name='currentuser-ref'></a>|
+ 
 
 
 ## CurrentUser
@@ -647,30 +576,27 @@ If the action sequence is run by some automated job in the backend, then no user
 Construct a new [timestamp](datatypes.md#datetimes) from an year/month/day/hour/minute/second
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
+
+
+|Input Name|Description
 ####     * - Year
 ####     * - Month
 ####     * - Day
 ####     * - Hour
 ####     * - Minute
 ####     * - Second
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - A [timestamp](datatypes.md#datetimes) constructed from the given inputs
+### Outputs|
+|--|--|
+ 
 
 
-        
-<a name='dayofmonth-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|Output|A [timestamp](datatypes.md#datetimes) constructed from the given inputs
+<a name='dayofmonth-ref'></a>|
+ 
 
 
 ## Day Of Month
@@ -678,26 +604,22 @@ Construct a new [timestamp](datatypes.md#datetimes) from an year/month/day/hour/
 Extracts the day component of a date/time field.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The day of the month (0-28/30/31)
 
 
-        
-<a name='dayofweek-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The day of the month (0-28/30/31)
+<a name='dayofweek-ref'></a>|
+ 
 
 
 ## Day Of Week
@@ -705,26 +627,22 @@ Extracts the day component of a date/time field.
 Extracts the day of week for the date/time field.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      -  Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 
 
-        
-<a name='deactivate-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+<a name='deactivate-ref'></a>|
+ 
 
 
 ## Deactivate
@@ -745,35 +663,30 @@ This block has no effect when being called from a model.
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Range
-      - The range within which, the value will be held. This can be a percentage like '5%' meaning, deviations beyond 5% of the current value will cause the output to be set. It can also be a value like '0.01' meaning if the value changes by more than 0.01 the output will be set.
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - The value to check
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The input value gets emmitted if it passes the deadband criteria
 
 
-        
-<a name='debug-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Range|The range within which, the value will be held. This can be a percentage like '5%' meaning, deviations beyond 5% of the current value will cause the output to be set. It can also be a value like '0.01' meaning if the value changes by more than 0.01 the output will be set.
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|Input|The value to check
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The input value gets emmitted if it passes the deadband criteria
+<a name='debug-ref'></a>|
+ 
 
 
 ## Debug
@@ -785,28 +698,23 @@ Use the Debug block to log data to the debug console.
     [debugging](debugging)
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - The object to be dumped to the debug log. This is serialized to JSON when logged.
-    * - Message
-      - Any additional message to be recorded along with the object
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The objectt that was sent as input is passed through as output
 
 
-        
-<a name='delay-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|The object to be dumped to the debug log. This is serialized to JSON when logged.|
+|Message|Any additional message to be recorded along with the object
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The objectt that was sent as input is passed through as output
+<a name='delay-ref'></a>|
+ 
 
 
 ## Delay
@@ -817,33 +725,28 @@ Use the Debug block to log data to the debug console.
     Note that any other branches in your action sequence will continue to execute while this block is on hold.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Time
-      - The number of milliseconds to pause
 
-        
-<a name='divider-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Time|The number of milliseconds to pause
+<a name='divider-ref'></a>|
+ 
 
 
 ## Divider
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to operate on
-    * - Input 2
-      - The second value to operate on
 
-        
-<a name='equals-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to operate on|
+|Input 2|The second value to operate on
+<a name='equals-ref'></a>|
+ 
 
 
 ## Equals
@@ -853,30 +756,24 @@ Comparisons are case-insensitive.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to compare
-    * - Input 2
-      - The value to compare against
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - True
-      - Writes the first input to this port if the condition is met. Else, doesn't write anything
-    * - False
-      - Writes the first input to this port if the condition is not met. Else, doesn't write anything.
 
 
-        
-<a name='es6javascript-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to compare|
+|Input 2|The value to compare against
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|True|Writes the first input to this port if the condition is met. Else, doesn't write anything|
+|False|Writes the first input to this port if the condition is not met. Else, doesn't write anything.
+<a name='es6javascript-ref'></a>|
+ 
 
 
 ## ES6Javascript
@@ -912,37 +809,31 @@ Comparisons are case-insensitive.
 {% endhint %}
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Name
-      - A label for the javascript block to show in the designer
-    * - Code
-      - The actual javascript code
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - *Multiple*
-      - Any inputs you add can be accessed via `runtime.inputs()`
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - *Multiple*
-      - Any outputs you add can be written to via `runtime.done({..})`
 
 
-        
-<a name='eventstart-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Name|A label for the javascript block to show in the designer|
+|Code|The actual javascript code
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|*Multiple|Any inputs you add can be accessed via `runtime.inputs()`
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|*Multiple|Any outputs you add can be written to via `runtime.done({..})`
+<a name='eventstart-ref'></a>|
+ 
 
 
 ## Event Trigger
@@ -965,16 +856,14 @@ An error will be thrown with the specified error message and no further executio
 This is useful to signal error conditions in the action sequence as well as for input validation for action sequences that are meant to be called from a UI.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Message
-      - The error message to be used when the error is generated
 
-        
-<a name='exists-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Message|The error message to be used when the error is generated
+<a name='exists-ref'></a>|
+ 
 
 
 ## Exists
@@ -994,28 +883,23 @@ Only one of them will be executed.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The value to check for existence
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - True
-      - The input value is written to this output if the input is valid
-    * - False
-      - The input value is written to this output if the input is invalid
 
 
-        
-<a name='extractvalue-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The value to check for existence
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|True|The input value is written to this output if the input is valid|
+|False|The input value is written to this output if the input is invalid
+<a name='extractvalue-ref'></a>|
+ 
 
 
 ## ExtractValue
@@ -1026,35 +910,30 @@ If the dictionary does not contain the given field, empty text will be written t
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Field
-      -  The name of the field, for which a value should be extracted.
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      -  The input dictionary
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      -  The value of the specified key in the dictionary
 
 
-        
-<a name='fireevent-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Field|The name of the field, for which a value should be extracted.
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|Input|The input dictionary
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The value of the specified key in the dictionary
+<a name='fireevent-ref'></a>|
+ 
 
 
 ## Fire Event
@@ -1066,25 +945,22 @@ Any input parameters you specify get sent as part of the event payload.
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
 
-    * - Field Name
-      - Description
-    * -  EventID
-      -  The id of the event to trigger
 
-### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - *Multiple*
-      - Add new inputs by clicking the 'Add Input Parameter' link in the properties panel.
+|Field Name|Description|
+|--|--|
+|EventID|The id of the event to trigger
+### Inputs|
+ 
 
-        
-<a name='fromjson-ref'></a>
+
+
+|Input Name|Description|
+|--|--|
+|*Multiple|Add new inputs by clicking the 'Add Input Parameter' link in the properties panel.
+<a name='fromjson-ref'></a>|
+ 
 
 
 ## Convert JSON
@@ -1093,26 +969,22 @@ Parses a json block into a [dictionary](datatypes.md#dictionaries) or a [result 
 The input json structure must either be an object or an array of homogenous objects.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - The json text to be parsed
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The resulting [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results)
 
 
-        
-<a name='getfromredis-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|The json text to be parsed
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The resulting [dictionary](datatypes.md#dictionaries) or [result set](datatypes.md#dt-results)
+<a name='getfromredis-ref'></a>|
+ 
 
 
 ## Get Value
@@ -1121,26 +993,22 @@ The input json structure must either be an object or an array of homogenous obje
   Gets an arbitrary value that was written using [Set Value](blocks.md#setinredis-ref).
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Key
-      - The key from which the value should be read
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Value
-      - The value to be read. Empty if the key doesn't exist or has expired.
 
 
-        
-<a name='gt-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Key|The key from which the value should be read
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Value|The value to be read. Empty if the key doesn't exist or has expired.
+<a name='gt-ref'></a>|
+ 
 
 
 ## Greater
@@ -1150,30 +1018,24 @@ Checks if the first value is greater than the second value.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to compare
-    * - Input 2
-      - The value to compare against
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - True
-      - Writes the first input to this port if the condition is met. Else, doesn't write anything
-    * - False
-      - Writes the first input to this port if the condition is not met. Else, doesn't write anything.
 
 
-        
-<a name='gtd-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to compare|
+|Input 2|The value to compare against
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|True|Writes the first input to this port if the condition is met. Else, doesn't write anything|
+|False|Writes the first input to this port if the condition is not met. Else, doesn't write anything.
+<a name='gtd-ref'></a>|
+ 
 
 
 ## After
@@ -1182,30 +1044,24 @@ Checks if the first datetime occurs after the second date time.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to compare
-    * - Input 2
-      - The value to compare against
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - True
-      - Writes the first input to this port if the condition is met. Else, doesn't write anything
-    * - False
-      - Writes the first input to this port if the condition is not met. Else, doesn't write anything.
 
 
-        
-<a name='hour-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to compare|
+|Input 2|The value to compare against
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|True|Writes the first input to this port if the condition is met. Else, doesn't write anything|
+|False|Writes the first input to this port if the condition is not met. Else, doesn't write anything.
+<a name='hour-ref'></a>|
+ 
 
 
 ## Hour
@@ -1213,26 +1069,22 @@ Checks if the first datetime occurs after the second date time.
 Extracts the hours component of a date/time field.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The hours component of the date/time (0-23)
 
 
-        
-<a name='incrementbyvalue-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The hours component of the date/time (0-23)
+<a name='incrementbyvalue-ref'></a>|
+ 
 
 
 ## Increment By Value
@@ -1244,37 +1096,31 @@ Extracts the hours component of a date/time field.
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Expiry
-      - The expiry time in seconds for the counter. If the counter is not updated within the given time, it will be deleted. This is optional. If no expiry is given, the counter lives forever
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Key
-      - The name of the counter. You can give any name. Counters are shared across all models. If a counter with this name doesn't exist, it will be created and the value set to 0.
-    * - Value
-      - The numeric value to increment the counter by.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The new value of the counter after incrementing.
 
 
-        
-<a name='injectheaders-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Expiry|The expiry time in seconds for the counter. If the counter is not updated within the given time, it will be deleted. This is optional. If no expiry is given, the counter lives forever
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|Key|The name of the counter. You can give any name. Counters are shared across all models. If a counter with this name doesn't exist, it will be created and the value set to 0.|
+|Value|The numeric value to increment the counter by.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The new value of the counter after incrementing.
+<a name='injectheaders-ref'></a>|
+ 
 
 
 ## Add Headers
@@ -1298,37 +1144,31 @@ For reference on what functions are available in javascript, see the Javascript 
     [Javascript Library](javascript.md#javascriptlib)
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Name
-      - A label for the javascript block to show in the designer
-    * - Code
-      - The actual javascript code
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - *Multiple*
-      - Any inputs you add can be accessed via `inputs.inputName`
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - *Multiple*
-      - Any outputs you add can be written to via :code:'outputs.outputName'
 
 
-        
-<a name='jsonarray-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Name|A label for the javascript block to show in the designer|
+|Code|The actual javascript code
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|*Multiple|Any inputs you add can be accessed via `inputs.inputName`
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|*Multiple|Any outputs you add can be written to via :code:'outputs.outputName'
+<a name='jsonarray-ref'></a>|
+ 
 
 
 ## Make JSON Array
@@ -1389,17 +1229,14 @@ For reference on what functions are available in javascript, see the Javascript 
 
 
 ### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - JSON Object
 
 
-        
-<a name='jsonpath-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|Output|JSON Object
+<a name='jsonpath-ref'></a>|
+ 
 
 
 ## Extract JSON Path
@@ -1412,30 +1249,24 @@ For reference on what functions are available in javascript, see the Javascript 
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - JSON Object
-      - The JSON to extract a sub-component from. This can be a text representation of JSON or a [JSON](datatypes.md#dt-json) value.
-    * - Path
-      - The JSON Path expression to use to find the component to extract from it.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - All
-      - Returns all matches as an array
-    * - First
-      - Returns the first match. Since its common to only have one match or to only want to process one, this is provideed as a convenience so you don't have to extract the first one out of the array
 
 
-        
-<a name='lookup-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|JSON Object|The JSON to extract a sub-component from. This can be a text representation of JSON or a [JSON](datatypes.md#dt-json) value.|
+|Path|The JSON Path expression to use to find the component to extract from it.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|All|Returns all matches as an array|
+|First|Returns the first match. Since its common to only have one match or to only want to process one, this is provideed as a convenience so you don't have to extract the first one out of the array
+<a name='lookup-ref'></a>|
+ 
 
 
 ## Lookup
@@ -1450,26 +1281,22 @@ For reference on what functions are available in javascript, see the Javascript 
     Use the `Edit Data` link in the [property panel](modeldesigner.md#propertiespanel) to bring up the editor where you can edit the key/value pairs.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - The key to look up
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      -  The corresponding value to obtain
 
 
-        
-<a name='lt-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|The key to look up
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The corresponding value to obtain
+<a name='lt-ref'></a>|
+ 
 
 
 ## Less
@@ -1479,30 +1306,24 @@ Checks if the first value is less than the second value.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to compare
-    * - Input 2
-      - The value to compare against
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - True
-      - Writes the first input to this port if the condition is met. Else, doesn't write anything
-    * - False
-      - Writes the first input to this port if the condition is not met. Else, doesn't write anything.
 
 
-        
-<a name='ltd-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to compare|
+|Input 2|The value to compare against
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|True|Writes the first input to this port if the condition is met. Else, doesn't write anything|
+|False|Writes the first input to this port if the condition is not met. Else, doesn't write anything.
+<a name='ltd-ref'></a>|
+ 
 
 
 ## Before
@@ -1511,30 +1332,24 @@ Checks if the first datetime occurs prior to the second date time.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to compare
-    * - Input 2
-      - The value to compare against
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - True
-      - Writes the first input to this port if the condition is met. Else, doesn't write anything
-    * - False
-      - Writes the first input to this port if the condition is not met. Else, doesn't write anything.
 
 
-        
-<a name='mergedata-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to compare|
+|Input 2|The value to compare against
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|True|Writes the first input to this port if the condition is met. Else, doesn't write anything|
+|False|Writes the first input to this port if the condition is not met. Else, doesn't write anything.
+<a name='mergedata-ref'></a>|
+ 
 
 
 ## Merge Data
@@ -1552,30 +1367,24 @@ a name *value* and the value being the input value.
     If the name being merged already exists in the dictionary, then it will be overwritten with the new value
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - The dictionary to add the new name/value pair into
-    * - Name
-      - The name of the field to be added to the dictionary
-    * - Value
-      - The value to be added to the dictionary
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The new dictionary containing the newly added name and value
 
 
-        
-<a name='minute-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|The dictionary to add the new name/value pair into|
+|Name|The name of the field to be added to the dictionary|
+|Value|The value to be added to the dictionary
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The new dictionary containing the newly added name and value
+<a name='minute-ref'></a>|
+ 
 
 
 ## Minute
@@ -1583,26 +1392,22 @@ a name *value* and the value being the input value.
 Extracts the minutes component of a date/time field.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The minutes component of the date/time (0-59)
 
 
-        
-<a name='mqttpublish-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The minutes component of the date/time (0-59)
+<a name='mqttpublish-ref'></a>|
+ 
 
 
 ## MqttPublish
@@ -1613,35 +1418,29 @@ Extracts the minutes component of a date/time field.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Topic
-      - The topic to send the message to
-    * - Message
-      - The message to send. This should be text
 
-        
-<a name='multiplier-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Topic|The topic to send the message to|
+|Message|The message to send. This should be text
+<a name='multiplier-ref'></a>|
+ 
 
 
 ## Multiply
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to operate on
-    * - Input 2
-      - The second value to operate on
 
-        
-<a name='nequals-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to operate on|
+|Input 2|The second value to operate on
+<a name='nequals-ref'></a>|
+ 
 
 
 ## Not Equal
@@ -1651,30 +1450,24 @@ Comparisons are case-insensitive.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The first value to compare
-    * - Input 2
-      - The value to compare against
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - True
-      - Writes the first input to this port if the condition is met. Else, doesn't write anything
-    * - False
-      - Writes the first input to this port if the condition is not met. Else, doesn't write anything.
 
 
-        
-<a name='notinstalledblock-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The first value to compare|
+|Input 2|The value to compare against
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|True|Writes the first input to this port if the condition is met. Else, doesn't write anything|
+|False|Writes the first input to this port if the condition is not met. Else, doesn't write anything.
+<a name='notinstalledblock-ref'></a>|
+ 
 
 
 ## Not Installed
@@ -1708,28 +1501,23 @@ Generate a unique id for an object by using the default ID format settings in iv
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Prefix
-      - The prefix to give for the generated id.
-    * - Override
-      - Use the `prefix` to derive the running number and date format, but override the actual prefix in the id with the one specified. You can leave this empty usually.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The generated id.
 
 
-        
-<a name='objectaction:System:GetAccountSetting-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Prefix|The prefix to give for the generated id.|
+|Override|Use the `prefix` to derive the running number and date format, but override the actual prefix in the id with the one specified. You can leave this empty usually.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The generated id.
+<a name='objectaction:System:GetAccountSetting-ref'></a>|
+ 
 
 
 ## GetAccountSetting
@@ -1739,26 +1527,22 @@ Reads a global setting in the current iviva account.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Key
-      - The setting to read
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The setting value. An empty string is returned if the setting is not present.
 
 
-        
-<a name='objectaction:System:GetUserByID-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Key|The setting to read
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The setting value. An empty string is returned if the setting is not present.
+<a name='objectaction:System:GetUserByID-ref'></a>|
+ 
 
 
 ## GetUserByID
@@ -1768,26 +1552,22 @@ Retrieve the iviva user key for the user having the specified login id.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - LoginID
-      - The login id of the iviva user
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The user key of the user having the specified login id
 
 
-        
-<a name='objectaction:System:Now-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|LoginID|The login id of the iviva user
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The user key of the user having the specified login id
+<a name='objectaction:System:Now-ref'></a>|
+ 
 
 
 ## Now
@@ -1795,17 +1575,14 @@ Retrieve the iviva user key for the user having the specified login id.
 Returns the current [timestamp](datatypes.md#datetimes) in UTC format.
 
 ### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The current [timestamp](datatypes.md#datetimes)
 
 
-        
-<a name='objectaction:System:PublishMessage-ref'></a>
+
+|Output Name|Description|
+|--|--|
+|Output|The current [timestamp](datatypes.md#datetimes)
+<a name='objectaction:System:PublishMessage-ref'></a>|
+ 
 
 
 ## PublishMessage
@@ -1820,18 +1597,15 @@ Publish a message to the message bus.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Channel
-      -  The channel to publish the message on
-    * - Message
-      -  The message to publish. This should be text.
 
-        
-<a name='objectaction:System:PublishMessageToQueue-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Channel|The channel to publish the message on|
+|Message|The message to publish. This should be text.
+<a name='objectaction:System:PublishMessageToQueue-ref'></a>|
+ 
 
 
 ## PublishMessageToQueue
@@ -1853,30 +1627,24 @@ Publish a message to the message queue.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Channel
-      -  The channel to publish the message on
-    * - Message
-      -  The message to publish. This should be text.
-    * - Lifetime
-      - The lifetime of the message, in seconds. If not set, the message will never expire.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - Error code describing if the message got published or not.
 
 
-        
-<a name='objectaction:System:SetAccountSetting-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Channel|The channel to publish the message on|
+|Message|The message to publish. This should be text.|
+|Lifetime|The lifetime of the message, in seconds. If not set, the message will never expire.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|Error code describing if the message got published or not.
+<a name='objectaction:System:SetAccountSetting-ref'></a>|
+ 
 
 
 ## SetAccountSetting
@@ -1886,28 +1654,23 @@ Writes a global setting in the current iviva account.
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Key
-      - The name to write
-    * - Value
-      - The value to write
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The value that was written
 
 
-        
-<a name='parsedate-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Key|The name to write|
+|Value|The value to write
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The value that was written
+<a name='parsedate-ref'></a>|
+ 
 
 
 ## Parse Date
@@ -1918,26 +1681,22 @@ If the input is not in any of those formats, Lucy tries to make a guess as to ho
 Don't like the sound of that? Then specify the date in a valid format :)
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input String
-      - The string to convert into a [timestamp](datatypes.md#datetimes)
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output Date
-      - The [timestamp](datatypes.md#datetimes)
 
 
-        
-<a name='parsejson-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input String|The string to convert into a [timestamp](datatypes.md#datetimes)
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output Date|The [timestamp](datatypes.md#datetimes)
+<a name='parsejson-ref'></a>|
+ 
 
 
 ## Parse JSON
@@ -1948,26 +1707,22 @@ Don't like the sound of that? Then specify the date in a valid format :)
     If the input does not contain valid json, this block will raise an error.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - The textual representation of JSON
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      -  The corresponding [JSON](datatypes.md#dt-json) value.
 
 
-        
-<a name='passvalue-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|The textual representation of JSON
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The corresponding [JSON](datatypes.md#dt-json) value.
+<a name='passvalue-ref'></a>|
+ 
 
 
 ## InjectValue
@@ -1981,26 +1736,22 @@ This is useful to ensure that certain parts of a sequene are executed before ano
     See [Flow of Data and Execution](actionsequences.md#dataflow) for more information on controlling data flow through a action sequence
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Value
-      -  The value to inject when something is written to the trigger port
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      -  The value specified in the input. This is written only once the trigger port has a value written to it.
 
 
-        
-<a name='publishmessage-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Value|The value to inject when something is written to the trigger port
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The value specified in the input. This is written only once the trigger port has a value written to it.
+<a name='publishmessage-ref'></a>|
+ 
 
 
 ## PublishMessage
@@ -2016,18 +1767,15 @@ This is useful to ensure that certain parts of a sequene are executed before ano
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Channel
-      -  The channel to publish the message on
-    * - Message
-      -  The message to publish. This should be text.
 
-        
-<a name='regexcapture-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Channel|The channel to publish the message on|
+|Message|The message to publish. This should be text.
+<a name='regexcapture-ref'></a>|
+ 
 
 
 ## RegexCapture
@@ -2043,28 +1791,23 @@ All input text that matches each capture group will be written to the correspond
     See https://msdn.microsoft.com/en-us/library/bs2twtah(v=vs.110).aspx for more information on capture groups.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - String
-      - The string to match against
-    * - Pattern
-      - The regular expression pattern to use
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - *Multiple*
-      - Add an output for each capture group in your regular expression. A list of matched strings for that capture group will be written to the output.
 
 
-        
-<a name='repeataction-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|String|The string to match against|
+|Pattern|The regular expression pattern to use
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|*Multiple|Add an output for each capture group in your regular expression. A list of matched strings for that capture group will be written to the output.
+<a name='repeataction-ref'></a>|
+ 
 
 
 ## Repeat Action
@@ -2108,30 +1851,24 @@ Any error that occurs during the execution of the loop action does not affect su
 Each will get executed independent of errors to any previous executions.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Action
-      - The action block to execute for each item in the list
-    * - Items
-      - The list of items to execute. This can be a [result set](datatypes.md#dt-results) or a list or array
-    * - Extra
-      - Any extra data to be passed along to the action that is called for each item in the list. Use this to send some extra fixed set of information to each item.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Done
-      - The number of items processed is written to this output once all inputs have been processed. Anthing attached to this pin will execute after the full loop is done.
 
 
-        
-<a name='scheduleaction-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Action|The action block to execute for each item in the list|
+|Items|The list of items to execute. This can be a [result set](datatypes.md#dt-results) or a list or array|
+|Extra|Any extra data to be passed along to the action that is called for each item in the list. Use this to send some extra fixed set of information to each item.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Done|The number of items processed is written to this output once all inputs have been processed. Anthing attached to this pin will execute after the full loop is done.
+<a name='scheduleaction-ref'></a>|
+ 
 
 
 ## Schedule Action
@@ -2145,18 +1882,15 @@ The action is executed exactly once and the schedule is removed once the action 
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Time
-      - The [timestamp](datatypes.md#datetimes) at which the action should be executed
-    * - Action
-      - The action to execute.
 
-        
-<a name='setinredis-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Time|The [timestamp](datatypes.md#datetimes) at which the action should be executed|
+|Action|The action to execute.
+<a name='setinredis-ref'></a>|
+ 
 
 
 ## Set Value
@@ -2170,27 +1904,23 @@ The action is executed exactly once and the schedule is removed once the action 
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
 
-    * - Field Name
-      - Description
-    * - Expiry
-      - The expiry time in seconds for the value. This can be empty to indicate no expiry.
 
-### Inputs
-.. list-table::
-    :header-rows: 1
 
-    * - Input Name
-      - Description
-    * - Key
-      - The key to write the value to
-    * - Value
-      - The value to write
+|Field Name|Description|
+|--|--|
+|Expiry|The expiry time in seconds for the value. This can be empty to indicate no expiry.
+### Inputs|
+ 
 
-        
-<a name='setname-ref'></a>
+
+
+|Input Name|Description|
+|--|--|
+|Key|The key to write the value to|
+|Value|The value to write
+<a name='setname-ref'></a>|
+ 
 
 
 ## SetName
@@ -2202,26 +1932,22 @@ Sets the name associated with the current model instance.
     [Attributes of instances](instances.md#instanceattrs)
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Name
-      - The name to set for the current model instance.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The name is passed through to the output.
 
 
-        
-<a name='splittext-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Name|The name to set for the current model instance.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The name is passed through to the output.
+<a name='splittext-ref'></a>|
+ 
 
 
 ## Split Text
@@ -2231,28 +1957,23 @@ Create a list from a comma separated list of items.
 Actually, create a list by splitting text by any delimiter.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Text
-      - The text to split
-    * - Delimiter
-      - The delimiter to use. Can be a character or some text. Typically, `,` is used
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Items
-      - A list of split items.
 
 
-        
-<a name='stringinterpolate-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Text|The text to split|
+|Delimiter|The delimiter to use. Can be a character or some text. Typically, `,` is used
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Items|A list of split items.
+<a name='stringinterpolate-ref'></a>|
+ 
 
 
 ## String Interpolation
@@ -2270,28 +1991,23 @@ Subtract the second floating point number from the first one.
 Both inputs are converted into floating point - if any non-numeric inputs are passed, they are treated as 0.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input 1
-      - The value to subtract from
-    * - Input 2
-      - The value to subtract
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The result of the subtraction
 
 
-        
-<a name='template-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input 1|The value to subtract from|
+|Input 2|The value to subtract
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The result of the subtraction
+<a name='template-ref'></a>|
+ 
 
 
 ## Template
@@ -2476,35 +2192,30 @@ Available Functions:
 
 
 ### Fields
-.. list-table::
-    :header-rows: 1
-
-    * - Field Name
-      - Description
-    * - Template
-      - The actual template to use.
-
-### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - *Multiple*
-      - The inputs to be accessed as variables. You can define as many as you need.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The final text output after rendering the template using the inputs
 
 
-        
-<a name='tojson-ref'></a>
+
+|Field Name|Description|
+|--|--|
+|Template|The actual template to use.
+### Inputs|
+ 
+
+
+
+|Input Name|Description|
+|--|--|
+|*Multiple|The inputs to be accessed as variables. You can define as many as you need.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The final text output after rendering the template using the inputs
+<a name='tojson-ref'></a>|
+ 
 
 
 ## Serialize JSON
@@ -2531,26 +2242,22 @@ Any other type of input gets converted to text and stored in a JSON object with 
     {"value":"2015-01-01 12:240"}
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - The object to be serialized as JSON.
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The serialized JSON.
 
 
-        
-<a name='unknownaction-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Input|The object to be serialized as JSON.
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The serialized JSON.
+<a name='unknownaction-ref'></a>|
+ 
 
 
 ## Unknown Action
@@ -2568,30 +2275,24 @@ This block represents all blocks that could not be loaded. This likely means you
 
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Channel
-      - Channel to listen for a message
-    * - Timeout
-      - Time to wait for a message in millisecond
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Error
-      - Error that occurred during processing
-    * - Message
-      - Message received on the channel
 
 
-        
-<a name='year-ref'></a>
+
+|Input Name|Description|
+|--|--|
+|Channel|Channel to listen for a message|
+|Timeout|Time to wait for a message in millisecond
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Error|Error that occurred during processing|
+|Message|Message received on the channel
+<a name='year-ref'></a>|
+ 
 
 
 ## Year
@@ -2599,22 +2300,18 @@ This block represents all blocks that could not be loaded. This likely means you
 Extracts the year component of a date/time field.
 
 ### Inputs
-.. list-table::
-    :header-rows: 1
-
-    * - Input Name
-      - Description
-    * - Input
-      - A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
-
-### Outputs
-.. list-table::
-    :header-rows: 1
-
-    * - Output Name
-      - Description
-    * - Output
-      - The year, as a number
 
 
-        
+
+|Input Name|Description|
+|--|--|
+|Input|A valid datetime object or the datetime as text specified in a [valid format](datatypes.md#datetimeformats)
+### Outputs|
+ 
+
+
+
+|Output Name|Description|
+|--|--|
+|Output|The year, as a number|
+ 

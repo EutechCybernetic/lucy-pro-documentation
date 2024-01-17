@@ -550,21 +550,13 @@ Insert one document at a time.
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to store the document under|
-|*document*|[JSON document](datatypes.md#dt-json)|*true*|Document to be stored|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[JSON document](datatypes.md#dt-json)|Document that was inserted into the collection|
+|[JSON document](datatypes.md#dt-json)|Document that was inserted into the collection
+``` json```|
  
-
-``` json```
 
             {
                 "_id": "5e21b3aecee5d8514cbfefa0",
@@ -609,12 +601,11 @@ Insert multiple documents at a time.
 
 |Name|Data Type|Required|Description|
 |----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to store the documents under|
-|*documents*|[JSON document](datatypes.md#dt-json)|*true*|Array of documents to be stored|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+|*collection_name|[Text](datatypes.md#dt-text)|*true*|Name of the collection to store the documents under|
+|*documents|[JSON document](datatypes.md#dt-json)|*true*|Array of documents to be stored|
+|*options|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API
+**Example**|
  
-
-**Example**
 
 ``` javascript```
 
@@ -657,21 +648,13 @@ Find the first matching document for the given collection & filter condition. Mo
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to find the documents|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[JSON document](datatypes.md#dt-json)|First document that matched the filter condition|
+|[JSON document](datatypes.md#dt-json)|First document that matched the filter condition
+``` json```|
  
-
-``` json```
 
             {
                 "_id": "5e21b3aecee5d8514cbfefa0",
@@ -713,21 +696,13 @@ Find all matching documents for the given collection & filter condition. More in
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to find the documents|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[JSON document](datatypes.md#dt-json)|Array of documents that matched the filter condition|
+|[JSON document](datatypes.md#dt-json)|Array of documents that matched the filter condition
+``` json```|
  
-
-``` json```
 
 ####             [
                     "_id": "5e21b3aecee5d8514cbfefa0",
@@ -789,22 +764,13 @@ Update first matching document with the given data for the given collection & fi
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to update the documents for|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be updated with|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[JSON document](datatypes.md#dt-json)|Replacement result|
+|[JSON document](datatypes.md#dt-json)|Replacement result
+``` json```|
  
-
-``` json```
 
             {
                 matchedCount: 1,
@@ -861,22 +827,13 @@ Update all matching documents with the given data for the given collection & fil
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to update the documents under for|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be updated with|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[JSON document](datatypes.md#dt-json)|Replacement result|
+|[JSON document](datatypes.md#dt-json)|Replacement result
+``` json```|
  
-
-``` json```
 
             {
                 matchedCount: 10,
@@ -936,22 +893,13 @@ Replace first matching document is replaced with the given data for the given co
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to replace the documents in|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be replaced with|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[JSON document](datatypes.md#dt-json)|Replacement result|
+|[JSON document](datatypes.md#dt-json)|Replacement result
+``` json```|
  
-
-``` json```
 
             {
                 matchedCount: 1,
@@ -1002,12 +950,11 @@ Delete first matching document for the given collection & filter condition. More
 
 |Name|Data Type|Required|Description|
 |----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+|*collection_name|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
+|*filter|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*options|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API
+**Example**|
  
-
-**Example**
 
 ``` javascript```
 
@@ -1043,12 +990,11 @@ Delete all matching documents for the given collection & filter condition. More 
 
 |Name|Data Type|Required|Description|
 |----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+|*collection_name|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
+|*filter|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*options|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API
+**Example**|
  
-
-**Example**
 
 ``` javascript```
 
@@ -1082,21 +1028,13 @@ Count all matching documents for the given collection & filter condition. More i
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to count the documents from|
-|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[number](datatypes.md#dt-numbers)|Number of documents that matched the filter condition|
+|[number](datatypes.md#dt-numbers)|Number of documents that matched the filter condition
+**Example**|
  
-
-**Example**
 
 ``` javascript```
 
@@ -1133,21 +1071,13 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
 
 
 
-|Name|Data Type|Required|Description|
-|----|----|----|----|
-|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to count the documents from|
-|*pipeline_stages*|[JSON document](datatypes.md#dt-json)|*true*|Array of pipeline stages to process the data through for aggregation|
-|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
- 
-
 
 
 |Data Type|Description|
 |--|--|
-|[JSON document](datatypes.md#dt-json)|Aggregation result|
+|[JSON document](datatypes.md#dt-json)|Aggregation result
+**Example**|
  
-
-**Example**
 
 Here, we need to find the electricity usage of a city. So, we group the data by *City* in our data collection whose *Usage* is more than *50000*, and calculate the *sum* from *Usage* field, and have the aggregation result in *total* field. The result would be,
 
@@ -1199,16 +1129,12 @@ This is provided in order to pass any additional configuration to the backend da
 
 |Name|Data Type|Required|Description|
 |----|----|----|----|
-|*limit*|[number](datatypes.md#dt-numbers)|*false*|Maximum number of documents to return||
-|default* is **0**|
-|*skip*|[number](datatypes.md#dt-numbers)|*false*|Number of documents to skip that match the filter condition|
+|*limit|[number](datatypes.md#dt-numbers)|*false*|Maximum number of documents to return
+*default* is **0**|
+|*skip|[number](datatypes.md#dt-numbers)|*false*|Number of documents to skip that match the filter condition
+*default* is **0**|
+|*sort|[number](datatypes.md#dt-numbers)|*false*|Order to sort the matched documents|
  
-
-        *default* is **0**
-    * - *sort*
-      - [number](datatypes.md#dt-numbers)
-      - *false*
-      - Order to sort the matched documents
 
         **0** for *ascending* & **1** for *descending*
 
@@ -1222,10 +1148,9 @@ The following registry settings are available for data collection feature,
 
 |Name|Required|Description|
 |---|---|---|
-|*MongoDBServer*|*true*|This is url where your MongoDB instance is running|
+|*MongoDBServer|*true*|This is url where your MongoDB instance is running
+**Example:** mongodb://localhost:27017|
  
-
-        **Example:** mongodb://localhost:27017
 
 {% hint style="info" %}
 

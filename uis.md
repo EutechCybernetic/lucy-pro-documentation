@@ -68,13 +68,11 @@ All ui containers have several common properties. These can be set by clicking o
 |Name|A more descriptive name to give to the screen.|
 |Description|A description of what the screen represents. Currently used only for weblets - this description will appear in the weblet browser.|
 |SetupScript|Any [javascript](uis.md#clientscript) to be run when the screen loads|
-|Permissions|The [permissions](uis.md#uipermissions) associated with this is screen.|
- 
-
-
+|Permissions|The [permissions](uis.md#uipermissions) associated with this is screen.
 ## Types of UI Elements
 There are many UI elements that can be placed inside containers.
-Please see the [Widget Reference](uifields.md#widgetreference) section for more information.
+Please see the [Widget Reference](uifields.md#widgetreference) section for more information.|
+ 
 
 ## Designing the User Interface
 You start defining a user interface by picking one of the containers and adding it to the bundle.

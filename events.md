@@ -26,10 +26,9 @@ Events consist of the following pieces of information:
 |--|--|
 |Event ID|A unique identifier for the event being raised|
 |LocationKey|The iviva location from which the event was triggered|
-|Payload|An event payload, in JSON format|
+|Payload|An event payload, in JSON format
+The `EventID` field is the most important of these. The `EventID` uniquely identifies this type of event and is the name used to subscribe to events.|
  
-
-The `EventID` field is the most important of these. The `EventID` uniquely identifies this type of event and is the name used to subscribe to events.
 
 ## Event ID Naming Convention
 The EventID can be anything unique but we recommend using the url path format:

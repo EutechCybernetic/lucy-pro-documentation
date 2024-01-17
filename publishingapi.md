@@ -140,11 +140,6 @@ If you want to process a complex JSON object, set the body format to Raw Text an
 
 
 
-|Content-Type|application/json|This is required||
-|Authorization|<apikey> or Bearer <authtoken>|This is required if the API is set to require authentication||
-|Example**|
- 
-
 ```
 
     POST /Lucy/TempSensor/value
@@ -177,11 +172,6 @@ Then your [action](actions.md#actions) should have two inputs: id and value.
 
 
 
-|Content-Type|application/x-www-form-urlencoded or multipart/form-data|This is required||
-|Authorization|<apikey> or Bearer <authtoken>|This is required if the API is set to require authentication|||
-|Example**|
- 
-
 ```
 
     PUT /Lucy/TempSensor/value
@@ -204,11 +194,6 @@ The data is available as an input pin called Body.
 **Required Headers**
 
 
-
-|||
-|Authorization|<apikey> or Bearer <authtoken>|This is required if the API is set to require authentication|||
-|Example**|
- 
 
 ```
 
@@ -247,22 +232,15 @@ The inputs are:
 
 
 
-|Query|This will be a [dictionary](datatypes.md#dictionaries) containing all query string parameters that were part of the request||
+|Query|This will be a [dictionary](datatypes.md#dictionaries) containing all query string parameters that were part of the request|
 |Headers|This will be a [dictionary](datatypes.md#dictionaries) containing all HTTP headers that were sent as part of the request.|
- 
-
-    * - HttpMethod
-      - This will be the name of the HTTP method that was used. This is useful if you want mulitple APIs mapped to a single action.
-    
-    * - ContentType
-      - This is the value of the Content-Type header that was sent. You can also retrieve this from the Headers [dictionary](datatypes.md#dictionaries) mentioned above, so this is just a convenience since as its the most-accessed header.
-    
-    * - InstanceKey
-      - If a query string parameter called InstanceKey was passed to the API, that will be available here. If your action was set to run on an instance, then this value will be used to decide which instance to run on.
-
+|HttpMethod|This will be the name of the HTTP method that was used. This is useful if you want mulitple APIs mapped to a single action.|
+|ContentType|This is the value of the Content-Type header that was sent. You can also retrieve this from the Headers [dictionary](datatypes.md#dictionaries) mentioned above, so this is just a convenience since as its the most-accessed header.|
+|InstanceKey|If a query string parameter called InstanceKey was passed to the API, that will be available here. If your action was set to run on an instance, then this value will be used to decide which instance to run on.
 ## Conflicts in input names
 Its possible that multiple parameters in the request may map to the same input name when the action is called.
-For example, if you have a query string parameter called HttpMethod, that will conflict with the standard HttpMethod parameter that we pass into every request.
+For example, if you have a query string parameter called HttpMethod, that will conflict with the standard HttpMethod parameter that we pass into every request.|
+ 
 
 In case of conflicts, there is a priority order to resolve it.
 
