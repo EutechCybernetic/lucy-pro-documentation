@@ -66,17 +66,16 @@ Parse a textual representation of a datetime.
 Generate an excel sheet in xlsx format.
 Adds column headers and rows of data.
 
-.. list-table::
-    :header-rows: 0
 
-    * - `columns`
-      - An array of column headers to add to the top.
-    * - `items`
-      - An array of objects to be populated as rows. Each object should have fields matching the items in the `columns` array
+
+|`columns`|An array of column headers to add to the top.|
+---------------------------------------------------------
+|`items`|An array of objects to be populated as rows. Each object should have fields matching the items in the `columns` array|
+ 
 
 Example:
 
-. code::
+```
 
     var columns = ['First Name','Last Name','Age'];
     var data = [
@@ -85,6 +84,8 @@ Example:
         {'First Name':'Fred','Last Name':'Mertz','Age':48}
     ];
     var sheet = oi.generateExcelSheet(columns,data);
+
+```
 
 
 #### Returns
@@ -115,11 +116,11 @@ The current time in UTC format
 ### convertFromUtc(dt, tz)
 Converts a [timestamp](datatypes.md#datetimes) from utc to a different timezone.
 
-.. list-table::
-    :header-rows: 0
 
-    * - `dt`
-      - A [timestamp](datatypes.md#datetimes) to convert to a different timezone
+
+|`dt`|A [timestamp](datatypes.md#datetimes) to convert to a different timezone|
+-------------------------------------------------------------------------------
+ 
 
     * - `tz`
       - The [code](timezonecodes.md#timezonecodes) of the timezone to convert to
@@ -138,11 +139,11 @@ Converts a [timestamp](datatypes.md#datetimes) from utc to a different timezone.
 ### convertToUtc(now, tz)
 Converts a [timestamp](datatypes.md#datetimes) to utc from a different timezone.
 
-.. list-table::
-    :header-rows: 0
 
-    * - `dt`
-      - A [timestamp](datatypes.md#datetimes) to convert to UTC
+
+|`dt`|A [timestamp](datatypes.md#datetimes) to convert to UTC|
+--------------------------------------------------------------
+ 
 
     * - `tz`
       - The [code](timezonecodes.md#timezonecodes) of the timezone the [timestamp](datatypes.md#datetimes) was currently in.
@@ -205,13 +206,12 @@ This name can be accessed via an http url of the form:
 
     http://<ivivacloudurl>/content/OI/<filename>
 
-.. list-table::
-    :header-rows: 0
 
-    * - `name`
-      - The base name for the file
-    * - `data`
-      - [binary data object](datatypes.md#binobjects) representing the data to be uploaded.
+
+|`name`|The base name for the file|
+-----------------------------------
+|`data`|[binary data object](datatypes.md#binobjects) representing the data to be uploaded.|
+ 
 
 
 #### Returns

@@ -34,29 +34,15 @@ These blocks are your everyday Lucy blocks, that enable you to work with the tre
 
 This blocks allows you to record a data point for the given trend.
 
-.. list-table:: Input Pins
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *Trend Name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the trend you are capturing like *energy* or *temperature*
-    * - *Value*
-      - [number](datatypes.md#dt-numbers)
-      - *true*
-      - Value of the data point you are capturing like *12.07* or *100*
-    * - *Timestamp*
-      - [Datetime](datatypes.md#dt-datetimes)
-      - *false* (*default*: current time)
-      - Records the time when the data point was captured
-    * - *Tag List*
-      - [JSON Document](datatypes.md#dt-json)
-      - *false*
-      - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*Trend Name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you are capturing like *energy* or *temperature*|
+|*Value*|[number](datatypes.md#dt-numbers)|*true*|Value of the data point you are capturing like *12.07* or *100*|
+|*Timestamp*|[Datetime](datatypes.md#dt-datetimes)|*false* (*default*: current time)|Records the time when the data point was captured|
+|*Tag List*|[JSON Document](datatypes.md#dt-json)|*false*|Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*|
+ 
 
 The following steps illustrate how you can add a point,
 
@@ -73,21 +59,13 @@ On successful insert, you should get an output of **1** from the *All Output* pi
 
 This blocks allows you to query data points for the given trend.
 
-.. list-table:: Input Pins
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *Trend Name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the trend you want to query like *energy* or *temperature*
-    * - *Bucket Type*
-      - [text](datatypes.md#dt-text)
-      - *false*
-      - Time buckets to group data points by.
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*Trend Name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you want to query like *energy* or *temperature*|
+|*Bucket Type*|[text](datatypes.md#dt-text)|*false*|Time buckets to group data points by.|
+ 
 
         Available buckets - Hour, Day, Week, Month, Year
     * - *Aggregation Type*
@@ -161,33 +139,16 @@ Insert one data point at a time.
     let trends = lucy.trends();
     trends.addPoint("<trend_name>", "<value>", "<timestamp>", "<tags>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *trend_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the trend you are capturing like *energy* or *temperature*
-    * - *value*
-      - [number](datatypes.md#dt-numbers)
-      - *true*
-      - Value of the data point you are capturing like *12.07* or *100*
-    * - *timestamp*
-      - [Datetime](datatypes.md#dt-datetimes)
-      - *true*
-      - Records the time when the data point was captured
-    * - *tags*
-      - [JSON Document](datatypes.md#dt-json)
-      - *true*
-      - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*trend_name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you are capturing like *energy* or *temperature*|
+|*value*|[number](datatypes.md#dt-numbers)|*true*|Value of the data point you are capturing like *12.07* or *100*|
+|*timestamp*|[Datetime](datatypes.md#dt-datetimes)|*true*|Records the time when the data point was captured|
+|*tags*|[JSON Document](datatypes.md#dt-json)|*true*|Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the trends API|
+ 
 
 **Example**
 
@@ -222,33 +183,16 @@ Insert one data point at a time. This is similar to [addPoint](#addpoint), excep
     let trends = lucy.trends();
     trends.addPoint("<trend_name>", "<value>", "<timestamp>", "<tags>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *trend_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the trend you are capturing like *energy* or *temperature*
-    * - *value*
-      - [number](datatypes.md#dt-numbers)
-      - *true*
-      - Value of the data point you are capturing like *12.07* or *100*
-    * - *timestamp*
-      - [Datetime](datatypes.md#dt-datetimes)
-      - *true*
-      - Records the time when the data point was captured
-    * - *tags*
-      - [JSON Document](datatypes.md#dt-json)
-      - *true*
-      - Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*trend_name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you are capturing like *energy* or *temperature*|
+|*value*|[number](datatypes.md#dt-numbers)|*true*|Value of the data point you are capturing like *12.07* or *100*|
+|*timestamp*|[Datetime](datatypes.md#dt-datetimes)|*true*|Records the time when the data point was captured|
+|*tags*|[JSON Document](datatypes.md#dt-json)|*true*|Additional metadata associated with the datapoint like *Location*, *Equipment ID*, *Equipment Type*|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the trends API|
+ 
 
 **Example**
 
@@ -285,23 +229,13 @@ Insert multiple data point at a time.
     let trends = lucy.trends();
     trends.addPoints("<points>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *points*
-      - [JSON Documents](datatypes.md#dt-json)
-      - *true*
-      - Array of JSON documents comprising of trend points
-      
-        Refer to **Trend Point** structure below
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*points*|[JSON Documents](datatypes.md#dt-json)|*true*|Array of JSON documents comprising of trend points||Refer to **Trend Point** structure below|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the trends API|
+ 
 
 **Trend Point**
 
@@ -347,23 +281,13 @@ Insert multiple data point at a time. This is similar to [addPoints](#addpoints)
     let trends = lucy.trends();
     trends.addPointsSync("<points>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *points*
-      - [JSON Documents](datatypes.md#dt-json)
-      - *true*
-      - Array of JSON documents comprising of trend points
-      
-        Refer to **Trend Point** structure below
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the trends API
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*points*|[JSON Documents](datatypes.md#dt-json)|*true*|Array of JSON documents comprising of trend points||Refer to **Trend Point** structure below|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the trends API|
+ 
 
 **Trend Point**
 
@@ -413,29 +337,15 @@ Query multiple data points for a given trend.
     let trends = lucy.trends();
     trends.queryPoints("<trend_name>", "<from>", "<to>", "<tags>", "<bucketType>", "<aggregationType>", "<options>");
 
-.. list-table:: Input Pins
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *trend_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the trend you want to query like *energy* or *temperature*
-    * - *from*
-      - [Datetime](datatypes.md#dt-datetimes)
-      - *true*
-      - Timestamp from which data points should be gathered
-    * - *to*
-      - [Datetime](datatypes.md#dt-datetimes)
-      - *true*
-      - Timestamp until which data points should be gathered
-    * - *bucket_type*
-      - [text](datatypes.md#dt-text)
-      - *true*
-      - Time buckets to group data points by.
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*trend_name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you want to query like *energy* or *temperature*|
+|*from*|[Datetime](datatypes.md#dt-datetimes)|*true*|Timestamp from which data points should be gathered|
+|*to*|[Datetime](datatypes.md#dt-datetimes)|*true*|Timestamp until which data points should be gathered|
+|*bucket_type*|[text](datatypes.md#dt-text)|*true*|Time buckets to group data points by.|
+ 
 
         Available buckets - hour, day, week, month, year
     * - *aggregation_type*
@@ -482,23 +392,14 @@ This is provided in order to pass any additional configuration to the backend tr
 {% hint type="note" %}
     This may be modified with new features as the backend changes. {% endhint %}
 
-.. list-table:: Available Options
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *limit*
-      - [number](datatypes.md#dt-numbers)
-      - *false*
-      - Maximum number of trends to return
-        
-        *default* is **0**
-    * - *offset*
-      - [number](datatypes.md#dt-numbers)
-      - *false*
-      - Number of trends to skip
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*limit*|[number](datatypes.md#dt-numbers)|*false*|Maximum number of trends to return||
+|default* is **0**|
+|*offset*|[number](datatypes.md#dt-numbers)|*false*|Number of trends to skip|
+ 
 
         *default* is **0**
     * - *sort*
@@ -514,22 +415,14 @@ This is provided in order to pass any additional configuration to the backend tr
 
 The following registry settings are available for trends feature,
 
-.. list-table:: Settings
-    :header-rows: 1
 
-    * - Name
-      - Required
-      - Description
-    * - *LucyEngine.TimeSeries.DataStore*
-      - *false*
-      - Backend datastore to use for storing trend data
-        
-        *default* is **influxdb**
-    * - *LucyEngine.TimeSeries.FlushInterval*
-      - *false*
-      - This says the interval at whichc the incoming trend data should be flushed into the datastore. This    can be tuned based on the rate at which trend points are being added. If large of number data is       added in a short period of time, then you can reduce this interval, to avoid bulk flushing in the      backend. 
-      
-        For example, if you get **5000 data points** every **5 seconds**, then you could set this value to say **1000** (*milliseconds*), to avoid flushing data in bulk.
+
+|Name|Required|Description|
+---------------------------
+|*LucyEngine.TimeSeries.DataStore*|*false*|Backend datastore to use for storing trend data||
+|default* is **influxdb**|
+|*LucyEngine.TimeSeries.FlushInterval*|*false*|This says the interval at whichc the incoming trend data should be flushed into the datastore. This    can be tuned based on the rate at which trend points are being added. If large of number data is       added in a short period of time, then you can reduce this interval, to avoid bulk flushing in the      backend.||For example, if you get **5000 data points** every **5 seconds**, then you could set this value to say **1000** (*milliseconds*), to avoid flushing data in bulk.|
+ 
 
         For example, if you get only **10 data points** every **1 second**, then you could set this value to say **10000** (*milliseconds*), to avoid flushing too little data.
 

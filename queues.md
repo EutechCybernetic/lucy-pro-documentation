@@ -31,26 +31,22 @@ There will be a separate task to read items from the queue and execute the linke
 
 ## Configurations
 
-.. list-table:: Inputs
-    :header-rows: 1
 
-    * - Label 
-      - Description
-    
-    * - Input 01
-      - This is the default input pin. You can remove this add and add other inputs as you require.
+
+|Label|Description||
+--------------------
+|Input 01|This is the default input pin. You can remove this add and add other inputs as you require.|
+ 
 
 {% hint type="note" %}
     You can add multiple inputs here. {% endhint %}
 
-.. list-table:: Outputs
-    :header-rows: 1
 
-    * - Label 
-      - Description
-    
-    * -  Output
-      - This is linked to a [action](actions.md#actions) block. The linked action will execute to process each item in the queue. Any data returned from the linked action (using a 
+
+|Label|Description||
+--------------------
+|Output|This is linked to a [action](actions.md#actions) block. The linked action will execute to process each item in the queue. Any data returned from the linked action (using a|
+ 
 
     * - Queue Id 
       - This will return a unique id for the item that got queued. 
@@ -61,18 +57,12 @@ There will be a separate task to read items from the queue and execute the linke
 {% hint type="note" %}
     When adding output pins to the action block, make sure that names of the output pins are identicle to the input pins in the queue block {% endhint %}
 
-.. list-table:: Properties
-    :header-rows: 1
 
-    * - Label 
-      - Mandatory/Optional
-      - Description
-      - Default Value
-    
-    * - Queue Name
-      - Mandatory
-      - Name ot the queue. This will be used to list queue items
-      - empty 
+
+|Label|Mandatory/Optional|Description|Default Value||
+-----------------------------------------------------
+|Queue Name|Mandatory|Name ot the queue. This will be used to list queue items|empty|
+ 
 
     * - Retry Immediately
       - Optional

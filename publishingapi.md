@@ -138,17 +138,12 @@ If you want to process a complex JSON object, set the body format to Raw Text an
 
 **Required Headers**
 
-.. list-table::
 
-    * - Content-Type
-      - application/json
-      - This is required
-    
-    * - Authorization
-      - <apikey> or Bearer <authtoken>
-      - This is required if the API is set to require authentication
-    
-**Example**
+
+|Content-Type|application/json|This is required||
+|Authorization|<apikey> or Bearer <authtoken>|This is required if the API is set to require authentication||
+|Example**|
+ 
 
 ```
 
@@ -180,18 +175,12 @@ Then your [action](actions.md#actions) should have two inputs: id and value.
 
 **Required Headers**
 
-.. list-table::
 
-    * - Content-Type
-      - application/x-www-form-urlencoded or multipart/form-data
-      - This is required
-    
-    * - Authorization
-      - <apikey> or Bearer <authtoken>
-      - This is required if the API is set to require authentication
-    
-    
-**Example**
+
+|Content-Type|application/x-www-form-urlencoded or multipart/form-data|This is required||
+|Authorization|<apikey> or Bearer <authtoken>|This is required if the API is set to require authentication|||
+|Example**|
+ 
 
 ```
 
@@ -214,16 +203,12 @@ The data is available as an input pin called Body.
 
 **Required Headers**
 
-.. list-table::
 
-  
-    
-    * - Authorization
-      - <apikey> or Bearer <authtoken>
-      - This is required if the API is set to require authentication
-    
-    
-**Example**
+
+|||
+|Authorization|<apikey> or Bearer <authtoken>|This is required if the API is set to require authentication|||
+|Example**|
+ 
 
 ```
 
@@ -260,13 +245,11 @@ You typically do not need to use them but if do, you can add pins with those nam
 
 The inputs are:
 
-.. list-table::
 
-    * - Query
-      - This will be a [dictionary](datatypes.md#dictionaries) containing all query string parameters that were part of the request
-    
-    * - Headers
-      - This will be a [dictionary](datatypes.md#dictionaries) containing all HTTP headers that were sent as part of the request.
+
+|Query|This will be a [dictionary](datatypes.md#dictionaries) containing all query string parameters that were part of the request||
+|Headers|This will be a [dictionary](datatypes.md#dictionaries) containing all HTTP headers that were sent as part of the request.|
+ 
 
     * - HttpMethod
       - This will be the name of the HTTP method that was used. This is useful if you want mulitple APIs mapped to a single action.

@@ -953,11 +953,11 @@ Example:
 
 Available Functions:
 
-.. list-table::
-    :header-rows: 1
 
-    * - Function Name
-      - Description
+
+|Function Name|Description|
+---------------------------
+ 
 
     * - html(content)
       - Escape the html inside `content`. This converts '<' into &amp; and so on

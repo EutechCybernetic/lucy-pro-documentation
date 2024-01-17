@@ -17,15 +17,13 @@ Taking the example of an **Asset** model, you may define the following attribute
 
 Attributes are defined in each model. The data that is associated with each attribute is specified in each actual model instance of the model.
 
-.. list-table:: Attribute Data Types
-    :header-rows: 1
 
-    * - Data type
-      - Description
-    * - Text
-      - Represents any generic piece of data - a name, a number, a JSON payload etc...
-    * - DateTime
-      - Used to represent a time stamp, a day, or a time.
+
+|Data type|Description|
+-----------------------
+|Text|Represents any generic piece of data - a name, a number, a JSON payload etc...|
+|DateTime|Used to represent a time stamp, a day, or a time.|
+ 
 
         Can be used with the various date manipulation blocks in Lucy.
 

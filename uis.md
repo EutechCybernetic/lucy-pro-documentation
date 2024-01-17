@@ -60,21 +60,16 @@ The available containers are:
 ### Common Properties
 All ui containers have several common properties. These can be set by clicking on that ui container in the [Bundle Explorer](uicomposer.md#bundleexplorer).
 
-.. list-table::
-    :header-rows: 1
 
-    * - Name
-      - Description
-    * - ID
-      - A unique identifier for this UI. This must be unique within the current bundle and is used to identify this particular UI.
-    * - Name
-      - A more descriptive name to give to the screen.
-    * - Description
-      - A description of what the screen represents. Currently used only for weblets - this description will appear in the weblet browser.
-    * - SetupScript
-      - Any [javascript](uis.md#clientscript) to be run when the screen loads
-    * - Permissions
-      - The [permissions](uis.md#uipermissions) associated with this is screen.
+
+|Name|Description|
+------------------
+|ID|A unique identifier for this UI. This must be unique within the current bundle and is used to identify this particular UI.|
+|Name|A more descriptive name to give to the screen.|
+|Description|A description of what the screen represents. Currently used only for weblets - this description will appear in the weblet browser.|
+|SetupScript|Any [javascript](uis.md#clientscript) to be run when the screen loads|
+|Permissions|The [permissions](uis.md#uipermissions) associated with this is screen.|
+ 
 
 
 ## Types of UI Elements

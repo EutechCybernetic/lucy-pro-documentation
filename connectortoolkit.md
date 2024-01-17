@@ -160,36 +160,19 @@ When you save your method definition, all variables that you have used are extra
 
 The following variables are made available to you by default:
 
-.. list-table::
-    :header-rows: 1
 
-    * - Variable
-      - Description
-      - Availability
-    * - `#{access_token}`
-      - This will contain the access token for OAuth2 authentication. Typically this is used in the Authorization header value as `Bearer #{access_token}`
-      - This is available when the authentication type is OAuth2
-    * - `#{apikey}`
-      - The api key based on the account that this web service method is executing in. 
-      - This is available when the authentication type is Custom
-    * - `#{username}`
-      - This is the username specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.
-      - This is available when the authentication type is Basic
-    * - `#{password}`
-      - This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.
-      - This is available when the authentication type is Basic
-    * - `#{lucyurl}`
-      - The url of the current Lucy account.
-      - Always available
-    * - `#{lucyid}`
-      - The name of the Lucy account that this connector is running in. This is often the subdomain name of the url.
-      - Always available
-    * - `#{lucycode}`
-      - This is a short code that is generated for your Lucy account. It can be used to uniquely identify this Lucy account.
-      - Always available
-    * - `#{password}`
-      - This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.
-      - Always available
+
+|Variable|Description|Availability|
+-----------------------------------
+|`#{access_token}`|This will contain the access token for OAuth2 authentication. Typically this is used in the Authorization header value as `Bearer #{access_token}`|This is available when the authentication type is OAuth2|
+|`#{apikey}`|The api key based on the account that this web service method is executing in.|This is available when the authentication type is Custom|
+|`#{username}`|This is the username specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.|This is available when the authentication type is Basic|
+|`#{password}`|This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.|This is available when the authentication type is Basic|
+|`#{lucyurl}`|The url of the current Lucy account.|Always available|
+|`#{lucyid}`|The name of the Lucy account that this connector is running in. This is often the subdomain name of the url.|Always available|
+|`#{lucycode}`|This is a short code that is generated for your Lucy account. It can be used to uniquely identify this Lucy account.|Always available|
+|`#{password}`|This is the password specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.|Always available|
+ 
 
 
 ### Parsing Outputs
@@ -224,17 +207,14 @@ For example, if the output from your web service is:
 
 You may want to extract 3 outputs:
 
-.. list-table::
-    :header-rows: 1
 
-    * - Name
-      - JSON Path
-    * - ID
-     - `$.id`
-    * - Value
-      - `$.data.value`
-    * - DateTime
-      - `$.data.lastupdate.timestamp`
+
+|Name|JSON Path|
+----------------
+|ID|`$.id`|
+|Value|`$.data.value`|
+|DateTime|`$.data.lastupdate.timestamp`|
+ 
 
 
 ### Error Handling
@@ -273,23 +253,19 @@ You can use ES6 javascript to write the code.
 
 Your script has access to the following objects that you can use to read the existing configuration and inputs and supply new configuration:
 
-.. list-table::
-    :header-rows: 1
 
-    * - Variable
-      - Description
-    * - inputs
-      - A [dictionary](datatypes.md#dictionaries) of inputs that were passed to the block. The dictionary keys are pin names. Values are the actual values fed to the block during execution. You can read values from here and transform them in some way before sending to the web service.
-    * - request
-      - The [request object](connectortoolkit.md#wsjsrequest). Gives you access to the details configured for the method including the url, query string and headers
-    * - runtime
-      - The runtime object. Has methods that let you override the request configuration details. Use this to override any configured data.
-    * - auth
-      - A [dictionary](datatypes.md#dictionaries) that contains any authentication information associated with the request and account profile. The following keys are available:
-        * accessToken - If the API uses OAuth 2, this will be the latest bearer token that was generated
-        * apiKey - If the API uses custom authentication, this is the custom api key that was configured for the web service account.
-        * username - If BASIC authentication was specified, this is the username that was given for the account profile that's being used in the execution
-        * password - If BASIC authentication was specified, this is the password that was given for the account profile that's being used in the execution
+
+|Variable|Description|
+----------------------
+|inputs|A [dictionary](datatypes.md#dictionaries) of inputs that were passed to the block. The dictionary keys are pin names. Values are the actual values fed to the block during execution. You can read values from here and transform them in some way before sending to the web service.|
+|request|The [request object](connectortoolkit.md#wsjsrequest). Gives you access to the details configured for the method including the url, query string and headers|
+|runtime|The runtime object. Has methods that let you override the request configuration details. Use this to override any configured data.|
+|auth|A [dictionary](datatypes.md#dictionaries) that contains any authentication information associated with the request and account profile. The following keys are available:|
+|accessToken - If the API uses OAuth 2, this will be the latest bearer token that was generated|
+|apiKey - If the API uses custom authentication, this is the custom api key that was configured for the web service account.|
+|username - If BASIC authentication was specified, this is the username that was given for the account profile that's being used in the execution|
+|password - If BASIC authentication was specified, this is the password that was given for the account profile that's being used in the execution|
+ 
 
 **Example 1**
 
@@ -390,25 +366,14 @@ This object is only available for pre-processing scripts in web services.
 The object contains the following members:
 
 
-.. list-table::
-    :header-rows: 0
 
-    * - Member
-      - Type
-      - Description
-    * - headers
-      - [dictionary](datatypes.md#dictionaries)
-      - A [dictionary](datatypes.md#dictionaries) of header name/value pairs that have been configured.
-    * - query
-      - [dictionary](datatypes.md#dictionaries)
-      - A [dictionary](datatypes.md#dictionaries) of  query string names and values.
-    * - body
-      - string
-      - The raw payload that is ready to be sent.
-    * - url
-      - string
-      - The url of the web service
-  
+|.. list-table::|:header-rows: 0|
+|Member|Type|Description|
+|headers|[dictionary](datatypes.md#dictionaries)|A [dictionary](datatypes.md#dictionaries) of header name/value pairs that have been configured.|
+|query|[dictionary](datatypes.md#dictionaries)|A [dictionary](datatypes.md#dictionaries) of  query string names and values.|
+|body|string|The raw payload that is ready to be sent.|
+|url|string|The url of the web service||
+ 
 
 <a name='wsjsruntime'></a>
 
@@ -417,13 +382,10 @@ This object lets you manipulate requests by changing the payload/query string/he
 The object contains the following members:
 
 
-.. list-table::
-    :header-rows: 0
 
-    * - Member
-      - Type
-      - Description
-      - Availability
+|.. list-table::|:header-rows: 0|
+|Member|Type|Description|Availability|
+ 
 
     * - setHeaders(object)
       - function

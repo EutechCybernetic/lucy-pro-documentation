@@ -6,13 +6,11 @@
 
 The following table lists all available timezones, their name, description, common abbreviation and iviva time zone code.
 
-.. list-table::
-      :header-rows: 1
 
-      * - Time Zone
-        - Description
-        - Abbreviation
-        - iviva code
+
+|Time Zone|Description|Abbreviation|iviva code|
+-----------------------------------------------
+ 
 
       * - Morocco Standard Time
         - (UTC) Casablanca

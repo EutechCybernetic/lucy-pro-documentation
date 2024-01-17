@@ -548,33 +548,21 @@ Insert one document at a time.
 
     collections.insertOne("<collection_name>", "<document>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to store the document under
-    * - *document*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Document to be stored
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to store the document under|
+|*document*|[JSON document](datatypes.md#dt-json)|*true*|Document to be stored|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [JSON document](datatypes.md#dt-json)
-      - Document that was inserted into the collection
+
+
+|Data Type|Description|
+-----------------------
+|[JSON document](datatypes.md#dt-json)|Document that was inserted into the collection|
+ 
 
 ``` json```
 
@@ -617,25 +605,14 @@ Insert multiple documents at a time.
 
     collections.insertMany("<collection_name>", "<documents>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to store the documents under
-    * - *documents*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Array of documents to be stored
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to store the documents under|
+|*documents*|[JSON document](datatypes.md#dt-json)|*true*|Array of documents to be stored|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
 **Example**
 
@@ -678,33 +655,21 @@ Find the first matching document for the given collection & filter condition. Mo
 
     collections.findOne("<collection_name>", "<filter>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to find the documents
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to find the documents|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [JSON document](datatypes.md#dt-json)
-      - First document that matched the filter condition
+
+
+|Data Type|Description|
+-----------------------
+|[JSON document](datatypes.md#dt-json)|First document that matched the filter condition|
+ 
 
 ``` json```
 
@@ -746,33 +711,21 @@ Find all matching documents for the given collection & filter condition. More in
 
     collections.findMany("<collection_name>", "<filter>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to find the documents
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to find the documents|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [JSON document](datatypes.md#dt-json)
-      - Array of documents that matched the filter condition
+
+
+|Data Type|Description|
+-----------------------
+|[JSON document](datatypes.md#dt-json)|Array of documents that matched the filter condition|
+ 
 
 ``` json```
 
@@ -834,37 +787,22 @@ Update first matching document with the given data for the given collection & fi
 
     collections.updateOne("<collection_name>", "<filter>", "<data>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to update the documents for
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *data*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Document to be updated with
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to update the documents for|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be updated with|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [JSON document](datatypes.md#dt-json)
-      - Replacement result
+
+
+|Data Type|Description|
+-----------------------
+|[JSON document](datatypes.md#dt-json)|Replacement result|
+ 
 
 ``` json```
 
@@ -921,37 +859,22 @@ Update all matching documents with the given data for the given collection & fil
 
     collections.updateMany("<collection_name>", "<filter>", "<data>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to update the documents under for
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *data*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Document to be updated with
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to update the documents under for|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be updated with|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [JSON document](datatypes.md#dt-json)
-      - Replacement result
+
+
+|Data Type|Description|
+-----------------------
+|[JSON document](datatypes.md#dt-json)|Replacement result|
+ 
 
 ``` json```
 
@@ -1011,37 +934,22 @@ Replace first matching document is replaced with the given data for the given co
 
     collections.replaceOne("<collection_name>", "<filter>", "<data>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to replace the documents in
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *data*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Document to be replaced with
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to replace the documents in|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be replaced with|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [JSON document](datatypes.md#dt-json)
-      - Replacement result
+
+
+|Data Type|Description|
+-----------------------
+|[JSON document](datatypes.md#dt-json)|Replacement result|
+ 
 
 ``` json```
 
@@ -1090,25 +998,14 @@ Delete first matching document for the given collection & filter condition. More
 
     collections.deleteOne("<collection_name>", "<filter>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to delete the documents from
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
 **Example**
 
@@ -1142,25 +1039,14 @@ Delete all matching documents for the given collection & filter condition. More 
 
     collections.deleteOne("<collection_name>", "<filter>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to delete the documents from
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
 **Example**
 
@@ -1194,33 +1080,21 @@ Count all matching documents for the given collection & filter condition. More i
 
     collections.count("<collection_name>", "<filter>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to count the documents from
-    * - *filter*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Filter condition to filter documents by
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to count the documents from|
+|*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [number](datatypes.md#dt-numbers)
-      - Number of documents that matched the filter condition
+
+
+|Data Type|Description|
+-----------------------
+|[number](datatypes.md#dt-numbers)|Number of documents that matched the filter condition|
+ 
 
 **Example**
 
@@ -1257,33 +1131,21 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
 
     collections.aggregate("<collection_name>", "<pipeline_stages>", "<options>");
 
-.. list-table:: Input Parameters
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *collection_name*
-      - [Text](datatypes.md#dt-text)
-      - *true*
-      - Name of the collection to count the documents from
-    * - *pipeline_stages*
-      - [JSON document](datatypes.md#dt-json)
-      - *true*
-      - Array of pipeline stages to process the data through for aggregation
-    * - *options*
-      - [JSON document](datatypes.md#dt-json)
-      - *true* (can be empty with no fields like **{}**)
-      - [Arbitrary Options](#arbitrary-options) to be passed to the data collection API
 
-.. list-table:: Output
-    :header-rows: 1
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to count the documents from|
+|*pipeline_stages*|[JSON document](datatypes.md#dt-json)|*true*|Array of pipeline stages to process the data through for aggregation|
+|*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
+ 
 
-    * - Data Type
-      - Description
-    * - [JSON document](datatypes.md#dt-json)
-      - Aggregation result
+
+
+|Data Type|Description|
+-----------------------
+|[JSON document](datatypes.md#dt-json)|Aggregation result|
+ 
 
 **Example**
 
@@ -1333,23 +1195,14 @@ This is provided in order to pass any additional configuration to the backend da
 {% hint type="note" %}
     This may be modified with new features as the backend changes. {% endhint %}
 
-.. list-table:: Available Options
-    :header-rows: 1
 
-    * - Name
-      - Data Type
-      - Required
-      - Description
-    * - *limit*
-      - [number](datatypes.md#dt-numbers)
-      - *false*
-      - Maximum number of documents to return
-        
-        *default* is **0**
-    * - *skip*
-      - [number](datatypes.md#dt-numbers)
-      - *false*
-      - Number of documents to skip that match the filter condition
+
+|Name|Data Type|Required|Description|
+-------------------------------------
+|*limit*|[number](datatypes.md#dt-numbers)|*false*|Maximum number of documents to return||
+|default* is **0**|
+|*skip*|[number](datatypes.md#dt-numbers)|*false*|Number of documents to skip that match the filter condition|
+ 
 
         *default* is **0**
     * - *sort*
@@ -1365,15 +1218,12 @@ This is provided in order to pass any additional configuration to the backend da
 
 The following registry settings are available for data collection feature,
 
-.. list-table:: Settings
-    :header-rows: 1
 
-    * - Name
-      - Required
-      - Description
-    * - *MongoDBServer*
-      - *true*
-      - This is url where your MongoDB instance is running
+
+|Name|Required|Description|
+---------------------------
+|*MongoDBServer*|*true*|This is url where your MongoDB instance is running|
+ 
 
         **Example:** mongodb://localhost:27017
 

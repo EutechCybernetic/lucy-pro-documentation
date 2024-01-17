@@ -20,17 +20,14 @@ iviva applications raise events whenever any important interactions occur in the
 ## Event Structure
 Events consist of the following pieces of information:
 
-.. list-table:: Event Structure
-    :header-rows: 1
 
-    * - Field
-      - Description
-    * - Event ID
-      - A unique identifier for the event being raised
-    * - LocationKey
-      - The iviva location from which the event was triggered
-    * - Payload
-      - An event payload, in JSON format
+
+|Field|Description|
+-------------------
+|Event ID|A unique identifier for the event being raised|
+|LocationKey|The iviva location from which the event was triggered|
+|Payload|An event payload, in JSON format|
+ 
 
 The `EventID` field is the most important of these. The `EventID` uniquely identifies this type of event and is the name used to subscribe to events.
 
