@@ -63,7 +63,7 @@ All ui containers have several common properties. These can be set by clicking o
 
 
 |Name|Description|
-------------------
+|--|--|
 |ID|A unique identifier for this UI. This must be unique within the current bundle and is used to identify this particular UI.|
 |Name|A more descriptive name to give to the screen.|
 |Description|A description of what the screen represents. Currently used only for weblets - this description will appear in the weblet browser.|

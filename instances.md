@@ -31,7 +31,7 @@ Along with inheriting the attributes of the model from which the model instance 
 
 
 |Attribute|Description|
------------------------
+|--|--|
 |Name|This is a display name for the model instance being created. It is shown in search results and labels. This defaults to the name of the model. The |SetName| block can be used to explicitly set it to something more useful.|
 |Description|A description of the model instance. Use of this will be depracated shortly.|
 |IsActive|Set to `1` if the model instance is currently active. Otherwise set to `0`. All |instances| are active by default.|

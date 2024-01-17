@@ -163,7 +163,7 @@ The following variables are made available to you by default:
 
 
 |Variable|Description|Availability|
------------------------------------
+|---|---|---|
 |`#{access_token}`|This will contain the access token for OAuth2 authentication. Typically this is used in the Authorization header value as `Bearer #{access_token}`|This is available when the authentication type is OAuth2|
 |`#{apikey}`|The api key based on the account that this web service method is executing in.|This is available when the authentication type is Custom|
 |`#{username}`|This is the username specified for the account under Basic Authentication. You normally do not need to use this as the Authorization header will be set automatically for Basic authentication.|This is available when the authentication type is Basic|
@@ -210,7 +210,7 @@ You may want to extract 3 outputs:
 
 
 |Name|JSON Path|
-----------------
+|--|--|
 |ID|`$.id`|
 |Value|`$.data.value`|
 |DateTime|`$.data.lastupdate.timestamp`|
@@ -256,7 +256,7 @@ Your script has access to the following objects that you can use to read the exi
 
 
 |Variable|Description|
-----------------------
+|--|--|
 |inputs|A [dictionary](datatypes.md#dictionaries) of inputs that were passed to the block. The dictionary keys are pin names. Values are the actual values fed to the block during execution. You can read values from here and transform them in some way before sending to the web service.|
 |request|The [request object](connectortoolkit.md#wsjsrequest). Gives you access to the details configured for the method including the url, query string and headers|
 |runtime|The runtime object. Has methods that let you override the request configuration details. Use this to override any configured data.|

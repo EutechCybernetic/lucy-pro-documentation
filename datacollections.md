@@ -551,7 +551,7 @@ Insert one document at a time.
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to store the document under|
 |*document*|[JSON document](datatypes.md#dt-json)|*true*|Document to be stored|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -560,7 +560,7 @@ Insert one document at a time.
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[JSON document](datatypes.md#dt-json)|Document that was inserted into the collection|
  
 
@@ -608,7 +608,7 @@ Insert multiple documents at a time.
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to store the documents under|
 |*documents*|[JSON document](datatypes.md#dt-json)|*true*|Array of documents to be stored|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -658,7 +658,7 @@ Find the first matching document for the given collection & filter condition. Mo
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to find the documents|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -667,7 +667,7 @@ Find the first matching document for the given collection & filter condition. Mo
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[JSON document](datatypes.md#dt-json)|First document that matched the filter condition|
  
 
@@ -714,7 +714,7 @@ Find all matching documents for the given collection & filter condition. More in
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to find the documents|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -723,7 +723,7 @@ Find all matching documents for the given collection & filter condition. More in
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[JSON document](datatypes.md#dt-json)|Array of documents that matched the filter condition|
  
 
@@ -790,7 +790,7 @@ Update first matching document with the given data for the given collection & fi
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to update the documents for|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be updated with|
@@ -800,7 +800,7 @@ Update first matching document with the given data for the given collection & fi
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[JSON document](datatypes.md#dt-json)|Replacement result|
  
 
@@ -862,7 +862,7 @@ Update all matching documents with the given data for the given collection & fil
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to update the documents under for|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be updated with|
@@ -872,7 +872,7 @@ Update all matching documents with the given data for the given collection & fil
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[JSON document](datatypes.md#dt-json)|Replacement result|
  
 
@@ -937,7 +937,7 @@ Replace first matching document is replaced with the given data for the given co
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to replace the documents in|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*data*|[JSON document](datatypes.md#dt-json)|*true*|Document to be replaced with|
@@ -947,7 +947,7 @@ Replace first matching document is replaced with the given data for the given co
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[JSON document](datatypes.md#dt-json)|Replacement result|
  
 
@@ -1001,7 +1001,7 @@ Delete first matching document for the given collection & filter condition. More
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -1042,7 +1042,7 @@ Delete all matching documents for the given collection & filter condition. More 
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to delete the documents from|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -1083,7 +1083,7 @@ Count all matching documents for the given collection & filter condition. More i
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to count the documents from|
 |*filter*|[JSON document](datatypes.md#dt-json)|*true*|Filter condition to filter documents by|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -1092,7 +1092,7 @@ Count all matching documents for the given collection & filter condition. More i
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[number](datatypes.md#dt-numbers)|Number of documents that matched the filter condition|
  
 
@@ -1134,7 +1134,7 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*collection_name*|[Text](datatypes.md#dt-text)|*true*|Name of the collection to count the documents from|
 |*pipeline_stages*|[JSON document](datatypes.md#dt-json)|*true*|Array of pipeline stages to process the data through for aggregation|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the data collection API|
@@ -1143,7 +1143,7 @@ Perform various aggration on your documents like *sum*, *average*, *min*, *max*,
 
 
 |Data Type|Description|
------------------------
+|--|--|
 |[JSON document](datatypes.md#dt-json)|Aggregation result|
  
 
@@ -1198,7 +1198,7 @@ This is provided in order to pass any additional configuration to the backend da
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*limit*|[number](datatypes.md#dt-numbers)|*false*|Maximum number of documents to return||
 |default* is **0**|
 |*skip*|[number](datatypes.md#dt-numbers)|*false*|Number of documents to skip that match the filter condition|
@@ -1221,7 +1221,7 @@ The following registry settings are available for data collection feature,
 
 
 |Name|Required|Description|
----------------------------
+|---|---|---|
 |*MongoDBServer*|*true*|This is url where your MongoDB instance is running|
  
 

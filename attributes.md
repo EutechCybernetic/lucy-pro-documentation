@@ -20,7 +20,7 @@ Attributes are defined in each model. The data that is associated with each attr
 
 
 |Data type|Description|
------------------------
+|--|--|
 |Text|Represents any generic piece of data - a name, a number, a JSON payload etc...|
 |DateTime|Used to represent a time stamp, a day, or a time.|
  

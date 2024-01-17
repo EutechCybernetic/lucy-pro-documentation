@@ -37,7 +37,7 @@ This blocks allows you to record a data point for the given trend.
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*Trend Name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you are capturing like *energy* or *temperature*|
 |*Value*|[number](datatypes.md#dt-numbers)|*true*|Value of the data point you are capturing like *12.07* or *100*|
 |*Timestamp*|[Datetime](datatypes.md#dt-datetimes)|*false* (*default*: current time)|Records the time when the data point was captured|
@@ -62,7 +62,7 @@ This blocks allows you to query data points for the given trend.
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*Trend Name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you want to query like *energy* or *temperature*|
 |*Bucket Type*|[text](datatypes.md#dt-text)|*false*|Time buckets to group data points by.|
  
@@ -142,7 +142,7 @@ Insert one data point at a time.
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*trend_name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you are capturing like *energy* or *temperature*|
 |*value*|[number](datatypes.md#dt-numbers)|*true*|Value of the data point you are capturing like *12.07* or *100*|
 |*timestamp*|[Datetime](datatypes.md#dt-datetimes)|*true*|Records the time when the data point was captured|
@@ -186,7 +186,7 @@ Insert one data point at a time. This is similar to [addPoint](#addpoint), excep
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*trend_name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you are capturing like *energy* or *temperature*|
 |*value*|[number](datatypes.md#dt-numbers)|*true*|Value of the data point you are capturing like *12.07* or *100*|
 |*timestamp*|[Datetime](datatypes.md#dt-datetimes)|*true*|Records the time when the data point was captured|
@@ -232,7 +232,7 @@ Insert multiple data point at a time.
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*points*|[JSON Documents](datatypes.md#dt-json)|*true*|Array of JSON documents comprising of trend points||Refer to **Trend Point** structure below|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the trends API|
  
@@ -284,7 +284,7 @@ Insert multiple data point at a time. This is similar to [addPoints](#addpoints)
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*points*|[JSON Documents](datatypes.md#dt-json)|*true*|Array of JSON documents comprising of trend points||Refer to **Trend Point** structure below|
 |*options*|[JSON document](datatypes.md#dt-json)|*true* (can be empty with no fields like **{}**)|[Arbitrary Options](#arbitrary-options) to be passed to the trends API|
  
@@ -340,7 +340,7 @@ Query multiple data points for a given trend.
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*trend_name*|[Text](datatypes.md#dt-text)|*true*|Name of the trend you want to query like *energy* or *temperature*|
 |*from*|[Datetime](datatypes.md#dt-datetimes)|*true*|Timestamp from which data points should be gathered|
 |*to*|[Datetime](datatypes.md#dt-datetimes)|*true*|Timestamp until which data points should be gathered|
@@ -395,7 +395,7 @@ This is provided in order to pass any additional configuration to the backend tr
 
 
 |Name|Data Type|Required|Description|
--------------------------------------
+|----|----|----|----|
 |*limit*|[number](datatypes.md#dt-numbers)|*false*|Maximum number of trends to return||
 |default* is **0**|
 |*offset*|[number](datatypes.md#dt-numbers)|*false*|Number of trends to skip|
@@ -418,7 +418,7 @@ The following registry settings are available for trends feature,
 
 
 |Name|Required|Description|
----------------------------
+|---|---|---|
 |*LucyEngine.TimeSeries.DataStore*|*false*|Backend datastore to use for storing trend data||
 |default* is **influxdb**|
 |*LucyEngine.TimeSeries.FlushInterval*|*false*|This says the interval at whichc the incoming trend data should be flushed into the datastore. This    can be tuned based on the rate at which trend points are being added. If large of number data is       added in a short period of time, then you can reduce this interval, to avoid bulk flushing in the      backend.||For example, if you get **5000 data points** every **5 seconds**, then you could set this value to say **1000** (*milliseconds*), to avoid flushing data in bulk.|

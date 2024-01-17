@@ -2414,7 +2414,7 @@ Available Functions:
 
 
 |Function Name|Description|
----------------------------
+|--|--|
  
 
         * - html(content)

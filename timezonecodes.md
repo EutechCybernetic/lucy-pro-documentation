@@ -9,7 +9,7 @@ The following table lists all available timezones, their name, description, comm
 
 
 |Time Zone|Description|Abbreviation|iviva code|
------------------------------------------------
+|----|----|----|----|
  
 
       * - Morocco Standard Time

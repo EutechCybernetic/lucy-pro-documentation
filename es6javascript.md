@@ -70,7 +70,7 @@ Adds column headers and rows of data.
 
 
 |`columns`|An array of column headers to add to the top.|
----------------------------------------------------------
+|--|--|
 |`items`|An array of objects to be populated as rows. Each object should have fields matching the items in the `columns` array|
  
 
@@ -120,7 +120,7 @@ Converts a [timestamp](datatypes.md#datetimes) from utc to a different timezone.
 
 
 |`dt`|A [timestamp](datatypes.md#datetimes) to convert to a different timezone|
--------------------------------------------------------------------------------
+|--|--|
  
 
     * - `tz`
@@ -143,7 +143,7 @@ Converts a [timestamp](datatypes.md#datetimes) to utc from a different timezone.
 
 
 |`dt`|A [timestamp](datatypes.md#datetimes) to convert to UTC|
---------------------------------------------------------------
+|--|--|
  
 
     * - `tz`
@@ -215,7 +215,7 @@ This name can be accessed via an http url of the form:
 
 
 |`name`|The base name for the file|
------------------------------------
+|--|--|
 |`data`|[binary data object](datatypes.md#binobjects) representing the data to be uploaded.|
  
 

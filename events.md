@@ -23,7 +23,7 @@ Events consist of the following pieces of information:
 
 
 |Field|Description|
--------------------
+|--|--|
 |Event ID|A unique identifier for the event being raised|
 |LocationKey|The iviva location from which the event was triggered|
 |Payload|An event payload, in JSON format|
