@@ -20,9 +20,7 @@ This is the backend service responsible for executing the action sequences that 
 This is a configuration tool to let you define your own connectors to external systems.
 
 {% hint style="seealso" %}
-
-    [Web Service Connector Toolkit](connectortoolkit.md#connectortoolkit)
-
+[Web Service Connector Toolkit](connectortoolkit.md#connectortoolkit)
 {% endhint %}
 
 ## Connector Gateways
